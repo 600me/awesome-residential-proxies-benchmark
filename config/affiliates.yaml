@@ -1,0 +1,10 @@
+{
+  "target_url": "https://api.ipify.org?format=json",
+  "attempts": 3,
+  "vendors": [
+    {"name": "Smartproxy", "proxy_env": "SMARTPROXY_PROXY_URL", "referral_url": "https://smartproxy.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark", "promo_code": "SMARTPROXY_PROMO_TBD"},
+    {"name": "Bright Data", "proxy_env": "BRIGHTDATA_PROXY_URL", "referral_url": "https://brightdata.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark", "promo_code": "BRIGHTDATA_PROMO_TBD"},
+    {"name": "Apify", "proxy_env": "APIFY_PROXY_URL", "referral_url": "https://apify.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark", "promo_code": "APIFY_PROMO_TBD"},
+    {"name": "Oxylabs", "proxy_env": "OXYLABS_PROXY_URL", "referral_url": "https://oxylabs.io/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark", "promo_code": "OXYLABS_PROMO_TBD"}
+  ]
+}
