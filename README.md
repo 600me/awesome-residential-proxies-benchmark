@@ -4,6 +4,8 @@
 
 本仓库对比 Smartproxy、Bright Data、Apify、Oxylabs 的连接成功率、响应头延迟、HTTP 状态与出口 IP 属性。先看下面的可复现测量，再用自己的目标站小批量验证，最后选择适合预算的服务。
 
+公开展示：[Benchmark](https://proxy.mybskm.top/) · [扩展隐私政策](https://proxy.mybskm.top/privacy.html)
+
 ## 100GB 抓取：有效单价才是账单真相
 
 以下是**明确假设的成本算例，并非厂商报价或已发生订单**：需要 100GB 有效电商/社媒数据，假设失败流量同样计费，忽略请求大小差异、重试计算费与固定套餐费。
@@ -19,21 +21,21 @@
 
 <!-- BENCHMARK:START -->
 
-Updated: 2026-10-16T07:42:45+00:00 (UTC)
+Updated: 2026-10-16T10:47:19+00:00 (UTC)
 
 **DRY RUN — direct network measurement + synthetic vendor fixtures; not vendor performance evidence.**
 
 | Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |
 |---|---:|---:|---|---|---|---|
-| Direct (real network) | 100.0% (3/3) | 882 | 200×3 | Unknown; AS? | OK | — |
-| [Smartproxy](https://smartproxy.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark) | 100.0% (3/3) | 250 | 200×3 | ISP (MOCK) | MOCK / OK | SMARTPROXY_PROMO_TBD |
-| [Bright Data](https://brightdata.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark) | 0.0% (0/3) | 180 | 403×3 | Unknown (MOCK) | MOCK / Failed | BRIGHTDATA_PROMO_TBD |
-| [Apify](https://apify.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark) | 0.0% (0/3) | — | Timeout×3 | Unknown (MOCK) | MOCK / Timeout | APIFY_PROMO_TBD |
-| [Oxylabs](https://oxylabs.io/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark) | 0.0% (0/3) | 300 | 503×3 | Hosting (MOCK) | MOCK / Failed | OXYLABS_PROMO_TBD |
+| Direct (real network) | 100.0% (3/3) | 864 | 200×3 | Unknown; AS? | OK | — |
+| [Smartproxy](https://go.272738.xyz/smartproxy) | 100.0% (3/3) | 250 | 200×3 | ISP (MOCK) | MOCK / OK | SMARTPROXY_PROMO_TBD |
+| [Bright Data](https://go.272738.xyz/brightdata) | 0.0% (0/3) | 180 | 403×3 | Unknown (MOCK) | MOCK / Failed | BRIGHTDATA_PROMO_TBD |
+| [Apify](https://go.272738.xyz/apify) | 0.0% (0/3) | — | Timeout×3 | Unknown (MOCK) | MOCK / Timeout | APIFY_PROMO_TBD |
+| [Oxylabs](https://go.272738.xyz/oxylabs) | 0.0% (0/3) | 300 | 503×3 | Hosting (MOCK) | MOCK / Failed | OXYLABS_PROMO_TBD |
 
 <!-- BENCHMARK:END -->
 
-表中链接保留 Referral 参数模板，`REPLACE_ME` 与 `*_PROMO_TBD` 是尚未激活的合作链接及独家 Promo Code 占位符，不代表已有返佣关系或已生效优惠。行动出口：点击对应厂商了解服务，结合下方命令验证自己的目标负载，再按有效单价决策；不要仅凭 Mock 数据采购。未来替换为有效联盟链接后，符合条件的购买可能为维护者带来佣金。
+表中推广入口使用 `https://go.272738.xyz/<vendor>` 稳定短链，当前跳转目标保留 Referral 参数模板，`REPLACE_ME` 与 `*_PROMO_TBD` 是尚未激活的合作链接及独家 Promo Code 占位符，不代表已有返佣关系或已生效优惠。行动出口：点击对应厂商了解服务，结合下方命令验证自己的目标负载，再按有效单价决策；不要仅凭 Mock 数据采购。未来替换为有效联盟链接后，符合条件的购买可能为维护者带来佣金。
 
 ## 复现测试
 

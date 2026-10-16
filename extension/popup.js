@@ -1,9 +1,9 @@
 "use strict";
 
-// Replace REPLACE_ME only after the corresponding affiliate enrollment is active.
+// Stable redirects; affiliate destinations are managed on the server.
 const REFERRALS = Object.freeze({
-  smartproxy: "https://smartproxy.com/?ref=REPLACE_ME&utm_source=chrome_extension&utm_campaign=proxy_benchmark",
-  brightdata: "https://brightdata.com/?ref=REPLACE_ME&utm_source=chrome_extension&utm_campaign=proxy_benchmark"
+  smartproxy: "https://go.272738.xyz/smartproxy",
+  brightdata: "https://go.272738.xyz/brightdata"
 });
 
 for (const [id, url] of Object.entries(REFERRALS)) {
