@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Run locally: ./deploy_us_server.sh [--host 96.9.225.9|100.80.6.84]
+# Run locally: ./deploy_us_server.sh [--host us-server|96.9.225.9|100.80.6.84]
 # --check validates local artifacts without SSH or starting a service.
 # Uses existing root SSH keys/config only. No package installs, fees or prompts.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-HOSTS=(96.9.225.9 100.80.6.84)
+HOSTS=(us-server 96.9.225.9 100.80.6.84)
 SSH_OPTIONS=(-o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=yes)
 CHECK_ONLY=0
 while (($#)); do
@@ -14,11 +14,11 @@ while (($#)); do
     --host)
       [[ $# -ge 2 ]] || { echo "--host requires an address" >&2; exit 2; }
       case "$2" in
-        96.9.225.9|100.80.6.84) HOSTS=("$2") ;;
-        *) echo "Use the specified US VPS public or Tailscale address." >&2; exit 2 ;;
+        us-server|96.9.225.9|100.80.6.84) HOSTS=("$2") ;;
+        *) echo "Use us-server or the specified US VPS public or Tailscale address." >&2; exit 2 ;;
       esac
       shift 2 ;;
-    *) echo "Usage: $0 [--check] [--host 96.9.225.9|100.80.6.84]" >&2; exit 2 ;;
+    *) echo "Usage: $0 [--check] [--host us-server|96.9.225.9|100.80.6.84]" >&2; exit 2 ;;
   esac
 done
 
@@ -39,8 +39,11 @@ fi
 
 TARGET=""
 for host in "${HOSTS[@]}"; do
-  if ssh "${SSH_OPTIONS[@]}" "root@$host" 'command -v python3 >/dev/null && command -v rsync >/dev/null && command -v systemctl >/dev/null && test -x /usr/bin/python3'; then
-    TARGET="root@$host"
+  # Keep the alias intact so SSH uses its configured user, key and host identity.
+  destination="$host"
+  [[ "$host" == us-server ]] || destination="root@$host"
+  if ssh "${SSH_OPTIONS[@]}" "$destination" 'command -v python3 >/dev/null && command -v rsync >/dev/null && command -v systemctl >/dev/null && test -x /usr/bin/python3'; then
+    TARGET="$destination"
     break
   fi
 done
@@ -52,7 +55,7 @@ install -d -m 0755 -o proxy-sniper -g proxy-sniper /opt/kais-proxy-sniper
 REMOTE
 
 # Only code and service definition are transferred; never overwrite live state.
-rsync -az --chmod=F755 -e 'ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=yes' \
+rsync -az -e 'ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=yes' \
   "$SCRIPT_DIR/sniper_daemon.py" "$SCRIPT_DIR/proxy-sniper.service" "$TARGET:/opt/kais-proxy-sniper/"
 
 ssh "${SSH_OPTIONS[@]}" "$TARGET" 'bash -se' <<'REMOTE'
@@ -64,6 +67,8 @@ systemd-analyze verify /etc/systemd/system/proxy-sniper.service
 systemctl daemon-reload
 systemctl enable proxy-sniper.service
 systemctl restart proxy-sniper.service
+# Require the process to remain active after startup, rather than only at fork.
+sleep 3
 systemctl is-active --quiet proxy-sniper.service
 systemctl --no-pager --full status proxy-sniper.service
 REMOTE
