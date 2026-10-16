@@ -1,0 +1,26 @@
+[Unit]
+Description=Kais public proxy intent feed monitor
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=proxy-sniper
+Group=proxy-sniper
+WorkingDirectory=/opt/kais-proxy-sniper
+ExecStart=/usr/bin/python3 -u /opt/kais-proxy-sniper/sniper_daemon.py
+Restart=on-failure
+RestartSec=60
+Environment=PYTHONDONTWRITEBYTECODE=1
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=proxy-sniper
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/kais-proxy-sniper
+
+[Install]
+WantedBy=multi-user.target

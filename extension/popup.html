@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Proxy Fraud Checker</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="icons/icon48.png" width="32" height="32" alt="">
+      <div><p class="eyebrow">KNOW YOUR EXIT IP</p><h1>Proxy Fraud Checker</h1></div>
+    </header>
+    <section class="result" aria-label="Current connection" aria-live="polite" aria-busy="true" id="result">
+      <p class="eyebrow">PUBLIC IP</p>
+      <p id="ip" class="ip">Checking…</p>
+      <dl>
+        <div><dt>Network type</dt><dd id="network">Checking…</dd></div>
+        <div><dt>Reported risk</dt><dd id="risk">Checking…</dd></div>
+        <div><dt>Provider / ASN</dt><dd id="provider">Checking…</dd></div>
+      </dl>
+      <p id="status" class="note" role="status">Requesting your browser’s current public exit IP…</p>
+      <button id="refresh" type="button" disabled>Check again</button>
+    </section>
+    <section class="offer" aria-label="Residential proxy comparison">
+      <p class="eyebrow">STOP PAYING FOR FAILED REQUESTS</p>
+      <h2>Crawlers or multi-account workflows hitting 403 blocks?</h2>
+      <p lang="zh-CN">爬虫/多账号频繁遭遇 403 阻断？推荐高纯度住宅代理（附专属优惠与基准测试）</p>
+      <p>100GB of usable data: at assumed 10% vs 80% yield, $1/GB hosting costs $1,000; $5/GB residential costs $625. That’s a $375 difference.</p>
+      <p class="note">Illustrative assumptions, not prices or measured savings. Compare before buying.</p>
+      <a id="smartproxy" class="cta" target="_blank" rel="noopener noreferrer sponsored">Compare Smartproxy ↗</a>
+      <a id="brightdata" class="secondary" target="_blank" rel="noopener noreferrer sponsored">Explore Bright Data ↗</a>
+      <p class="note">Referral and exclusive offer placeholders; no discount is active yet. Qualifying purchases through activated affiliate links may earn us a commission.</p>
+    </section>
+    <footer>
+      <p>ISP means a non-hosting candidate, not proof of a clean residential IP. Risk signals do not guarantee access or detect every fraud.</p>
+      <p>Only your exit IP is sent to <a href="https://ipquery.io" target="_blank" rel="noopener noreferrer">IPQuery</a> when opened or refreshed. No browsing history, accounts, analytics or local storage.</p>
+    </footer>
+  </main>
+</body>
+</html>
