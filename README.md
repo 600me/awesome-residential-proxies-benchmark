@@ -4,7 +4,7 @@
 
 本仓库对比 Smartproxy、Bright Data、Apify、Oxylabs 的连接成功率、响应头延迟、HTTP 状态与出口 IP 属性。先看下面的可复现测量，再用自己的目标站小批量验证，最后选择适合预算的服务。
 
-公开展示：[Benchmark](https://proxy.mybskm.top/) · [扩展隐私政策](https://proxy.mybskm.top/privacy.html)
+公开展示：[Benchmark](https://proxy.mybskm.top/) · [GitHub Repo](https://github.com/600me/awesome-residential-proxies-benchmark) · [扩展隐私政策](https://proxy.mybskm.top/privacy.html)
 
 ## 100GB 抓取：有效单价才是账单真相
 
