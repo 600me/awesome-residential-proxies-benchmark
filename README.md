@@ -56,3 +56,9 @@ Success Rate 是本轮 HTTP 2xx 次数 / 请求次数，不是目标站内容有
 ## 自动更新
 
 GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动触发。将上述代理环境变量配置为同名 GitHub Actions Secrets 后自动使用；空缺时照常输出未测试状态。工作流只在 README 有变更时以 `GITHUB_TOKEN` 提交并推送，仓库分支策略仍需允许该工作流写入。本地生成不代表工作流已在 GitHub 自然运行。
+
+## Sister Projects (Matrix Interlinks)
+
+- [Proxy Infrastructure Benchmark](https://proxy.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-residential-proxies-benchmark)
+- [Global GPU Cloud Benchmark](https://gpu.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-gpu-cloud-pricing-benchmark)
+- [Global Payments Matrix](https://pay.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-indie-global-payments-matrix)
