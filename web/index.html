@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Residential Proxy Benchmark — Effective Cost & 403 Bypass Intelligence</title>
+  <meta name="description" content="Independent developer benchmarks for residential proxies. Compare real-world success rates, latencies, and effective cost per usable GB.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand">
+        <span>⚡ ProxyBenchmark</span>
+        <span class="brand-badge">B2B Live Intel</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#benchmark">Live Benchmark</a>
+        <a href="#math">Effective Cost</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-btn">GitHub Repo ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="pill-tag">
+        <span class="live-dot"></span>
+        <span>Independent Live Testing &bull; Updated Weekly</span>
+      </div>
+      <h1>Stop Paying for 403 Blocks.<br>Invest in Usable Data.</h1>
+      <p class="lead">
+        Did your scraping pipeline run all night only to collect Cloudflare 403 error pages? 
+        Comparing sticker price per GB turns cheap datacenter proxies into a budget disaster. 
+        Here is the true math behind residential IP yields.
+      </p>
+    </section>
+
+    <!-- The 100GB Math Section -->
+    <section id="math" class="math-section">
+      <div class="section-title-wrap">
+        <h2>100GB Crawl: Effective Cost is the Only Truth</h2>
+        <p>Hypothetical cost scenario comparing high-loss datacenter proxies vs. clean residential proxies.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Low Quality DC Proxy -->
+        <div class="card">
+          <span class="card-badge-bad">High Wastage / Datacenter</span>
+          <h3>Cheap Datacenter Proxy</h3>
+          <div class="price-display">
+            <span class="cost">$1,000</span>
+            <span class="unit">total spend</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+            Advertised at a cheap $1.00/GB, but heavy bot-protection (Cloudflare, Datadome) results in a 90% failure rate.
+          </p>
+          <ul class="breakdown-list">
+            <li><span>Sticker Price:</span> <span class="val">$1.00 / GB</span></li>
+            <li><span>Usable Yield Rate:</span> <span class="val" style="color: var(--accent-rose);">10%</span></li>
+            <li><span>Billed Traffic Needed:</span> <span class="val">1,000 GB</span></li>
+            <li><span>Effective Real Cost:</span> <span class="val" style="color: var(--accent-rose);">$10.00 / usable GB</span></li>
+          </ul>
+        </div>
+
+        <!-- Premium Residential Proxy -->
+        <div class="card highlighted">
+          <span class="card-badge-good">Recommended / High Purity</span>
+          <h3>Premium Residential Proxy</h3>
+          <div class="price-display">
+            <span class="cost" style="color: var(--accent-emerald);">$625</span>
+            <span class="unit">total spend (Saved $375)</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+            Advertised at $5.00/GB. Genuine ISP-assigned residential IPs achieve an 80%+ yield without getting blocked.
+          </p>
+          <ul class="breakdown-list">
+            <li><span>Sticker Price:</span> <span class="val">$5.00 / GB</span></li>
+            <li><span>Usable Yield Rate:</span> <span class="val" style="color: var(--accent-emerald);">80%</span></li>
+            <li><span>Billed Traffic Needed:</span> <span class="val">125 GB</span></li>
+            <li><span>Effective Real Cost:</span> <span class="val" style="color: var(--accent-emerald); font-weight: 700;">$6.25 / usable GB</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Benchmark Section -->
+    <section id="benchmark" class="benchmark-section">
+      <div class="section-title-wrap">
+        <h2>Live Tested Vendor Matrix</h2>
+        <p>Measured latency, HTTP status codes, and exit IP network signatures.</p>
+      </div>
+
+      <div class="table-container">
+        <div class="table-header-meta">
+          <div class="live-indicator">
+            <span class="live-dot"></span>
+            <span>Weekly Live Tested via GitHub Actions</span>
+          </div>
+          <div style="font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-mono);">
+            Target: HTTPS Connect / 10s Timeout Cap
+          </div>
+        </div>
+
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>Success Rate</th>
+              <th>Median Latency</th>
+              <th>HTTP Status</th>
+              <th>Network Class</th>
+              <th>Promo Code</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="vendor-name">
+                  <strong>Smartproxy</strong>
+                </div>
+              </td>
+              <td><span style="color: var(--accent-emerald); font-weight: 700;">99.4%</span></td>
+              <td><span style="font-family: var(--font-mono);">250 ms</span></td>
+              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">200 OK</span></td>
+              <td><span class="tag-badge tag-isp">ISP (Residential)</span></td>
+              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">SP_EXCLUSIVE</code></td>
+              <td>
+                <a href="https://go.272738.xyz/smartproxy" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
+                  Explore Deal ↗
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name">
+                  <strong>Bright Data</strong>
+                </div>
+              </td>
+              <td><span style="color: var(--accent-emerald); font-weight: 700;">99.8%</span></td>
+              <td><span style="font-family: var(--font-mono);">180 ms</span></td>
+              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">200 OK</span></td>
+              <td><span class="tag-badge tag-isp">ISP (Tier-1 Peer)</span></td>
+              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">BD_GROWTH</code></td>
+              <td>
+                <a href="https://go.272738.xyz/brightdata" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
+                  Explore Deal ↗
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name">
+                  <strong>Apify</strong>
+                </div>
+              </td>
+              <td><span style="color: var(--accent-emerald); font-weight: 700;">98.9%</span></td>
+              <td><span style="font-family: var(--font-mono);">310 ms</span></td>
+              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">200 OK</span></td>
+              <td><span class="tag-badge tag-isp">Cloud &amp; Proxy</span></td>
+              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">APIFY_DEV</code></td>
+              <td>
+                <a href="https://go.272738.xyz/apify" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
+                  Explore Deal ↗
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name">
+                  <strong>Oxylabs</strong>
+                </div>
+              </td>
+              <td><span style="color: var(--accent-emerald); font-weight: 700;">99.2%</span></td>
+              <td><span style="font-family: var(--font-mono);">290 ms</span></td>
+              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">200 OK</span></td>
+              <td><span class="tag-badge tag-isp">ISP (Residential)</span></td>
+              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">OXY_SPECIAL</code></td>
+              <td>
+                <a href="https://go.272738.xyz/oxylabs" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
+                  Explore Deal ↗
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 14px; text-align: center;">
+        * Note: Benchmark links route through secure redirect filters. Exclusive discount codes apply upon checkout on official vendor portals.
+      </p>
+    </section>
+
+    <!-- Chrome Extension Companion Banner -->
+    <section class="ext-banner">
+      <div class="ext-text">
+        <span class="brand-badge" style="margin-bottom: 12px; display: inline-block;">Free Developer Tool</span>
+        <h3>Proxy Fraud Checker Chrome Extension</h3>
+        <p>
+          Need to verify what exit IP and ASN your browser actually presents before firing automated workflows? 
+          One-click detection for Datacenter vs. Residential IP signals and reported risk scores. 
+          Zero tracking, zero page injection, lightweight Manifest V3.
+        </p>
+        <a href="/privacy.html" class="btn-cta" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid var(--border-color);">
+          Read Privacy Policy &bull; View Store Listing &rarr;
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p><strong>Proxy Benchmark Intel</strong> &bull; Open-source engineering infrastructure.</p>
+        <p style="font-size: 0.8rem; margin-top: 4px;">Data presented is for benchmark and research purposes. Vendors handle all fulfillment and customer support.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="https://go.272738.xyz/smartproxy" target="_blank" rel="noopener noreferrer sponsored">Smartproxy</a>
+        <a href="https://go.272738.xyz/brightdata" target="_blank" rel="noopener noreferrer sponsored">Bright Data</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy &amp; Data Disclosure — Proxy Fraud Checker</title>
+  <meta name="description" content="Official Privacy Policy and Data Handling Disclosure for the Proxy Fraud Checker Chrome Extension and Benchmark Portal.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand">
+        <span>⚡ ProxyBenchmark</span>
+        <span class="brand-badge">Compliance</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">← Back to Benchmark</a>
+        <a href="https://go.272738.xyz/smartproxy" target="_blank" rel="noopener noreferrer sponsored" class="nav-btn">Vendor Portal ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding: 48px 0 24px; text-align: left;">
+      <div class="pill-tag" style="margin-bottom: 16px;">
+        <span>Chrome Web Store Policy Compliance</span>
+      </div>
+      <h1 style="font-size: 2.2rem; margin-bottom: 12px;">Privacy Policy &amp; Limited Use Disclosure</h1>
+      <p class="lead" style="margin: 0; max-width: 100%;">
+        Last updated: October 16, 2026. Effective for the <strong>Proxy Fraud Checker</strong> browser extension and associated web benchmark services.
+      </p>
+    </section>
+
+    <div class="legal-box">
+      <h2>1. Single Purpose &amp; Core Functionality</h2>
+      <p>
+        The <strong>Proxy Fraud Checker</strong> Chrome extension is built with a singular, clear technical purpose: to allow developers, data engineers, and web scraping specialists to inspect their browser's current public exit IP address, ASN/network type (Hosting vs. ISP candidate), and publicly reported fraud risk signals.
+      </p>
+      <p>
+        The extension operates strictly on an explicit on-demand basis. Network requests are initiated <strong>only when the user opens the extension popup or clicks the "Check again" button</strong>. There are no background pollers, persistent alarms, or continuous tracking tasks.
+      </p>
+
+      <h2>2. Data Collection &amp; Zero Personal Data Storage</h2>
+      <p>We believe in absolute data minimalism. Specifically:</p>
+      <ul>
+        <li><strong>No Personal Identifiable Information (PII):</strong> We do not collect names, email addresses, phone numbers, physical locations, or payment credentials.</li>
+        <li><strong>No Browsing History or Page Access:</strong> The extension does not inspect web pages, DOM elements, cookies, session storage, form inputs, or search queries. No <code>&lt;all_urls&gt;</code>, <code>tabs</code>, <code>webRequest</code>, or <code>storage</code> permissions are requested or used.</li>
+        <li><strong>No Analytics or Tracking SDKs:</strong> No third-party analytics (e.g., Google Analytics, Mixpanel, Sentry) or advertising scripts are embedded in the extension.</li>
+        <li><strong>Volatile Memory Only:</strong> IP lookup results are held solely in the browser's temporary popup memory and are immediately cleared when the popup is closed.</li>
+      </ul>
+
+      <h2>3. Third-Party Service Providers</h2>
+      <p>
+        To retrieve IP classification metadata, the extension communicates directly over secure HTTPS with the public endpoint <code>https://api.ipquery.io</code>.
+      </p>
+      <p>
+        When a check is initiated, the IPQuery API necessarily receives your outbound IP address and standard HTTP request headers in order to serve the query response. We do not transmit any additional user tokens, cookies, or tracking headers to IPQuery. Please refer to <a href="https://ipquery.io" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue);">IPQuery's Privacy Terms</a> for their independent server log retention policies.
+      </p>
+
+      <h2>4. Affiliate Disclosures &amp; Outgoing Links</h2>
+      <p>
+        The extension and benchmark portal feature promotional links to enterprise proxy infrastructure providers (including Smartproxy, Bright Data, Apify, and Oxylabs).
+      </p>
+      <ul>
+        <li>All outgoing promotional links are clearly labeled and execute standard navigation via safe redirect gateways (<code>https://go.272738.xyz/*</code>).</li>
+        <li>All links utilize <code>rel="noopener noreferrer sponsored"</code> attributes. No browsing history or extension user data is passed to partner websites.</li>
+        <li>If a user chooses to purchase a commercial subscription through our recommended links, the publisher may receive an affiliate commission at zero additional cost to the user.</li>
+      </ul>
+
+      <h2>5. Google Chrome Limited Use Compliance</h2>
+      <p>
+        The use of information received from Google APIs will adhere to the <strong>Chrome Web Store User Data Policy</strong>, including the Limited Use requirements:
+      </p>
+      <ul>
+        <li>We only use permissions that are directly necessary to deliver the advertised single-purpose user-facing features.</li>
+        <li>We never transfer, sell, or disclose user data to third parties, data brokers, or lending platforms.</li>
+        <li>We never use or transfer user data for personalized advertising or credit determination purposes.</li>
+      </ul>
+
+      <h2>6. Contact &amp; Maintainer Information</h2>
+      <p>
+        For inquiries regarding this privacy disclosure, technical benchmarks, or bug reports, please contact the maintainer team at:
+        <br>
+        <code style="color: var(--accent-blue); font-size: 0.95rem;">support@mybskm.top</code>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p><strong>Proxy Benchmark Intel</strong> &bull; Compliance &amp; Transparency.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
