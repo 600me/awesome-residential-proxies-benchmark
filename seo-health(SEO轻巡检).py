@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check three public sites and the directive's Firstbase CPS relay; silent if healthy."""
+"""Check four public sites and the directive's Firstbase CPS relay; silent if healthy."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import re
@@ -8,7 +8,7 @@ from time import monotonic
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
-HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top")
+HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top")
 
 
 def fetch(url, head=False):

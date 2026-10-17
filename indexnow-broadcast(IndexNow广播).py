@@ -5,7 +5,7 @@ import subprocess
 from datetime import datetime, timezone
 
 KEY = "e9a7c3b2f1048a90d8e27c1b5049a3ef"
-HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top")
+HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top")
 
 
 def main():
