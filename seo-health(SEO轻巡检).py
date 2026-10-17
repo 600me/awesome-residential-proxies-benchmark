@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check four public sites and the directive's Firstbase CPS relay; silent if healthy."""
+"""Check five public sites and the directive's Firstbase CPS relay; silent if healthy."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import re
@@ -8,7 +8,7 @@ from time import monotonic
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
-HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top")
+HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top", "esim.mybskm.top")
 
 
 def fetch(url, head=False):
@@ -59,12 +59,14 @@ def main():
     pages += [(f"https://{host}/sitemap.xml", "sitemap") for host in HOSTS]
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(check, pages))
-        relays = {"https://go.272738.xyz/firstbase"}
+        relays = {"https://go.272738.xyz/firstbase", "https://go.272738.xyz/airalo"}
         results += list(pool.map(check, [(url, "relay") for url in sorted(relays)]))
     errors = [error for _, _, error in results if error]
     for error in errors:
         print(error)
     if args.verbose:
+        for host in HOSTS:
+            print(f"{'FAIL' if any(error and host in error for _, _, error in results) else 'PASS'}: {host}")
         print(f"{'FAIL' if errors else 'PASS'}: {len(pages)} site/sitemap checks, "
               f"{len(relays)} CPS relays, {len(errors)} errors, "
               f"{(monotonic() - started) * 1000:.0f} ms")

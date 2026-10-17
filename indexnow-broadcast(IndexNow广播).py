@@ -5,7 +5,7 @@ import subprocess
 from datetime import datetime, timezone
 
 KEY = "e9a7c3b2f1048a90d8e27c1b5049a3ef"
-HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top")
+HOSTS = {host: [f"https://{host}/"] for host in ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top", "esim.mybskm.top")}
 
 
 def main():
@@ -21,7 +21,7 @@ def main():
     for host in HOSTS:
         payload = {"host": host, "key": KEY,
                    "keyLocation": f"https://{host}/{KEY}.txt",
-                   "urlList": [f"https://{host}/"]}
+                   "urlList": HOSTS[host]}
         response = subprocess.run(
             ["curl", "-sS", "--max-time", "30", "-X", "POST",
              "-H", "Content-Type: application/json; charset=utf-8",
