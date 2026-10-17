@@ -21,7 +21,7 @@ Referral links:
 - Smartproxy: https://go.272738.xyz/smartproxy
 - Bright Data: https://go.272738.xyz/brightdata
 
-The short links currently redirect to destinations containing the inactive REPLACE_ME referral placeholder. Exclusive discounts are not active. Once activated, qualifying purchases through affiliate links may earn the publisher a commission. Recommendations are advertising links, not independent certification. The extension does not modify links on other websites or inject affiliate codes into your browsing.
+As of October 17, 2026, the Smartproxy / Decodo short link routes to the approved official affiliate link; qualifying purchases may earn the publisher a commission. The Bright Data application remains pending and its destination still contains an inactive REPLACE_ME referral placeholder. No exclusive discount code is confirmed. Recommendations are advertising links, not independent certification. The extension does not modify links on other websites or inject affiliate codes into your browsing.
 
 An ISP/non-hosting result is a residential candidate, not proof of a residential household, exclusive use or cleanliness. Risk signals may be incomplete or inaccurate. This tool does not measure target-site success, bypass access controls, guarantee 403 avoidance or establish that an IP is fraudulent. Use services within the permissions and terms applicable to your work.
 
