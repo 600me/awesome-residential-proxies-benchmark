@@ -12,7 +12,7 @@ HOSTS = ("proxy.mybskm.top", "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.
 
 
 def fetch(url, head=False):
-    command = ["curl", "-sS", "--connect-timeout", "5", "--max-time", "15",
+    command = ["curl", "--doh-url", "https://cloudflare-dns.com/dns-query", "-sS", "--connect-timeout", "5", "--max-time", "15",
                "--max-filesize", "1048576"]
     command += ["-I"] if head else []
     response = subprocess.run(command + ["-w", "\n%{http_code}", url],

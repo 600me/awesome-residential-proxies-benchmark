@@ -12,7 +12,7 @@ def main():
     # Verify all public keys before sending any notifications.
     for host in HOSTS:
         response = subprocess.run(
-            ["curl", "-fsS", "--max-time", "20", f"https://{host}/{KEY}.txt"],
+            ["curl", "--doh-url", "https://cloudflare-dns.com/dns-query", "-fsS", "--max-time", "20", f"https://{host}/{KEY}.txt"],
             capture_output=True, text=True, check=True,
         )
         if response.stdout.strip() != KEY:
@@ -23,7 +23,7 @@ def main():
                    "keyLocation": f"https://{host}/{KEY}.txt",
                    "urlList": HOSTS[host]}
         response = subprocess.run(
-            ["curl", "-sS", "--max-time", "30", "-X", "POST",
+            ["curl", "--doh-url", "https://cloudflare-dns.com/dns-query", "-sS", "--max-time", "30", "-X", "POST",
              "-H", "Content-Type: application/json; charset=utf-8",
              "--data-binary", "@-", "-w", "\n%{http_code}",
              "https://api.indexnow.org/indexnow"],
