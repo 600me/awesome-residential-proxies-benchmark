@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Proxy Fraud Checker",
-  "version": "1.0.0",
-  "description": "Check your public IP, hosting/ISP signals and reported risk. Compare residential proxies when 403s waste your crawl budget.",
+  "version": "1.0.1",
+  "description": "Check your public IP, hosting/ISP status and risk signals, with a plain-language note on what the result does and does not prove.",
   "host_permissions": ["https://api.ipquery.io/*"],
   "action": {
     "default_title": "Check current IP",

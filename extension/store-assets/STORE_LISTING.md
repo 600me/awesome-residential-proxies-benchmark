@@ -4,26 +4,24 @@
 Proxy Fraud Checker
 
 ## Short description
-Check your public IP, hosting/ISP signals and reported risk. Compare residential proxies when 403s waste your crawl budget.
+See your public IP, hosting/ISP status and proxy/VPN risk signals in one click. No signup, no background access.
 
 ## Detailed description
-Crawlers or multi-account workflows hitting 403 blocks? Check the IP your browser actually presents before another round of failed requests drains your bandwidth budget.
+Your exit IP is one of the first things many anti-bot systems evaluate. Check it before you debug anything else.
 
-Proxy Fraud Checker shows your current public IP, Hosting vs ISP/non-hosting classification, provider/ASN and third-party risk signals in one click. It runs only when you open the popup or press Check again. No signup, no background polling, no page access.
+Proxy Fraud Checker shows the public IP your browser actually presents, whether that address belongs to a hosting provider or a non-hosting ISP, its provider/ASN, and the risk flags reported by a third-party lookup. It runs only when you open the popup or press Check again: no signup, no background polling, no page access, no analytics.
 
-100GB of usable data can cost more than the sticker price suggests. Illustrative assumptions: at $1/GB and 10% usable yield, hosting traffic costs $1,000; at $5/GB and 80% yield, residential traffic costs $625. The difference is $375. These are hypothetical inputs, not vendor prices, measured success rates or promised savings.
+The popup then explains what the result does and does not mean. If the address is a hosting range or is flagged as a VPN, proxy or Tor node, the extension may show one clearly labeled paid link to a residential proxy provider. If the address looks like a normal ISP, no paid link is shown and the extension instead explains how to test the IP your crawler actually uses. Detection signals are third-party estimates: they can be incomplete or wrong, and they do not prove that a site blocked you or that a different IP will succeed.
 
-Crawlers / multi-account workflows frequently blocked by 403s? Explore high-purity residential proxies, exclusive offer placeholders and reproducible benchmarks. Compare Smartproxy and Bright Data through the clearly labeled links in the popup and test on your own workload before purchasing.
+Cost math, not marketing: 100GB of usable data can cost more than the sticker price suggests. Illustrative assumptions only — at $1/GB and 10% usable yield, hosting traffic costs $1,000; at $5/GB and 80% yield, residential traffic costs $625. The difference is $375. These are hypothetical inputs, not vendor prices, measured success rates or promised savings. Test on your own workload before purchasing.
 
-Required campaign wording (Chinese): 爬虫/多账号频繁遭遇 403 阻断？推荐高纯度住宅代理（附专属优惠与基准测试）
+Benchmark and methodology: https://proxy.mybskm.top/
 
-Referral links:
-- Smartproxy: https://go.272738.xyz/smartproxy
-- Bright Data: https://go.272738.xyz/brightdata
-
-As of October 17, 2026, the Smartproxy / Decodo short link routes to the approved official affiliate link; qualifying purchases may earn the publisher a commission. The Bright Data application remains pending and its destination still contains an inactive REPLACE_ME referral placeholder. No exclusive discount code is confirmed. Recommendations are advertising links, not independent certification. The extension does not modify links on other websites or inject affiliate codes into your browsing.
-
-An ISP/non-hosting result is a residential candidate, not proof of a residential household, exclusive use or cleanliness. Risk signals may be incomplete or inaccurate. This tool does not measure target-site success, bypass access controls, guarantee 403 avoidance or establish that an IP is fraudulent. Use services within the permissions and terms applicable to your work.
+## Affiliate disclosure
+- The popup contains one paid link, to Decodo (formerly Smartproxy). If you subscribe through it, the publisher may earn a commission at no additional cost to you. The result shown above the link is produced by the IP lookup and is not affected by the commission.
+- As of 2026-10-18, the Decodo landing page lists code TAKE5 for 5% off the first month on eligible plans, plus a 3-day free trial. Offers and terms are controlled by Decodo and can change; verify at checkout.
+- No other provider link is shown. Bright Data is not displayed in v1.0.1 because no active affiliate agreement is in place.
+- The extension does not modify links or cookies on other websites, does not inject affiliate codes, and does not open any link without a click.
 
 ## Privacy policy / disclosure
 Public privacy policy: https://proxy.mybskm.top/privacy.html
@@ -39,9 +37,11 @@ Public privacy policy: https://proxy.mybskm.top/privacy.html
 When you explicitly open a privacy/benchmark page or an affiliate short link, the publisher's static web server receives normal connection metadata, including your exit IP, to serve the page or redirect. Access logging is disabled for these two sites; no analytics or tracking cookies are used. Operational error logs may contain connection metadata. This is separate from the extension's IP lookup, which goes directly to IPQuery.
 
 ## Package and submission notes
-The ZIP contains manifest.json at its root, popup.html/js/css, three PNG icons and this listing. No build step or dependencies. Upload the ZIP in the Developer Dashboard; for local testing, unzip it and use chrome://extensions → Developer mode → Load unpacked. Chrome may reject direct ZIP dragging; Load unpacked is the supported local route.
+v1.0.1 changes: removed the leftover Chinese campaign line, removed the inactive Bright Data button, replaced the static offer block with a result-aware explanation (hosting / VPN-proxy-Tor / clean ISP / unknown), added the real Decodo offer and a one-line affiliate disclosure, and added a footer link to the store reviews page. No permission, host access or CSP change.
 
-Public privacy URL: https://proxy.mybskm.top/privacy.html. Before a public store submission, supply the store's publisher/contact details and required screenshots in the dashboard. This file is the listing text; a ZIP passing local checks does not imply store approval or publication. No fees or store submission are performed by packaging.
+The runtime ZIP contains manifest.json, popup.html, popup.js, popup.css and the three PNG icons. It does not contain this listing file, screenshots or any internal notes.
+
+Upload the ZIP in the Developer Dashboard; for local testing, unzip it and use chrome://extensions → Developer mode → Load unpacked. Public privacy URL: https://proxy.mybskm.top/privacy.html.
 
 API schema reference: https://github.com/ipqwery/ipqwery
 Chrome host permissions: https://developer.chrome.com/docs/extensions/develop/concepts/network-requests

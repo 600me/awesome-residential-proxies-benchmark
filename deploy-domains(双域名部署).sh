@@ -80,8 +80,7 @@ for name, domain, body in [('kais-proxy-benchmark','proxy.mybskm.top',static), (
 extension = Path('extension')
 with zipfile.ZipFile(extension/'proxy-fraud-checker.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
     for name in ['manifest.json', 'popup.html', 'popup.js', 'popup.css',
-                 'icons/icon16.png', 'icons/icon48.png', 'icons/icon128.png',
-                 'store-assets/STORE_LISTING.md']:
+                 'icons/icon16.png', 'icons/icon48.png', 'icons/icon128.png']:
         archive.write(extension/name, name)
 print('Generated benchmark, full privacy policy, four redirect routes and extension ZIP.')
 PY

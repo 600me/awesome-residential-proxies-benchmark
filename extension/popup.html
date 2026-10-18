@@ -25,20 +25,22 @@
       <p id="status" class="note" role="status">Requesting your browser’s current public exit IP…</p>
       <button id="refresh" type="button" disabled>Check again</button>
     </section>
-    <section class="offer" aria-label="Residential proxy comparison">
-      <p class="eyebrow">STOP PAYING FOR FAILED REQUESTS</p>
-      <h2>Crawlers or multi-account workflows hitting 403 blocks?</h2>
-      <p lang="zh-CN">爬虫/多账号频繁遭遇 403 阻断？推荐高纯度住宅代理（附专属优惠与基准测试）</p>
-      <p>100GB of usable data: at assumed 10% vs 80% yield, $1/GB hosting costs $1,000; $5/GB residential costs $625. That’s a $375 difference.</p>
-      <p class="note">Illustrative assumptions, not prices or measured savings. Compare before buying.</p>
-      <a id="smartproxy" class="cta" target="_blank" rel="noopener noreferrer sponsored">Compare Smartproxy ↗</a>
-      <a id="brightdata" class="secondary" target="_blank" rel="noopener noreferrer sponsored">Explore Bright Data ↗</a>
-      <p class="note">Smartproxy / Decodo affiliate link is active; qualifying purchases may earn us a commission. Bright Data remains pending. No exclusive discount is confirmed.</p>
+
+    <section class="offer" id="offer" aria-label="What this result means" data-state="hidden" hidden>
+      <p class="eyebrow"><span id="offer-kicker">WHAT THIS MEANS</span><span class="tag" id="offer-tag" hidden>SPONSORED</span></p>
+      <h2 id="offer-title"></h2>
+      <p id="offer-body"></p>
+      <a id="cta" class="cta" target="_blank" rel="noopener noreferrer sponsored" hidden></a>
+      <p class="note" id="offer-note" hidden></p>
+      <p class="note" id="offer-disclosure" hidden></p>
+      <a id="benchmark" class="secondary" target="_blank" rel="noopener noreferrer" hidden></a>
     </section>
+
     <footer>
       <p>ISP means a non-hosting candidate, not proof of a clean residential IP. Risk signals do not guarantee access or detect every fraud.</p>
       <p>Only your exit IP is sent to <a href="https://ipquery.io" target="_blank" rel="noopener noreferrer">IPQuery</a> when opened or refreshed. No browsing history, accounts, analytics or local storage.</p>
       <p><a href="https://proxy.mybskm.top/privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy</a> · <a href="https://proxy.mybskm.top/" target="_blank" rel="noopener noreferrer">Reproducible benchmark</a></p>
+      <p class="note"><a href="https://chromewebstore.google.com/detail/ogihjffhcilpepjkpdifmkloioocoajp/reviews" target="_blank" rel="noopener noreferrer">Rate this extension ↗</a></p>
     </footer>
   </main>
 </body>
