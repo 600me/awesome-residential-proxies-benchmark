@@ -1,12 +1,34 @@
 # Residential Proxy Benchmark — 把预算花在有效抓取上
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Proxy_Fraud_Checker-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/proxy-fraud-checker/ogihjffhcilpepjkpdifmkloioocoajp)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Proxy_Fraud_Checker-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/proxy-fraud-checker/ogihjffhcilpepjkpdifmkloioocoajp?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
 
 电商价格任务跑了一夜，早晨拿到的却是 Cloudflare 403 页面？社媒采集不断重试，垃圾机房 IP 消耗带宽、计算资源和工程师排障时间，真正可用的数据迟迟不能交付。采购代理时，只比较每 GB 标价，很容易把便宜买成昂贵。
 
-本仓库对比 Smartproxy、Bright Data、Apify、Oxylabs 的连接成功率、响应头延迟、HTTP 状态与出口 IP 属性。先看下面的可复现测量，再用自己的目标站小批量验证，最后选择适合预算的服务。
+本仓库对比 Smartproxy、Bright Data、Apify、Oxylabs 的连接成功率、响应头延迟、HTTP 状态与出口 IP 属性。先看在线生产看板与下方可复现测量，再用自己的目标站小批量验证，最后选择适合预算的服务。
 
-公开展示：[Benchmark](https://proxy.mybskm.top/) · [GitHub Repo](https://github.com/600me/awesome-residential-proxies-benchmark) · [扩展隐私政策](https://proxy.mybskm.top/privacy.html)
+公开展示：[Live Proxy Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub Repo](https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [扩展隐私政策](https://proxy.mybskm.top/privacy.html)
+
+## 实时生产测量与动态排名
+
+实时生产测量与动态排名请直接查看 [Live Proxy Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)；本地可直接运行 `python3 probe_runner.py` 进行多厂商连通性实测。
+
+<!-- BENCHMARK:START -->
+
+Updated: 2026-10-18T12:57:30+00:00 (UTC)
+
+**Live run — unconfigured vendors are not tested.**
+
+| Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |
+|---|---:|---:|---|---|---|---|
+| Direct (real network) | 100.0% (3/3) | 848 | 200×3 | Unknown; AS? | OK | — |
+| [Smartproxy](https://go.272738.xyz/smartproxy?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
+| [Bright Data](https://go.272738.xyz/brightdata?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
+| [Apify](https://go.272738.xyz/apify?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
+| [Oxylabs](https://go.272738.xyz/oxylabs?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
+
+<!-- BENCHMARK:END -->
+
+表中推广入口使用 `https://go.272738.xyz/<vendor>?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark` 稳定短链。2026-10-17，Smartproxy（现名 Decodo）联盟申请已获批，对应短链已接入官方专属推广链接；符合条件的购买可能为维护者带来佣金。Bright Data、Apify、Oxylabs 的联盟状态以各后台审核结果为准；未激活的目标不产生佣金，也不代表已确认折扣。当前未确认独家优惠码，不代表有已生效折扣。行动出口：点击对应厂商了解服务，结合下方命令验证自己的目标负载，再按有效单价决策；不要仅凭标价或单一轮次采购。联盟获批不代表已取得厂商代理凭据、完成真实性能测量或产生收入。
 
 ## 100GB 抓取：有效单价才是账单真相
 
@@ -19,26 +41,6 @@
 
 公式：有效单价 = 标价 ÷ 有效数据率。这个假设下住宅方案节省 $375（37.5%）。真实成功率随站点、地区、会话和时间变化；住宅标签不保证能通过 Cloudflare，也不保证数据有效。
 
-## 实测对比与试用入口
-
-<!-- BENCHMARK:START -->
-
-Updated: 2026-10-16T10:47:19+00:00 (UTC)
-
-**DRY RUN — direct network measurement + synthetic vendor fixtures; not vendor performance evidence.**
-
-| Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |
-|---|---:|---:|---|---|---|---|
-| Direct (real network) | 100.0% (3/3) | 864 | 200×3 | Unknown; AS? | OK | — |
-| [Smartproxy](https://go.272738.xyz/smartproxy) | 100.0% (3/3) | 250 | 200×3 | ISP (MOCK) | MOCK / OK | SMARTPROXY_PROMO_TBD |
-| [Bright Data](https://go.272738.xyz/brightdata) | 0.0% (0/3) | 180 | 403×3 | Unknown (MOCK) | MOCK / Failed | BRIGHTDATA_PROMO_TBD |
-| [Apify](https://go.272738.xyz/apify) | 0.0% (0/3) | — | Timeout×3 | Unknown (MOCK) | MOCK / Timeout | APIFY_PROMO_TBD |
-| [Oxylabs](https://go.272738.xyz/oxylabs) | 0.0% (0/3) | 300 | 503×3 | Hosting (MOCK) | MOCK / Failed | OXYLABS_PROMO_TBD |
-
-<!-- BENCHMARK:END -->
-
-表中推广入口使用 `https://go.272738.xyz/<vendor>` 稳定短链。2026-10-17，Smartproxy（现名 Decodo）联盟申请已获批，对应短链已接入官方专属推广链接；符合条件的购买可能为维护者带来佣金。Bright Data 与 Apify 仍待审核，其他尚含 `REPLACE_ME` 的目标及 `*_PROMO_TBD` 仍是未激活占位符。当前未确认独家优惠码，不代表有已生效折扣。行动出口：点击对应厂商了解服务，结合下方命令验证自己的目标负载，再按有效单价决策；不要仅凭 Mock 数据采购。联盟获批不代表已取得厂商代理凭据、完成真实性能测量或产生收入。
-
 ## 复现测试
 
 ```sh
@@ -47,9 +49,9 @@ python3 probe_runner.py --dry-run
 python3 probe_runner.py
 ```
 
-配置文件 `config/affiliates.yaml` 使用合法 YAML 的 JSON 子集，故仅需 `aiohttp`，无需额外 YAML 解析依赖。默认每家并发请求 3 次 `https://api.ipify.org?format=json`。真实代理 URL 从四个同名环境变量读取：`SMARTPROXY_PROXY_URL`、`BRIGHTDATA_PROXY_URL`、`APIFY_PROXY_URL`、`OXYLABS_PROXY_URL`；使用厂商提供的 `http://用户名:密码@主机:端口`，特殊字符应 URL 编码，不把凭据写入仓库。Apify 需提供实际代理网关凭据，此处不把平台 Actor 服务混同代理网关。
+`--dry-run` 只做本地直连与配置检查，不上传 README、不生成任何厂商测量；`python3 probe_runner.py` 读取四个代理环境变量做真实连通性测试并把结果写入上方表格。未配置的厂商显示 Not configured / Not tested；不会冒充实测。每次请求超时上限 10 秒。
 
-未配置的厂商显示 Not configured / Not tested；不会冒充实测。`--dry-run` 始终尝试真实直连，并渲染四家明确标为 MOCK 的固定数据，覆盖 200、403、503 和 Timeout。离线或单家故障也会完成渲染，超时上限每次请求 10 秒。
+配置文件 `config/affiliates.yaml` 使用合法 YAML 的 JSON 子集，故仅需 `aiohttp`，无需额外 YAML 解析依赖。默认每家并发请求 3 次 `https://api.ipify.org?format=json`。真实代理 URL 从四个同名环境变量读取：`SMARTPROXY_PROXY_URL`、`BRIGHTDATA_PROXY_URL`、`APIFY_PROXY_URL`、`OXYLABS_PROXY_URL`；使用厂商提供的 `http://用户名:密码@主机:端口`，特殊字符应 URL 编码，不把凭据写入仓库。Apify 需提供实际代理网关凭据，此处不把平台 Actor 服务混同代理网关。
 
 Success Rate 是本轮 HTTP 2xx 次数 / 请求次数，不是目标站内容有效率；Latency 是收到响应头的耗时中位数，包含建连与 TLS，不是纯网络 RTT。HTTP 错误仍记录响应延迟。默认端点只验证连通性，**不测量 Cloudflare 绕过能力、电商/社媒业务成功率或带宽吞吐**。更换目标 URL 后，若其响应不含出口 `ip`，IP 属性显示 Unknown。
 
@@ -61,7 +63,7 @@ GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动�
 
 ## Sister Projects (Matrix Interlinks)
 
-- [Proxy Infrastructure Benchmark](https://proxy.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-residential-proxies-benchmark)
-- [Global GPU Cloud Benchmark](https://gpu.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-gpu-cloud-pricing-benchmark)
-- [Global Payments Matrix](https://pay.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-indie-global-payments-matrix)
-- [Web Scraping APIs Benchmark](https://scrape.mybskm.top) · [GitHub repository](https://github.com/600me/awesome-web-scraping-apis-benchmark)
+- [Proxy Infrastructure Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+- [Global GPU Cloud Benchmark](https://gpu.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-gpu-cloud-pricing-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+- [Global Payments Matrix](https://pay.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-indie-global-payments-matrix?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+- [Web Scraping APIs Benchmark](https://scrape.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-web-scraping-apis-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)

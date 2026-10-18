@@ -5,29 +5,29 @@
     {
       "name": "Smartproxy",
       "proxy_env": "SMARTPROXY_PROXY_URL",
-      "referral_url": "https://go.272738.xyz/smartproxy",
-      "promo_code": "SMARTPROXY_PROMO_TBD",
+      "referral_url": "https://go.272738.xyz/smartproxy?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
+      "promo_code": "—",
       "destination_url": "https://visit.decodo.com/k434W0"
     },
     {
       "name": "Bright Data",
       "proxy_env": "BRIGHTDATA_PROXY_URL",
-      "referral_url": "https://go.272738.xyz/brightdata",
-      "promo_code": "BRIGHTDATA_PROMO_TBD",
+      "referral_url": "https://go.272738.xyz/brightdata?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
+      "promo_code": "—",
       "destination_url": "https://brightdata.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark"
     },
     {
       "name": "Apify",
       "proxy_env": "APIFY_PROXY_URL",
-      "referral_url": "https://go.272738.xyz/apify",
-      "promo_code": "APIFY_PROMO_TBD",
+      "referral_url": "https://go.272738.xyz/apify?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
+      "promo_code": "—",
       "destination_url": "https://apify.com/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark"
     },
     {
       "name": "Oxylabs",
       "proxy_env": "OXYLABS_PROXY_URL",
-      "referral_url": "https://go.272738.xyz/oxylabs",
-      "promo_code": "OXYLABS_PROMO_TBD",
+      "referral_url": "https://go.272738.xyz/oxylabs?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
+      "promo_code": "—",
       "destination_url": "https://oxylabs.io/?ref=REPLACE_ME&utm_source=github&utm_campaign=proxy_benchmark"
     }
   ]

@@ -73,9 +73,9 @@ def cell(value):
     return str(value).replace('|', '\\|').replace('\n', ' ').replace('\r', ' ')
 
 
-def render(rows, dry_run):
+def render(rows):
     lines = [f"Updated: {datetime.now(timezone.utc).isoformat(timespec='seconds')} (UTC)", '',
-             '**DRY RUN — direct network measurement + synthetic vendor fixtures; not vendor performance evidence.**' if dry_run else '**Live run — unconfigured vendors are not tested.**', '',
+             '**Live run — unconfigured vendors are not tested.**', '',
              '| Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |',
              '|---|---:|---:|---|---|---|---|']
     for vendor, rate, latency, status, kind, outcome in rows:
@@ -111,17 +111,18 @@ async def main(dry_run):
     if not isinstance(config['attempts'], int) or not 1 <= config['attempts'] <= 10:
         raise ValueError('attempts must be between 1 and 10')
     async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=10)) as session:
+        direct = await probe(session, {'name': 'Direct (real network)'}, config, direct=True)
         if dry_run:
-            rows = [await probe(session, {'name': 'Direct (real network)'}, config, direct=True)]
-            fixtures = [('100.0% (3/3)', '250', '200×3', 'ISP (MOCK)', 'MOCK / OK'),
-                        ('0.0% (0/3)', '180', '403×3', 'Unknown (MOCK)', 'MOCK / Failed'),
-                        ('0.0% (0/3)', '—', 'Timeout×3', 'Unknown (MOCK)', 'MOCK / Timeout'),
-                        ('0.0% (0/3)', '300', '503×3', 'Hosting (MOCK)', 'MOCK / Failed')]
-            rows.extend((v, *fixtures[i % len(fixtures)]) for i, v in enumerate(config['vendors']))
-        else:
-            rows = await asyncio.gather(*(probe(session, vendor, config) for vendor in config['vendors']))
-    inject(render(rows, dry_run))
-    print('README benchmark updated' + (' (dry run)' if dry_run else ''))
+            rows = [direct]
+            rows.extend((vendor, 'Not tested', '—', '—', 'Unknown', 'Not tested')
+                        for vendor in config['vendors'])
+            print(render(rows))
+            print('Local dry run: README not modified; run without --dry-run for a live table.')
+            return
+        vendor_rows = await asyncio.gather(*(probe(session, vendor, config) for vendor in config['vendors']))
+        rows = [direct, *vendor_rows]
+    inject(render(rows))
+    print('README benchmark updated')
 
 
 if __name__ == '__main__':
