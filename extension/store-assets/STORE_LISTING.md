@@ -37,6 +37,8 @@ Public privacy policy: https://proxy.mybskm.top/privacy.html
 When you explicitly open a privacy/benchmark page or an affiliate short link, the publisher's static web server receives normal connection metadata, including your exit IP, to serve the page or redirect. Access logging is disabled for these two sites; no analytics or tracking cookies are used. Operational error logs may contain connection metadata. This is separate from the extension's IP lookup, which goes directly to IPQuery.
 
 ## Package and submission notes
+Submission status: v1.0.1 was uploaded to the existing Proxy Fraud Checker item, the detailed description and affiliate disclosure above were saved, and screenshot-1280x800-v101.png replaced the previous screenshot. The Developer Dashboard confirmed submission and shows Pending review. Automatic publication after approval is enabled. Submission is not approval or publication of v1.0.1.
+
 v1.0.1 changes: removed the leftover Chinese campaign line, removed the inactive Bright Data button, replaced the static offer block with a result-aware explanation (hosting / VPN-proxy-Tor / clean ISP / unknown), added the real Decodo offer and a one-line affiliate disclosure, and added a footer link to the store reviews page. No permission, host access or CSP change.
 
 The runtime ZIP contains manifest.json, popup.html, popup.js, popup.css and the three PNG icons. It does not contain this listing file, screenshots or any internal notes.
