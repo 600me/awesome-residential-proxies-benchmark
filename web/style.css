@@ -110,6 +110,18 @@ header.site-header {
   border-color: var(--accent-blue);
 }
 
+.nav-btn-primary {
+  background: var(--accent-blue);
+  color: #06121f !important;
+  border-color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.nav-btn-primary:hover {
+  background: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
 /* Hero Section */
 .hero {
   padding: 72px 0 48px;
