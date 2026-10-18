@@ -1,5 +1,5 @@
 [Unit]
-Description=Kais public proxy intent feed monitor
+Description=Kais public proxy GPU payments scraping intent monitor
 Wants=network-online.target
 After=network-online.target
 

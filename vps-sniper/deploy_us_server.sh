@@ -52,9 +52,20 @@ done
 ssh "${SSH_OPTIONS[@]}" "$TARGET" 'bash -se' <<'REMOTE'
 id -u proxy-sniper >/dev/null 2>&1 || useradd --system --user-group --no-create-home --shell /usr/sbin/nologin proxy-sniper
 install -d -m 0755 -o proxy-sniper -g proxy-sniper /opt/kais-proxy-sniper
+# Preserve the actual previous installation and state before upgrading in place.
+backup_dir="/opt/kais-proxy-sniper/backups/$(date -u +%Y%m%dT%H%M%SZ)"
+install -d -m 0700 "$backup_dir"
+for artifact in sniper_daemon.py proxy-sniper.service state.json matched_leads.jsonl; do
+  if [[ -f "/opt/kais-proxy-sniper/$artifact" ]]; then
+    cp -p "/opt/kais-proxy-sniper/$artifact" "$backup_dir/"
+  fi
+done
+if [[ -f /etc/systemd/system/proxy-sniper.service ]]; then
+  cp -p /etc/systemd/system/proxy-sniper.service "$backup_dir/installed.service"
+fi
 REMOTE
 
-# Only code and service definition are transferred; never overwrite live state.
+# Only code and service definition are transferred; preserve state and lead ledger.
 rsync -az -e 'ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=yes' \
   "$SCRIPT_DIR/sniper_daemon.py" "$SCRIPT_DIR/proxy-sniper.service" "$TARGET:/opt/kais-proxy-sniper/"
 
