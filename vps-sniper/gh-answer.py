@@ -1,19 +1,36 @@
 #!/usr/bin/env python3
-"""Turn public GitHub issue reports into scored, four-part technical reply drafts.
+"""Turn public GitHub issue reports into scored, four-part technical replies.
 
-    python3 gh-answer.py --dry-run   # offline fixtures, no GitHub API calls
-    python3 gh-answer.py --once      # one real public GitHub search round
-    python3 gh-answer.py             # same as --once
+    python3 gh-answer.py --dry-run                 # offline fixtures, no network
+    python3 gh-answer.py --once                    # draft only, one live round
+    python3 gh-answer.py --once --post --limit 3   # post up to 3 real replies
 
-The script is read-only against GitHub: it never posts comments, opens PRs or
-uses credentials other than an optional GITHUB_TOKEN / GH_TOKEN for rate limits.
-Candidates are appended atomically to outreach_gh.jsonl beside this file.
+For a qualifying issue (score >= 3) DeepSeek writes an issue-specific four-part
+reply. The model name is read from DEEPSEEK_MODEL and defaults to the permanent
+alias `deepseek-chat`. DeepSeek keeps that alias pointed at its latest
+production chat model (V3, V3.5, V4, ...), so backend upgrades need no code
+change; set DEEPSEEK_MODEL only when an explicit snapshot must be pinned. Every
+AI call has a hard 6 second timeout and falls back to the curated expert
+templates on a missing key, timeout, HTTP error or malformed answer, so a bad
+network never blocks a run.
+
+`--post` writes real comments through the official GitHub REST API. Safety
+gates: repository stars >= 50, issue open and updated within 14 days, never a
+600me-owned repository, never an issue already recorded with posted: true, at
+most --limit posts per run (default 2, hard max 5), and a random 3-7 second
+pause between posts. Successful receipts (comment_url / comment_id / post_time)
+are appended atomically to outreach_gh.jsonl beside this file.
+
+`--dry-run` is fully offline: it scores local fixtures across all four
+categories, never calls GitHub or DeepSeek, and never writes the ledger.
 Only the Python standard library is used; no database or message queue.
 """
 
 import argparse
+import datetime
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -25,9 +42,35 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 LEDGER_PATH = os.path.join(HERE, "outreach_gh.jsonl")
 SEARCH_URL = "https://api.github.com/search/issues"
 REPO_URL = "https://api.github.com/repos/"
-USER_AGENT = "kais-proxy-benchmark-gh-answer/1.0 (+https://proxy.mybskm.top/)"
+USER_AGENT = "kais-proxy-benchmark-gh-answer/1.1 (+https://proxy.mybskm.top/)"
 MAX_BYTES = 2 * 1024 * 1024
 MIN_SCORE = 3
+MIN_STARS = 50
+MAX_ISSUE_AGE_DAYS = 14
+MAX_POSTS = 5
+POST_SLEEP_MIN = 3.0
+POST_SLEEP_MAX = 7.0
+# Permanent alias pointer: DeepSeek resolves `deepseek-chat` to the current
+# production chat model. DEEPSEEK_MODEL is the documented escape hatch for
+# pinning an explicit snapshot without touching this file.
+DEEPSEEK_API_URL = os.environ.get(
+    "DEEPSEEK_CHAT_URL", "https://api.deepseek.com/chat/completions")
+DEEPSEEK_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
+DEEPSEEK_TIMEOUT = 6
+DEEPSEEK_SYSTEM_PROMPT = (
+    "You are a senior production engineer replying to a public GitHub issue. "
+    "Write a concise, technically specific Markdown answer with exactly four parts:\n"
+    "1. **Root cause.** Explain the most likely cause using the issue's actual error "
+    "text, status codes, versions and environment. Do not invent logs or facts.\n"
+    "2. **Verify it with one command.** Give one copy-paste command that isolates the "
+    "failure, followed by one sentence explaining what the result means.\n"
+    "3. **What to change.** Give concrete fixes, configuration or code changes, "
+    "ordered by expected impact.\n"
+    "4. A final line starting with `Disclosure:` stating that you maintain the linked "
+    "open-source benchmark, including its URL.\n"
+    "No greeting, no sales pitch, no 'check out my tool'. Stay under 450 words. "
+    "Return only the Markdown reply."
+)
 
 INTENT_RE = re.compile(
     r"(?:\?|how (?:do|can|should|to)|need (?:help|advice|recommendations?)|"
@@ -243,8 +286,112 @@ def build_draft(category, evidence):
     )
 
 
-def load_seen(path=LEDGER_PATH):
-    seen = set()
+def disclosure(category):
+    spec = CATEGORIES[category]
+    target = "https://github.com/" + spec["repo"] + "?utm_source=gh_issue"
+    return ("Disclosure: I maintain the open-source benchmark at github.com/"
+            + spec["repo"] + ". Measured success rate, latency, HTTP status and "
+            "IP/ASN data: " + target)
+
+
+def deepseek_prompt(category, issue, evidence):
+    spec = CATEGORIES[category]
+    target = "https://github.com/" + spec["repo"] + "?utm_source=gh_issue"
+    signals = ", ".join(dict.fromkeys(
+        evidence.get("error", [])[:3] + evidence.get("vendor", [])[:3]
+        + evidence.get("intent", [])[:2])) or "none"
+    body = (issue.get("body") or "").strip()
+    if len(body) > 6000:
+        body = body[:6000] + "\n[body truncated]"
+    return (
+        "Category: " + category + "\n"
+        "Repository: " + issue["repo"] + "\n"
+        "Issue title: " + issue["title"] + "\n"
+        "Issue body:\n" + (body or "(empty)") + "\n\n"
+        "Detected signals: " + signals + "\n"
+        "Reference benchmark (use this exact disclosure link): " + target + "\n"
+        "Category background you may use, but tailor it to this issue: "
+        + spec["root_cause"] + "\n"
+        "Usual fix direction: " + spec["fix"] + "\n\n"
+        "Answer this specific report. If the body lacks a key detail, state the "
+        "assumption instead of inventing it."
+    )
+
+
+def deepseek_draft(category, issue, evidence):
+    """Return an issue-specific four-part reply, or None to trigger fallback."""
+    api_key = (os.environ.get("DEEPSEEK_API_KEY") or "").strip()
+    if not api_key:
+        log("ai_skip", reason="DEEPSEEK_API_KEY not set")
+        return None
+    payload = {
+        "model": DEEPSEEK_MODEL,
+        "messages": [
+            {"role": "system", "content": DEEPSEEK_SYSTEM_PROMPT},
+            {"role": "user", "content": deepseek_prompt(category, issue, evidence)},
+        ],
+        "temperature": 0.3,
+        "max_tokens": 700,
+        "stream": False,
+    }
+    request = urllib.request.Request(
+        DEEPSEEK_API_URL,
+        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": "Bearer " + api_key,
+            "User-Agent": USER_AGENT,
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=DEEPSEEK_TIMEOUT) as response:
+            raw = response.read(MAX_BYTES)
+    except urllib.error.HTTPError as error:
+        detail = ""
+        try:
+            detail = error.read(300).decode("utf-8", "replace")
+        except Exception:
+            pass
+        log("ai_error", status=error.code, model=DEEPSEEK_MODEL, detail=detail[:200])
+        return None
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
+        log("ai_error", model=DEEPSEEK_MODEL, detail=str(error)[:200])
+        return None
+    try:
+        data = json.loads(raw)
+        content = data["choices"][0]["message"]["content"]
+    except (ValueError, KeyError, IndexError, TypeError) as error:
+        log("ai_error", model=DEEPSEEK_MODEL,
+            detail="bad response: " + str(error)[:160])
+        return None
+    if not isinstance(content, str):
+        log("ai_reject", model=DEEPSEEK_MODEL, reason="non-text content")
+        return None
+    content = content.strip()
+    lowered = content.lower()
+    required = ("root cause", "verify", "what to change")
+    if len(content) < 200 or not all(marker in lowered for marker in required):
+        log("ai_reject", model=DEEPSEEK_MODEL, chars=len(content),
+            reason="missing four-part structure")
+        return None
+    if "disclosure:" not in lowered:
+        content += "\n\n" + disclosure(category)
+    log("ai_draft", model=DEEPSEEK_MODEL, category=category,
+        chars=len(content), issue_url=issue["issue_url"])
+    return content
+
+
+def draft_for(issue):
+    """AI first; the curated template is the zero-interruption fallback."""
+    response = deepseek_draft(issue["category"], issue, issue["evidence"])
+    if response:
+        return response, "deepseek"
+    return build_draft(issue["category"], issue["evidence"]), "template"
+
+
+def iter_records(path=LEDGER_PATH):
     try:
         with open(path, encoding="utf-8") as stream:
             for line in stream:
@@ -254,11 +401,28 @@ def load_seen(path=LEDGER_PATH):
                     record = json.loads(line)
                 except (ValueError, TypeError):
                     continue
-                if isinstance(record, dict) and isinstance(record.get("issue_url"), str):
-                    seen.add(record["issue_url"])
+                if isinstance(record, dict):
+                    yield record
     except FileNotFoundError:
-        pass
-    return seen
+        return
+
+
+def load_seen(path=LEDGER_PATH):
+    return {record["issue_url"] for record in iter_records(path)
+            if isinstance(record.get("issue_url"), str)}
+
+
+def load_posted(path=LEDGER_PATH):
+    """Only a recorded receipt blocks a second comment; drafts do not."""
+    posted = set()
+    for record in iter_records(path):
+        issue_url = record.get("issue_url")
+        if not isinstance(issue_url, str):
+            continue
+        if record.get("posted") is True or (
+                record.get("comment_url") and record.get("comment_id")):
+            posted.add(issue_url)
+    return posted
 
 
 def append_record(record, path=LEDGER_PATH):
@@ -275,7 +439,8 @@ def append_record(record, path=LEDGER_PATH):
         os.close(fd)
 
 
-def make_record(category, issue, stars, score, evidence, dry_run):
+def make_record(category, issue, stars, score, evidence, dry_run,
+                response=None, source="template"):
     target = "https://github.com/" + CATEGORIES[category]["repo"] + "?utm_source=gh_issue"
     return {
         "time": now(),
@@ -285,7 +450,8 @@ def make_record(category, issue, stars, score, evidence, dry_run):
         "category": category,
         "score": score,
         "signals": evidence,
-        "draft_response": build_draft(category, evidence),
+        "draft_source": source,
+        "draft_response": response if response else build_draft(category, evidence),
         "recommended_target": target,
         "dry_run": dry_run,
     }
@@ -327,8 +493,62 @@ def github_get(url, params=None):
         return None
 
 
+def github_post(url, payload):
+    """POST JSON to GitHub. Returns the parsed receipt, or None on any error."""
+    token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip()
+    if not token:
+        log("post_error", reason="GITHUB_TOKEN/GH_TOKEN not set")
+        return None
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        headers={
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": USER_AGENT,
+            "Authorization": "Bearer " + token,
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            raw = response.read(MAX_BYTES)
+            status = getattr(response, "status", 0)
+    except urllib.error.HTTPError as error:
+        detail = ""
+        try:
+            detail = error.read(300).decode("utf-8", "replace")
+        except Exception:
+            pass
+        log("post_error", status=error.code, url=url, detail=detail[:200])
+        return None
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
+        log("post_error", url=url, detail=str(error)[:200])
+        return None
+    if status and not 200 <= status < 300:
+        log("post_error", status=status, url=url)
+        return None
+    try:
+        data = json.loads(raw)
+    except (ValueError, TypeError) as error:
+        log("post_error", url=url, detail="invalid JSON: " + str(error)[:120])
+        return None
+    if not isinstance(data, dict) or not data.get("html_url") or data.get("id") is None:
+        log("post_error", url=url, detail="response missing html_url/id")
+        return None
+    return data
+
+
+def post_comment(repo, number, body):
+    url = (REPO_URL + urllib.parse.quote(repo, safe="/")
+           + "/issues/" + str(number) + "/comments")
+    return github_post(url, {"body": body})
+
+
 def search_issues(keyword, per_page=10):
-    cutoff = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 365 * 86400))
+    cutoff = time.strftime("%Y-%m-%d",
+                           time.gmtime(time.time() - MAX_ISSUE_AGE_DAYS * 86400))
     query = keyword + " in:title,body is:issue is:open updated:>=" + cutoff
     data = github_get(SEARCH_URL, {
         "q": query,
@@ -352,11 +572,13 @@ def repo_from_item(item):
 def issue_from_item(item):
     repo = repo_from_item(item)
     issue_url = item.get("html_url") or ""
-    if not repo or not issue_url:
+    number = item.get("number")
+    if not repo or not issue_url or not isinstance(number, int):
         return None
     return {
         "issue_url": issue_url,
         "repo": repo,
+        "number": number,
         "title": str(item.get("title") or ""),
         "body": str(item.get("body") or ""),
         "updated_at": str(item.get("updated_at") or ""),
@@ -372,13 +594,21 @@ def fetch_stars(repo, cache):
     return cache[repo]
 
 
-def run_live(limit, per_page):
-    seen = load_seen()
-    cache = {}
+def fresh_enough(updated_at):
+    try:
+        updated = datetime.datetime.strptime(
+            updated_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
+    except (TypeError, ValueError):
+        return False
+    age = (datetime.datetime.now(datetime.timezone.utc) - updated).total_seconds()
+    return 0 <= age <= MAX_ISSUE_AGE_DAYS * 86400
+
+
+def collect_candidates(per_page):
+    """One live search pass over all four categories, deduplicated by issue URL."""
+    candidates = {}
     searched = 0
-    emitted = 0
     for category, spec in CATEGORIES.items():
-        candidates = {}
         for keyword in spec["keywords"]:
             items = search_issues(keyword, per_page)
             if items is None:
@@ -391,7 +621,7 @@ def run_live(limit, per_page):
                 if isinstance(user, dict) and user.get("type") == "Bot":
                     continue
                 issue = issue_from_item(item)
-                if not issue or issue["issue_url"] in seen:
+                if not issue:
                     continue
                 if issue["repo"].split("/", 1)[0].lower() == "600me":
                     continue
@@ -405,19 +635,35 @@ def run_live(limit, per_page):
                 score, evidence = score_issue(text, category)
                 if score < MIN_SCORE:
                     continue
+                issue["category"] = category
                 issue["score"] = score
                 issue["evidence"] = evidence
-                candidates[issue["issue_url"]] = issue
-        ranked = sorted(candidates.values(),
+                previous = candidates.get(issue["issue_url"])
+                if previous is None or score > previous["score"]:
+                    candidates[issue["issue_url"]] = issue
+    return list(candidates.values()), searched
+
+
+def run_draft_round(candidates, searched, limit):
+    """Draft-only round: up to --limit drafts per category, never posts."""
+    seen = load_seen()
+    cache = {}
+    emitted = 0
+    for category in CATEGORIES:
+        ranked = sorted((issue for issue in candidates if issue["category"] == category),
                         key=lambda value: (value["score"], value["updated_at"]),
                         reverse=True)
         selected = 0
         for issue in ranked:
             if selected >= limit:
                 break
+            if issue["issue_url"] in seen:
+                continue
             stars = fetch_stars(issue["repo"], cache)
+            response, source = draft_for(issue)
             record = make_record(category, issue, stars, issue["score"],
-                                 issue["evidence"], dry_run=False)
+                                 issue["evidence"], dry_run=False,
+                                 response=response, source=source)
             append_record(record)
             seen.add(record["issue_url"])
             print(json.dumps(record, ensure_ascii=False), flush=True)
@@ -425,6 +671,63 @@ def run_live(limit, per_page):
             emitted += 1
     log("round", searched=searched, emitted=emitted, limit=limit, ledger=LEDGER_PATH)
     return 0 if searched else 1
+
+
+def run_post_round(candidates, searched, limit):
+    """Post at most `limit` real comments, with every anti-abuse gate applied."""
+    posted = load_posted()
+    cache = {}
+    ranked = sorted(candidates,
+                    key=lambda value: (value["score"], value["updated_at"]),
+                    reverse=True)
+    attempts = 0
+    published = 0
+    for index, issue in enumerate(ranked):
+        if attempts >= limit:
+            break
+        if issue["issue_url"] in posted:
+            log("post_skip", issue_url=issue["issue_url"], reason="already posted")
+            continue
+        if not fresh_enough(issue["updated_at"]):
+            log("post_skip", issue_url=issue["issue_url"], reason="stale")
+            continue
+        stars = fetch_stars(issue["repo"], cache)
+        if not isinstance(stars, int) or stars < MIN_STARS:
+            log("post_skip", issue_url=issue["issue_url"], reason="stars", stars=stars)
+            continue
+        response, source = draft_for(issue)
+        attempts += 1
+        result = post_comment(issue["repo"], issue["number"], response)
+        if result:
+            record = make_record(issue["category"], issue, stars, issue["score"],
+                                 issue["evidence"], dry_run=False,
+                                 response=response, source=source)
+            record.update({
+                "posted": True,
+                "comment_url": result["html_url"],
+                "comment_id": result["id"],
+                "post_time": now(),
+            })
+            append_record(record)
+            posted.add(issue["issue_url"])
+            print(json.dumps(record, ensure_ascii=False), flush=True)
+            published += 1
+        else:
+            log("post_failed", issue_url=issue["issue_url"], repo=issue["repo"])
+        if attempts < limit and index + 1 < len(ranked):
+            delay = random.uniform(POST_SLEEP_MIN, POST_SLEEP_MAX)
+            log("post_pause", seconds=round(delay, 2))
+            time.sleep(delay)
+    log("post_round", searched=searched, candidates=len(candidates),
+        attempts=attempts, published=published, limit=limit, ledger=LEDGER_PATH)
+    return 0 if searched else 1
+
+
+def run_live(limit, per_page, post=False):
+    candidates, searched = collect_candidates(per_page)
+    if post:
+        return run_post_round(candidates, searched, limit)
+    return run_draft_round(candidates, searched, limit)
 
 
 FIXTURES = (
@@ -510,12 +813,13 @@ FIXTURES = (
 
 
 def dry_run():
-    seen = load_seen()
+    """Offline acceptance: no HTTP, no ledger writes, all four categories."""
     accepted = []
     for fixture in FIXTURES:
         issue = {
             "issue_url": "https://github.com/" + fixture["repo"] + "/issues/" + str(fixture["number"]),
             "repo": fixture["repo"],
+            "number": fixture["number"],
             "title": fixture["title"],
             "body": fixture["body"],
             "updated_at": fixture["updated_at"],
@@ -530,20 +834,19 @@ def dry_run():
             continue
         record = make_record(fixture["category"], issue, fixture["stars"], score, evidence,
                              dry_run=True)
-        if record["issue_url"] not in seen:
-            append_record(record)
-            seen.add(record["issue_url"])
         accepted.append(record)
         print(json.dumps(record, ensure_ascii=False), flush=True)
     categories = {record["category"] for record in accepted}
     assert categories == set(CATEGORIES), "dry run must cover all four categories"
     assert all(record["score"] >= MIN_SCORE for record in accepted), "gate must hold"
+    assert all(record["draft_source"] == "template" for record in accepted), \
+        "dry run must not call DeepSeek"
     assert len(accepted) == 6, "dry run must accept exactly the six qualifying fixtures"
     assert all(record["recommended_target"].endswith("?utm_source=gh_issue")
                for record in accepted), "every target needs the gh_issue UTM tag"
     log("dry_run_pass", categories=sorted(categories), accepted=len(accepted),
         rejected=len(FIXTURES) - len(accepted), min_score=MIN_SCORE,
-        ledger=LEDGER_PATH, offline=True)
+        offline=True, network_calls=0, ledger_writes=0)
     return 0
 
 
@@ -551,21 +854,27 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dry-run", action="store_true",
-                        help="score offline fixtures; no GitHub requests")
+                        help="score offline fixtures; no network and no ledger writes")
     parser.add_argument("--once", action="store_true",
                         help="one real public GitHub search round (default)")
+    parser.add_argument("--post", action="store_true",
+                        help="post real comments through the GitHub REST API")
     parser.add_argument("--limit", type=int, default=2,
-                        help="maximum drafts per category in a live round (default: 2)")
+                        help="maximum drafts per category, or posts per run (default: 2, max: 5)")
     parser.add_argument("--per-page", type=int, default=10,
                         help="search results per keyword, 1-30 (default: 10)")
     args = parser.parse_args()
-    if not 1 <= args.limit <= 10:
-        parser.error("--limit must be between 1 and 10")
+    if not 1 <= args.limit <= MAX_POSTS:
+        parser.error("--limit must be between 1 and " + str(MAX_POSTS))
     if not 1 <= args.per_page <= 30:
         parser.error("--per-page must be between 1 and 30")
     if args.dry_run:
+        if args.post:
+            log("dry_run_post_ignored", reason="offline mode never posts")
         return dry_run()
-    return run_live(args.limit, args.per_page)
+    if args.post and not (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")):
+        parser.error("--post requires GITHUB_TOKEN or GH_TOKEN")
+    return run_live(args.limit, args.per_page, args.post)
 
 
 if __name__ == "__main__":

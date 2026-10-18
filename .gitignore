@@ -1,4 +1,6 @@
 __pycache__/
 .DS_Store
 vps-sniper/outreach_gh.jsonl
+vps-sniper/*.env
+vps-sniper/logs/
 ai-review(模型讨论)/
