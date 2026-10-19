@@ -122,8 +122,9 @@ def step_b_site():
     assert canonical and canonical.group(1) == PAGE, canonical.group(1) if canonical else "missing canonical"
     assert '"@type": "Article"' in body and '"headline": ' in body, "Article JSON-LD missing"
     assert "FTC Disclosure" in body and "affiliate" in body.lower(), "FTC disclosure missing"
+    decoded = html.unescape(body)
     for link in REQUIRED_LINKS:
-        assert link in body, f"missing link {link}"
+        assert link in body or link in decoded, f"missing link {link}"
     content = body.split('<div class="content">', 1)[1].split("</div>", 1)[0]
     text = html.unescape(re.sub(r"<[^>]+>", " ", content))
     words = len(text.split())
