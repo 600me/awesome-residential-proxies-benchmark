@@ -125,7 +125,7 @@ def step_b_site():
     decoded = html.unescape(body)
     for link in REQUIRED_LINKS:
         assert link in body or link in decoded, f"missing link {link}"
-    content = body.split('<div class="content">', 1)[1].split("</div>", 1)[0]
+    content = body.split('<div class="content">', 1)[1].split('<div class="cta-panel">', 1)[0]
     text = html.unescape(re.sub(r"<[^>]+>", " ", content))
     words = len(text.split())
     assert words >= 1600, f"only {words} words in article body"
