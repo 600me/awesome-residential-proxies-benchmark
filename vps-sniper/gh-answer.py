@@ -28,6 +28,15 @@ and every ledger record read the same per-category `target_url`.
 
 `--dry-run` is fully offline: it scores local fixtures across all four
 categories, never calls GitHub or DeepSeek, and never writes the ledger.
+
+Shadowban probe: `--check-shadowban` re-reads the recent receipts in
+outreach_gh.jsonl and asks GitHub about them **without any Authorization
+header**, exactly as a logged-out visitor would. A 404 or a comment missing
+from the public list means GitHub hid it (quiet shadowban): the probe logs
+`shadowban_alert` and exits 2 so a timer job can trip its alarm. Every real
+post in `run_post_round` additionally records `public_visible`, and a False
+result aborts the rest of that round before another comment is written.
+
 Only the Python standard library is used; no database or message queue.
 """
 
@@ -48,6 +57,9 @@ LEDGER_PATH = os.path.join(HERE, "outreach_gh.jsonl")
 SEARCH_URL = "https://api.github.com/search/issues"
 REPO_URL = "https://api.github.com/repos/"
 USER_AGENT = "kais-proxy-benchmark-gh-answer/1.2 (+https://proxy.mybskm.top/)"
+# Anonymous probe traffic is a separate identity on purpose: it must never look
+# like the posting account, and it must never carry a token.
+ANON_USER_AGENT = "kais-proxy-benchmark-shadowban-probe/1.0 (+https://proxy.mybskm.top/)"
 MAX_BYTES = 2 * 1024 * 1024
 MIN_SCORE = 3
 MIN_STARS = 20
@@ -56,6 +68,8 @@ REPO_COOLDOWN_DAYS = 30
 MAX_POSTS = 5
 POST_SLEEP_MIN = 3.0
 POST_SLEEP_MAX = 7.0
+SHADOWBAN_SETTLE = 2.0
+SHADOWBAN_SAMPLE = 5
 # Permanent alias pointer: DeepSeek resolves `deepseek-chat` to the current
 # production chat model. DEEPSEEK_MODEL is the documented escape hatch for
 # pinning an explicit snapshot without touching this file.
@@ -607,6 +621,128 @@ def post_comment(repo, number, body):
     return github_post(url, {"body": body})
 
 
+def anonymous_github_get(url):
+    """Token-free GitHub GET. Returns (status, parsed); status is None when no
+    HTTP response was ever produced."""
+    request = urllib.request.Request(url, headers={
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": ANON_USER_AGENT,
+    })
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            status = getattr(response, "status", 200) or 200
+            raw = response.read(MAX_BYTES)
+    except urllib.error.HTTPError as error:
+        try:
+            detail = error.read(200).decode("utf-8", "replace")
+        except Exception:
+            detail = ""
+        log("anon_probe", status=error.code, url=url.split("?", 1)[0],
+            detail=detail[:120])
+        return error.code, None
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
+        log("anon_probe", url=url.split("?", 1)[0], detail=str(error)[:160])
+        return None, None
+    try:
+        return status, json.loads(raw)
+    except (ValueError, TypeError):
+        return status, None
+
+
+def issue_number_from_url(issue_url):
+    """The ledger keys an issue by URL; the API needs the numeric number."""
+    match = re.search(r"/issues/(\d+)(?:$|[?#])", issue_url or "")
+    return int(match.group(1)) if match else None
+
+
+def verify_public_visibility(repo, number, comment_id):
+    """Shadowban probe for one posted comment, with no Authorization header.
+
+    True  -> a logged-out visitor sees it (HTTP 200 plus an id match, either in
+             the public list or on the single comment);
+    False -> 404, or absent from a public list that loaded cleanly: GitHub hid
+             the comment. Logs `shadowban_alert` immediately;
+    None  -> the probe itself failed (network, anonymous rate limit). That
+             proves nothing and must not be reported as a shadowban.
+    """
+    comment_id = str(comment_id)
+    base = REPO_URL + urllib.parse.quote(repo, safe="/") + "/issues/"
+    list_status, listed = anonymous_github_get(
+        base + str(number) + "/comments?per_page=100")
+    in_list = (list_status == 200 and isinstance(listed, list)
+               and any(str(item.get("id")) == comment_id
+                       for item in listed if isinstance(item, dict)))
+    single_status, single = anonymous_github_get(base + "comments/" + comment_id)
+    single_ok = (single_status == 200 and isinstance(single, dict)
+                 and str(single.get("id")) == comment_id)
+    if in_list or single_ok:
+        return True
+    if single_status == 404:
+        hidden = True
+    elif (list_status == 200 and isinstance(listed, list)
+          and single_status not in (403, 429, None)):
+        hidden = True
+    else:
+        hidden = False
+    if hidden:
+        log("shadowban_alert", repo=repo, number=number, comment_id=comment_id,
+            list_status=list_status, single_status=single_status,
+            detail="comment is not publicly visible without credentials")
+        return False
+    log("anon_check_error", repo=repo, number=number, comment_id=comment_id,
+        list_status=list_status, single_status=single_status)
+    return None
+
+
+def load_published_receipts(limit=SHADOWBAN_SAMPLE):
+    """Most recent real posts (posted: true and a comment_id) from the ledger."""
+    receipts = []
+    for record in iter_records():
+        comment_id = record.get("comment_id")
+        repo = record.get("repo")
+        number = issue_number_from_url(record.get("issue_url"))
+        if record.get("posted") is not True or comment_id is None:
+            continue
+        if not isinstance(repo, str) or not repo or number is None:
+            continue
+        receipts.append({
+            "repo": repo,
+            "number": number,
+            "comment_id": comment_id,
+            "comment_url": record.get("comment_url"),
+            "post_time": record.get("post_time") or record.get("time"),
+        })
+    return receipts[-limit:]
+
+
+def check_shadowban(limit=SHADOWBAN_SAMPLE):
+    """Anonymous visibility audit of recent posts. 0 all visible, 2 hidden."""
+    receipts = load_published_receipts(limit)
+    results = []
+    for receipt in receipts:
+        visible = verify_public_visibility(
+            receipt["repo"], receipt["number"], receipt["comment_id"])
+        results.append(dict(receipt, public_visible=visible))
+    hidden = sum(1 for entry in results if entry["public_visible"] is False)
+    inconclusive = sum(1 for entry in results if entry["public_visible"] is None)
+    report = {
+        "time": now(),
+        "checked": len(results),
+        "visible": len(results) - hidden - inconclusive,
+        "hidden": hidden,
+        "inconclusive": inconclusive,
+        "token_used": False,
+        "results": results,
+    }
+    print(json.dumps(report, ensure_ascii=False), flush=True)
+    log("shadowban_check", checked=len(results), visible=report["visible"],
+        hidden=hidden, inconclusive=inconclusive, ledger=LEDGER_PATH)
+    if hidden:
+        return 2
+    return 1 if inconclusive else 0
+
+
 def search_issues(keyword, per_page=15):
     cutoff = time.strftime("%Y-%m-%d",
                            time.gmtime(time.time() - MAX_ISSUE_AGE_DAYS * 86400))
@@ -788,11 +924,27 @@ def run_post_round(candidates, searched, limit):
                 "comment_id": result["id"],
                 "post_time": now(),
             })
+            # Let GitHub's read path catch up, then look at the comment the way
+            # a logged-out stranger does. A hidden comment is a shadowban.
+            time.sleep(SHADOWBAN_SETTLE)
+            visible = verify_public_visibility(
+                issue["repo"], issue["number"], result["id"])
+            if visible is None:
+                time.sleep(SHADOWBAN_SETTLE)
+                visible = verify_public_visibility(
+                    issue["repo"], issue["number"], result["id"])
+            record["public_visible"] = visible is not False
+            record["visibility_probe"] = {True: "visible", False: "hidden",
+                                          None: "inconclusive"}[visible]
             append_record(record)
             posted.add(issue["issue_url"])
             posted_repos.add(issue["repo"])
             print(json.dumps(record, ensure_ascii=False), flush=True)
             published += 1
+            if visible is False:
+                log("post_abort", repo=issue["repo"], comment_id=result["id"],
+                    reason="shadowban circuit breaker: comment not publicly visible")
+                break
         else:
             log("post_failed", issue_url=issue["issue_url"], repo=issue["repo"])
         if attempts < limit and index + 1 < len(ranked):
@@ -959,11 +1111,15 @@ def main():
                         help="maximum drafts per category, or posts per run (default: 2, max: 5)")
     parser.add_argument("--per-page", type=int, default=15,
                         help="search results per keyword, 1-30 (default: 15)")
+    parser.add_argument("--check-shadowban", action="store_true",
+                        help="anonymous, no-token visibility audit of recent posts")
     args = parser.parse_args()
     if not 1 <= args.limit <= MAX_POSTS:
         parser.error("--limit must be between 1 and " + str(MAX_POSTS))
     if not 1 <= args.per_page <= 30:
         parser.error("--per-page must be between 1 and 30")
+    if args.check_shadowban:
+        return check_shadowban()
     if args.dry_run:
         if args.post:
             log("dry_run_post_ignored", reason="offline mode never posts")
