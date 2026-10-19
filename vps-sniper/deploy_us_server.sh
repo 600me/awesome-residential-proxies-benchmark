@@ -71,6 +71,8 @@ rsync -az -e 'ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking
 
 ssh "${SSH_OPTIONS[@]}" "$TARGET" 'bash -se' <<'REMOTE'
 cd /opt/kais-proxy-sniper
+# Root-run rsync/deploy leaves root-owned files the daemon cannot append to.
+chown -R proxy-sniper:proxy-sniper /opt/kais-proxy-sniper
 /usr/bin/python3 -c 'from pathlib import Path; p = Path("sniper_daemon.py"); compile(p.read_text(), str(p), "exec")'
 runuser -u proxy-sniper -- /usr/bin/python3 sniper_daemon.py --dry-run
 install -m 0644 proxy-sniper.service /etc/systemd/system/proxy-sniper.service
