@@ -1,45 +1,45 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T11:10:40Z",
+  "generated_at": "2026-10-19T11:15:40Z",
   "host": "us-server",
   "sources": {
     "relay_log": {
       "path": "/var/log/nginx/affiliate_relay.log",
-      "lines": 1513,
-      "bytes": 190582,
-      "sha256": "3df84964c75dbe311a8e270e18347dde4001e7505272d472c6d6fc0860e1ce7b"
+      "lines": 1518,
+      "bytes": 190973,
+      "sha256": "1d495da701ab29bad227e9c964a0bd797f160d854d10c96c639f1d3e17d0c6bd"
     },
     "access_log": {
       "path": "/var/log/nginx/access.log",
-      "lines": 136,
-      "bytes": 29600,
-      "sha256": "02bbfc32dd0b22a0a91ccf0fcc6b929ed4c248ea75f38dded1cc086e03fef86c"
+      "lines": 171,
+      "bytes": 34003,
+      "sha256": "f41d110450aa066353b590c75708a42c8336c11aecd0333c39d0cfe521b33e78"
     }
   },
   "period": {
     "start": "2026-10-18T03:20:11-11:00",
-    "end": "2026-10-19T00:00:11-11:00"
+    "end": "2026-10-19T00:10:30-11:00"
   },
   "totals": {
-    "requests": 1513,
-    "status_302": 644,
+    "requests": 1518,
+    "status_302": 649,
     "status_301": 177,
     "status_404": 691,
     "status_400": 1,
-    "redirect_rate_pct": 54.26
+    "redirect_rate_pct": 54.41
   },
   "status_distribution": {
     "404": 691,
-    "302": 644,
+    "302": 649,
     "301": 177,
     "400": 1
   },
   "route_distribution": {
     "/smartproxy": 133,
-    "/scraperapi": 92,
-    "/runpod": 90,
+    "/scraperapi": 93,
+    "/runpod": 92,
+    "/firstbase": 88,
     "/vastai": 87,
-    "/firstbase": 86,
     "/": 78,
     "/zenrows": 51,
     "/apify": 50,
@@ -651,9 +651,9 @@
     "/gitconfig": 1
   },
   "parameterized": {
-    "total": 224,
+    "total": 226,
     "by_src": {
-      "health_probe_subid": 87,
+      "health_probe_subid": 89,
       "devto_runpod_vast": 15,
       "article_403tax": 14,
       "article_h100trap": 14,
@@ -704,17 +704,17 @@
     }
   },
   "bot_filter": {
-    "excluded": 1492,
-    "excluded_pct": 98.61,
+    "excluded": 1497,
+    "excluded_pct": 98.62,
     "reasons": {
       "scanner_path": 678,
-      "self_or_monitor_ip": 587,
+      "self_or_monitor_ip": 592,
       "bot_user_agent": 218,
       "scanner_ip_history": 8,
       "http_error": 1
     },
     "by_ua": {
-      "curl/8.7.1": 619,
+      "curl/8.7.1": 624,
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36": 276,
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36": 116,
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36": 108,
@@ -1053,36 +1053,61 @@
     "note": "0 browser-like affiliate-route clicks survived the path, IP, user-agent, status and reverse-DNS filters; 0 of them were HTTP 302. 0 carry a src/utm_content token, 0 are untagged and 0 carry a health/self probe token and are excluded from human_clicks_by_src."
   },
   "access_log_summary": {
-    "requests": 136,
-    "status_200": 3,
-    "status_404": 20,
-    "status_410": 0,
-    "browser_like_page_views": 1,
+    "requests": 171,
+    "status_200": 34,
+    "status_404": 22,
+    "status_410": 2,
+    "browser_like_page_views": 2,
     "filter_reasons": {
-      "scanner_path": 129,
+      "scanner_path": 131,
+      "bot_user_agent": 32,
+      "http_error": 4,
       "non_get": 2,
-      "http_error": 2,
-      "bot_user_agent": 2,
-      "browser_like": 1
+      "browser_like": 2
     },
     "top_pages": {
-      "/": 1
+      "/": 1,
+      "/blog/proxy-cost-audit.html": 1
     }
   },
   "health_check": {
-    "script": "/Users/a600/project-workspaces(项目工作区)/kais-proxy-cps-benchmark/affiliate-health-check(联盟巡检).py",
+    "script": "/opt/kais-proxy-sniper/affiliate-health-check(联盟巡检).py",
     "expected_active": 5,
-    "active_passed": 1,
-    "all_302": false,
-    "errors": 8,
+    "active_passed": 5,
+    "all_302": true,
+    "errors": 0,
     "new_links": -1,
-    "script_exit_code": 1,
-    "summary": "active=1/5 unaffiliated=0/4 subid_passthrough=1/5 errors=8 elapsed_ms=38420 exit=1",
+    "script_exit_code": 0,
+    "summary": "active=5/5 unaffiliated=4/4 subid_passthrough=5/5 errors=0 elapsed_ms=485 exit=0",
     "relays": [
+      {
+        "name": "Smartproxy",
+        "relay_status": 302,
+        "location": "subid passthrough subId1=health_probe_subid; https://visit.decodo.com/k434W0?subId1=direct",
+        "ok": true
+      },
+      {
+        "name": "Firstbase",
+        "relay_status": 302,
+        "location": "subid passthrough utm_content=health_probe_subid; https://get.firstbase.io/slcdxtscxrh7?utm_content=direct",
+        "ok": true
+      },
       {
         "name": "RunPod",
         "relay_status": 302,
         "location": "subid passthrough utm_content=health_probe_subid; https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_benchmark&utm_content=direct",
+        "ok": true
+      },
+      {
+        "name": "Vast.ai",
+        "relay_status": 302,
+        "location": "subid passthrough utm_content=health_probe_subid; https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=direct",
+        "ok": true
+      },
+      {
+        "name": "ScraperAPI",
+        "relay_status": 302,
+        "location": "subid passthrough fp_sid=health_probe_subid; https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=direct&utm_source=github&utm_campaign=scraping_benchmark&utm_content=direct",
         "ok": true
       }
     ],
@@ -1090,41 +1115,41 @@
     "note": "exit=2 is the script's documented signal for out-of-scope NEW_LINK placeholders, not a relay failure."
   },
   "shadowban_check": {
-    "source": null,
-    "time": null,
-    "checked": null,
-    "visible": null,
-    "hidden": null,
-    "inconclusive": null
+    "source": "/opt/kais-proxy-sniper/logs/shadowban_check_latest.json",
+    "time": "2026-10-19T11:15:29Z",
+    "checked": 1,
+    "visible": 1,
+    "hidden": 0,
+    "inconclusive": 0
   },
   "log_read_mode": {
-    "relay": "ssh",
-    "access": "ssh"
+    "relay": "local",
+    "access": "local"
   },
   "findings": [
-    "1/5 active affiliate relays returned HTTP 302 with attribution intact.",
-    "678 of 1513 relay requests were scanner probes for secrets and config files; they were excluded by the path allowlist.",
+    "5/5 active affiliate relays returned HTTP 302 with attribution intact.",
+    "678 of 1518 relay requests were scanner probes for secrets and config files; they were excluded by the path allowlist.",
     "218 requests carried declared or tool user agents (curl, python-requests, ShapBot, ClaudeBot, Googlebot, GoogleOther) and were excluded.",
     "8 requests came from IPs already tainted by scanner paths and were excluded by IP history.",
-    "587 requests came from this VPS or the operator's own line (health probes and self-checks) and were excluded.",
+    "592 requests came from this VPS or the operator's own line (health probes and self-checks) and were excluded.",
     "0 external human 302 clicks in the period; 0 are src-attributed (none), 0 untagged.",
     "0 probe-tagged clicks and 14 ClaudeBot src-tagged fetches are excluded from the human attribution table.",
-    "Access log is dominated by scanner noise; 3 of 136 requests returned 200."
+    "Access log is dominated by scanner noise; 34 of 171 requests returned 200."
   ],
   "funnel": {
-    "generated_at": "2026-10-19T11:10:40Z",
+    "generated_at": "2026-10-19T11:15:40Z",
     "external_human_302_clicks": 0,
     "human_clicks_by_src": {},
     "human_clicks_untagged": 0,
     "human_clicks_probe_tagged_excluded": 0,
-    "github_comments_visible": null,
-    "github_comments_checked": null,
-    "github_shadowban_hidden": null,
-    "relay_requests": 1513,
-    "active_relays_302": 1,
+    "github_comments_visible": 1,
+    "github_comments_checked": 1,
+    "github_shadowban_hidden": 0,
+    "relay_requests": 1518,
+    "active_relays_302": 5,
     "log_read_mode": {
-      "relay": "ssh",
-      "access": "ssh"
+      "relay": "local",
+      "access": "local"
     }
   }
 }
