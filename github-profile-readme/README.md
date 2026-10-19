@@ -14,12 +14,34 @@ retained dollar**.
 
 Every formula is visible on the page. Nothing is uploaded; all math runs client-side.
 
-| Calculator | What it prices | Hosted |
+| Calculator | What it prices | Hosted | Dataset |
+|---|---|---|---|
+| 🖥️ **LLM VRAM & GPU Cloud True TCO Calculator** | Weights + KV cache (GQA/MLA), NVLink vs PCIe topology, card-count rounding, RunPod/Vast.ai bundle billing → **cost per useful GPU-hour** | [gpu.mybskm.top/calculator](https://gpu.mybskm.top/calculator/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/llm-gpu-cost-calculator) | [HF Dataset](https://huggingface.co/datasets/600me/gpu-cloud-h100-a100-pricing-benchmark) |
+| 🕷️ **LLM/RAG Web Scraping & Anti-Bot True TCO Calculator** | `1/(1-block_rate)` retry amplification, challenge-page bandwidth bloat, Chromium render cost, managed-credit tiers → **$ per 1,000 clean Markdown pages** | [scrape.mybskm.top/calculator](https://scrape.mybskm.top/calculator/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/rag-web-scraping-cost-calculator) | [HF Dataset](https://huggingface.co/datasets/600me/web-scraping-anti-bot-api-benchmark) |
+| 🌐 **Residential Proxy Sticky Session & `cf_clearance` Loss Calculator** | Premature sticky-IP drops invalidating `cf_clearance`, geometric re-run tax, real GB burned → **sticky sessions vs per-request rotation, monthly** | [proxy.mybskm.top/calculator](https://proxy.mybskm.top/calculator/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/residential-proxy-sticky-session-calculator) | [HF Dataset](https://huggingface.co/datasets/600me/residential-proxy-commercial-policy-matrix) |
+| 💳 **Non-US Indie SaaS: MoR (Paddle/LS) vs US LLC + Stripe Breakeven** | 5% Merchant-of-Record drag vs Wyoming/Delaware franchise tax, registered agent, Form 5472 exposure → **at which MRR the LLC wins** | [pay.mybskm.top](https://pay.mybskm.top/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/ai-saas-stripe-vs-mor-tax-calculator) | [HF Dataset](https://huggingface.co/datasets/600me/global-saas-mor-vs-us-llc-fee-matrix) |
+
+---
+
+## 📊 Public Benchmark Datasets (HuggingFace, MIT-licensed, viewer-ready)
+
+Every model above also ships as a machine-readable dataset with a documented schema, so you can audit
+or re-run the arithmetic instead of trusting a screenshot. CSV + JSONL, 10–252 rows each, rendered by
+the HuggingFace Dataset Viewer.
+
+| Dataset | What is inside | Rows |
 |---|---|---|
-| 🖥️ **LLM VRAM & GPU Cloud True TCO Calculator** | Weights + KV cache (GQA/MLA), NVLink vs PCIe topology, card-count rounding, RunPod/Vast.ai bundle billing → **cost per useful GPU-hour** | [gpu.mybskm.top/calculator](https://gpu.mybskm.top/calculator/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/llm-gpu-cost-calculator) |
-| 🕷️ **LLM/RAG Web Scraping & Anti-Bot True TCO Calculator** | `1/(1-block_rate)` retry amplification, challenge-page bandwidth bloat, Chromium render cost, managed-credit tiers → **$ per 1,000 clean Markdown pages** | [scrape.mybskm.top/calculator](https://scrape.mybskm.top/calculator/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/rag-web-scraping-cost-calculator) |
-| 🌐 **Residential Proxy Sticky Session & `cf_clearance` Loss Calculator** | Premature sticky-IP drops invalidating `cf_clearance`, geometric re-run tax, real GB burned → **sticky sessions vs per-request rotation, monthly** | [proxy.mybskm.top/calculator](https://proxy.mybskm.top/calculator/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/residential-proxy-sticky-session-calculator) |
-| 💳 **Non-US Indie SaaS: MoR (Paddle/LS) vs US LLC + Stripe Breakeven** | 5% Merchant-of-Record drag vs Wyoming/Delaware franchise tax, registered agent, Form 5472 exposure → **at which MRR the LLC wins** | [pay.mybskm.top](https://pay.mybskm.top/?utm_source=gh_profile) · [HF Space](https://huggingface.co/spaces/600me/ai-saas-stripe-vs-mor-tax-calculator) |
+| [`gpu-cloud-h100-a100-pricing-benchmark`](https://huggingface.co/datasets/600me/gpu-cloud-h100-a100-pricing-benchmark) | RunPod / Vast.ai / Lambda / CoreWeave / AWS / GCP / Azure list rates for H100 SXM & PCIe, A100 80GB, L40S, RTX 4090 + cold-start, NVMe and 85%-utilisation effective cost per useful GPU-hour | 28 |
+| [`web-scraping-anti-bot-api-benchmark`](https://huggingface.co/datasets/600me/web-scraping-anti-bot-api-benchmark) | ScraperAPI, ZenRows, ScrapingBee, Crawlbase, Bright Data, Smartproxy residential and self-hosted Playwright: JS/premium credit multipliers, block rates, retry amplification, $/1k clean pages (measured + hard-target stress) | 14 |
+| [`residential-proxy-commercial-policy-matrix`](https://huggingface.co/datasets/600me/residential-proxy-commercial-policy-matrix) | 9-dimension commercial matrix for Smartproxy (Decodo), Bright Data, Oxylabs, IPRoyal, SOAX, Webshare and the free `curl_cffi + WARP` baseline, plus sticky-session re-run tax across 3 flow shapes | 21 |
+| [`global-saas-mor-vs-us-llc-fee-matrix`](https://huggingface.co/datasets/600me/global-saas-mor-vs-us-llc-fee-matrix) | Paddle / Lemon Squeezy 5% + $0.50 vs US LLC + Stripe 2.9% + intl/FX surcharges across $1k–$50k MRR, $15–$99 AOV and 3 card mixes, with 3-year net retained and Firstbase / Atlas / Doola entity costs | 252 |
+
+Usage:
+
+```bash
+pip install datasets
+python3 -c "from datasets import load_dataset; print(load_dataset('600me/residential-proxy-commercial-policy-matrix', split='train')[:3])"
+```
 
 ---
 
