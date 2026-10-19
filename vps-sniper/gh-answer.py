@@ -15,11 +15,16 @@ templates on a missing key, timeout, HTTP error or malformed answer, so a bad
 network never blocks a run.
 
 `--post` writes real comments through the official GitHub REST API. Safety
-gates: repository stars >= 50, issue open and updated within 14 days, never a
-600me-owned repository, never an issue already recorded with posted: true, at
-most --limit posts per run (default 2, hard max 5), and a random 3-7 second
-pause between posts. Successful receipts (comment_url / comment_id / post_time)
-are appended atomically to outreach_gh.jsonl beside this file.
+gates: repository stars >= 20, issue open and updated within 21 days, never a
+600me-owned repository, never an issue already recorded with posted: true,
+one comment per repository per 30-day cooldown, at most --limit posts per run
+(default 2, hard max 5), and a random 3-7 second pause between posts.
+Successful receipts (comment_url / comment_id / post_time) are appended
+atomically to outreach_gh.jsonl beside this file.
+
+Outreach links point at the owned research sites (with utm_source=gh_issue),
+never at a short-link relay. `build_draft`, `disclosure`, the DeepSeek prompt
+and every ledger record read the same per-category `target_url`.
 
 `--dry-run` is fully offline: it scores local fixtures across all four
 categories, never calls GitHub or DeepSeek, and never writes the ledger.
@@ -42,11 +47,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 LEDGER_PATH = os.path.join(HERE, "outreach_gh.jsonl")
 SEARCH_URL = "https://api.github.com/search/issues"
 REPO_URL = "https://api.github.com/repos/"
-USER_AGENT = "kais-proxy-benchmark-gh-answer/1.1 (+https://proxy.mybskm.top/)"
+USER_AGENT = "kais-proxy-benchmark-gh-answer/1.2 (+https://proxy.mybskm.top/)"
 MAX_BYTES = 2 * 1024 * 1024
 MIN_SCORE = 3
-MIN_STARS = 50
-MAX_ISSUE_AGE_DAYS = 14
+MIN_STARS = 20
+MAX_ISSUE_AGE_DAYS = 21
+REPO_COOLDOWN_DAYS = 30
 MAX_POSTS = 5
 POST_SLEEP_MIN = 3.0
 POST_SLEEP_MAX = 7.0
@@ -75,7 +81,14 @@ DEEPSEEK_SYSTEM_PROMPT = (
 INTENT_RE = re.compile(
     r"(?:\?|how (?:do|can|should|to)|need (?:help|advice|recommendations?)|"
     r"looking for|recommend|suggest|alternatives?|workaround|anyone|"
-    r"is there|best way|help me|advice)",
+    r"is there|best way|help me|advice|steps to reproduce|expected behavior|"
+    r"actual behavior|traceback|stack\s*trace|```)",
+    re.I,
+)
+
+NEGATIVE_TITLE_RE = re.compile(
+    r"\b(?:roadmap|rfc|epic|tracking|digest|changelog|release\s+notes|"
+    r"bump\b|deps\b|translation|weekly|todo\s+list)\b",
     re.I,
 )
 
@@ -115,7 +128,9 @@ def score_issue(text, category):
 
 CATEGORIES = {
     "proxy": {
-        "keywords": ("cloudflare 403", "residential proxy"),
+        "keywords": ("cloudflare 403 proxy", "residential proxy 403",
+                     "cf_clearance 403", "curl_cffi 403"),
+        "target_url": "https://scrape.mybskm.top/blog/proxy-cost-audit.html?utm_source=gh_issue",
         "error_re": re.compile(
             r"\b(?:403|429|407|blocked|banned|denied|timeout|timed out|rate[- ]?limit|"
             r"challenge|captcha|cf_clearance)\b", re.I),
@@ -152,7 +167,9 @@ CATEGORIES = {
         ),
     },
     "scraping": {
-        "keywords": ("turnstile", "scraping blocked"),
+        "keywords": ("turnstile playwright", "cloudflare 403 playwright",
+                     "scraping blocked cloudflare", "puppeteer turnstile"),
+        "target_url": "https://scrape.mybskm.top/blog/403-tax.html?utm_source=gh_issue",
         "error_re": re.compile(
             r"\b(?:turnstile|captcha|blocked|403|429|rate[- ]?limit|challenge|"
             r"timeout)\b", re.I),
@@ -188,7 +205,9 @@ CATEGORIES = {
         ),
     },
     "payments": {
-        "keywords": ("stripe banned", "stripe alternative"),
+        "keywords": ("stripe banned", "stripe account closed",
+                     "stripe alternative saas", "paddle vs stripe"),
+        "target_url": "https://pay.mybskm.top/?utm_source=gh_issue",
         "error_re": re.compile(
             r"\b(?:banned|closed|suspended|deactivated|chargeback|dispute|reserve|"
             r"restricted|declined|frozen|payout\s+hold|5\.7)\b", re.I),
@@ -227,7 +246,9 @@ CATEGORIES = {
         ),
     },
     "gpu": {
-        "keywords": ("runpod expensive", "h100 gpu cloud"),
+        "keywords": ("runpod expensive", "h100 gpu cloud",
+                     "vllm cuda out of memory", "runpod vs vast"),
+        "target_url": "https://gpu.mybskm.top/calculator/?utm_source=gh_issue",
         "error_re": re.compile(
             r"\b(?:expensive|cost(?:s|ly)?|price|pricing|cheaper|budget|billing|"
             r"invoice|overpriced)\b", re.I),
@@ -267,7 +288,6 @@ CATEGORIES = {
 
 def build_draft(category, evidence):
     spec = CATEGORIES[category]
-    target = "https://github.com/" + spec["repo"] + "?utm_source=gh_issue"
     signals = ", ".join(dict.fromkeys(value for value in
                                      evidence["error"][:2] + evidence["vendor"][:2]
                                      if value != "?"))
@@ -281,22 +301,38 @@ def build_draft(category, evidence):
         "```sh\n" + spec["command"] + "\n```\n\n"
         + spec["verify_note"] + "\n\n"
         "**What to change.** " + spec["fix"] + "\n\n"
-        "Disclosure: I maintain the open-source benchmark at github.com/" + spec["repo"] + ". "
-        "Measured success rate, latency, HTTP status and IP/ASN data: " + target
+        + disclosure(category)
     )
 
 
 def disclosure(category):
+    """Disclosure points at the owned research page, never a short-link relay."""
     spec = CATEGORIES[category]
-    target = "https://github.com/" + spec["repo"] + "?utm_source=gh_issue"
+    target = spec["target_url"]
+    if category == "proxy":
+        return ("Disclosure: I maintain the open-source proxy cost CLI "
+                "(https://github.com/600me/check-proxy-tax) and benchmark data: "
+                + target)
+    if category == "scraping":
+        return ("Disclosure: I maintain the open-source scraping API benchmark "
+                "(https://github.com/600me/awesome-web-scraping-apis-benchmark) "
+                "and benchmark data: " + target)
     return ("Disclosure: I maintain the open-source benchmark at github.com/"
             + spec["repo"] + ". Measured success rate, latency, HTTP status and "
             "IP/ASN data: " + target)
 
 
+def canonical_disclosure(content, category):
+    """Keep one canonical disclosure line, even when the model writes its own."""
+    kept = [line for line in content.splitlines()
+            if not re.match(r"^\s*\**\s*disclosure\s*:", line, re.I)]
+    body = "\n".join(kept).rstrip()
+    return (body + "\n\n" if body else "") + disclosure(category)
+
+
 def deepseek_prompt(category, issue, evidence):
     spec = CATEGORIES[category]
-    target = "https://github.com/" + spec["repo"] + "?utm_source=gh_issue"
+    target = spec["target_url"]
     signals = ", ".join(dict.fromkeys(
         evidence.get("error", [])[:3] + evidence.get("vendor", [])[:3]
         + evidence.get("intent", [])[:2])) or "none"
@@ -371,13 +407,15 @@ def deepseek_draft(category, issue, evidence):
         return None
     content = content.strip()
     lowered = content.lower()
+    if "go.272738.xyz" in lowered:
+        log("ai_reject", model=DEEPSEEK_MODEL, reason="forbidden short link")
+        return None
     required = ("root cause", "verify", "what to change")
     if len(content) < 200 or not all(marker in lowered for marker in required):
         log("ai_reject", model=DEEPSEEK_MODEL, chars=len(content),
             reason="missing four-part structure")
         return None
-    if "disclosure:" not in lowered:
-        content += "\n\n" + disclosure(category)
+    content = canonical_disclosure(content, category)
     log("ai_draft", model=DEEPSEEK_MODEL, category=category,
         chars=len(content), issue_url=issue["issue_url"])
     return content
@@ -425,6 +463,29 @@ def load_posted(path=LEDGER_PATH):
     return posted
 
 
+def load_recent_posted_repos(path=LEDGER_PATH, days=REPO_COOLDOWN_DAYS):
+    """Repos that already received a comment inside the cooldown window."""
+    cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)
+    cooled = set()
+    for record in iter_records(path):
+        repo = record.get("repo")
+        if not isinstance(repo, str) or not repo:
+            continue
+        if not (record.get("posted") is True or record.get("comment_url")):
+            continue
+        stamp = record.get("post_time") or record.get("time")
+        if not isinstance(stamp, str):
+            continue
+        try:
+            posted_at = datetime.datetime.strptime(
+                stamp, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
+        except ValueError:
+            continue
+        if posted_at >= cutoff:
+            cooled.add(repo)
+    return cooled
+
+
 def append_record(record, path=LEDGER_PATH):
     """One O_APPEND write plus fsync keeps a complete JSON line contiguous."""
     line = (json.dumps(record, ensure_ascii=False) + "\n").encode("utf-8")
@@ -441,7 +502,7 @@ def append_record(record, path=LEDGER_PATH):
 
 def make_record(category, issue, stars, score, evidence, dry_run,
                 response=None, source="template"):
-    target = "https://github.com/" + CATEGORIES[category]["repo"] + "?utm_source=gh_issue"
+    target = CATEGORIES[category]["target_url"]
     return {
         "time": now(),
         "issue_url": issue["issue_url"],
@@ -546,10 +607,11 @@ def post_comment(repo, number, body):
     return github_post(url, {"body": body})
 
 
-def search_issues(keyword, per_page=10):
+def search_issues(keyword, per_page=15):
     cutoff = time.strftime("%Y-%m-%d",
                            time.gmtime(time.time() - MAX_ISSUE_AGE_DAYS * 86400))
-    query = keyword + " in:title,body is:issue is:open updated:>=" + cutoff
+    query = (keyword + " in:title,body is:issue is:open comments:<8 updated:>="
+             + cutoff)
     data = github_get(SEARCH_URL, {
         "q": query,
         "sort": "updated",
@@ -608,8 +670,14 @@ def collect_candidates(per_page):
     """One live search pass over all four categories, deduplicated by issue URL."""
     candidates = {}
     searched = 0
+    first_call = True
     for category, spec in CATEGORIES.items():
         for keyword in spec["keywords"]:
+            # GitHub Search has a strict secondary rate limit. Space the 16
+            # category/keyword queries instead of firing them back-to-back.
+            if not first_call:
+                time.sleep(1.2)
+            first_call = False
             items = search_issues(keyword, per_page)
             if items is None:
                 continue
@@ -627,10 +695,16 @@ def collect_candidates(per_page):
                     continue
                 if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", issue["repo"]):
                     continue
+                if NEGATIVE_TITLE_RE.search(issue["title"]):
+                    continue
                 text = issue["title"] + "\n" + issue["body"]
-                # Require the category term in the title: huge tracker threads often
-                # mention Cloudflare/Stripe/GPU in passing and are not support asks.
-                if not spec["gate_re"].search(issue["title"]):
+                # The short title only has to identify the surface (vendor or
+                # error). The full title+body must satisfy the two-dimension
+                # category gate, so real stack traces and repro steps qualify.
+                if not (spec["vendor_re"].search(issue["title"])
+                        or spec["error_re"].search(issue["title"])):
+                    continue
+                if not spec["gate_re"].search(text):
                     continue
                 score, evidence = score_issue(text, category)
                 if score < MIN_SCORE:
@@ -669,13 +743,16 @@ def run_draft_round(candidates, searched, limit):
             print(json.dumps(record, ensure_ascii=False), flush=True)
             selected += 1
             emitted += 1
-    log("round", searched=searched, emitted=emitted, limit=limit, ledger=LEDGER_PATH)
+    log("round", searched=searched, candidates=len(candidates), emitted=emitted,
+        limit=limit, ledger=LEDGER_PATH)
     return 0 if searched else 1
 
 
 def run_post_round(candidates, searched, limit):
     """Post at most `limit` real comments, with every anti-abuse gate applied."""
     posted = load_posted()
+    cooled_repos = load_recent_posted_repos()
+    posted_repos = set()
     cache = {}
     ranked = sorted(candidates,
                     key=lambda value: (value["score"], value["updated_at"]),
@@ -687,6 +764,9 @@ def run_post_round(candidates, searched, limit):
             break
         if issue["issue_url"] in posted:
             log("post_skip", issue_url=issue["issue_url"], reason="already posted")
+            continue
+        if issue["repo"] in cooled_repos or issue["repo"] in posted_repos:
+            log("post_skip", issue_url=issue["issue_url"], reason="repo_cooldown")
             continue
         if not fresh_enough(issue["updated_at"]):
             log("post_skip", issue_url=issue["issue_url"], reason="stale")
@@ -710,6 +790,7 @@ def run_post_round(candidates, searched, limit):
             })
             append_record(record)
             posted.add(issue["issue_url"])
+            posted_repos.add(issue["repo"])
             print(json.dumps(record, ensure_ascii=False), flush=True)
             published += 1
         else:
@@ -825,8 +906,19 @@ def dry_run():
             "updated_at": fixture["updated_at"],
         }
         text = issue["title"] + "\n" + issue["body"]
-        if not CATEGORIES[fixture["category"]]["gate_re"].search(issue["title"]):
-            log("gate_reject", issue_url=issue["issue_url"], score=0, reason="category gate")
+        spec = CATEGORIES[fixture["category"]]
+        if NEGATIVE_TITLE_RE.search(issue["title"]):
+            log("gate_reject", issue_url=issue["issue_url"], score=0,
+                reason="negative title")
+            continue
+        if not (spec["vendor_re"].search(issue["title"])
+                or spec["error_re"].search(issue["title"])):
+            log("gate_reject", issue_url=issue["issue_url"], score=0,
+                reason="title vendor/error")
+            continue
+        if not spec["gate_re"].search(text):
+            log("gate_reject", issue_url=issue["issue_url"], score=0,
+                reason="category gate")
             continue
         score, evidence = score_issue(text, fixture["category"])
         if score < MIN_SCORE:
@@ -844,6 +936,10 @@ def dry_run():
     assert len(accepted) == 6, "dry run must accept exactly the six qualifying fixtures"
     assert all(record["recommended_target"].endswith("?utm_source=gh_issue")
                for record in accepted), "every target needs the gh_issue UTM tag"
+    assert all(record["recommended_target"] == CATEGORIES[record["category"]]["target_url"]
+               for record in accepted), "record target must match the category target_url"
+    assert all("go.272738.xyz" not in record["draft_response"]
+               for record in accepted), "public replies must never contain a short link"
     log("dry_run_pass", categories=sorted(categories), accepted=len(accepted),
         rejected=len(FIXTURES) - len(accepted), min_score=MIN_SCORE,
         offline=True, network_calls=0, ledger_writes=0)
@@ -861,8 +957,8 @@ def main():
                         help="post real comments through the GitHub REST API")
     parser.add_argument("--limit", type=int, default=2,
                         help="maximum drafts per category, or posts per run (default: 2, max: 5)")
-    parser.add_argument("--per-page", type=int, default=10,
-                        help="search results per keyword, 1-30 (default: 10)")
+    parser.add_argument("--per-page", type=int, default=15,
+                        help="search results per keyword, 1-30 (default: 15)")
     args = parser.parse_args()
     if not 1 <= args.limit <= MAX_POSTS:
         parser.error("--limit must be between 1 and " + str(MAX_POSTS))
