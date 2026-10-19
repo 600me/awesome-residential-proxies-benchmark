@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 """Build vps-sniper/traffic_audit_report.json from the US VPS nginx logs.
 
-Read-only against the server: SSH cat, then local parsing. Bot/scanner noise is
-separated from browser-like sessions by path allowlist, user-agent signatures,
-HTTP status and reverse DNS. The health check is executed fresh and its five
-active 302 relays are recorded verbatim.
+Read-only. Runs either on the Mac (reads the logs over SSH) or on the VPS itself
+as proxy-sniper (reads the readable log files directly; no SSH loopback). Bot and
+scanner noise is separated from browser-like sessions by path allowlist, declared
+user-agent signatures, HTTP status, self/probe IP and reverse DNS. Human clicks
+are attributed per `src` / `utm_content`. The health check is executed fresh when
+its script is present and its 302 relays are recorded verbatim. A one-line
+funnel summary JSON is printed at the end for the daily outreach log.
 """
 
 from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import socket
 import subprocess
@@ -23,10 +27,15 @@ HERE = Path(__file__).resolve().parent
 HOST = "us-server"
 RELAY_LOG = "/var/log/nginx/affiliate_relay.log"
 ACCESS_LOG = "/var/log/nginx/access.log"
-HEALTH_SCRIPT = HERE.parent / "affiliate-health-check(联盟巡检).py"
+HEALTH_CANDIDATES = [
+    HERE / "affiliate-health-check(联盟巡检).py",
+    HERE.parent / "affiliate-health-check(联盟巡检).py",
+]
 OUT = HERE / "traffic_audit_report.json"
 ACTIVE_ROUTES = ["smartproxy", "firstbase", "runpod", "vastai", "scraperapi"]
-MONITOR_IPS = {"183.225.0.137"}
+MONITOR_IPS = {"183.225.0.137"}  # Operator's own line: not an external human.
+SELF_IPS = {"96.9.225.9", "127.0.0.1"}  # This VPS: health probes and self-checks.
+PROBE_SRC_RE = re.compile(r"^(health_probe|verify_step|selftest|self_probe|smoke)", re.I)
 AFFILIATE_ROUTES = {
     "airalo", "apify", "brightdata", "crawlbase", "deepinfra", "doola",
     "firstbase", "lemonsqueezy", "nomad", "openrouter", "oxylabs", "paddle",
@@ -53,6 +62,22 @@ def ssh_cat(path):
     result = subprocess.run(["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=10",
                              HOST, "cat", path], capture_output=True, text=True, check=True)
     return result.stdout
+
+
+def read_log(path):
+    """Read a log directly when this host owns it, else over SSH (read-only)."""
+    local = Path(path)
+    if local.is_file() and os.access(local, os.R_OK):
+        return local.read_text(encoding="utf-8", errors="replace"), "local"
+    return ssh_cat(path), "ssh"
+
+
+def query_params(raw_path):
+    """`?a=1&b=2` -> dict. Values are not URL-decoded: log literals are kept."""
+    if "?" not in raw_path:
+        return {}
+    query = raw_path.split("?", 1)[1]
+    return dict(part.split("=", 1) for part in query.split("&") if "=" in part)
 
 
 def rdns(ip):
@@ -107,9 +132,9 @@ def classify_relay(lines):
         elif ip in tainted:
             reasons["scanner_ip_history"] += 1
             bots.append((ts, code, raw_path, ua, ip, "scanner_ip_history"))
-        elif ip in MONITOR_IPS and "curl/" in ua:
-            reasons["monitor_probe"] += 1
-            bots.append((ts, code, raw_path, ua, ip, "monitor_probe"))
+        elif ip in MONITOR_IPS or ip in SELF_IPS:
+            reasons["self_or_monitor_ip"] += 1
+            bots.append((ts, code, raw_path, ua, ip, "self_or_monitor_ip"))
         elif BOT_UA.search(ua):
             reasons["bot_user_agent"] += 1
             bots.append((ts, code, raw_path, ua, ip, "bot_user_agent"))
@@ -155,13 +180,17 @@ def classify_access(lines):
 
 
 def run_health():
-    result = subprocess.run([sys.executable, str(HEALTH_SCRIPT)],
+    """Run the affiliate relay health check when it is available on this host."""
+    script = next((path for path in HEALTH_CANDIDATES if path.is_file()), None)
+    if script is None:
+        return {"script": None, "exit_code": None, "summary": "", "counts": {},
+                "relays": [], "raw": "", "skipped": "health-check script not present on this host"}
+    result = subprocess.run([sys.executable, str(script)],
                             capture_output=True, text=True)
     output = result.stdout.strip()
     relays = []
     for line in output.splitlines():
         if line.startswith("PASS "):
-            match = re.match(r"PASS ([^:]+): HTTP (\d{3});.*?(https?://\S+)(?: -> HTTP (\d{3}) (\S+))?$", line)
             name = line.split(":", 1)[0][5:]
             status_match = re.search(r"HTTP (\d{3})", line)
             location = line.split("intact; ", 1)[-1].split(" -> ")[0].strip()
@@ -173,13 +202,31 @@ def run_health():
         if "=" in pair:
             key, value = pair.split("=", 1)
             counts[key] = value
-    return {"exit_code": result.returncode, "summary": summary, "counts": counts,
-            "relays": relays, "raw": output}
+    return {"script": str(script), "exit_code": result.returncode, "summary": summary,
+            "counts": counts, "relays": relays, "raw": output}
+
+
+def shadowban_snapshot():
+    """`gh-answer.py --check-shadowban` output, passed in via SHADOWBAN_REPORT."""
+    path = os.environ.get("SHADOWBAN_REPORT", "")
+    empty = {"source": None, "time": None, "checked": None, "visible": None,
+             "hidden": None, "inconclusive": None}
+    if not path:
+        return empty
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return empty
+    if not isinstance(data, dict):
+        return empty
+    return {"source": path, "time": data.get("time"), "checked": data.get("checked"),
+            "visible": data.get("visible"), "hidden": data.get("hidden"),
+            "inconclusive": data.get("inconclusive")}
 
 
 def main():
-    relay_text = ssh_cat(RELAY_LOG)
-    access_text = ssh_cat(ACCESS_LOG)
+    relay_text, relay_source = read_log(RELAY_LOG)
+    access_text, access_source = read_log(ACCESS_LOG)
     relay_lines = relay_text.splitlines()
     access_lines = access_text.splitlines()
 
@@ -198,8 +245,27 @@ def main():
 
     claude_src = sum(1 for row in bots if row[5] == "bot_user_agent"
                      and "ClaudeBot" in row[3] and "src=" in row[2])
+
+    # Real external human clicks only: verified human rows minus probe tokens.
+    human_src = Counter()
+    human_untagged = 0
+    human_probe_tagged = 0
+    external_human_302 = 0
+    for row in verified_human:
+        if row["status"] == 302:
+            external_human_302 += 1
+        params = query_params(row["path"])
+        attribution = params.get("src") or params.get("utm_content") or ""
+        if not attribution:
+            human_untagged += 1
+        elif PROBE_SRC_RE.match(attribution):
+            human_probe_tagged += 1
+        else:
+            human_src[attribution] += 1
+    attributed_human = sum(human_src.values())
     health = run_health()
     active_ok = sum(1 for r in health["relays"] if r["ok"])
+    shadowban = shadowban_snapshot()
     report = {
         "schema_version": "1.0",
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -237,13 +303,20 @@ def main():
             "browser_like_candidates": len(enriched),
             "affiliate_route_candidates": len(affiliate_candidates),
             "verified_human_affiliate_clicks": len(verified_human),
+            "external_human_302_clicks": external_human_302,
+            "human_clicks_by_src": dict(human_src.most_common()),
+            "human_clicks_by_src_total": attributed_human,
+            "human_clicks_untagged": human_untagged,
+            "human_clicks_probe_tagged_excluded": human_probe_tagged,
             "unique_ips": sorted({row["ip"] for row in enriched}),
             "datacenter_candidates": sum(1 for row in enriched if row["datacenter"]),
             "candidates": enriched,
             "affiliate_candidates": affiliate_candidates,
-            "note": ("No parameterized click in the log is both human and attributable: 24 src-tagged "
-                     "requests are 20 local curl probes and 4 ClaudeBot fetches. The only non-UTM "
-                     "affiliate-route candidates resolve to GCP/AWS datacenter ranges."),
+            "note": (f"{len(verified_human)} browser-like affiliate-route clicks survived the path, IP, "
+                     f"user-agent, status and reverse-DNS filters; {external_human_302} of them were HTTP 302. "
+                     f"{attributed_human} carry a src/utm_content token, {human_untagged} are untagged and "
+                     f"{human_probe_tagged} carry a health/self probe token and are excluded from "
+                     f"human_clicks_by_src."),
         },
         "access_log_summary": {
             "requests": len(access_lines),
@@ -255,7 +328,7 @@ def main():
             "top_pages": dict(a_pages.most_common(10)),
         },
         "health_check": {
-            "script": str(HEALTH_SCRIPT),
+            "script": health["script"],
             "expected_active": 5,
             "active_passed": active_ok,
             "all_302": active_ok == 5 and len(health["relays"]) == 5,
@@ -264,23 +337,44 @@ def main():
             "script_exit_code": health["exit_code"],
             "summary": health["summary"],
             "relays": health["relays"],
-            "note": ("exit=2 is the script's documented signal for 4 out-of-scope NEW_LINK "
-                     "placeholders, not a relay failure; active=5/5 and errors=0."),
+            "skipped": health.get("skipped"),
+            "note": ("exit=2 is the script's documented signal for out-of-scope NEW_LINK "
+                     "placeholders, not a relay failure."),
         },
+        "shadowban_check": shadowban,
+        "log_read_mode": {"relay": relay_source, "access": access_source},
         "findings": [
-            f"{active_ok}/5 active affiliate relays returned HTTP 302 with attribution intact.",
+            f"{active_ok}/5 active affiliate relays returned HTTP 302 with attribution intact." if health["relays"]
+            else f"Relay health check skipped on this host ({health.get('skipped')}).",
             f"{reasons.get('scanner_path', 0)} of {len(relay_lines)} relay requests were scanner probes for secrets and config files; they were excluded by the path allowlist.",
             f"{reasons.get('bot_user_agent', 0)} requests carried declared or tool user agents (curl, python-requests, ShapBot, ClaudeBot, Googlebot, GoogleOther) and were excluded.",
             f"{reasons.get('scanner_ip_history', 0)} requests came from IPs already tainted by scanner paths and were excluded by IP history.",
-            f"{len(verified_human)} verified human affiliate clicks in the period; of {sum(src.values())} src-tagged requests, {sum(src.values()) - claude_src} were local curl probes and {claude_src} were ClaudeBot fetches.",
-            f"The only browser-like affiliate-route candidates ({len(affiliate_candidates)}) resolve to GCP/AWS datacenter ranges, so they are not counted as humans.",
-            f"Access log is dominated by 404/410 scanner noise; {a_status.get('200', 0)} of {len(access_lines)} requests returned 200.",
+            f"{reasons.get('self_or_monitor_ip', 0)} requests came from this VPS or the operator's own line (health probes and self-checks) and were excluded.",
+            f"{external_human_302} external human 302 clicks in the period; {attributed_human} are src-attributed "
+            f"({', '.join(f'{k}={v}' for k, v in human_src.most_common(5)) or 'none'}), {human_untagged} untagged.",
+            f"{human_probe_tagged} probe-tagged clicks and {claude_src} ClaudeBot src-tagged fetches are excluded from the human attribution table.",
+            f"Access log is dominated by scanner noise; {a_status.get('200', 0)} of {len(access_lines)} requests returned 200.",
         ],
     }
+    funnel = {
+        "generated_at": report["generated_at"],
+        "external_human_302_clicks": external_human_302,
+        "human_clicks_by_src": dict(human_src.most_common()),
+        "human_clicks_untagged": human_untagged,
+        "human_clicks_probe_tagged_excluded": human_probe_tagged,
+        "github_comments_visible": shadowban["visible"],
+        "github_comments_checked": shadowban["checked"],
+        "github_shadowban_hidden": shadowban["hidden"],
+        "relay_requests": len(relay_lines),
+        "active_relays_302": active_ok,
+        "log_read_mode": report["log_read_mode"],
+    }
+    report["funnel"] = funnel
     OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps({key: report[key] for key in
                       ("totals", "bot_filter", "human_traffic", "health_check")},
                      indent=2)[:3000])
+    print("FUNNEL_SUMMARY " + json.dumps(funnel, ensure_ascii=False))
     print("wrote", OUT)
 
 

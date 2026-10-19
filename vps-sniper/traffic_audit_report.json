@@ -1,65 +1,65 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T04:59:59Z",
+  "generated_at": "2026-10-19T11:10:40Z",
   "host": "us-server",
   "sources": {
     "relay_log": {
       "path": "/var/log/nginx/affiliate_relay.log",
-      "lines": 908,
-      "bytes": 137189,
-      "sha256": "d1e6420530157f7fe186cc9200bbe817ab2dd989879d0ab154c836ff36db9734"
+      "lines": 1513,
+      "bytes": 190582,
+      "sha256": "3df84964c75dbe311a8e270e18347dde4001e7505272d472c6d6fc0860e1ce7b"
     },
     "access_log": {
       "path": "/var/log/nginx/access.log",
-      "lines": 2093,
-      "bytes": 403351,
-      "sha256": "b3e228d629e0eedf5a569b4c6542de1992ddf6c047ceb0fbc28bfda5f4f51ba1"
+      "lines": 136,
+      "bytes": 29600,
+      "sha256": "02bbfc32dd0b22a0a91ccf0fcc6b929ed4c248ea75f38dded1cc086e03fef86c"
     }
   },
   "period": {
     "start": "2026-10-18T03:20:11-11:00",
-    "end": "2026-10-18T17:59:36-11:00"
+    "end": "2026-10-19T00:00:11-11:00"
   },
   "totals": {
-    "requests": 908,
-    "status_302": 128,
-    "status_301": 97,
-    "status_404": 682,
+    "requests": 1513,
+    "status_302": 644,
+    "status_301": 177,
+    "status_404": 691,
     "status_400": 1,
-    "redirect_rate_pct": 24.78
+    "redirect_rate_pct": 54.26
   },
   "status_distribution": {
-    "404": 682,
-    "302": 128,
-    "301": 97,
+    "404": 691,
+    "302": 644,
+    "301": 177,
     "400": 1
   },
   "route_distribution": {
-    "/": 74,
-    "/smartproxy": 23,
-    "/runpod": 14,
-    "/vastai": 13,
-    "/scraperapi": 12,
-    "/brightdata": 11,
-    "/apify": 8,
-    "/doola": 8,
-    "/zenrows": 8,
-    "/firstbase": 6,
-    "/robots.txt": 5,
+    "/smartproxy": 133,
+    "/scraperapi": 92,
+    "/runpod": 90,
+    "/vastai": 87,
+    "/firstbase": 86,
+    "/": 78,
+    "/zenrows": 51,
+    "/apify": 50,
+    "/brightdata": 45,
+    "/doola": 45,
+    "/robots.txt": 14,
+    "/lemonsqueezy": 6,
+    "/paddle": 6,
+    "/wise": 6,
+    "/together": 5,
+    "/openrouter": 5,
+    "/deepinfra": 5,
+    "/nomad": 5,
+    "/airalo": 5,
+    "/saily": 5,
     "/oxylabs": 4,
-    "/together": 4,
-    "/openrouter": 4,
-    "/deepinfra": 4,
-    "/lemonsqueezy": 4,
-    "/paddle": 4,
-    "/wise": 4,
     "/scrapingbee": 4,
     "/crawlbase": 4,
+    "/yesim": 4,
     "/.env": 4,
-    "/nomad": 3,
-    "/airalo": 3,
-    "/yesim": 3,
-    "/saily": 3,
     "/.git/config": 3,
     "/.env.local": 3,
     "/.env.production": 3,
@@ -651,63 +651,104 @@
     "/gitconfig": 1
   },
   "parameterized": {
-    "total": 28,
+    "total": 224,
     "by_src": {
-      "article_403tax": 12,
-      "article_h100trap": 12
+      "health_probe_subid": 87,
+      "devto_runpod_vast": 15,
+      "article_403tax": 14,
+      "article_h100trap": 14,
+      "compare_runpod_vast": 12,
+      "devto_cli": 7,
+      "devto_firstbase_atlas": 7,
+      "devto_sticky_guide": 6,
+      "compare_firstbase_atlas": 5,
+      "verify_step6b": 5,
+      "devto_mor_breakeven": 4,
+      "compare_smartproxy_scraperapi": 4,
+      "article_mor_breakeven": 3,
+      "proxy_footer": 3,
+      "devto_smartproxy_scraperapi": 3,
+      "scrape_calc_diy": 2,
+      "scrape_calc_api": 2,
+      "hf_space_scrape_diy": 2,
+      "hf_space_scrape_api": 2,
+      "test_probe": 2,
+      "pay_calc_winner": 2,
+      "%0d%0aX-Injected:%20evil": 2,
+      "proxy_table_winner": 2,
+      "proxy_calc_cta": 2,
+      "article_sticky_guide": 2,
+      "verify_step3": 1,
+      "bad%20value": 1,
+      "../etc/passwd": 1,
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 1,
+      "pay_resources": 1
     },
     "by_utm_source": {
-      "scrape_blog": 10,
-      "gpu_blog": 10,
+      "scrape_blog": 12,
+      "gpu_blog": 12,
+      "devto": 3,
+      "github": 2,
+      "gpu_calculator": 2,
       "chrome_extension": 1,
-      "github": 1
+      "article_b": 1,
+      "only_src": 1
     },
     "by_campaign": {
-      "403_tax": 10,
-      "h100_trap": 10,
+      "403_tax": 12,
+      "h100_trap": 12,
+      "proxy_audit_cli": 3,
+      "vram_fit": 2,
       "v101": 1,
       "proxy_benchmark": 1
     }
   },
   "bot_filter": {
-    "excluded": 896,
-    "excluded_pct": 98.68,
+    "excluded": 1492,
+    "excluded_pct": 98.61,
     "reasons": {
       "scanner_path": 678,
-      "bot_user_agent": 113,
-      "monitor_probe": 96,
+      "self_or_monitor_ip": 587,
+      "bot_user_agent": 218,
       "scanner_ip_history": 8,
       "http_error": 1
     },
     "by_ua": {
+      "curl/8.7.1": 619,
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36": 276,
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36": 116,
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36": 108,
-      "curl/8.7.1": 96,
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36": 91,
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36": 90,
       "python-requests/2.34.2": 56,
       "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0": 44,
-      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)": 6,
-      "Python/3.11 aiohttp/3.14.4": 2
+      "IsonSearchBot/1.0 (+https://search.isonai.com/bot)": 26,
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)": 18
     }
   },
   "human_traffic": {
-    "browser_like_candidates": 12,
-    "affiliate_route_candidates": 5,
+    "browser_like_candidates": 21,
+    "affiliate_route_candidates": 12,
     "verified_human_affiliate_clicks": 0,
+    "external_human_302_clicks": 0,
+    "human_clicks_by_src": {},
+    "human_clicks_by_src_total": 0,
+    "human_clicks_untagged": 0,
+    "human_clicks_probe_tagged_excluded": 0,
     "unique_ips": [
       "159.203.75.79",
+      "178.16.54.246",
       "185.19.40.202",
       "185.218.86.14",
       "34.19.55.141",
+      "34.56.72.94",
       "35.238.198.183",
       "45.138.12.168",
       "45.139.104.172",
       "45.148.10.169",
       "54.242.62.18"
     ],
-    "datacenter_candidates": 6,
+    "datacenter_candidates": 13,
     "candidates": [
       {
         "ts": "2026-10-18T05:26:13-11:00",
@@ -816,6 +857,87 @@
         "ip": "35.238.198.183",
         "rdns": "183.198.238.35.bc.googleusercontent.com",
         "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T18:06:58-11:00",
+        "status": 302,
+        "path": "/scraperapi?utm_source=devto&utm_medium=article&utm_campaign=proxy_audit_cli&src=devto_cli",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T18:06:58-11:00",
+        "status": 302,
+        "path": "/smartproxy?utm_source=devto&utm_medium=article&utm_campaign=proxy_audit_cli&src=devto_cli",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T19:10:56-11:00",
+        "status": 302,
+        "path": "/firstbase?src=devto_mor_breakeven",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/smartproxy?src=devto_sticky_guide",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/runpod?src=devto_runpod_vast",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/vastai?src=devto_runpod_vast",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/firstbase?src=devto_firstbase_atlas",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T23:11:17-11:00",
+        "status": 301,
+        "path": "/",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "ip": "178.16.54.246",
+        "rdns": "",
+        "datacenter": false
+      },
+      {
+        "ts": "2026-10-18T23:11:29-11:00",
+        "status": 301,
+        "path": "/",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "ip": "178.16.54.246",
+        "rdns": "",
+        "datacenter": false
       }
     ],
     "affiliate_candidates": [
@@ -863,84 +985,146 @@
         "ip": "34.19.55.141",
         "rdns": "141.55.19.34.bc.googleusercontent.com",
         "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T18:06:58-11:00",
+        "status": 302,
+        "path": "/scraperapi?utm_source=devto&utm_medium=article&utm_campaign=proxy_audit_cli&src=devto_cli",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T18:06:58-11:00",
+        "status": 302,
+        "path": "/smartproxy?utm_source=devto&utm_medium=article&utm_campaign=proxy_audit_cli&src=devto_cli",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T19:10:56-11:00",
+        "status": 302,
+        "path": "/firstbase?src=devto_mor_breakeven",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/smartproxy?src=devto_sticky_guide",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/runpod?src=devto_runpod_vast",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/vastai?src=devto_runpod_vast",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
+      },
+      {
+        "ts": "2026-10-18T20:21:49-11:00",
+        "status": 302,
+        "path": "/firstbase?src=devto_firstbase_atlas",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+        "ip": "34.56.72.94",
+        "rdns": "94.72.56.34.bc.googleusercontent.com",
+        "datacenter": true
       }
     ],
-    "note": "No parameterized click in the log is both human and attributable: 24 src-tagged requests are 20 local curl probes and 4 ClaudeBot fetches. The only non-UTM affiliate-route candidates resolve to GCP/AWS datacenter ranges."
+    "note": "0 browser-like affiliate-route clicks survived the path, IP, user-agent, status and reverse-DNS filters; 0 of them were HTTP 302. 0 carry a src/utm_content token, 0 are untagged and 0 carry a health/self probe token and are excluded from human_clicks_by_src."
   },
   "access_log_summary": {
-    "requests": 2093,
-    "status_200": 314,
-    "status_404": 1253,
-    "status_410": 346,
-    "browser_like_page_views": 98,
+    "requests": 136,
+    "status_200": 3,
+    "status_404": 20,
+    "status_410": 0,
+    "browser_like_page_views": 1,
     "filter_reasons": {
-      "scanner_path": 1466,
-      "bot_user_agent": 233,
-      "http_error": 156,
-      "non_get": 100,
-      "browser_like": 98,
-      "parse_error": 40
+      "scanner_path": 129,
+      "non_get": 2,
+      "http_error": 2,
+      "bot_user_agent": 2,
+      "browser_like": 1
     },
     "top_pages": {
-      "/": 81,
-      "/robots.txt": 7,
-      "/favicon.ico": 4,
-      "/blog/h100-rental-trap.html": 3,
-      "/data.json": 1,
-      "/README.md": 1,
-      "/calculator/": 1
+      "/": 1
     }
   },
   "health_check": {
     "script": "/Users/a600/project-workspaces(项目工作区)/kais-proxy-cps-benchmark/affiliate-health-check(联盟巡检).py",
     "expected_active": 5,
-    "active_passed": 5,
-    "all_302": true,
-    "errors": 0,
-    "new_links": 4,
-    "script_exit_code": 2,
-    "summary": "active=5/5 pending=0/4 new_links=4 errors=0 elapsed_ms=1652 exit=2",
+    "active_passed": 1,
+    "all_302": false,
+    "errors": 8,
+    "new_links": -1,
+    "script_exit_code": 1,
+    "summary": "active=1/5 unaffiliated=0/4 subid_passthrough=1/5 errors=8 elapsed_ms=38420 exit=1",
     "relays": [
-      {
-        "name": "Smartproxy",
-        "relay_status": 302,
-        "location": "https://visit.decodo.com/k434W0",
-        "ok": true
-      },
-      {
-        "name": "Firstbase",
-        "relay_status": 302,
-        "location": "https://get.firstbase.io/slcdxtscxrh7",
-        "ok": true
-      },
       {
         "name": "RunPod",
         "relay_status": 302,
-        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_benchmark",
-        "ok": true
-      },
-      {
-        "name": "Vast.ai",
-        "relay_status": 302,
-        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark",
-        "ok": true
-      },
-      {
-        "name": "ScraperAPI",
-        "relay_status": 302,
-        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&utm_source=github&utm_campaign=scraping_benchmark",
+        "location": "subid passthrough utm_content=health_probe_subid; https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_benchmark&utm_content=direct",
         "ok": true
       }
     ],
-    "note": "exit=2 is the script's documented signal for 4 out-of-scope NEW_LINK placeholders, not a relay failure; active=5/5 and errors=0."
+    "skipped": null,
+    "note": "exit=2 is the script's documented signal for out-of-scope NEW_LINK placeholders, not a relay failure."
+  },
+  "shadowban_check": {
+    "source": null,
+    "time": null,
+    "checked": null,
+    "visible": null,
+    "hidden": null,
+    "inconclusive": null
+  },
+  "log_read_mode": {
+    "relay": "ssh",
+    "access": "ssh"
   },
   "findings": [
-    "5/5 active affiliate relays returned HTTP 302 with attribution intact.",
-    "678 of 908 relay requests were scanner probes for secrets and config files; they were excluded by the path allowlist.",
-    "113 requests carried declared or tool user agents (curl, python-requests, ShapBot, ClaudeBot, Googlebot, GoogleOther) and were excluded.",
+    "1/5 active affiliate relays returned HTTP 302 with attribution intact.",
+    "678 of 1513 relay requests were scanner probes for secrets and config files; they were excluded by the path allowlist.",
+    "218 requests carried declared or tool user agents (curl, python-requests, ShapBot, ClaudeBot, Googlebot, GoogleOther) and were excluded.",
     "8 requests came from IPs already tainted by scanner paths and were excluded by IP history.",
-    "0 verified human affiliate clicks in the period; of 24 src-tagged requests, 20 were local curl probes and 4 were ClaudeBot fetches.",
-    "The only browser-like affiliate-route candidates (5) resolve to GCP/AWS datacenter ranges, so they are not counted as humans.",
-    "Access log is dominated by 404/410 scanner noise; 314 of 2093 requests returned 200."
-  ]
+    "587 requests came from this VPS or the operator's own line (health probes and self-checks) and were excluded.",
+    "0 external human 302 clicks in the period; 0 are src-attributed (none), 0 untagged.",
+    "0 probe-tagged clicks and 14 ClaudeBot src-tagged fetches are excluded from the human attribution table.",
+    "Access log is dominated by scanner noise; 3 of 136 requests returned 200."
+  ],
+  "funnel": {
+    "generated_at": "2026-10-19T11:10:40Z",
+    "external_human_302_clicks": 0,
+    "human_clicks_by_src": {},
+    "human_clicks_untagged": 0,
+    "human_clicks_probe_tagged_excluded": 0,
+    "github_comments_visible": null,
+    "github_comments_checked": null,
+    "github_shadowban_hidden": null,
+    "relay_requests": 1513,
+    "active_relays_302": 1,
+    "log_read_mode": {
+      "relay": "ssh",
+      "access": "ssh"
+    }
+  }
 }
