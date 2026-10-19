@@ -144,7 +144,7 @@ CATEGORIES = {
     "proxy": {
         "keywords": ("cloudflare 403 proxy", "residential proxy 403",
                      "cf_clearance 403", "curl_cffi 403"),
-        "target_url": "https://scrape.mybskm.top/blog/proxy-cost-audit.html?utm_source=gh_issue",
+        "target_url": "https://scrape.mybskm.top/blog/smartproxy-vs-scraperapi.html?utm_source=gh_issue",
         "error_re": re.compile(
             r"\b(?:403|429|407|blocked|banned|denied|timeout|timed out|rate[- ]?limit|"
             r"challenge|captcha|cf_clearance)\b", re.I),
@@ -183,7 +183,7 @@ CATEGORIES = {
     "scraping": {
         "keywords": ("turnstile playwright", "cloudflare 403 playwright",
                      "scraping blocked cloudflare", "puppeteer turnstile"),
-        "target_url": "https://scrape.mybskm.top/blog/403-tax.html?utm_source=gh_issue",
+        "target_url": "https://scrape.mybskm.top/blog/smartproxy-vs-scraperapi.html?utm_source=gh_issue",
         "error_re": re.compile(
             r"\b(?:turnstile|captcha|blocked|403|429|rate[- ]?limit|challenge|"
             r"timeout)\b", re.I),
@@ -325,12 +325,12 @@ def disclosure(category):
     target = spec["target_url"]
     if category == "proxy":
         return ("Disclosure: I maintain the open-source proxy cost CLI "
-                "(https://github.com/600me/check-proxy-tax) and benchmark data: "
-                + target)
+                "(https://github.com/600me/check-proxy-tax) and the residential-pool "
+                "versus managed-unblocker cost comparison: " + target)
     if category == "scraping":
         return ("Disclosure: I maintain the open-source scraping API benchmark "
-                "(https://github.com/600me/awesome-web-scraping-apis-benchmark) "
-                "and benchmark data: " + target)
+                "(https://github.com/600me/awesome-web-scraping-apis-benchmark) and the "
+                "residential-pool versus managed-unblocker cost comparison: " + target)
     return ("Disclosure: I maintain the open-source benchmark at github.com/"
             + spec["repo"] + ". Measured success rate, latency, HTTP status and "
             "IP/ASN data: " + target)

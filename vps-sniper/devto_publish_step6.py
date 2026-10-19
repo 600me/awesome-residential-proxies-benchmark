@@ -78,9 +78,27 @@ ARTICLES = {
             "https://gpu.mybskm.top/blog/runpod-vs-vastai-h100-a100.html",
         ],
     },
+
+    "08": {
+        "file": "08-smartproxy-vs-scraperapi.md",
+        "title": "Smartproxy (Decodo) vs ScraperAPI (2026): Raw Residential Proxy Pool vs Managed Anti-Bot Unblocker TCO",
+        "canonical_url": "https://scrape.mybskm.top/blog/smartproxy-vs-scraperapi.html",
+        "series": "Anti-Bot Economics",
+        "tags": ["webscraping", "python", "proxy", "devops"],
+        "description": "A residential pool costs $193.71 for a million light pages where the managed API costs $299, then $1,161.62 for 250k rendered pages where the managed API still costs $299. Three worked scenarios, the break-even arithmetic, and a 30-line hybrid router that beats both at $215.68.",
+        "required_links": [
+            "https://scrape.mybskm.top/calculator/",
+            "https://proxy.mybskm.top/calculator/",
+            "https://huggingface.co/spaces/600me/rag-web-scraping-cost-calculator",
+            "https://github.com/600me/check-proxy-tax",
+            "https://go.272738.xyz/smartproxy?src=devto_smartproxy_scraperapi",
+            "https://go.272738.xyz/scraperapi?src=devto_smartproxy_scraperapi",
+            "https://scrape.mybskm.top/blog/smartproxy-vs-scraperapi.html",
+        ],
+    },
 }
 
-ORDER = ["05", "06", "07"]
+ORDER = ["05", "06", "07", "08"]
 
 
 def now():
