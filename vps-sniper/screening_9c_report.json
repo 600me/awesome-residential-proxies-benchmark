@@ -1,0 +1,58 @@
+{
+ "step": "9C-2",
+ "method": "ThreadPoolExecutor(max_workers=16), per-request timeout=8s; search metadata reused to avoid per-repo calls; top-18 merged-PR checks and top-6 rules scans run concurrently",
+ "wall_clock_seconds_budget": 15,
+ "wall_clock_seconds_actual": 14.4,
+ "excluded_already_submitted": [
+  "cleder/awesome-python-testing",
+  "denji/awesome-http-benchmark",
+  "aliesbelik/load-testing-toolkit",
+  "YSGStudyHards/Awesome-Tools"
+ ],
+ "rejected_examples": [
+  {
+   "repo": "agarrharr/awesome-cli-apps",
+   "reason": "contributing.md requires app >3 months old and >20 GitHub stars; bans AI-generated PRs"
+  },
+  {
+   "repo": "lorien/awesome-web-scraping",
+   "reason": "restricted content: projects whose GitHub repo is younger than one month (600me/check-proxy-tax created 2026-10-18)"
+  },
+  {
+   "repo": "vinta/awesome-python",
+   "reason": "shortlist policy + quality bar; new 0-star project not eligible"
+  },
+  {
+   "repo": "Kikobeats/awesome-api",
+   "reason": "no merged PR / push within 90 days (last push 2024-10-12)"
+  },
+  {
+   "repo": "BruceDone/awesome-crawler",
+   "reason": "no merged PR within 90 days (last push 2024-06-16)"
+  }
+ ],
+ "selected": [
+  {
+   "repo": "marmelab/awesome-rest",
+   "stars": 3921,
+   "archived": false,
+   "pushed_at": "2026-10-05T15:46:57Z",
+   "last_merged": "2026-10-05T15:46:57Z",
+   "gate": "no CONTRIBUTING.md; no star/age/AI/self-promotion clause found",
+   "pr": 233,
+   "changed_files": 1,
+   "state": "open"
+  },
+  {
+   "repo": "mfornos/awesome-microservices",
+   "stars": 14543,
+   "archived": false,
+   "pushed_at": "2026-08-20T15:52:41Z",
+   "last_merged": "2026-08-20T15:07:11Z",
+   "gate": "CONTRIBUTING.md: format + alphabetical only; no star/age/AI/self-promotion clause",
+   "pr": 345,
+   "changed_files": 1,
+   "state": "open"
+  }
+ ]
+}
