@@ -107,7 +107,12 @@ def step_a():
                         "latency, and effective cost per 1,000 usable requests."), added[0]
     status, fork = api(f"/repos/{FORK}")
     assert status == 200 and fork["parent"]["full_name"] == UPSTREAM
-    return f"open, 1 commit, 1 added README line, page 200 ({PR_URL})"
+    status, upstream_main = api(f"/repos/{UPSTREAM}/git/ref/heads/main")
+    status, fork_main = api(f"/repos/{FORK}/git/ref/heads/main")
+    assert status == 200 and fork_main["object"]["sha"] == upstream_main["object"]["sha"], "fork main drift"
+    status, branch_ref = api(f"/repos/{FORK}/git/ref/heads/{BRANCH}")
+    assert status == 200 and branch_ref["object"]["sha"] == pr["head"]["sha"], "branch head mismatch"
+    return f"open, 1 commit, 1 added README line, fork main synced, page 200 ({PR_URL})"
 
 
 def page_text():
