@@ -118,6 +118,7 @@ Cost of 100 GB of clean traffic in the checkout scenario: **$0.00** for the best
 **HuggingFace Datasets**
 - [gpu-cloud-h100-a100-pricing-benchmark](https://huggingface.co/datasets/600me/gpu-cloud-h100-a100-pricing-benchmark)
 - [web-scraping-anti-bot-api-benchmark](https://huggingface.co/datasets/600me/web-scraping-anti-bot-api-benchmark)
+- [residential-proxy-commercial-policy-matrix](https://huggingface.co/datasets/600me/residential-proxy-commercial-policy-matrix)  ← this dataset
 - [global-saas-mor-vs-us-llc-fee-matrix](https://huggingface.co/datasets/600me/global-saas-mor-vs-us-llc-fee-matrix)
 
 
