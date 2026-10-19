@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proxy Infrastructure Research &amp; 403 Teardowns | proxy.mybskm.top</title>
+<meta name="description" content="Long-form residential proxy research: sticky-session TTL, cf_clearance binding, JA3/JA4 fingerprints, ASN economics and the real cost of the re-run tax.">
+<link rel="canonical" href="https://proxy.mybskm.top/blog/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="600me">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Residential Proxy Benchmark">
+<meta property="og:title" content="Proxy Infrastructure Research &amp; 403 Teardowns">
+<meta property="og:description" content="Sticky-session TTL, TLS fingerprints and ASN economics: the research behind the benchmark.">
+<meta property="og:url" content="https://proxy.mybskm.top/blog/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Proxy Infrastructure Research &amp; 403 Teardowns">
+<meta name="twitter:description" content="Why residential proxies still return 403s, and what the re-run tax really costs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338bdf8'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Proxy Infrastructure Research & 403 Teardowns",
+  "headline": "Proxy Infrastructure Research & 403 Teardowns",
+  "url": "https://proxy.mybskm.top/blog/",
+  "description": "Long-form residential proxy research: sticky-session TTL, cf_clearance binding, JA3/JA4 fingerprints, ASN economics and the real cost of the re-run tax.",
+  "isPartOf": {"@type": "WebSite", "name": "Residential Proxy Benchmark", "url": "https://proxy.mybskm.top/"},
+  "publisher": {"@type": "Organization", "name": "Residential Proxy Benchmark", "url": "https://proxy.mybskm.top/"},
+  "inLanguage": "en",
+  "hasPart": [
+    {
+      "@type": "Article",
+      "headline": "Why Rotating Residential Proxies Still Get 403s: Sticky Session TTL, JA3 Fingerprints, and ASN Economics (2026)",
+      "description": "How sticky-session TTL, cf_clearance cookie binding, JA3/JA4 TLS fingerprints and ASN reputation produce 403s even through residential proxies, and how to price the re-run tax.",
+      "url": "https://proxy.mybskm.top/blog/residential-proxy-sticky-session-guide.html",
+      "datePublished": "2026-10-19",
+      "author": {"@type": "Person", "name": "600me"}
+    }
+  ]
+}
+</script>
+<style>
+:root{color-scheme:dark;--bg:#090d16;--panel:rgba(30,41,59,.6);--line:rgba(255,255,255,.09);
+  --ink:#f8fafc;--muted:#a7b4c6;--blue:#38bdf8;--cyan:#06b6d4;--green:#10b981;--amber:#f59e0b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);color:var(--ink);font:15.5px/1.7 var(--sans);
+  background-image:radial-gradient(circle at 50% 0%,rgba(56,189,248,.10),transparent 48%)}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+header.site{border-bottom:1px solid var(--line);background:rgba(9,13,22,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:64px;max-width:1120px;margin:0 auto;padding:0 24px;flex-wrap:wrap}
+.brand{font-weight:700;color:var(--ink);white-space:nowrap}.brand b{color:var(--blue)}
+nav.top{display:flex;gap:15px;flex-wrap:wrap;font-size:.86rem}
+nav.top a{color:var(--muted)}nav.top a:hover{color:var(--ink);text-decoration:none}
+main{padding:36px 0 60px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin:8px 0 0}
+h1{font-size:clamp(30px,4.6vw,46px);line-height:1.1;letter-spacing:-.04em;margin:16px 0 12px}
+.lede{color:var(--muted);font-size:16px;max-width:780px;margin:0 0 30px}
+.ftc{padding:13px 18px;border:1px solid rgba(245,158,11,.32);border-left:4px solid var(--amber);
+  background:linear-gradient(90deg,rgba(245,158,11,.11),rgba(245,158,11,.03));border-radius:10px;font-size:.85rem;color:var(--muted);margin:0 0 30px}
+.ftc strong{color:var(--amber)}
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+article.post{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--panel)}
+article.post.featured{border-color:rgba(56,189,248,.34);background:linear-gradient(180deg,rgba(56,189,248,.08),rgba(30,41,59,.5))}
+article.post h2{margin:0 0 8px;font-size:1.28rem;letter-spacing:-.02em;line-height:1.3}
+article.post h2 a{color:var(--ink)}
+article.post h2 a:hover{color:var(--blue);text-decoration:none}
+.pmeta{font-family:var(--mono);font-size:.75rem;color:var(--muted);margin:0 0 12px}
+.pmeta .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 9px;margin-right:8px;color:var(--blue)}
+article.post p{color:var(--muted);margin:0 0 14px;font-size:.94rem}
+.readmore{font-family:var(--mono);font-size:.82rem;font-weight:600}
+.sisters{margin-top:34px;border-top:1px solid var(--line);padding-top:22px}
+.sisters h2{font-size:1.05rem;margin:0 0 12px}
+.sisters ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sisters li{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:rgba(15,23,42,.5)}
+.sisters a{font-weight:600}
+.sisters span{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
+footer.site{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.84rem;background:#060911}
+footer.site a{color:var(--muted)}
+@media (max-width:760px){.sisters ul{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">⚡ <b>ProxyBenchmark</b> &middot; Research</a>
+    <nav class="top">
+      <a href="/">Home</a>
+      <a href="/#matrix">9-Dimension Matrix</a>
+      <a href="/#telemetry">Live Telemetry</a>
+      <a href="/calculator/">Calculator</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Research index &middot; updated 2026-10-19</p>
+  <h1>Proxy Infrastructure Research &amp; 403 Teardowns</h1>
+  <p class="lede">
+    Long-form teardowns of the things that decide whether a crawl succeeds: sticky-session TTL, cookie-to-IP binding,
+    TLS fingerprints, ASN reputation and the re-run tax that never shows up on the invoice.
+    Every article pairs vendor policy facts with commands you can run yourself.
+  </p>
+
+  <div class="ftc">
+    <strong>FTC Affiliate Disclosure:</strong> articles on this site may contain affiliate links. If you buy a plan after
+    clicking the Smartproxy (Decodo) link we may earn a commission at no extra cost to you. Measurements, ordering and the
+    free open-source baseline are unaffected and earn us nothing.
+  </div>
+
+  <div class="cards">
+    <article class="post featured">
+      <p class="pmeta"><span class="chip">Sticky sessions</span> 2026-10-19 &middot; ~11 min read</p>
+      <h2><a href="/blog/residential-proxy-sticky-session-guide.html">Why Rotating Residential Proxies Still Get 403s: Sticky Session TTL, JA3 Fingerprints, and ASN Economics (2026)</a></h2>
+      <p>
+        Three layers, one invoice. We separate ASN reputation, session-to-IP binding and the TLS fingerprint that travels
+        with your request, then work a three-tier example where forced per-request rotation burns 548 GB and $2,190 a month
+        for exactly the same completed flows that a sticky session finishes with 387 GB and $1,548.
+        Includes five copy-paste <code>curl</code> / <code>curl_cffi</code> diagnostics and the documented sticky window of
+        every vendor in the benchmark.
+      </p>
+      <a class="readmore" href="/blog/residential-proxy-sticky-session-guide.html">Read the teardown →</a>
+    </article>
+  </div>
+
+  <section class="sisters">
+    <h2>Sister research on the matrix</h2>
+    <ul>
+      <li>
+        <a href="https://scrape.mybskm.top/blog/403-tax.html">The 403 tax on scraping APIs</a>
+        <span>scrape.mybskm.top &middot; per-request pricing versus success-rate reality</span>
+      </li>
+      <li>
+        <a href="https://scrape.mybskm.top/blog/proxy-cost-audit.html">Scraping stack cost audit</a>
+        <span>scrape.mybskm.top &middot; where the budget actually goes</span>
+      </li>
+      <li>
+        <a href="https://gpu.mybskm.top/blog/h100-rental-trap.html">The H100 rental trap</a>
+        <span>gpu.mybskm.top &middot; bundle minimums and the effective cost of a useful GPU-hour</span>
+      </li>
+      <li>
+        <a href="https://pay.mybskm.top/blog/mor-vs-us-llc-breakeven.html">US LLC versus Morocco: the break-even</a>
+        <span>pay.mybskm.top &middot; indie payments and entity economics</span>
+      </li>
+    </ul>
+  </section>
+
+  <p style="margin-top:26px">
+    <a class="readmore" href="/calculator/">Open the sticky-session &amp; concurrency-loss calculator →</a>
+  </p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Residential Proxy Benchmark</strong> &bull; independent measurement and public policy facts. No third-party scripts.</p>
+    <p><a href="/">Home</a> &bull; <a href="/calculator/">Calculator</a> &bull; <a href="/blog/">Blog</a> &bull; <a href="/privacy.html">Privacy policy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

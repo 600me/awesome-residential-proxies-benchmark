@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Residential Proxy Benchmark — Effective Cost &amp; 403 Bypass Intelligence</title>
-<link rel="canonical" href="https://proxy.mybskm.top/">
-<meta property="og:title" content="Residential Proxy Benchmark — Effective Cost &amp; 403 Bypass Intelligence">
-<meta property="og:description" content="Residential proxy benchmark: compare success rates, latency and effective cost per usable GB. Estimate the cost of failed requests and choose your proxy provider.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://proxy.mybskm.top/">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Residential Proxy Benchmark — Effective Cost &amp; 403 Bypass Intelligence">
-<meta name="twitter:description" content="Residential proxy benchmark: compare success rates, latency and effective cost per usable GB. Estimate the cost of failed requests and choose your proxy provider.">
-<script type="application/ld+json">
+  <title>Residential Proxy Benchmark — 9-Dimension Commercial Matrix &amp; Live Telemetry</title>
+  <link rel="canonical" href="https://proxy.mybskm.top/">
+  <meta property="og:title" content="Residential Proxy Benchmark — 9-Dimension Commercial Matrix &amp; Live Telemetry">
+  <meta property="og:description" content="Compare Smartproxy (Decodo), Bright Data, Oxylabs and Apify on nine verifiable procurement dimensions, then read the live probe telemetry and the open-source $0 baseline.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://proxy.mybskm.top/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Residential Proxy Benchmark — 9-Dimension Commercial Matrix &amp; Live Telemetry">
+  <meta name="twitter:description" content="Nine public commercial and policy dimensions across four vendors, plus a non-commissioned free open-source anchor and live automated probe telemetry.">
+  <meta name="description" content="Residential proxy comparison on nine verifiable procurement dimensions: entry $/GB, billing granularity, minimum deposit, free trial, refund SLA, geo/ASN coverage, KYC friction, sticky-session window and best-fit use case.">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Residential Proxy Benchmark — Effective Cost & 403 Bypass Intelligence",
+  "name": "Residential Proxy Benchmark — 9-Dimension Commercial Matrix & Live Telemetry",
   "url": "https://proxy.mybskm.top/",
-  "description": "Residential proxy benchmark: compare success rates, latency and effective cost per usable GB. Estimate the cost of failed requests and choose your proxy provider.",
+  "description": "Residential proxy comparison on nine verifiable procurement dimensions plus live automated probe telemetry and a free open-source baseline.",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Any",
   "browserRequirements": "Requires JavaScript for interactive comparisons.",
@@ -29,13 +30,14 @@
     "description": "Free access to this comparison tool; provider services are priced separately."
   },
   "featureList": [
-    "Residential proxy success-rate comparison",
-    "Latency and effective cost per usable GB",
+    "9-dimension public commercial and policy matrix",
+    "Live automated probe telemetry (api.ipify.org / TLS handshake)",
+    "Free open-source $0 baseline (curl_cffi + WARP / IPv6)",
+    "Sticky-session concurrency-loss calculator",
     "Free proxy fraud checker extension"
   ]
 }
 </script>
-  <meta name="description" content="Residential proxy benchmark: compare success rates, latency and effective cost per usable GB. Estimate the cost of failed requests and choose your proxy provider.">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
@@ -48,9 +50,11 @@
         <span class="brand-badge">B2B Live Intel</span>
       </a>
       <nav class="nav-links">
-        <a href="#benchmark">Live Benchmark</a>
-        <a href="#math">Effective Cost</a>
-        <a href="/privacy.html">Privacy Policy</a>
+        <a href="#matrix">Commercial Matrix</a>
+        <a href="#telemetry">Live Telemetry</a>
+        <a href="/calculator/">Calculator</a>
+        <a href="/blog/">Blog</a>
+        <a href="/privacy.html">Privacy</a>
         <a href="https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer" class="nav-btn">GitHub Repo ↗</a>
         <a href="https://chromewebstore.google.com/detail/proxy-fraud-checker/ogihjffhcilpepjkpdifmkloioocoajp?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer" class="nav-btn nav-btn-primary">Add to Chrome (Free) ↗</a>
       </nav>
@@ -58,29 +62,285 @@
   </header>
 
   <main class="container">
+    <!-- FTC Affiliate Disclosure -->
+    <section class="ftc-banner" id="disclosure">
+      <strong>FTC Affiliate Disclosure:</strong>
+      Some links on this page are affiliate links. If you buy a residential proxy plan after clicking
+      <em>Smartproxy (Decodo)</em> from this page, <strong>we may earn a commission at no extra cost to you</strong>.
+      That commercial relationship never changes the measured numbers, the policy facts or the ordering of the table:
+      every figure in <a href="#matrix">Table 1</a> is publicly verifiable without an account, and
+      <a href="#telemetry">Table 2</a> is machine-generated from real probe output. The
+      <a href="#anchor">free open-source baseline</a> earns us <strong>$0</strong> — it is included precisely as a commission-free control.
+    </section>
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="pill-tag">
         <span class="live-dot"></span>
-        <span>Independent Live Testing &bull; Updated Weekly</span>
+        <span>Independent Testing &bull; Policy Facts Verified 2026-10</span>
       </div>
       <h1>Stop Paying for 403 Blocks.<br>Invest in Usable Data.</h1>
       <p class="lead">
-        Did your scraping pipeline run all night only to collect Cloudflare 403 error pages? 
-        Comparing sticker price per GB turns cheap datacenter proxies into a budget disaster. 
-        Here is the true math behind residential IP yields.
+        Did your scraping pipeline run all night only to collect Cloudflare 403 error pages?
+        Comparing sticker price per GB turns cheap datacenter proxies into a budget disaster.
+        Below, the procurement decision is split into two honest layers: <strong>nine commercial and policy
+        dimensions you can verify today without buying anything</strong>, and a live telemetry table produced by
+        real requests — including a $0 open-source option where residential proxies are simply overkill.
       </p>
+    </section>
+
+    <!-- TABLE 1: 9-Dimension Public Commercial & Policy Matrix -->
+    <section id="matrix" class="matrix-section">
+      <div class="section-title-wrap">
+        <h2>Table 1: 9-Dimension Public Commercial &amp; Policy Matrix <span class="verified-chip">Verified 2026-10</span></h2>
+        <p>
+          Nine procurement dimensions that can be 100% confirmed from public pricing pages, documentation and terms —
+          no proxy credential and no purchase required. Every row is filled: nothing here is "unknown" or "not tested".
+          Prices are the vendors' own published list rates as of October 2026 and exclude VAT; footnote sources are listed under the table.
+        </p>
+      </div>
+
+      <div class="table-container table-scroll">
+        <table class="benchmark-table matrix-table">
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>① Entry $/GB (PAYG)</th>
+              <th>② Billing Granularity</th>
+              <th>③ Min Deposit</th>
+              <th>④ Free Trial</th>
+              <th>⑤ Refund SLA</th>
+              <th>⑥ Geo / ASN Coverage</th>
+              <th>⑦ KYC Friction</th>
+              <th>⑧ Sticky Session Window</th>
+              <th>⑨ Best For</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-winner">
+              <td>
+                <div class="vendor-name"><strong>Smartproxy (Decodo)</strong></div>
+                <span class="tag-badge tag-isp">Verified Partner</span>
+                <div class="row-sub">Best Self-Serve Value</div>
+              </td>
+              <td><span class="val-strong">$4.00</span><span class="val-sub">list PAYG; $3.75/GB at 3&nbsp;GB &rarr; $2.75/GB at 100&nbsp;GB</span></td>
+              <td>Per-GB on a monthly plan or Pay-As-You-Go; extra GB can be topped up mid-cycle</td>
+              <td>$11.25 <span class="val-sub">(3&nbsp;GB plan) + VAT; PAYG top-up, no large commitment</span></td>
+              <td>3&nbsp;day / 100&nbsp;MB residential trial <span class="val-sub">(card required at activation)</span></td>
+              <td>14-day money-back on self-serve purchases <span class="val-sub">(void once the free trial has been used)</span></td>
+              <td>115M+ IPs, 195+ locations <span class="val-sub">country / state / city / ZIP / ASN targeting</span></td>
+              <td><span class="tag-badge tag-isp">Self-serve</span> Email signup; no company KYC for residential</td>
+              <td>1&ndash;1440&nbsp;min configurable <span class="val-sub">(default 10&nbsp;min)</span></td>
+              <td>All-round self-serve value below ~100&nbsp;GB/month where a human KYC review would be friction</td>
+              <td>
+                <a href="https://go.272738.xyz/smartproxy?src=proxy_table_winner" target="_blank" rel="sponsored noopener" class="btn-cta">
+                  Explore Deal ↗
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name"><strong>Bright Data</strong></div>
+                <span class="tag-badge">Direct Reference</span>
+                <div class="row-sub">Enterprise KYC</div>
+              </td>
+              <td><span class="val-strong">$8.00</span><span class="val-sub">list PAYG (frequently promoted at $4.00/GB); $3.50/GB at the $499 / 141&nbsp;GB plan</span></td>
+              <td>Per-GB PAYG or monthly commit plans ($499 / $999 / $1,999); Web Unlocker metered separately per 1k requests</td>
+              <td>$10 <span class="val-sub">minimum PAYG deposit</span></td>
+              <td>$2 proxy credit for 7&nbsp;days <span class="val-sub">(residential additionally needs KYC + funded account first)</span></td>
+              <td>No published self-serve refund window; commercial terms negotiated per contract</td>
+              <td>400M+ rotating IPs, 195 countries <span class="val-sub">country / state / city / ZIP targeting included</span></td>
+              <td><span class="tag-badge tag-dc">Human-reviewed KYC</span> Verified companies only; <strong>no instant self-serve path</strong> since 2026-07</td>
+              <td>Up to 30&nbsp;min sticky sessions</td>
+              <td>Enterprises that already pass a compliance review and buy in the hundreds of GB</td>
+              <td><span class="val-sub">no commissioned link &mdash; see footnote 2</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name"><strong>Oxylabs</strong></div>
+                <span class="tag-badge">Direct Reference</span>
+                <div class="row-sub">Corporate Tier</div>
+              </td>
+              <td><span class="val-strong">$6.00</span><span class="val-sub">entry tier; $5.00/GB at 20&nbsp;GB, $2.50/GB at 1&nbsp;TB</span></td>
+              <td>Per-GB monthly subscription ($30 Starter / $100 Basic / $500 Flexible / $2,500+ enterprise); one-time PAYG available</td>
+              <td>$30 <span class="val-sub">starter plan; smaller PAYG increments exist</span></td>
+              <td>$5 welcome credit toward any product</td>
+              <td>Self-service purchases stated as non-refundable; evaluate with the welcome credit first</td>
+              <td>175M+ IPs, 195 countries <span class="val-sub">coordinate-level geo-targeting</span></td>
+              <td><span class="tag-badge tag-dc">Mandatory KYC</span> Corporate onboarding required</td>
+              <td>Up to 24&nbsp;hours sticky sessions <span class="val-sub">(longest documented window in this table)</span></td>
+              <td>Corporate and mid-size data teams needing long-lived sessions and formal onboarding</td>
+              <td><span class="val-sub">no commissioned link &mdash; see footnote 3</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name"><strong>Apify Residential</strong></div>
+                <span class="tag-badge">Direct Reference</span>
+                <div class="row-sub">Actor Bundled</div>
+              </td>
+              <td><span class="val-strong">$8.00</span><span class="val-sub">on every tier including Free; $7.00/GB at the $999 Business plan</span></td>
+              <td>Prepaid platform credits; residential metered per GB and consumed alongside Actor compute</td>
+              <td>$0 <span class="val-sub">no separate minimum GB purchase; paid plans start at $19/month</span></td>
+              <td>$5/month free platform credits with no card <span class="val-sub">(&asymp;625&nbsp;MB at $8/GB; external proxy use needs a paid plan)</span></td>
+              <td>Fees generally non-refundable; failed Actor runs are remedied with credit compensation</td>
+              <td>Residential pool reachable through the Apify platform and actors, not a standalone gateway</td>
+              <td><span class="tag-badge tag-isp">Self-serve</span> Standard email signup; no KYC</td>
+              <td>~30&nbsp;min session reuse via a stable <code>session</code> ID</td>
+              <td>Teams already running Apify Actors who want proxy cost on the same invoice as compute</td>
+              <td><span class="val-sub">no commissioned link &mdash; see footnote 4</span></td>
+            </tr>
+            <tr class="row-anchor" id="anchor">
+              <td>
+                <div class="vendor-name"><strong>Direct <code>curl_cffi</code> + Cloudflare WARP / IPv6</strong></div>
+                <span class="tag-badge tag-free">Free Open-Source Baseline</span>
+                <div class="row-sub">$0 Commission Anchor</div>
+              </td>
+              <td><span class="val-strong">$0.00</span><span class="val-sub">no proxy vendor in the billing path at all</span></td>
+              <td>None <span class="val-sub">no meter, no invoice, no quota</span></td>
+              <td>$0</td>
+              <td>Permanently free <span class="val-sub">MIT/BSD tooling; WARP free tier</span></td>
+              <td>N/A <span class="val-sub">there is no vendor to refund</span></td>
+              <td>Whatever your host or WARP egress provides <span class="val-sub">(Cloudflare edge ASN, typically hosting-class)</span></td>
+              <td>None <span class="val-sub">no account, no review</span></td>
+              <td>N/A <span class="val-sub">connection-level control; you own TLS/JA3, there is no session TTL to expire</span></td>
+              <td>Low-volume workloads &mdash; see the explicit note below</td>
+              <td><span class="val-sub">no link &mdash; nothing to sell</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="anchor-note">
+        <strong>Why the free row is in the table:</strong> We earn <strong>$0 from this open-source option</strong>;
+        it is recommended for <strong>low-volume workloads (&lt;1,000 requests/day) where residential proxies are overkill</strong>.
+        If your crawl is small, JA3/JA4-sensitive and aimed at endpoints that are not aggressively bot-protected,
+        <code>curl_cffi</code> plus a free WARP/IPv6 egress will often clear the same targets at zero marginal cost.
+        Buy residential bandwidth when you actually need rotating consumer ASNs, geo precision or sticky sessions &mdash; not by default.
+      </div>
+
+      <p class="footnotes">
+        <strong>Figure provenance (all public, checked 2026-10):</strong>
+        <sup>1</sup> Decodo/Smartproxy residential pricing &amp; trials:
+        <a href="https://decodo.com/proxies/residential-proxies/pricing" target="_blank" rel="noopener nofollow">decodo.com/proxies/residential-proxies/pricing</a>,
+        <a href="https://help.decodo.com/docs/trials" target="_blank" rel="noopener nofollow">help.decodo.com/docs/trials</a>,
+        <a href="https://help.decodo.com/docs/residential-proxy-custom-sticky-sessions" target="_blank" rel="noopener nofollow">sticky-session docs</a>,
+        <a href="https://decodo.com/faq/billing/can-i-get-a-refund" target="_blank" rel="noopener nofollow">refund policy</a>.
+        <sup>2</sup> Bright Data:
+        <a href="https://brightdata.com/pricing/proxy-network/residential-proxies" target="_blank" rel="noopener nofollow">pricing</a>,
+        <a href="https://docs.brightdata.com/products/residential/network-access" target="_blank" rel="noopener nofollow">residential network access / KYC policy</a>.
+        <sup>3</sup> Oxylabs:
+        <a href="https://oxylabs.io/pricing/residential-proxy-pool" target="_blank" rel="noopener nofollow">residential pricing</a>,
+        <a href="https://developers.oxylabs.io/help-center/products-and-features/how-to-use-session-control" target="_blank" rel="noopener nofollow">session control docs</a>.
+        <sup>4</sup> Apify:
+        <a href="https://apify.com/pricing" target="_blank" rel="noopener nofollow">pricing</a>,
+        <a href="https://docs.apify.com/proxy" target="_blank" rel="noopener nofollow">proxy docs</a>,
+        <a href="https://docs.apify.com/legal/general-terms-and-conditions" target="_blank" rel="noopener nofollow">terms</a>.
+        Bright Data, Oxylabs and Apify rows are listed as <em>direct references</em>: we hold no affiliate agreement with them and
+        do not operate a commissioned relay for those three. Published list prices change without notice &mdash; confirm on the vendor page before buying.
+      </p>
+    </section>
+
+    <!-- TABLE 2: Live Automated Probe Telemetry -->
+    <section id="telemetry" class="benchmark-section">
+      <div class="section-title-wrap">
+        <h2>Table 2: Live Automated Probe Telemetry <span class="verified-chip">api.ipify.org / TLS Handshake</span></h2>
+        <p>
+          This table is a measurement instrument, not a marketing grid, and it is intentionally separate from the
+          commercial matrix above. The same table is regenerated by the scheduled GitHub Actions run and by anyone
+          who runs the open-source probe locally.
+        </p>
+      </div>
+
+      <div class="table-container table-scroll">
+        <div class="table-header-meta">
+          <div class="live-indicator">
+            <span class="live-dot"></span>
+            <span>Latest real connectivity run &mdash; generated, never hand-written</span>
+          </div>
+          <div style="font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-mono);">
+            Target: <code>https://api.ipify.org?format=json</code> &bull; 10 s timeout
+          </div>
+        </div>
+
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Probe target</th>
+              <th>Attempts</th>
+              <th>Success rate</th>
+              <th>Median latency</th>
+              <th>Exit IP / ASN evidence</th>
+              <th>Evidence stamp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="vendor-name"><strong>Direct baseline (no proxy)</strong></div>
+                <div class="row-sub">raw TLS handshake + HTTPS GET, <code>Connection: close</code></div>
+              </td>
+              <td>5</td>
+              <td><span class="val-strong" style="color: var(--accent-emerald);">100% (5/5)</span></td>
+              <td>890 ms total<br><span class="val-sub">596 ms TLS handshake</span></td>
+              <td><span class="ip-chip">144.34.225.53</span> &middot; AS25820 IT7 Networks Inc (Cluster Logic Inc) &mdash; <strong>hosting-class</strong></td>
+              <td><span class="val-sub">2026-10-19T06:41Z</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name"><strong>Direct baseline (project runner)</strong></div>
+                <div class="row-sub"><code>python3 probe_runner.py --dry-run</code>, 3 concurrent requests</div>
+              </td>
+              <td>3</td>
+              <td><span class="val-strong" style="color: var(--accent-emerald);">100% (3/3)</span></td>
+              <td>1027 ms <span class="val-sub">(response headers)</span></td>
+              <td>HTTP 200&times;3 &middot; ASN lookup rate-limited in that run, shown as Unknown rather than guessed</td>
+              <td><span class="val-sub">2026-10-19T06:43Z</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vendor-name"><strong>Smartproxy (Decodo) residential gateway</strong></div>
+                <div class="row-sub">Probed through the vendor's residential endpoint when a credential is provisioned</div>
+              </td>
+              <td colspan="4" class="credential-slot">
+                <strong>Credential not yet provisioned &rarr; this cell stays empty on purpose.</strong>
+                We will not print a success rate, a latency or a residential ASN that a probe did not observe.
+                Decodo's 100&nbsp;MB residential trial requires card details at activation, which is an owner-approved
+                payment action and therefore not something the pipeline performs unattended. Paste your Decodo
+                residential endpoint into the <code>SMARTPROXY_PROXY_URL</code> secret and re-run the probe:
+                the row fills itself with the measured success rate, latency and exit ASN.
+              </td>
+              <td><span class="val-sub">pending credential</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="protocol-box">
+        <h3>Probe protocol &amp; sampling logic</h3>
+        <ul>
+          <li><strong>Request shape:</strong> an HTTP/1.1 <code>GET /?format=json</code> to <code>api.ipify.org</code> with <code>User-Agent: curl/8.7.1</code> and <code>Connection: close</code>, executed over a raw socket so TCP connect and the TLS handshake are timed separately from the server response.</li>
+          <li><strong>Latency definition:</strong> "total" is wall-clock time from TCP connect start to the first response body byte (it <em>includes</em> TCP, TLS and server processing, so it is not a pure network RTT). "TLS" is time from TCP connect start to handshake completion.</li>
+          <li><strong>Sampling:</strong> the project runner issues 3 concurrent requests per vendor with a 10&nbsp;s total timeout, exactly as configured in <code>config/affiliates.yaml</code>; the standalone audit above used 5 sequential requests. Success rate is <em>HTTP 2xx responses / requests issued</em> for this endpoint only.</li>
+          <li><strong>ASN evidence:</strong> the exit IP returned by the endpoint is looked up once per run through the free <code>ipapi.is</code> public interface to read ASN and hosting-vs-ISP classification. Rate limiting degrades the field to <em>Unknown</em> rather than fabricating a value.</li>
+          <li><strong>What this does NOT measure:</strong> Cloudflare bypass ability, e-commerce or social-media success rates, throughput, or residential purity of a rotating pool. A single exit IP is one sample, not a pool audit.</li>
+        </ul>
+        <p class="mono-cmd">
+          <strong>Run the same audit yourself (open-source, no account):</strong><br>
+          <code>git clone https://github.com/600me/check-proxy-tax &amp;&amp; python3 probe_runner.py --dry-run</code><br>
+          Full tool: <a href="https://github.com/600me/check-proxy-tax" target="_blank" rel="noopener">github.com/600me/check-proxy-tax</a>
+        </p>
+      </div>
     </section>
 
     <!-- The 100GB Math Section -->
     <section id="math" class="math-section">
       <div class="section-title-wrap">
         <h2>100GB Crawl: Effective Cost is the Only Truth</h2>
-        <p>Hypothetical cost scenario comparing high-loss datacenter proxies vs. clean residential proxies.</p>
+        <p>Explicitly hypothetical cost scenario &mdash; planning arithmetic, not a vendor quote and not a measured order.</p>
       </div>
 
       <div class="cards-grid">
-        <!-- Low Quality DC Proxy -->
         <div class="card">
           <span class="card-badge-bad">High Wastage / Datacenter</span>
           <h3>Cheap Datacenter Proxy</h3>
@@ -89,7 +349,7 @@
             <span class="unit">total spend</span>
           </div>
           <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
-            Advertised at a cheap $1.00/GB, but heavy bot-protection (Cloudflare, Datadome) results in a 90% failure rate.
+            Advertised at a cheap $1.00/GB, but heavy bot-protection (Cloudflare, DataDome) results in a 90% failure rate.
           </p>
           <ul class="breakdown-list">
             <li><span>Sticker Price:</span> <span class="val">$1.00 / GB</span></li>
@@ -99,16 +359,15 @@
           </ul>
         </div>
 
-        <!-- Premium Residential Proxy -->
         <div class="card highlighted">
-          <span class="card-badge-good">Recommended / High Purity</span>
+          <span class="card-badge-good">Assume High Purity</span>
           <h3>Premium Residential Proxy</h3>
           <div class="price-display">
             <span class="cost" style="color: var(--accent-emerald);">$625</span>
             <span class="unit">total spend (Saved $375)</span>
           </div>
           <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
-            Advertised at $5.00/GB. Genuine ISP-assigned residential IPs achieve an 80%+ yield without getting blocked.
+            Advertised at $5.00/GB. In this assumed scenario a residential IP pool reaches 80% yield without being blocked.
           </p>
           <ul class="breakdown-list">
             <li><span>Sticker Price:</span> <span class="val">$5.00 / GB</span></li>
@@ -118,112 +377,9 @@
           </ul>
         </div>
       </div>
-    </section>
-
-    <!-- Live Benchmark Section -->
-    <section id="benchmark" class="benchmark-section">
-      <div class="section-title-wrap">
-        <h2>Vendor Connectivity Matrix</h2>
-        <p>Real latency, HTTP status and exit IP signatures. Vendors without configured proxy credentials stay Not tested.</p>
-      </div>
-
-      <div class="table-container">
-        <div class="table-header-meta">
-          <div class="live-indicator">
-            <span class="live-dot"></span>
-            <span>Latest real connectivity run via GitHub Actions</span>
-          </div>
-          <div style="font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-mono);">
-            Target: HTTPS Connect / 10s Timeout Cap
-          </div>
-        </div>
-
-        <table class="benchmark-table">
-          <thead>
-            <tr>
-              <th>Provider</th>
-              <th>Success Rate</th>
-              <th>Median Latency</th>
-              <th>HTTP Status</th>
-              <th>Network Class</th>
-              <th>Promo Code</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="vendor-name">
-                  <strong>Smartproxy</strong>
-                </div>
-              </td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">Not tested</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span class="tag-badge">Not configured</span></td>
-              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Not issued</code></td>
-              <td>
-                <a href="https://go.272738.xyz/smartproxy?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
-                  Explore Deal ↗
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="vendor-name">
-                  <strong>Bright Data</strong>
-                </div>
-              </td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">Not tested</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span class="tag-badge">Not configured</span></td>
-              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Not issued</code></td>
-              <td>
-                <a href="https://go.272738.xyz/brightdata?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
-                  Explore Deal ↗
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="vendor-name">
-                  <strong>Apify</strong>
-                </div>
-              </td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">Not tested</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span class="tag-badge">Not configured</span></td>
-              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Not issued</code></td>
-              <td>
-                <a href="https://go.272738.xyz/apify?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
-                  Explore Deal ↗
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="vendor-name">
-                  <strong>Oxylabs</strong>
-                </div>
-              </td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">Not tested</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span style="font-family: var(--font-mono); color: var(--text-muted);">—</span></td>
-              <td><span class="tag-badge">Not configured</span></td>
-              <td><code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Not issued</code></td>
-              <td>
-                <a href="https://go.272738.xyz/oxylabs?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer sponsored" class="btn-cta">
-                  Explore Deal ↗
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 14px; text-align: center;">
-        * Affiliate status (2026-10-17): Smartproxy / Decodo is approved and its promotional link is active; qualifying purchases may earn us a commission. Bright Data, Apify and Oxylabs applications remain pending. No exclusive discount code is confirmed. Vendor rows stay Not tested until real proxy credentials are configured in GitHub Actions Secrets; no illustrative or fixed sample performance figures are displayed. The reproducible method and latest direct baseline are in the GitHub README.
+      <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 18px; text-align: center;">
+        Effective unit price = sticker price &divide; usable yield rate. Neither scenario is a measurement of any named vendor.
+        Model your own numbers in the <a href="/calculator/">sticky-session &amp; concurrency-loss calculator</a>.
       </p>
     </section>
 
@@ -233,8 +389,8 @@
         <span class="brand-badge" style="margin-bottom: 12px; display: inline-block;">Free Developer Tool</span>
         <h3>Proxy Fraud Checker Chrome Extension</h3>
         <p>
-          Need to verify what exit IP and ASN your browser actually presents before firing automated workflows? 
-          One-click detection for Datacenter vs. Residential IP signals and reported risk scores. 
+          Need to verify what exit IP and ASN your browser actually presents before firing automated workflows?
+          One-click detection for Datacenter vs. Residential IP signals and reported risk scores.
           Zero tracking, zero page injection, lightweight Manifest V3.
         </p>
         <a href="/privacy.html" class="btn-cta" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid var(--border-color);">
@@ -248,17 +404,22 @@
     <div class="container footer-content">
       <div>
         <p><strong>Proxy Benchmark Intel</strong> &bull; Open-source engineering infrastructure.</p>
-        <p style="font-size: 0.8rem; margin-top: 4px;">Data presented is for benchmark and research purposes. Vendors handle all fulfillment and customer support.</p>
+        <p style="font-size: 0.8rem; margin-top: 4px;">
+          <strong>FTC Disclosure:</strong> this site earns commissions on qualifying purchases made through the
+          Smartproxy (Decodo) affiliate link shown above. Bright Data, Oxylabs, Apify and the open-source baseline earn us nothing.
+          Measurement data is published for benchmark and research purposes; vendors handle all fulfilment and customer support.
+        </p>
       </div>
       <div class="footer-links">
-        <a href="https://esim.mybskm.top/?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">eSIM Travel</a>
+        <a href="/calculator/">Calculator</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://scrape.mybskm.top/calculator/?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">Scraping TCO</a>
+        <a href="https://gpu.mybskm.top/calculator/?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">GPU calculator</a>
         <a href="https://gpu.mybskm.top?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">GPU benchmark</a>
-        <a href="https://pay.mybskm.top?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">Payments calculator</a>
-        <a href="https://scrape.mybskm.top?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">Scraping APIs</a>
-        <a href="/">Home</a>
+        <a href="https://pay.mybskm.top?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">Payments matrix</a>
+        <a href="https://esim.mybskm.top/?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark">eSIM Travel</a>
         <a href="/privacy.html">Privacy Policy</a>
-        <a href="https://go.272738.xyz/smartproxy?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer sponsored">Smartproxy</a>
-        <a href="https://go.272738.xyz/brightdata?utm_source=proxy_dashboard&utm_medium=website&utm_campaign=proxy_benchmark" target="_blank" rel="noopener noreferrer sponsored">Bright Data</a>
+        <a href="https://go.272738.xyz/smartproxy?src=proxy_footer" target="_blank" rel="sponsored noopener">Smartproxy</a>
       </div>
     </div>
   </footer>

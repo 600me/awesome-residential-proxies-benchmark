@@ -488,3 +488,189 @@ footer.site-footer {
 .legal-box li {
   margin-bottom: 8px;
 }
+
+/* ============================================================
+   Step 5 additions: FTC banner, 9-dimension matrix, telemetry
+   ============================================================ */
+
+/* FTC affiliate disclosure banner */
+.ftc-banner {
+  margin: 24px 0 0;
+  padding: 16px 20px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-left: 4px solid var(--accent-amber);
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.12), rgba(245, 158, 11, 0.03));
+  border-radius: 10px;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+.ftc-banner strong { color: var(--accent-amber); }
+.ftc-banner em { color: var(--text-main); font-style: normal; font-weight: 600; }
+.ftc-banner a { color: var(--accent-blue); }
+
+/* Matrix section */
+.matrix-section { margin: 48px 0 64px; }
+
+.verified-chip {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.table-scroll { overflow-x: auto; }
+.table-scroll table { min-width: 1180px; }
+
+/* Denser layout for the 11-column matrix */
+table.matrix-table th,
+table.matrix-table td {
+  padding: 12px 14px;
+  font-size: 0.8rem;
+  vertical-align: top;
+}
+table.matrix-table th { white-space: nowrap; font-size: 0.72rem; }
+table.matrix-table td:first-child { min-width: 190px; }
+table.matrix-table td:last-child { white-space: nowrap; }
+
+.row-sub {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+}
+
+.val-strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.val-sub {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+table.matrix-table td code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 0.74rem;
+}
+
+tr.row-winner td {
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.09), rgba(16, 185, 129, 0.02));
+}
+tr.row-winner td:first-child { box-shadow: inset 3px 0 0 var(--accent-emerald); }
+tr.row-anchor td { background: rgba(56, 189, 248, 0.05); }
+tr.row-anchor td:first-child { box-shadow: inset 3px 0 0 var(--accent-blue); }
+
+.tag-free {
+  background: rgba(56, 189, 248, 0.14);
+  color: var(--accent-blue);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.anchor-note {
+  margin-top: 18px;
+  padding: 16px 20px;
+  border: 1px dashed rgba(56, 189, 248, 0.35);
+  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.05);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.anchor-note strong { color: var(--text-main); }
+.anchor-note code {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.82em;
+}
+
+.footnotes {
+  margin-top: 18px;
+  font-size: 0.76rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+.footnotes a { color: var(--accent-blue); }
+.footnotes sup { color: var(--accent-blue); font-weight: 700; }
+
+/* Telemetry extras */
+.ip-chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+.credential-slot {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+.credential-slot strong { color: var(--accent-amber); }
+.credential-slot code {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.78em;
+}
+
+.protocol-box {
+  margin-top: 22px;
+  padding: 22px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--bg-card);
+}
+.protocol-box h3 {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.protocol-box ul { padding-left: 20px; color: var(--text-muted); font-size: 0.86rem; }
+.protocol-box li { margin-bottom: 9px; line-height: 1.65; }
+.protocol-box strong { color: var(--text-main); }
+.protocol-box code {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  overflow-wrap: anywhere;
+}
+.mono-cmd {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+}
+.mono-cmd code { font-size: 0.82rem; }
+.mono-cmd a { color: var(--accent-blue); }
+
+@media (max-width: 700px) {
+  .ftc-banner { font-size: 0.82rem; }
+  .verified-chip { margin-left: 0; margin-top: 8px; }
+}
