@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>写了个零依赖 Python CLI 测算爬虫 403 重试税，顺手做了 4 个免注册在线工程计算器（代理/反爬API/GPU/出海收单）</title>
+<meta name="description" content="用 check-proxy-tax（MIT、零依赖）实测 403 重试税与有效每千次可用响应成本，附 4 个免注册在线计算器：住宅代理、反爬 API TCO、GPU 租用、出海收单盈亏平衡。">
+<style>
+  :root{--fg:#1b1f24;--muted:#5b6672;--line:#dfe4ea;--bg:#fff;--code:#f5f7fa;--accent:#0b6bcb}
+  @media (prefers-color-scheme: dark){:root{--fg:#e6e9ee;--muted:#9aa5b1;--line:#2b323b;--bg:#15181d;--code:#1d222a;--accent:#59a6ff}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  main{max-width:820px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:1.6rem;line-height:1.4;margin:0 0 12px}
+  h2{font-size:1.2rem;margin:36px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+  h3{font-size:1.02rem;margin:22px 0 8px}
+  p,li{color:var(--fg)}
+  .meta{color:var(--muted);font-size:.86rem;border-left:3px solid var(--accent);padding:8px 12px;background:var(--code);border-radius:0 6px 6px 0;margin:0 0 24px}
+  code{background:var(--code);padding:.12em .38em;border-radius:4px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:14px;overflow:auto;font-size:.84rem;line-height:1.55}
+  pre code{background:none;padding:0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+  th{background:var(--code)}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  a{color:var(--accent)}
+  .cta{display:block;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0;background:var(--code)}
+  .cta b{display:block;margin-bottom:2px}
+  .note{font-size:.86rem;color:var(--muted)}
+  footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>写了个零依赖 Python CLI 测算爬虫 403 重试税，顺手做了 4 个免注册在线工程计算器（代理/反爬API/GPU/出海收单）</h1>
+<p class="meta">发布账号：<code>WalterPGale</code>｜目标板块：技术 / 开源工具<br>
+内容性质：开源工具 + 免费在线计算器，文末有联盟链接披露；页面零广告无弹窗。<br>
+事实核对（2026-10-23）：仓库 MIT、stdlib-only；wheel 安装命令在干净 venv 实测通过；4 个计算器 URL 均返回 HTTP 200；文中数字均可复算。</p>
+
+<h2>一、先说我踩到的坑：403 不是「买贵了代理」能解决的</h2>
+<p>做电商价格监控和 RAG 抓取的朋友大概率都遇到过这个循环：</p>
+<ol>
+  <li>目标站上 Cloudflare，返回 <code>403</code> 或 <code>cf-mitigated: challenge</code>；</li>
+  <li>换成住宅代理，过了；</li>
+  <li>抓了十几分钟，<code>cf_clearance</code> 失效或 IP 被标，又开始 <code>403</code>；</li>
+  <li>加大并发、加快轮换，<code>403</code> 更多，带宽消耗翻倍。</li>
+</ol>
+<p>问题在于 <code>cf_clearance</code> 这类 cookie 是<strong>跟 TLS/JA3 指纹 + 出口 IP 绑定</strong>的。每换一次出口 IP 相当于从头做一次握手挑战；每换一次 UA 或 HTTP 客户端指纹，挑战结果也不能复用。于是真正发生在账单上的不是「我买了 100GB 流量」，而是：</p>
+<ul>
+  <li>一次 <code>403</code> 响应照样计费（按请求计费的代理尤其明显）；</li>
+  <li><code>403</code> 之后的重试也计费；</li>
+  <li>一次 <code>200</code> 但返回挑战页 / 空壳页 / 登录墙，同样计费却毫无价值。</li>
+</ul>
+<p><strong>算例（纯算术，不是厂商报价）</strong>：某代理标价 <code>$0.49 / 1,000 请求</code>。</p>
+<table>
+  <thead><tr><th class="num">可用率</th><th class="num">拿到 1,000 条可用响应需要发</th><th class="num">有效单价</th><th class="num">相对标价倍数</th></tr></thead>
+  <tbody>
+    <tr><td class="num">100%</td><td class="num">1,000 次</td><td class="num">$0.49</td><td class="num">1.00x</td></tr>
+    <tr><td class="num">70%</td><td class="num">1,429 次</td><td class="num">$0.70</td><td class="num">1.43x</td></tr>
+    <tr><td class="num">50%</td><td class="num">2,000 次</td><td class="num">$0.98</td><td class="num">2.00x</td></tr>
+    <tr><td class="num">40%</td><td class="num">2,500 次</td><td class="num">$1.225</td><td class="num">2.50x</td></tr>
+    <tr><td class="num">33%</td><td class="num">3,030 次</td><td class="num">$1.485</td><td class="num">3.03x</td></tr>
+  </tbody>
+</table>
+<p>如果厂商按 GB 计费，同一件事换个单位：你需要 <strong>100GB 有效数据</strong>、可用率 40%，那么计费流量是 <strong>250GB</strong>。「每 GB 标价便宜 30%」在低可用率面前完全不够看——这就是我把它叫 <strong>403 Tax（403 重试税）</strong> 的原因：它是标价与真实成本之间的差额，而且不写在报价单上。</p>
+
+<h2>二、开源方案：check-proxy-tax（MIT，零依赖，单文件核心模块）</h2>
+<p>仓库：<a href="https://github.com/600me/check-proxy-tax">github.com/600me/check-proxy-tax</a>（MIT，Python 3.8+，只用标准库，无账号、无 API Key、无后台服务）</p>
+<p>它做的事很窄：<strong>对同一个 URL 打一小波并发请求，把每个响应判定成 usable / blocked，然后告诉你「每 1,000 条可用响应」到底花了多少钱。</strong></p>
+<p>判定标准故意从严，必须同时满足：</p>
+<ol>
+  <li>最终 HTTP 状态码是 <code>200</code>（重定向会跟随，按最终状态判定）；</li>
+  <li>如果传了 <code>--marker</code>，响应体必须包含该字符串。</li>
+</ol>
+<p><code>403</code>、<code>429</code>、其它 <code>4xx</code>、<code>5xx</code>、超时、连接/TLS 失败，以及<strong>没有 marker 的 200</strong>，一律算 blocked。</p>
+
+<h3>安装（一条命令，不用 clone）</h3>
+<pre><code>pip install https://github.com/600me/check-proxy-tax/releases/download/v1.0.0/check_proxy_tax-1.0.0-py3-none-any.whl
+check-proxy-tax --help</code></pre>
+
+<h3>跑一次真实测算</h3>
+<pre><code>check-proxy-tax \
+  --url "https://example.com" \
+  --requests 20 \
+  --marker "Example Domain" \
+  --price-per-1k 0.49 \
+  --json</code></pre>
+<p>以下为本机真实输出（<code>example.com</code>，无代理，20 次采样）：</p>
+<pre><code>{
+  "tool": "check-proxy-tax",
+  "version": "1.0.0",
+  "url": "https://example.com",
+  "marker": "Example Domain",
+  "requests": 20,
+  "concurrency": 4,
+  "timeout_seconds": 10.0,
+  "proxy_configured": false,
+  "nominal_price_per_1k": 0.49,
+  "usable_count": 20,
+  "blocked_count": 0,
+  "usable_pct": 100.0,
+  "effective_cost_per_1k": 0.49,
+  "tax_multiplier": 1.0,
+  "cost_status": "finite",
+  "latency_ms": { "p50": 931.98, "p95": 1924.37, "min": 716.4, "max": 2153.02 },
+  "total_bytes": 11540,
+  "status_counts": { "200": 20 },
+  "blocked_reasons": {},
+  "exit_code": 0
+}</code></pre>
+<p>把 <code>--proxy</code> 换成自己的代理、URL 换成真实目标页、<code>--marker</code> 换成商品页上稳定的字符串（比如「加入购物车」），<code>usable_pct</code> 会立刻掉下来，<code>effective_cost_per_1k</code> 与 <code>tax_multiplier</code> 会给出真实差价。如果一次都没成功，<code>cost_status</code> 是 <code>infinite</code>——这种情况下标价再低也买不到可用数据。</p>
+<p>数学就三行：</p>
+<pre><code>usable_pct            = usable_count / total_requests * 100
+effective_cost_per_1k = nominal_price_per_1k / (usable_pct / 100)
+tax_multiplier        = effective_cost_per_1k / nominal_price_per_1k</code></pre>
+
+<h3>放进 CI 当门禁</h3>
+<p>退出码是设计过的：<code>0</code> 全部可用、<code>1</code> 部分被拦（降级）、<code>2</code> 一条都不可用、<code>3</code> 参数错误。</p>
+<pre><code>check-proxy-tax --url "$TARGET" --requests 50 --marker "$MARKER" \
+  --proxy "$PROXY_URL" --price-per-1k 0.49 --json &gt; probe.json \
+  || echo "::warning::可用率下降，检查代理池或指纹配置"</code></pre>
+<p class="note">提醒：单次采样只说明「这一时刻、这一个出口」。做采购决策至少覆盖不同时段与多个出口。</p>
+
+<h2>三、顺手做的 4 个在线计算器（免注册、零广告）</h2>
+<p>CLI 只回答「这次采样多少钱」，采购决策往往要先估算模型，所以另外做了 4 个纯前端计算器：</p>
+
+<div class="cta">
+  <b>1）住宅代理 403 重试税与有效每 GB 单价</b>
+  <a href="https://proxy.mybskm.top/calculator/?utm_source=nodeseek">https://proxy.mybskm.top/calculator/?utm_source=nodeseek</a>
+  <p class="note">按 GB 计费场景，把可用率、重试、页面体积带进去，算「拿到 N GB 有效数据要付多少」；同时有 9 维度厂商公开政策对照表（价格粒度、最低充值、试用、退款、KYC、粘性会话窗口等），每格都能在不注册、不付款的前提下从厂商公开页面核实。</p>
+</div>
+
+<div class="cta">
+  <b>2）RAG / 反爬云 API 综合 TCO</b>
+  <a href="https://scrape.mybskm.top/calculator/?utm_source=nodeseek">https://scrape.mybskm.top/calculator/?utm_source=nodeseek</a>
+  <p class="note">自建（代理 + 无头浏览器 + 指纹维护 + 人力）vs 托管抓取 API（按成功请求计费）的总成本对比。适合正在纠结「要不要自己维护浏览器农场」的团队。</p>
+</div>
+
+<div class="cta">
+  <b>3）H100 / A100 GPU 租用冷启动与存储真实成本</b>
+  <a href="https://gpu.mybskm.top/calculator/?utm_source=nodeseek">https://gpu.mybskm.top/calculator/?utm_source=nodeseek</a>
+  <p class="note">输入参数量、精度、上下文、并发，先算显存需求（权重 + KV cache + CUDA context，再乘 1.15 安全余量），再给 RunPod / Vast.ai 的小时成本对照。真实坑：per-GPU-hour 不是账单单位。公开抽样价里 Vast.ai H100 为 $2.01/卡时、RunPod 为 $2.69/卡时（低 25.3%），但 Vast 部分 offer 只能 2 卡捆绑租——单卡任务在 4090 上实际是 $0.858/小时 vs RunPod $0.34/小时，反而贵 152%。</p>
+</div>
+
+<div class="cta">
+  <b>4）非美出海 SaaS：MoR（Paddle / Lemon Squeezy）vs 美区 LLC（Firstbase + Stripe）盈亏平衡点</b>
+  <a href="https://pay.mybskm.top/?utm_source=nodeseek">https://pay.mybskm.top/?utm_source=nodeseek</a>
+  <p class="note">把 MRR、客单价、卡组织构成、FX、年合规成本带进去，直接算「从多少 MRR 开始，5% 的 MoR 抽成超过自建 LLC + Stripe 的固定成本」。参考量级：最理想卡构成下平衡点约 $3,205 MRR，70% 国际卡抬到 $5,376，再叠加货币转换可到 $15,152。没有统一答案，只有「你的 MRR 与卡构成决定的答案」。</p>
+</div>
+
+<h2>四、态度与反馈</h2>
+<ul>
+  <li>代码 MIT，单模块零依赖，欢迎直接读、直接改、直接接自己的监控。bug 或想加的指标（按 GB 计价模式、并发梯度扫描等）开 Issue 就行。</li>
+  <li>计算器全部是静态前端，参数自己改，不存你的数据、不要求注册、没有弹窗广告。</li>
+  <li><strong>透明披露</strong>：部分厂商入口是联盟链接，通过它们购买我可能获得佣金，价格对你不变；表格中的公开政策数字与联盟关系无关，且可自行复核。所有「实测」数字都标了采样时间与方式，未测的格子直接写「未测试」，不填示意值。</li>
+</ul>
+<p>如果这篇对你有用，GitHub 点 Star 就是最好的反馈；如果你测出某家代理在你自己的目标站上可用率很高，欢迎在楼里贴数据——来自真实负载的数字比任何厂商页面都有用。</p>
+
+<footer>
+披露：本文部分厂商入口含联盟追踪；结论与实测数字不因佣金关系改变。基准数字采样于 2026-10-18 至 2026-10-23，仅为估算、非厂商报价或购买承诺。
+</footer>
+</main>
+</body>
+</html>

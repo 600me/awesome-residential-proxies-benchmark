@@ -1,0 +1,75 @@
+{
+  "account": "@VerlieK88056",
+  "campaign": "launch_thread_v1",
+  "created_at": "2026-10-23T14:00:00Z",
+  "algorithm_notes": {
+    "main_tweet_has_external_link": false,
+    "reason": "主推文 0 外链，避免外链降权；全部直达链接放在第 1 条自我回复（自评）里，主推文只保留可引用的结论与数字。",
+    "posting_order": "按 id 顺序 1 → 2 → 3 → 4，第 4 条以 self-reply 形式挂在第 1 条下，线程内不做二次外链堆叠。",
+    "weighted_length_limit": 280,
+    "weighted_length_rule": "CJK 计 2，其余字符计 1，URL 一律按 23 计（t.co 包装）。",
+    "verification_basis": "所有数字取自 600me/check-proxy-tax 真实输出与 4 个计算器页面的公开抽样价（采样 2026-10-18 ~ 2026-10-23）；GPU/支付数字可在对应计算器页面复算。"
+  },
+  "tweets": [
+    {
+      "id": 1,
+      "role": "main_tweet",
+      "has_external_link": false,
+      "weighted_length": 253,
+      "text": "\"Vast is 25% cheaper than RunPod\" is true on paper: H100 samples $2.01 vs $2.69/GPU-hr (-25.3%).\n\nThen I priced one 4090 for a 1-GPU job. Vast's verified offer is a 2-card bundle: $0.858/h. RunPod: $0.34/h.\n\n+152%.\n\nPer-GPU-hour is not the billing unit."
+    },
+    {
+      "id": 2,
+      "role": "thread_reply",
+      "has_external_link": false,
+      "weighted_length": 249,
+      "text": "The 403 tax in 3 lines:\n\nusable = 200s whose body contains your marker\neffective $/1k = nominal / usable_rate\n$0.49/1k @70% usable = $0.70 (1.43x). @40% = $1.225 (2.5x).\n\n`check-proxy-tax --url ... --marker ... --json` prints that, stdlib only, MIT."
+    },
+    {
+      "id": 3,
+      "role": "thread_reply",
+      "has_external_link": false,
+      "weighted_length": 254,
+      "text": "What the numbers sit on:\n\n- proxies: 9 policy dims from public pricing pages, 0 unverified cells\n- scraping API vs DIY TCO\n- GPU: weights+KV+CUDA x1.15, 5 card classes, 2 providers\n- payments: MoR 5% vs US LLC+Stripe breakeven\n\nNo 'contact sales' inputs."
+    },
+    {
+      "id": 4,
+      "role": "self_reply_conversion",
+      "has_external_link": true,
+      "weighted_length": 273,
+      "text": "Links, all free, no signup:\n\nProxies/403 tax: https://proxy.mybskm.top/calculator/?utm_source=x_thread\nScraping API TCO: https://scrape.mybskm.top/calculator/?utm_source=x_thread\nGPU: https://gpu.mybskm.top/calculator/?utm_source=x_thread\nPayments: https://pay.mybskm.top/?utm_source=x_thread\n\nCode: https://github.com/600me/check-proxy-tax\n\nDisclosure: some vendor links are affiliate; numbers don't change."
+    }
+  ],
+  "claim_sources": [
+    {
+      "claim": "H100 public sample: Vast.ai $2.01/GPU-hr vs RunPod $2.69/GPU-hr (-25.3%)",
+      "source": "https://gpu.mybskm.top/calculator/ 内嵌抽样价（sampleAt 2026-10-18），per-GPU-hour 单价可在页面 GPUS 常量中核对",
+      "reproduce": "(2.69 - 2.01) / 2.69 = 25.28%"
+    },
+    {
+      "claim": "RTX 4090 单卡任务：Vast 2 卡捆绑后 $0.858/h vs RunPod $0.34/h（+152%）",
+      "source": "同上页面：4090 runpod $0.34/GPU-hr bundle=1；vast $0.429/GPU-hr bundle=2，报价按整捆计费",
+      "reproduce": "0.429 * 2 = 0.858; (0.858 - 0.34) / 0.34 = 152.4%"
+    },
+    {
+      "claim": "$0.49/1k @70% usable = $0.70 (1.43x)；@40% = $1.225 (2.5x)",
+      "source": "600me/check-proxy-tax 计算公式与真实 JSON 输出",
+      "reproduce": "0.49 / 0.70 = 0.70; 0.49 / 0.40 = 1.225"
+    },
+    {
+      "claim": "MoR 5% vs 美国 LLC + Stripe 盈亏平衡点 $3,205 / $5,376 / $15,152 MRR",
+      "source": "https://pay.mybskm.top/ 计算器与研究说明（Break-even moves from $3,205 to $5,376 and then $15,152 MRR as card mix and currency change）",
+      "reproduce": "打开页面，调整国际卡占比与 FX 开关，观察 breakeven MRR"
+    },
+    {
+      "claim": "CLI 零依赖、MIT、仅标准库",
+      "source": "https://github.com/600me/check-proxy-tax README + LICENSE；本地干净 venv 安装 wheel 实测通过",
+      "reproduce": "python3 -m venv v && v/bin/pip install <wheel-url> && v/bin/check-proxy-tax --version"
+    }
+  ],
+  "do_not_post": [
+    "不要在第 1 条主推文里加入任何 http(s) 链接（含 GitHub）；外链只出现在第 4 条自我回复。",
+    "不要把 63% 之类的未复算数字写进线程；本文所有倍数均可由上面的 reproduce 公式复算。",
+    "不要使用 go.272738.xyz 短链作为公开入口（联盟短链只用于已披露的厂商 CTA，不作为内容入口）。"
+  ]
+}
