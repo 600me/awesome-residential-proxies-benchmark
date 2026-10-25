@@ -54,7 +54,7 @@ Now the part almost nobody measures: how much of the traffic you pay for is even
 403s, 429s, timeouts and "200 but it's a challenge page" are all billed. That's the 403
 tax, and it multiplies your effective $/GB:
 
-  pip install https://github.com/600me/check-proxy-tax/releases/download/v1.0.0/check_proxy_tax-1.0.0-py3-none-any.whl
+  pip install check-proxy-tax
   check-proxy-tax --url 'https://target.example/product/123' --requests 30 \
     --marker 'Add to cart' --proxy 'http://user:pass@host:port' --price-per-1k 0.49 --json
 
@@ -180,7 +180,7 @@ few of those.
 Step 2 — measure the block rate per service/country instead of guessing, and treat
 "contains a price" as the success marker:
 
-  pip install https://github.com/600me/check-proxy-tax/releases/download/v1.0.0/check_proxy_tax-1.0.0-py3-none-any.whl
+  pip install check-proxy-tax
   check-proxy-tax --url 'https://www.netflix.com/signup/planselection' --requests 10 \
     --marker 'plan' --proxy 'http://user:pass@de.exit.example:8000' --price-per-1k 0.49 --json
 
