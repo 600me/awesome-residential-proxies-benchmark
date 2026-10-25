@@ -1,0 +1,6 @@
+{"stage": 1, "task": "pypi_distribution", "status": "COMPLETED", "date": "2026-10-25", "asset": "https://pypi.org/project/check-proxy-tax/1.0.0/", "verification": "pip install check-proxy-tax"}
+{"stage": 1, "task": "nodejs_npx_cli", "status": "COMPLETED", "date": "2026-10-25", "asset": "github:600me/check-proxy-tax", "verification": "npx github:600me/check-proxy-tax --help"}
+{"stage": 1, "task": "leads_triage_top3", "status": "VERIFIED_READY", "date": "2026-10-25", "asset": "outbound-materials/top_3_sniper_replies.md", "verification": "3 technical replies with zero promotional fluff"}
+{"stage": 2, "task": "awesome_wave_2", "status": "PLANNED", "target_date": "2026-10-28", "asset": "5 targeted active Awesome repos (>500 stars)", "verification": "submitted_prs.jsonl PR additions"}
+{"stage": 3, "task": "github_action_ci", "status": "PLANNED", "target_date": "2026-11-04", "asset": "600me/check-proxy-tax-action", "verification": "action.yml with GitHub Marketplace release"}
+{"stage": 4, "task": "medium_canonical_syndication", "status": "PLANNED", "target_date": "2026-11-11", "asset": "Medium 8 articles cross-posting", "verification": "canonical_url pointing to mybskm.top blogs"}
