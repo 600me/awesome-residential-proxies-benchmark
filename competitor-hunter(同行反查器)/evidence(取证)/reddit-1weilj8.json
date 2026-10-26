@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/vastai/comments/1weilj8/what_the_hell_is_happening_to_vastai_lately/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:21.119797+00:00",
+  "post": {
+    "id": "1weilj8",
+    "title": "What the hell is happening to Vast.ai lately?",
+    "subreddit": "vastai",
+    "created_utc": 1789234075.0,
+    "score": 9,
+    "num_comments": 33,
+    "archived": false,
+    "locked": false,
+    "selftext": "Seriously, what the hell is going on with Vast.ai right now?\n\nThe GPU marketplace is getting absolutely flooded with garbage listings and prices that make ZERO sense.\n\nI open Vast.ai because I want to rent a GPU, not spend half my time digging through hundreds of stupid listings trying to find one machine that actually has decent value.\n\nPeople are listing GPUs at completely ridiculous prices, weird configurations everywhere, terrible price/performance, and somehow the marketplace just keeps getting more cluttered every day.\n\nIt honestly feels like everyone is just throwing random prices on every GPU and hoping some idiot clicks rent.\n\nAnd before someone says “it’s a marketplace, hosts can charge whatever they want” — yeah, obviously. But if the marketplace becomes full of trash offers, then the platform itself becomes trash to use.\n\nThe whole reason I used Vast.ai was because it was supposed to be cheaper and more flexible than normal cloud providers.\n\nNow I’m sitting there thinking:\n\nWhy am I even wasting my time searching through this mess?\n\nIf I have to constantly filter garbage, compare nonsense pricing, check hidden problems with every instance, and pray the machine is actually worth renting, I might as well pay a little more somewhere else and save myself the headache.\n\nVast.ai really needs to do something about this.\n\nBetter ranking.\nBetter filtering.\nBetter visibility for actually competitive machines.\nSomething.\n\nBecause right now the marketplace feels completely spammed.\n\nAnd if it keeps going like this, I’m just going to move to another provider.\n\nI highly doubt I’m the only person getting tired of this shit.\n\nVast had a really good thing going, but this current situation is seriously pushing customers away.",
+    "permalink": "/r/vastai/comments/1weilj8/what_the_hell_is_happening_to_vastai_lately/",
+    "author": "addicted-to-you",
+    "removed_by_category": null
+  }
+}

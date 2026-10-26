@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/reactjs/comments/1m7o486/difference_between_raw_stripe_and_lemonsqueezy/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:14.140007+00:00",
+  "post": {
+    "id": "1m7o486",
+    "title": "Difference between raw Stripe and LemonSqueezy?",
+    "subreddit": "reactjs",
+    "created_utc": 1753311734.0,
+    "score": 5,
+    "num_comments": 14,
+    "archived": false,
+    "locked": false,
+    "selftext": "Hey how's it going? I'm eager to build my own first SaaS application. I'm good regarding the frontend; good for the backend - but one thing that is holding me back, keeps me overthinking - I can't wrap my head around payment integration.\n\nA while back, I posted a question somewhere regarding Stripe, then someone told me I have to take care of taxes on my own if I use Stripe. They suggested a merchant of record like LemonSqueezy; which takes care of invoicing, VAT, etc. But every other guide I read up on React says \"use Stripe\", as well as I, who initially thought that Stripe will have taken care of all those things for me? 🤔\n\nCan someone provide some guidance so I can put this question to rest and just get to developing? Because the more I keep reading on my own regarding this topic, the more I keep overthinking, rather than coming to conclusions.\n\nThank you for your time and answers.",
+    "permalink": "/r/reactjs/comments/1m7o486/difference_between_raw_stripe_and_lemonsqueezy/",
+    "author": "xX_mr_sh4d0w_Xx",
+    "removed_by_category": null
+  }
+}

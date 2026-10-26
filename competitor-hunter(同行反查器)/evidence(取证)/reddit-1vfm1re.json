@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/battlebots/comments/1vfm1re/bright_data_is_operating_a_residential_proxy/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:29.907270+00:00",
+  "post": {
+    "id": "1vfm1re",
+    "title": "Bright Data is operating a residential proxy network for data scraping using apps installed on smart TVs",
+    "subreddit": "battlebots",
+    "created_utc": 1785875360.0,
+    "score": 103,
+    "num_comments": 25,
+    "archived": false,
+    "locked": false,
+    "selftext": "There's a bunch more nuance to it than just that one-line summary, but the fact that it is happening at all doesn't sit comfortably with me as a twenty year IT guy and makes me feel less good about their support of Battlebots than I already did: [https://www.mnemonic.io/resources/blog/samsungs-recommendation-rent-out-your-tvs-internet-connection/](https://www.mnemonic.io/resources/blog/samsungs-recommendation-rent-out-your-tvs-internet-connection/)",
+    "permalink": "/r/battlebots/comments/1vfm1re/bright_data_is_operating_a_residential_proxy/",
+    "author": "TheSpearTip",
+    "removed_by_category": null
+  }
+}

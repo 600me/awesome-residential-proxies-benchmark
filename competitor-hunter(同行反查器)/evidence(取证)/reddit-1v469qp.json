@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/WebScrapingInsider/comments/1v469qp/looking_for_the_best_rotating_residential_proxy/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:27.357515+00:00",
+  "post": {
+    "id": "1v469qp",
+    "title": "Looking for the best rotating residential proxy for web scraping",
+    "subreddit": "WebScrapingInsider",
+    "created_utc": 1784789997.0,
+    "score": 17,
+    "num_comments": 54,
+    "archived": false,
+    "locked": false,
+    "selftext": "I was scraping about 100GB of data per month through our residential proxy provider, but they suddenly got shut down so we need to find a new residential proxy provider that offers good performance for cheap price.\n\nWe are doing about 100GB of scraping per month of public pages (previously were paying $4/GB).\n\n",
+    "permalink": "/r/WebScrapingInsider/comments/1v469qp/looking_for_the_best_rotating_residential_proxy/",
+    "author": "Previous_Town3598",
+    "removed_by_category": null
+  }
+}

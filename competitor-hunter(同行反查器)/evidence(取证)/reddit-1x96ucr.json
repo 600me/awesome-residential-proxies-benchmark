@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/mlops/comments/1x96ucr/vastai_is_unbeatable_on_price_until_the_data_is/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:21.567688+00:00",
+  "post": {
+    "id": "1x96ucr",
+    "title": "Vast.ai is unbeatable on price until the data is sensitive or the box needs to stay up",
+    "subreddit": "mlops",
+    "created_utc": 1792339367.0,
+    "score": 3,
+    "num_comments": 16,
+    "archived": false,
+    "locked": false,
+    "selftext": "Vast is about the cheapest way I've found to get a GPU. An H200 was starting around $4/hour when I last checked, and the interruptible listings go lower than that, and for throwaway experiments it's hard to argue with.  \n  \nWhere it stopped working for me is when the workload involves sensitive data or the machine needs to stay up for a long time. Vast is a marketplace, so what you're renting comes with a few catches:  \n  \n\\-> you're renting a machine that belongs to some third-party host  \n\\-> interruptible instances can get paused  \n\\-> hosts vary in reliability and pricing, so the cheapest listing isn’t necessarily one I’d use for a long-running workload.  \n  \nThat's a fine trade when you're just testing something, but not for my case.  \n  \nSo I started looking at other options:  \n  \n\\-> a dedicated box from a neocloud like CoreWeave or Lambda gets you off the shared marketplace while still renting  \n  \n\\-> or you own the hardware outright. I looked at B3IQ for that because you own the machine and keep root access while they host it. Your API requests route only to the machine on your account, which seemed different from landing on a marketplace host. You're carrying the full cost though, so it only adds up if you expect to keep the hardware busy or are open to renting out your idle capacity.  \n  \nFor anyone doing proprietary or regulated work, was a dedicated rental enough in the end, or did you have to actually own the hardware?",
+    "permalink": "/r/mlops/comments/1x96ucr/vastai_is_unbeatable_on_price_until_the_data_is/",
+    "author": "StatementLeading7557",
+    "removed_by_category": null
+  }
+}

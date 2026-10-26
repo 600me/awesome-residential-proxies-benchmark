@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/proxies/comments/1rtrqg2/enlighten_me_on_quality_scores_decodo/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:31.615921+00:00",
+  "post": {
+    "id": "1rtrqg2",
+    "title": "Enlighten me on \"quality scores\" (Decodo)",
+    "subreddit": "proxies",
+    "created_utc": 1773514822.0,
+    "score": 2,
+    "num_comments": 6,
+    "archived": true,
+    "locked": false,
+    "selftext": "**TLDR:** New to residential proxies, using Decodo. But finding that AWS is blocking my tool traffic only from proxy IPs. Home IP works with tools no problem. IPQualityScore shows my IP quality as poor. Am I overthinking/misunderstanding quality? Should I be seeking a different provider? See below on a quote from a user here.\n\n**Full context:**\n\nI have a couple of tools that are in need of residential proxies, specifically SOCKS5. After doing \\~30-45 minutes of reading I decided to give Decodo a shot. I tried their residential and mobile proxies with my tool and all seemed well, until I did some further testing.\n\nI spun up a AWS ec2 instance to see what some of the traffic was going to look like, well AWS is blocking my traffic to the ec2 instance when coming from my proxy. For both HTTP and custom TCP ports. When I try the same traffic from my home IP. No problemo.\n\nI understand AWS and other cloud providers got some robust tools to quickly identify and blacklist proxy IP's. I decided run some IP's through IPQualityScore, all come back with a extremely high proxy score of 80+. Which inclines me to think these are \"bad quality IP's\" but I am a noob on residential proxies so I am confused why I have seen a lot of good posts praising Decodo.\n\nI just read a reddit post on this subreddit from a user saying:\n\n>Another thread, another question regarding trust scores. Trust/Fraud scores has nothing to do with the quality of the IPs that we simple folk purchase from providers.\n\nCan someone enlighten me on what this means? Am I over thinking AWS or other providers blocking these requests from my proxies?\n\n**EDIT/UPDATE:**   \nAfter extensive testing I believe Decodo is only proxying http ports such as 80 and 443 and it has nothing to do with AWS. I set up netcat listeners on my home IP, would receive the requests through the proxy as long as it was 80 or 443. As soon as I used any other port such as 3306 or 55555 traffic would be denied. Such a shame, I figured since Decodo says it supports SOCKS5 I assumed it allowed proxying TCP traffic to any  port.",
+    "permalink": "/r/proxies/comments/1rtrqg2/enlighten_me_on_quality_scores_decodo/",
+    "author": "NerdzRcool",
+    "removed_by_category": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1grxtan/costeffective_cloud_gpu_options_for_finetuning/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:25.520370+00:00",
+  "post": {
+    "id": "1grxtan",
+    "title": "Cost-Effective Cloud GPU Options for Fine-Tuning and Inference?",
+    "subreddit": "LocalLLaMA",
+    "created_utc": 1731681626.0,
+    "score": 12,
+    "num_comments": 45,
+    "archived": false,
+    "locked": false,
+    "selftext": "I'm evaluating cloud GPU providers for two specific AI workloads:\n\n1. **Fine-Tuning:** Access to high-performance GPU setups (A100, H100, or even RTX 3090/4090 clusters) that can be spun up temporarily and terminated post-training.\n2. **Inference:** Reliable but less powerful configurations for model testing and simple low workload deployments.\n\nRunPod seems interesting, but I’m unsure about the reliability of their on-demand model, where availability isn't guaranteed (?).\n\nFor traditional cloud providers like AWS, Azure, and GCP, I want to know if they offer reasonably priced instances with specific GPU configurations (e.g., 8x A100 or 4x 4090) and whether their pricing or scaling options work well for projects requiring frequent adjustments.\n\nIf anyone has used these or other platforms, I'd love to hear your take on reliability, cost, and ease of use for similar tasks.",
+    "permalink": "/r/LocalLLaMA/comments/1grxtan/costeffective_cloud_gpu_options_for_finetuning/",
+    "author": "pathfinder6709",
+    "removed_by_category": null
+  }
+}

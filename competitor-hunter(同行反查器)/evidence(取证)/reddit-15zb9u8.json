@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/webscraping/comments/15zb9u8/advice_on_setting_up_a_scraping_infrastructure/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:30.739628+00:00",
+  "post": {
+    "id": "15zb9u8",
+    "title": "Advice on setting up a scraping infrastructure for hard websites like LinkedIn",
+    "subreddit": "webscraping",
+    "created_utc": 1692813288.0,
+    "score": 3,
+    "num_comments": 28,
+    "archived": true,
+    "locked": false,
+    "selftext": "I'll start off by saying I've learned a lot from this sub. My current goal is to scrape at a large scale and maintain that infrastructure internally to build ML datasets.\n\nI've looked into pre-built solutions like brightdata but they are exorbitantly expensive once you reach a certain scale.\n\nBuilding out the infrastructure to scrape sites like LinkedIn would be way cheaper in the long run. I've learned quite a bit from the posts here already but wanted feedback on which parts would be more important.\n\nFrom what I've gathered, having high-quality rotating residential proxies is the number one way to succeed in scraping sites like LinkedIn. Are there any suggestions on which proxy providers would fit the bill here within a reasonable price range? The alternative is to set up my own mobile proxy network by actually buying the dongles.\n\nIn terms of the scraper itself, are there any specific things I need to be aware of? I know brightdata and a lot of similar players like zenrows offer something called a \"web unlocker\" which is supposed to solve captchas as well.\n\nIf you get a really good proxy provider how beneficial is it to use these scraping apis?\n\nI'm also planning to ease into setting up this infrastructure over a period of time since I understand it won't be easy and will likely cost some money up front.\n\nTill then I'm considering some vendors that package different parts of the scraping stack together. Ideally, I would like to get off them soon since some of them massively overcharge for proxies or charge for things I may not need for my use case.\n\nAnyway, here are some providers I'm looking at for proxies:\n\n* IPRoyal\n* Soax\n* Storm Proxies\n* Lightning Proxies\n* [Privateproxy.me](https://Privateproxy.me)\n* Oxyproxy\n\nFor scraping api's I'm considering:\n\n* Zenrows\n* Zyte\n* Shifter\n* ScrapeIN\n* ScraperAPI\n* Crawlbase\n\nAny feedback or advice is appreciated\n\nEdit: Added more context and fixed some formatting",
+    "permalink": "/r/webscraping/comments/15zb9u8/advice_on_setting_up_a_scraping_infrastructure/",
+    "author": "startingover1993",
+    "removed_by_category": null
+  }
+}

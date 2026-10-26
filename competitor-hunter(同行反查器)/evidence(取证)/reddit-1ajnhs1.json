@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ajnhs1/renting_gpu_time_vast_ai_is_much_more_expensive/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:22.553909+00:00",
+  "post": {
+    "id": "1ajnhs1",
+    "title": "Renting GPU time (vast AI) is much more expensive than APIs (openai, m, anth)",
+    "subreddit": "LocalLLaMA",
+    "created_utc": 1707157346.0,
+    "score": 128,
+    "num_comments": 99,
+    "archived": false,
+    "locked": false,
+    "selftext": "So, I've heard the hype like everyone else that local is getting close to openAI standard.  Which is great, however, openai API keeps coming down in price.  \n\nI thought that maybe renting GPU's would be a good way to experiment, but even that has been pricy.\n\nFor example, 48-80gb (basically what you need for a 70b) costs $1 per hour on the cheapest stable Vast.ai instance and maybe generates 10-30 tokens per second.\n\nAt $1/hr and 10-30 tokens per second it costs the same as GPT-4 turbo per token.  That's at saturation, with no pauses.\n\nCan someone help understand how to min-max ownership vs renting vs API?\n\nI feel like the risk with API is that it will always just be a mystery to me.  And I have to know how it works.  So I'm trying the whole docker fiasco,  But I'm burning up money in the process.",
+    "permalink": "/r/LocalLLaMA/comments/1ajnhs1/renting_gpu_time_vast_ai_is_much_more_expensive/",
+    "author": "RMCPhoto",
+    "removed_by_category": null
+  }
+}

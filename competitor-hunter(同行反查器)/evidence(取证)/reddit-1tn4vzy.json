@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/SaaS/comments/1tn4vzy/stripe_is_killing_lemon_squeezy_dont_use/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:15.343703+00:00",
+  "post": {
+    "id": "1tn4vzy",
+    "title": "Stripe is killing Lemon Squeezy, don't use!",
+    "subreddit": "SaaS",
+    "created_utc": 1779704210.0,
+    "score": 2,
+    "num_comments": 2,
+    "archived": false,
+    "locked": false,
+    "selftext": "Not being in the US, Stripe is not an option but they seem to be ruining other payment gateways that use to work fine.\n\nIn Africa we use PayStack, which is like Stripe for African countries. Recently stripe acquired them but thankfully they've not tinkered with them yet, it still works 100%.\n\nLemon Squeezy is really painful now, I validated my company years ago and tried to setup a new web app. I uploaded all my documents, setup products etc... and then the stupid wizard doesn't accept my Tax Number . It's a valid tax number that worked fine previously. I tried like 20 times, emailed them etc... no success.\n\nI'm now looking at Paddle, so far so good, just some final verification steps.",
+    "permalink": "/r/SaaS/comments/1tn4vzy/stripe_is_killing_lemon_squeezy_dont_use/",
+    "author": "[deleted]",
+    "removed_by_category": null
+  }
+}

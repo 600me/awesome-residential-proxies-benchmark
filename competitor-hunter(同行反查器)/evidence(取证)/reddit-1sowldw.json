@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/stripe/comments/1sowldw/stripe_was_good_until_they_acquired_lemon_squeezy/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:15.141460+00:00",
+  "post": {
+    "id": "1sowldw",
+    "title": "Stripe was good until they acquired Lemon Squeezy",
+    "subreddit": "stripe",
+    "created_utc": 1776516051.0,
+    "score": 5,
+    "num_comments": 15,
+    "archived": true,
+    "locked": false,
+    "selftext": "Seriously, I wander how Stripe management could risk a well earned reputation by acquiring Lemon Squeezy, and then create a market offering for  the MoR product based on that acquisition.\n\nThere are bugs in the payment rails,  there are periods where many payments fail, some periods where payments succeed.  There are out of high risk payments - and dont get fooled by marketing hype - even in MoR ALL chargebacks are passed back to the you.\n\nSo even if as merchant of record Stripe accepts high risk payments and when there is a chargeback it becomes your problem.\n\nThe collections and dunning process is broken.  For example , on renewal date a charge is attempted and payment fails... NO dunning email goes out,  stripe recovery happens after a week... this is NOT a setting we can change on dashboard.   Regardless of what you do on dashboard the stripe MoR has a mind of its own.\n\nI think the issue is with the poor quality of LemonSqueezy , some startup dude made a quick exit on a substandard product and Stripe drank that cool aide\n\nI have created 3 tickets in past 2 months.  It takes effort to even prove there is a problem.  Even then after confirmed technical bug on Stripe side it takes weeks.  It tool 2 months to solve one technical issue, other tickets closed because I couldn't prove that the issue exists... ",
+    "permalink": "/r/stripe/comments/1sowldw/stripe_was_good_until_they_acquired_lemon_squeezy/",
+    "author": "Negative-Ad-7993",
+    "removed_by_category": null
+  }
+}

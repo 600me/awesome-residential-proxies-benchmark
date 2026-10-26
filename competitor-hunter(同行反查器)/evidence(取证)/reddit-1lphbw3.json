@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/webdev/comments/1lphbw3/cloudflare_launches_pay_per_crawl_feature_to/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:34.508274+00:00",
+  "post": {
+    "id": "1lphbw3",
+    "title": "Cloudflare launches \"pay per crawl\" feature to enable website owners to charge AI crawlers for access",
+    "subreddit": "webdev",
+    "created_utc": 1751413959.0,
+    "score": 1208,
+    "num_comments": 131,
+    "archived": false,
+    "locked": false,
+    "selftext": ">Pay per crawl integrates with existing web infrastructure, leveraging HTTP status codes and established authentication mechanisms to create a framework for paid content access.\n\n>Each time an AI crawler requests content, they either present payment intent via request headers for successful access (HTTP response code 200), or receive a 402 Payment Required response with pricing. Cloudflare acts as the Merchant of Record for pay per crawl and also provides the underlying technical infrastructure.\n\nSource: [https://blog.cloudflare.com/introducing-pay-per-crawl/](https://blog.cloudflare.com/introducing-pay-per-crawl/)",
+    "permalink": "/r/webdev/comments/1lphbw3/cloudflare_launches_pay_per_crawl_feature_to/",
+    "author": "ZGeekie",
+    "removed_by_category": null
+  }
+}

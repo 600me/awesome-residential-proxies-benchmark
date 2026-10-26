@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/LocalLLM/comments/1qs0tkq/whats_the_best_cloud_based_company_to_rent_a_gpu/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:25.485642+00:00",
+  "post": {
+    "id": "1qs0tkq",
+    "title": "What's the best cloud based company to rent a GPU from?",
+    "subreddit": "LocalLLM",
+    "created_utc": 1769861652.0,
+    "score": 14,
+    "num_comments": 36,
+    "archived": false,
+    "locked": false,
+    "selftext": "Yes I understand the cloud and local are completely different but I have a reason. I've played around with some LLM models on my personal PC but unfrotunetly it crashes after a while and also means I can't do anything other than talk to the AI when I'm using it as it takes up most of my RAM and all my GPU. I want to build a dedicated machine, ive been saving up money for a while and want to spend it on building a server, but I'm not certain what hardware id need or if I need to save more to buy better gear.\n\nI was hoping there was a company out there where I can rent GPU's and test models to see the performance. I know run-pod exists but I don't like their terms of service, idealy I want something with more privacy and security. What is there?",
+    "permalink": "/r/LocalLLM/comments/1qs0tkq/whats_the_best_cloud_based_company_to_rent_a_gpu/",
+    "author": "Jakob4800",
+    "removed_by_category": null
+  }
+}

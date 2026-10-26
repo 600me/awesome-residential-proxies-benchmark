@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/StableDiffusion/comments/1icr9b2/whats_the_most_affordable_cloud_computing/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:18.019299+00:00",
+  "post": {
+    "id": "1icr9b2",
+    "title": "What's the most affordable cloud computing platform for video generation?",
+    "subreddit": "StableDiffusion",
+    "created_utc": 1738148354.0,
+    "score": 17,
+    "num_comments": 13,
+    "archived": true,
+    "locked": false,
+    "selftext": "I only have 8Gb of VRAM so running something like Hunyuan Video is a little much for my system. I know there are tons of various cloud computing platforms for it and I have used Runpod and google colab for other models in the past, but from what I understand there are better and cheaper alternatives that the community likes.",
+    "permalink": "/r/StableDiffusion/comments/1icr9b2/whats_the_most_affordable_cloud_computing/",
+    "author": "Sixhaunt",
+    "removed_by_category": null
+  }
+}

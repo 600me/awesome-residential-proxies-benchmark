@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/SillyTavernAI/comments/1fcm21q/do_you_use_cloud_gpus_like_runpodvastai/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:17.102592+00:00",
+  "post": {
+    "id": "1fcm21q",
+    "title": "Do you use cloud gpu's like runpod/vast.ai?",
+    "subreddit": "SillyTavernAI",
+    "created_utc": 1725877283.0,
+    "score": 4,
+    "num_comments": 20,
+    "archived": true,
+    "locked": true,
+    "selftext": "These service only list the prices/hour of gpu rental but I don't know how easy it is to use and how cost effective they are. I'd like to make a simple google sheet calculator but don't know a lot of details\n\nwhat tools do you use? the goal should be setting up an API endpoint or Kobold/ST Web UI that the user can then use\n\n\n- do you set it up for each use, e.g. downloading models etc? what is your process like?\n- how much time does it take for setup? is there some cost calculator which will show how long it takes to set it up, vs using serverless mode in runpod, and total cost inc cost for storage etc\n\nQn: why after download speeds so low, according to multiple posts? On Google colab the download is much faster. Are the advertised speeds on runpod etc not accurate?",
+    "permalink": "/r/SillyTavernAI/comments/1fcm21q/do_you_use_cloud_gpus_like_runpodvastai/",
+    "author": "ECrispy",
+    "removed_by_category": null
+  }
+}

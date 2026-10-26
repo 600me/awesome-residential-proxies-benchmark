@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/cloudcomputing/comments/1d8yc27/how_is_it_possible_that_companies_can_rent_h100s/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:19.285601+00:00",
+  "post": {
+    "id": "1d8yc27",
+    "title": "How is it possible that companies can rent H100s for $2 per *gpu* per hour and still turn a profit?",
+    "subreddit": "cloudcomputing",
+    "created_utc": 1717615206.0,
+    "score": 67,
+    "num_comments": 59,
+    "archived": false,
+    "locked": false,
+    "selftext": "An H100 costs roughly $25,000. Even if it was rented full time, it doesn't seem like it'd ever be profitable. In a single year of 24 hours a day, 365 days a year, you'd only make $17,000, but that doesn't include costs of power, security, facilities, etc.\n\nEdit/Update: This has been pretty informative so far!\n\nIf anyone has any resources that I can read regarding an in-depth cost explanation of data centers, I'd appreciate it. It seems like some of my ignorant questions were downvoted, so it's probably one of those situations that I really need to gain some more foundational knowledge - I just don't know where to find it",
+    "permalink": "/r/cloudcomputing/comments/1d8yc27/how_is_it_possible_that_companies_can_rent_h100s/",
+    "author": "Setholopagus",
+    "removed_by_category": null
+  }
+}

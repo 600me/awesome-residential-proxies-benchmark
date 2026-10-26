@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/ollama/comments/1u4yjbj/looking_for_dedicated_cloud_gpu_recommendations/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:23.028101+00:00",
+  "post": {
+    "id": "1u4yjbj",
+    "title": "Looking for Dedicated Cloud GPU Recommendations for a 3-Man Team (No Limits, High Availability)",
+    "subreddit": "ollama",
+    "created_utc": 1781375714.0,
+    "score": 13,
+    "num_comments": 33,
+    "archived": false,
+    "locked": false,
+    "selftext": "We are a 3-man team looking to rent a cloud GPU server on a monthly basis. We need it to run large open-source models like GLM and others.\n\nHere is what we need:\n\nNo limits: No rate limits or cutting off. It must handle our workflow smoothly.\n\nAlways online: 24/7 uptime. We can't use spot instances that get interrupted.\n\nFull control: We want to deploy any model easily using Docker, Ollama, etc.\n\nBudget: Not an issue. We just care about stability and high performance.\n\nWhat are the best providers for this? (RunPod, Lambda Labs, AWS, etc.)? Any recommendations based on your experience?",
+    "permalink": "/r/ollama/comments/1u4yjbj/looking_for_dedicated_cloud_gpu_recommendations/",
+    "author": "marwan_rashad5",
+    "removed_by_category": null
+  }
+}

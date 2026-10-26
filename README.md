@@ -94,3 +94,13 @@ GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动�
 - [Global GPU Cloud Benchmark](https://gpu.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GPU calculator](https://gpu.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-gpu-cloud-pricing-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
 - [Global Payments Matrix](https://pay.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-indie-global-payments-matrix?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
 - [Web Scraping APIs Benchmark](https://scrape.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Scraping TCO calculator](https://scrape.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-web-scraping-apis-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+
+
+## 2026-10-26 双轨采集与物料交付
+
+- 已运行两个16线程采集脚本；14组Google查询、97个唯一Reddit候选、74个真实JSON未锁/未归档结果，精选20条（四赛道各5条）附逐帖英文评论。
+- 同行报告记录5个真实公开主体，含入口、offer/官方佣金、页面尺寸与截图；近期出单证据合格数为0，历史转化和作者收入自述不替代近期成交。
+- 已写入 `outbound-materials/nodeseek_tco_post.md` 与 `outbound-materials/x_reply_hijack_targets.json`（12条草案）。本轮未发布。
+- `python3 verify_dual_track.py` 实测退出0；仅表示工单指定机械断言与取证一致性通过。输出 `full_task_satisfied=false`，商业证据指标未达到。完整输出在 `competitor-hunter(同行反查器)/evidence(取证)/verification-result.txt`。
+- 报告：`/Users/a600/project-hub(项目设计实施)/kais-business-findings(生意发现记录)/cps-live-hijack-benchmarks-20261026(海外CPS活体截流同行拆解报告).md`。
+- CLI发布wheel已下载至临时目录，实际 `--help` 退出0，稿件参数有效；临时目录已清理。浏览器取证标签均通过finally关闭，未改变生产调度。

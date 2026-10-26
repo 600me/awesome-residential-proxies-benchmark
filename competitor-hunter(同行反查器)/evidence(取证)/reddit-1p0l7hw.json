@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1p0l7hw/best_cloud_gpu_inference_option_costs_for_per/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:26.438778+00:00",
+  "post": {
+    "id": "1p0l7hw",
+    "title": "Best Cloud GPU / inference option / costs for per hour agentic coding",
+    "subreddit": "LocalLLaMA",
+    "created_utc": 1763493749.0,
+    "score": 0,
+    "num_comments": 7,
+    "archived": false,
+    "locked": false,
+    "selftext": "Hey folks,\n\nI'm finding Copilot is sometimes quite slow and I would like to be able to chose models and hosting options instead of paying the large flat fee. I'm part of a software engineering team and we'd like to find a solution... Does anyone have any suggestions for GPU Cloud hosts that can host modern coding models? I was thinking about Qwen3 Coder, and what kind of GPU would be required to run the smaller 30B and the larger 480B parameter model- or are there newer SOTA models that outperform that as well?\n\nI have been researching GPU Cloud providers and am curious about running our own inferencing on [https://northflank.com/pricing](https://northflank.com/pricing) or something like that... Do folks think that would take a lot of time to setup and that the costs would be significantly greater than using an inferencing service such as [Fireworks.AI](http://Fireworks.AI) or DeepInfra? \n\nThanks,   \nMark",
+    "permalink": "/r/LocalLLaMA/comments/1p0l7hw/best_cloud_gpu_inference_option_costs_for_per/",
+    "author": "AdSuccessful4905",
+    "removed_by_category": null
+  }
+}

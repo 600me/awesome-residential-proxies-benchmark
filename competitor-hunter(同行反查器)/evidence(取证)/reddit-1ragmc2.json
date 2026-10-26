@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/comfyui/comments/1ragmc2/runpod_a_million_times_slower_on_io_than_vast/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:17.558335+00:00",
+  "post": {
+    "id": "1ragmc2",
+    "title": "runpod a million times slower on io than vast?",
+    "subreddit": "comfyui",
+    "created_utc": 1771645004.0,
+    "score": 6,
+    "num_comments": 3,
+    "archived": false,
+    "locked": false,
+    "selftext": "Not sure if anyone else faced this, I'm just trying to get a dataset and a lora trained for the first time, and I had used runpod last week, first 5 instances of the damned template just hung or crashed, literally got to the point where i was spinning up three instances at a time, because it was taking so damn long for the template to get the template loaded and for me to make sure it didn't just hang or crash again. (I'd then kill the two others once one was working, or more accurately, they'd just die on their own)\n\nmeanwhile, I was dreading doing this process again after I found this nice dataset workflow [here](https://www.reddit.com/r/comfyui/comments/1o6xgqk/free_face_dataset_generation_workflow_for_lora/), so much so that I had asked chatgpt what other solutions there were, it listed out the usual suspects, vast and runpod being the top two, colab being the third. aws and azure further below and then some random stuff lambda labs, modal, etc.\n\nI guess subconsciously I hated the process so much for runpod that I was like shit what do I have to lose by trying vast and colab? So, I went through the button clicking for vast fearing the same bullshit again every second. \n\nTurns out it worked great, model files download in less than a couple minutes for a new workflow (compared to literally a f'ing hour that runpod will bill you for), the UI isnt a f'ing nightmare to get a comfy container up, its easy to work with both the jupyter interface to upload/download images, and I noticed that the time I spent actually represented the cost I paid.\n\nWhy in the everliving hell is anyone using runpod still? Is there something I'm missing? Was it just their growth marketing pushing it on all the youtubers essentially?",
+    "permalink": "/r/comfyui/comments/1ragmc2/runpod_a_million_times_slower_on_io_than_vast/",
+    "author": "United_Ad8618",
+    "removed_by_category": null
+  }
+}

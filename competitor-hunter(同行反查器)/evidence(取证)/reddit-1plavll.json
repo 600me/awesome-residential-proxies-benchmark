@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/StableDiffusion/comments/1plavll/h100_80gb_how_much_per_hour_for_training_or/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:19.301607+00:00",
+  "post": {
+    "id": "1plavll",
+    "title": "H100 80GB - how much per hour for training or running models?",
+    "subreddit": "StableDiffusion",
+    "created_utc": 1765594763.0,
+    "score": 2,
+    "num_comments": 8,
+    "archived": true,
+    "locked": false,
+    "selftext": "I’m wondering how much you would be willing to pay per hour for an H100 80GB VRAM instance on Vast.ai with 64–128 GB of RAM.\n\nThe company I work for is interested in putting a few cards on this platform.\n\nWould it be okay to offer them at $0.60–$0.80 per hour? Our plan is to keep them rented as much as possible while providing a good discount.",
+    "permalink": "/r/StableDiffusion/comments/1plavll/h100_80gb_how_much_per_hour_for_training_or/",
+    "author": "No_Progress_5160",
+    "removed_by_category": null
+  }
+}

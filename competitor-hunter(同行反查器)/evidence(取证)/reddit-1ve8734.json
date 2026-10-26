@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/deeplearning/comments/1ve8734/i_tracked_cloud_gpu_rental_prices_for_2_years/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:18.614828+00:00",
+  "post": {
+    "id": "1ve8734",
+    "title": "I tracked cloud GPU rental prices for 2 years. Here's the data",
+    "subreddit": "deeplearning",
+    "created_utc": 1785748040.0,
+    "score": 12,
+    "num_comments": 6,
+    "archived": false,
+    "locked": false,
+    "selftext": "Hey, I've been tracking cloud GPU prices since mid 2024 and turned it into a price index:\n\n[https://getdeploying.com/gpu-price-index](https://getdeploying.com/gpu-price-index)\n\nSome findings:\n\n* On-demand prices are up 11% since the Sep 2025 low\n* Spot (interruptible) instances sit at \\~48% of on-demand pricing\n* Nvidia H100: $7.89/hr on hyperscalers vs $4.02/hr on neoclouds (+96%)\n* Consumer cards going the other way: RTX 4090 down 27% YoY to $0.44/hr\n* Reservation discounts: 3 months \\~4%, 1 year \\~23%, 3 years \\~46%\n\nThe main limitation is I track published pricing only. Actual negotiated rates + usage/capacity weighting would be more representative, but I haven't been able to get this data reliably.\n\nThere's also pricing history and current availability per GPU model, eg. for the H100: [https://getdeploying.com/gpus/nvidia-h100](https://getdeploying.com/gpus/nvidia-h100)\n\nHappy to hear any ideas to improve it",
+    "permalink": "/r/deeplearning/comments/1ve8734/i_tracked_cloud_gpu_rental_prices_for_2_years/",
+    "author": "anthonynsimon",
+    "removed_by_category": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/ycombinator/comments/1ig79zo/whats_the_cheapest_way_to_register_a_business_in/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:09.889377+00:00",
+  "post": {
+    "id": "1ig79zo",
+    "title": "What's the cheapest way to register a business in US?",
+    "subreddit": "ycombinator",
+    "created_utc": 1738529325.0,
+    "score": 14,
+    "num_comments": 34,
+    "archived": true,
+    "locked": false,
+    "selftext": "I've heard of Stripe Atlas and Firstbase\n\nAtlas costs $500 + $100/year\n\nFirstbase costs $400\n\nDo I need to have a register agent all the time which is what $100/year in Stripe gives you and $150/year in Firstbase?\n\nAny other good alternatives?\n\nPlease let me know if you have experience.",
+    "permalink": "/r/ycombinator/comments/1ig79zo/whats_the_cheapest_way_to_register_a_business_in/",
+    "author": "BoJackHorseMan53",
+    "removed_by_category": null
+  }
+}

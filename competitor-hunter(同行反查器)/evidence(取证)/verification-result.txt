@@ -1,0 +1,8 @@
+PASS report 5 documented public cases (sales checked separately)
+PASS reddit 20 unique posts; source JSON, hashes, four lanes and Google top-ten observations match
+PASS materials NodeSeek post + 12 X drafts; links, numerical examples and length checked
+PASS scripts both scanners compile and use 16 worker network pools
+EVIDENCE_GAP recent sales: 0 of 5 required; historical revenue and live pages are insufficient
+{"mechanical_passed": true, "failed_checks": [], "recent_sales_verified": 0, "recent_sales_required": 5, "full_task_satisfied": false}
+
+exit_code=0

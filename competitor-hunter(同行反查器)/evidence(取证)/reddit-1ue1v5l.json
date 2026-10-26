@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/vastai/comments/1ue1v5l/i_think_that_price_is_too_much/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:21.098617+00:00",
+  "post": {
+    "id": "1ue1v5l",
+    "title": "I think that price is too much.",
+    "subreddit": "vastai",
+    "created_utc": 1782270549.0,
+    "score": 21,
+    "num_comments": 45,
+    "archived": false,
+    "locked": false,
+    "selftext": "Yesterday I wanted to test out a code. Found an RTX 5090 for about $0.43 an hour. Reasonable. \n\nAfter about 10 minutes, the 23 GB code was downloaded but it wouldn't run. So back to the drawing board. I destroyed my instance and immediately I was charged $0.53 (roughly). \n\nImmediately I chatted with the help desk. They looked into it and gave me a screenshot of my billing. The instance was $0.43 an hour and I didn't spend over an hour using it. BUT I got charged for downloading the 23 GB at $0.03 per GB. That's $30 per TB (roughly)! Later I found the same instance at the download/upload rate is $27 per TB.\n\n1) Main issue is visibility in UI. Rent price is visible. But download and upload rate is not! It's like reading a EULA when you just want to use the software. \n\n2) I've checked with other instances about the download/upload pricing. Even data center instances of an RTX PRO 6000 that cost $1.20 charge less than $2 per TB. \n\nI feel like I was scammed. ",
+    "permalink": "/r/vastai/comments/1ue1v5l/i_think_that_price_is_too_much/",
+    "author": "nobmuncha4bears",
+    "removed_by_category": null
+  }
+}

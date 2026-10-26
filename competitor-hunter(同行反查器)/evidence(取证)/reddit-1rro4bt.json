@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/WebScrapingInsider/comments/1rro4bt/what_are_some_best_cheap_residential_proxies/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:28.484981+00:00",
+  "post": {
+    "id": "1rro4bt",
+    "title": "What are some best cheap residential proxies?",
+    "subreddit": "WebScrapingInsider",
+    "created_utc": 1773314700.0,
+    "score": 21,
+    "num_comments": 82,
+    "archived": false,
+    "locked": false,
+    "selftext": "Running a reporting pipeline that pulls competitor pricing data a few times a day. Datacenter proxies keep getting flagged. Looking for residential options that won't break the bank. Anyone have recommendations or know where to compare them?\n\n",
+    "permalink": "/r/WebScrapingInsider/comments/1rro4bt/what_are_some_best_cheap_residential_proxies/",
+    "author": "Bigrob1055",
+    "removed_by_category": null
+  }
+}

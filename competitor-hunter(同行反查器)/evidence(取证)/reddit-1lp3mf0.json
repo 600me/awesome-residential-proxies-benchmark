@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/webscraping/comments/1lp3mf0/cloudflare_to_introduce_paypercrawl_for_ai_bots/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:35.851882+00:00",
+  "post": {
+    "id": "1lp3mf0",
+    "title": "Cloudflare to introduce pay-per-crawl for AI bots",
+    "subreddit": "webscraping",
+    "created_utc": 1751381367.0,
+    "score": 81,
+    "num_comments": 31,
+    "archived": true,
+    "locked": false,
+    "selftext": "",
+    "permalink": "/r/webscraping/comments/1lp3mf0/cloudflare_to_introduce_paypercrawl_for_ai_bots/",
+    "author": "madredditscientist",
+    "removed_by_category": null
+  }
+}

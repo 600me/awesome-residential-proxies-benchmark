@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/SaaS/comments/1l6g599/lemonsqueezy_vs_stripe_whats_your_take/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:13.724997+00:00",
+  "post": {
+    "id": "1l6g599",
+    "title": "LemonSqueezy vs Stripe – What’s Your Take?",
+    "subreddit": "SaaS",
+    "created_utc": 1749399759.0,
+    "score": 6,
+    "num_comments": 16,
+    "archived": false,
+    "locked": false,
+    "selftext": "While building my SaaS [Collably.me](http://Collably.me), I had to use LemonSqueezy because Stripe isn’t available in Morocco, and It's not available on many other countries\n\nI’m curious what do you all think about both platforms?  \nIf you've used either (or both), what were the pros and cons in your experience?\n\nPersonally LemonSqueezy made setting up subscriptions easy with nextjs, especially because I found an official github repo to set up lemonsqueezy with nextjs and drizzle, but I replaced drizzle with prisma.\n\nWould love to hear your thoughts! especially if you are not a US citizen.",
+    "permalink": "/r/SaaS/comments/1l6g599/lemonsqueezy_vs_stripe_whats_your_take/",
+    "author": "AsrarMeansSecrets",
+    "removed_by_category": null
+  }
+}

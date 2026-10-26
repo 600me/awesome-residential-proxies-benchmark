@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/startups/comments/1s42z38/pricing_recommendation_for_web_scraping_startup_i/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:36.119621+00:00",
+  "post": {
+    "id": "1s42z38",
+    "title": "Pricing recommendation for web scraping startup. I will not promote",
+    "subreddit": "startups",
+    "created_utc": 1774518344.0,
+    "score": 0,
+    "num_comments": 7,
+    "archived": true,
+    "locked": false,
+    "selftext": "Hi there,\n\nI developed a pricing tool (under the hood it is just a web scraper with a bit of addons).\n\nMy service is highly specialised, offering data no other service can offer out of the box.\n\nI pitch my app now to a large enterprise and I dont know how much to charge for it.\n\nmy initial idea was 5k EUR for 50k products + 750 EUR for each batch of 10k on top.\n\nRevenue of the enterprise is 7bn while my data supports sales for roughly 280m. I have proof to improve profit margin by at least 0.5 percentage points (=+1.4m profit, if expanded to all of their 300k products).\n\nAm I too expensive or too cheap?\n\n",
+    "permalink": "/r/startups/comments/1s42z38/pricing_recommendation_for_web_scraping_startup_i/",
+    "author": "_Hashtag_Swag_",
+    "removed_by_category": null
+  }
+}

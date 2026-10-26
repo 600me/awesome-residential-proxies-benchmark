@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/vastai/comments/1unljvh/advice_sought_should_i_start_hosting_on_vastai/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:22.389441+00:00",
+  "post": {
+    "id": "1unljvh",
+    "title": "Advice Sought - Should I Start Hosting on Vast.AI?",
+    "subreddit": "vastai",
+    "created_utc": 1783203252.0,
+    "score": 0,
+    "num_comments": 26,
+    "archived": false,
+    "locked": false,
+    "selftext": "I've been toying with the idea of getting a loan to get into hosting here in Canada. The loan isn't so bad, maybe no worse than 10% interest and no need to make principal payments for the first year.\n\nThe hard part is figuring out a way to turn that into profit.\n\nAt first I was toying with the idea of buying a couple of RTX 6000 Pro Blackwell cards but looking at the competitive price point, I started figuring two of them really isn't \\*that\\* competitive. So I started looking at the H100, getting a single card.\n\nI'd probably end up having the ability to spend maybe $50K CAD to set up the system, that'd be like $35K USD.\n\nMy expenses would end up probably being about $900-950 a month, and after a year that'd jump to about $2K. OR in USD $630-670 and $1400 respectively.\n\nBut I understand utilization shouldn't be expected to be more than 50-60% for new users. Is there \\*ever\\* a point at which you can expect 80-100% utilization? And is there \\*ever\\* a point at which one could sell a H100 for rent for over $2 USD an hour?\n\nI also see [Vast.AI](http://Vast.AI) has a financing programme. Anyone have experience with it?",
+    "permalink": "/r/vastai/comments/1unljvh/advice_sought_should_i_start_hosting_on_vastai/",
+    "author": "Beautiful_Sound1928",
+    "removed_by_category": null
+  }
+}

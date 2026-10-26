@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/scrapingtheweb/comments/1qqaptb/my_residential_proxies_work_great_for_2_days_then/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:32.721401+00:00",
+  "post": {
+    "id": "1qqaptb",
+    "title": "My residential proxies work great for 2 days then suddenly everything fails",
+    "subreddit": "scrapingtheweb",
+    "created_utc": 1769698534.0,
+    "score": 6,
+    "num_comments": 22,
+    "archived": false,
+    "locked": false,
+    "selftext": "This is driving me insane. I'll set up a scraping job with residential proxies, everything runs perfectly for 48 hours, then suddenly I'm getting 90% failure rates.\n\nThe IPs aren't blocked (I can verify manually), but something about the proxy infrastructure seems to degrade. Speed drops, timeouts increase, and success rates tank.\n\nI've tried 3 different providers now and they all follow this same pattern. Initial performance is solid, then it's like the IP quality just falls off a cliff.\n\nI'm running legitimate data collection (price monitoring) at reasonable request rates, nothing aggressive. But I can't run a sustainable operation when I have to constantly switch providers or debug why everything stopped working.\n\nIs this just how residential proxies work or am I missing something fundamental? I need stability more than anything else right now.",
+    "permalink": "/r/scrapingtheweb/comments/1qqaptb/my_residential_proxies_work_great_for_2_days_then/",
+    "author": "Impressive-Bed-873",
+    "removed_by_category": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/SaaS/comments/1nd8he4/payments_paddle_v_stripe_v_lemonsqueezy_v_polar/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:14.914315+00:00",
+  "post": {
+    "id": "1nd8he4",
+    "title": "Payments: Paddle v Stripe v LemonSqueezy v Polar",
+    "subreddit": "SaaS",
+    "created_utc": 1757492410.0,
+    "score": 4,
+    "num_comments": 23,
+    "archived": false,
+    "locked": false,
+    "selftext": "I’m building a Saas app with a simple tiered subscriptions model. Trying to pick a payments provider I want to find a good balance of:\n\n- payment fees (e.g 5% + 0.25 from Stripe)\n- developer experience\n- good analytics, dunning etc\n- is the merchant of record\n\nHas anyone had experience with multiple of these platforms? Where did you find good balance on this?\n\nRight now Polar and Paddle are looking good",
+    "permalink": "/r/SaaS/comments/1nd8he4/payments_paddle_v_stripe_v_lemonsqueezy_v_polar/",
+    "author": "Still-Key-2311",
+    "removed_by_category": null
+  }
+}

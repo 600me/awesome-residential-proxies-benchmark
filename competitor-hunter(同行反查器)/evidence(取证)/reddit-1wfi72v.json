@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/LocalLLM/comments/1wfi72v/h100b200_or_similar_monthly_rental/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:18.164807+00:00",
+  "post": {
+    "id": "1wfi72v",
+    "title": "H100/B200 or similar monthly rental?",
+    "subreddit": "LocalLLM",
+    "created_utc": 1789330015.0,
+    "score": 7,
+    "num_comments": 21,
+    "archived": false,
+    "locked": false,
+    "selftext": "Any tips on where to rent a server with h100 or greater but at a monthly price? I figured it'll be a lot cheaper than vast.ai or runpods",
+    "permalink": "/r/LocalLLM/comments/1wfi72v/h100b200_or_similar_monthly_rental/",
+    "author": "03captain23",
+    "removed_by_category": null
+  }
+}

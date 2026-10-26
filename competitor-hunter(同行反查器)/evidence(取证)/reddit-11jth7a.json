@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/kickstarter/comments/11jth7a/stripe_atlas_or_northwest_or_firstbase/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:09.709257+00:00",
+  "post": {
+    "id": "11jth7a",
+    "title": "Stripe Atlas or northwest or firstbase?",
+    "subreddit": "kickstarter",
+    "created_utc": 1678092973.0,
+    "score": 0,
+    "num_comments": 11,
+    "archived": false,
+    "locked": false,
+    "selftext": "Hi, I am going to setup a LLC in US so as to create a pretty small project from country that Kickstarter not support yet. I have narrowed down to 3 agents, Stripe Atlas, northwest and firstbase. Stripe is recommended by Kickstarter, northwest and firstbase seems to have better reviews. Which one do you suggest? anyone got some experience? Thank you!",
+    "permalink": "/r/kickstarter/comments/11jth7a/stripe_atlas_or_northwest_or_firstbase/",
+    "author": "CJCCJJ",
+    "removed_by_category": null
+  }
+}

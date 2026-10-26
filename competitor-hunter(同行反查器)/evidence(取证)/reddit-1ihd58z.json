@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/comfyui/comments/1ihd58z/eli5_how_does_one_use_a_service_like_runpod_or/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:17.340738+00:00",
+  "post": {
+    "id": "1ihd58z",
+    "title": "ELI5: How does one use a service like runpod or vast.ai ?",
+    "subreddit": "comfyui",
+    "created_utc": 1738657681.0,
+    "score": 4,
+    "num_comments": 9,
+    "archived": false,
+    "locked": false,
+    "selftext": "Greetings everyone,\n\nTitle says it all. I want to generate some images, and I saw these services akin to runpod and [vast.ai](http://vast.ai) . But when reading more about that people had tons of complains that I quite frankly have no idea how does it work. I've used ComfyUI with SD1.5 on my pc, but it took about 3\\~4 minutes (a pretty old PC, I'm aware) per image generation. So I'm gravitating towards one of these services since they seem to cost about 0.5€ per hour (I would have to work for about 4000h on AI art before buying a PC becomes a cheaper alternative, and even then by that time I would be looking into a new PC).\n\nSo, can you guys explain how exactly does it work? How can I run it, what precautions should I take, etc... Any help is appreciated.\n\n  \nEDIT: And out of sheer curiosity, how does it stack against paying for a CIVITAI subscription for instance?",
+    "permalink": "/r/comfyui/comments/1ihd58z/eli5_how_does_one_use_a_service_like_runpod_or/",
+    "author": "[deleted]",
+    "removed_by_category": null
+  }
+}

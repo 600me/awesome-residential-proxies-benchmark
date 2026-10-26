@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/scrapingtheweb/comments/1e6ugsu/best_proxy_sites_oxylabs_vs_bright_data_vs/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:29.311438+00:00",
+  "post": {
+    "id": "1e6ugsu",
+    "title": "[Best proxy sites?] Oxylabs vs Bright data vs IPRoyal comparison. What should I try first?",
+    "subreddit": "scrapingtheweb",
+    "created_utc": 1721361015.0,
+    "score": 26,
+    "num_comments": 70,
+    "archived": false,
+    "locked": false,
+    "selftext": "Hey folks. This is my first journey into paying for enterprise residential proxy plans for data scraping as a side gig. What's considered the gold standard proxies these days? My current vendor only provides data center proxies and those get flagged up every few days. \n\nWhat do you all suggest I battle test first?\n\n[View Poll](https://www.reddit.com/poll/1e6ugsu)",
+    "permalink": "/r/scrapingtheweb/comments/1e6ugsu/best_proxy_sites_oxylabs_vs_bright_data_vs/",
+    "author": "Any_Bodybuilder_70",
+    "removed_by_category": null
+  }
+}

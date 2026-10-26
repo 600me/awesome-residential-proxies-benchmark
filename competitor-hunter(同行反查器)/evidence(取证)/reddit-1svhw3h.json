@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/SideProject/comments/1svhw3h/i_got_tired_of_no_good_proxyscraping_solution_for/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:31.930515+00:00",
+  "post": {
+    "id": "1svhw3h",
+    "title": "I got tired of no good proxy/scraping solution for social media so I’m building one — would you use it?",
+    "subreddit": "SideProject",
+    "created_utc": 1777137172.0,
+    "score": 3,
+    "num_comments": 16,
+    "archived": true,
+    "locked": false,
+    "selftext": "Hey everyone,\n\nI’ve been scraping social platforms for a while and kept running into the same wall — Firecrawl is great for regular websites, Decodo for general proxies, but nothing is purpose-built for social media.\n\nSo I’m building it myself. The idea is simple:\n\n\t•\tRotating residential proxies tuned specifically for social platforms (Reddit, TikTok, etc.)\n\n\t•\tClean JSON output like Firecrawl but for social URLs\n\n\t•\tSimple API, no proxy management headaches\n\nBefore I build too much I want to know if others hit the same pain.\n\nQuick questions:\n\n\t1.\tDo you scrape social media for your work/projects?\n\n\t2.\tWhat’s your biggest frustration with current tools?\n\n\t3.\tWould you pay for a reliable social-focused scraping API?\n\nNot selling anything yet — just trying to understand if this pain is real for others or just me.",
+    "permalink": "/r/SideProject/comments/1svhw3h/i_got_tired_of_no_good_proxyscraping_solution_for/",
+    "author": "Nicolas_JVM",
+    "removed_by_category": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/webscraping/comments/jcmkic/best_scraper_api_with_js_rendering_for_100month/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:38.170205+00:00",
+  "post": {
+    "id": "jcmkic",
+    "title": "Best Scraper API with JS rendering for $100/month or less?",
+    "subreddit": "webscraping",
+    "created_utc": 1602898686.0,
+    "score": 2,
+    "num_comments": 9,
+    "archived": true,
+    "locked": false,
+    "selftext": "I love ScraperAPI and it's my go-to for standard scraping. I trialed their business plan, which is the lowest tier that provides JS rendering, to see how it works with JS-rendered scraping... and it worked like a dream. Only problem is the price tag at $249/month for this plan is way too high to start.\n\nI tried using a rotating proxy with Puppeteer, but I've been having trouble deploying it successfully and at scale. Apparently ScraperAPI uses Puppeteer for their JS rendering, so I could try to figure out how they make it so smooth. However, my preference is just to find a cheaper alternative to ScraperAPI that I can deploy without headaches.\n\nIn short, what are viable ScraperAPI alternatives for JS-rendered scraping?",
+    "permalink": "/r/webscraping/comments/jcmkic/best_scraper_api_with_js_rendering_for_100month/",
+    "author": "Tom-Logan",
+    "removed_by_category": null
+  }
+}

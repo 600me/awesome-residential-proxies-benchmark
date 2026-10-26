@@ -1,0 +1,74 @@
+[
+  {
+    "id": "x_gpu_1",
+    "lane": "gpu",
+    "trigger": "Surprise GPU bills due to cluster idle time during off-peak hours",
+    "reply": "GPU idle time adds up. Hypothetical: 8 cards @ $2.5/card/hr for 125h costs $2.5k ($2k active + $500 idle waste, +25%). Size your needed VRAM and card count with my calculator, add storage extra: https://gpu.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_gpu_2",
+    "lane": "gpu",
+    "trigger": "Overlooking persistent disk and volume storage costs on cloud GPU instances",
+    "reply": "GPU storage traps add up. Hypothetical: a $1.8/hr card for 50h ($90) plus a $150/mo 1TB drive hits $240. Estimate your baseline VRAM & card count with my calculator, factor disks separately: https://gpu.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_gpu_3",
+    "lane": "gpu",
+    "trigger": "Debating reserved monthly GPU contracts vs spot or on-demand usage",
+    "reply": "Reserved vs on-demand GPU? Hypothetical: 730h reserved @ $2.2/hr is $1,606; running 300h on-demand @ $3/hr ($900) saves $706. Size required VRAM & card count first via my tool (storage extra): https://gpu.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_gpu_4",
+    "lane": "gpu",
+    "trigger": "Dataset loading and warm-up latency inflating multi-GPU training expenses",
+    "reply": "Data warm-up burns budget. Hypothetical: a 4-card node @ $1.5/card/hr ($6/hr) wastes $90 across a 15h checkpoint sync before inference. Size your VRAM & card needs before launch with my calculator: https://gpu.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_proxy_1",
+    "lane": "proxy",
+    "trigger": "Proxy sticker shock caused by failed requests and 403 retry loops",
+    "reply": "Proxies hide retry tax. Hypothetical: at $0.49/1k tries and 40% success rate, effective cost is $1.225/1k successes if fails bill equally. Check sticky session retry loss via my calculator: https://proxy.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_proxy_2",
+    "lane": "proxy",
+    "trigger": "Comparing unmetered bandwidth proxies against pay-per-request scraping APIs",
+    "reply": "Bandwidth vs API scraping? Hypothetical: $4/GB residential traffic on 2MB pages is $0.008/hit. An API at $0.005/success saves 37.5% without retry waste. Compare build vs API TCO with my tool: https://scrape.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_proxy_3",
+    "lane": "proxy",
+    "trigger": "Scraping bots burning attempts against strict anti-bot protections",
+    "reply": "Anti-bot walls multiply bills. Hypothetical: needing 100k successes at a 25% pass rate takes 400k billed tries ($400 vs $100 nominal @ $1/1k). Measure actual success rates using my CLI tool: https://github.com/600me/check-proxy-tax"
+  },
+  {
+    "id": "x_proxy_4",
+    "lane": "proxy",
+    "trigger": "Hidden server compute overhead when running self-hosted headless browser scrapers",
+    "reply": "Headless scrapers carry hidden compute. Hypothetical: 50k pages cost $60 proxy + $65 server ($125) vs $100 for scrape APIs. Estimate page volume, JS, and engineering hours with my tool: https://scrape.mybskm.top/calculator/"
+  },
+  {
+    "id": "x_llc_1",
+    "lane": "llc",
+    "trigger": "Non-US founders deciding between US LLC formation and Merchant of Record solutions",
+    "reply": "US LLC or MoR? Hypothetical: on $10k sales (100 orders), MoR at 5%+$0.50 is $550. Stripe at 2.9%+$0.30 is $320 plus ~$800 annual LLC compliance. Compare break-even fees with my calculator: https://pay.mybskm.top/"
+  },
+  {
+    "id": "x_llc_2",
+    "lane": "llc",
+    "trigger": "Founders assuming an out-of-state US LLC has zero annual compliance expenses",
+    "reply": "US LLCs carry fixed upkeep. Hypothetical: $300 state franchise tax + $150 registered agent + $50 annual report is $500/yr before filing fees. Not tax advice. Model annual costs via my tool: https://pay.mybskm.top/"
+  },
+  {
+    "id": "x_llc_3",
+    "lane": "llc",
+    "trigger": "High-volume digital businesses comparing percentage cut of MoR vs payment gateways",
+    "reply": "At scale, MoR cuts bite. Hypothetical: $50k/mo sales costs ~$2,500 on 5% MoR vs ~$1,450 on 2.9% gateway, leaving $1,050/mo for LLC overhead. No payment approval guaranteed. My calculator: https://pay.mybskm.top/"
+  },
+  {
+    "id": "x_llc_4",
+    "lane": "llc",
+    "trigger": "International indie hackers asking if a US LLC provides direct tax exemption",
+    "reply": "A US LLC doesn't guarantee tax exemption or a gateway. Hypothetical: at $5k MRR, a 5% MoR costs $250 vs $160 under a hypothetical 3.2% processing fee, plus fixed upkeep. Compare fees via my tool: https://pay.mybskm.top/"
+  }
+]

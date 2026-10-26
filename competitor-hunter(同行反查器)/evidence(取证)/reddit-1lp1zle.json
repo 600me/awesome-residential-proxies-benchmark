@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/technology/comments/1lp1zle/cloudflare_says_ai_companies_have_been_scraping/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:37.380818+00:00",
+  "post": {
+    "id": "1lp1zle",
+    "title": "Cloudflare says AI companies have been “scraping content without limits” – now it’s letting website owners block crawlers and force them to pay",
+    "subreddit": "technology",
+    "created_utc": 1751377308.0,
+    "score": 2752,
+    "num_comments": 84,
+    "archived": true,
+    "locked": false,
+    "selftext": "",
+    "permalink": "/r/technology/comments/1lp1zle/cloudflare_says_ai_companies_have_been_scraping/",
+    "author": "Franco1875",
+    "removed_by_category": null
+  }
+}

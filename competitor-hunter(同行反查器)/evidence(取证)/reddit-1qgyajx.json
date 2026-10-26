@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.reddit.com/r/LLMDevs/comments/1qgyajx/whats_the_real_price_of_vastai/.json?raw_json=1&limit=1",
+  "http_status": 200,
+  "checked_at": "2026-10-26T12:34:22.904748+00:00",
+  "post": {
+    "id": "1qgyajx",
+    "title": "What's the real price of Vast.ai?",
+    "subreddit": "LLMDevs",
+    "created_utc": 1768809781.0,
+    "score": 0,
+    "num_comments": 1,
+    "archived": false,
+    "locked": false,
+    "selftext": "I've been eyeing [vast.ai](http://vast.ai) for inference. Let's say price is 0.05$/hour for GPU. But there's got to be some other costs like storage or bandwidth. There is no freaking way that it's just 0.05$/hour for everything.\n\nFor you who use [vast.ai](http://vast.ai) can you please give me examples of your cost and what exactly do you pay?",
+    "permalink": "/r/LLMDevs/comments/1qgyajx/whats_the_real_price_of_vastai/",
+    "author": "teskabudaletina",
+    "removed_by_category": null
+  }
+}
