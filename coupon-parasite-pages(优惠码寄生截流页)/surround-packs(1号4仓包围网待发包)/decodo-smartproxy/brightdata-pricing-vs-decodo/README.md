@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Bright Data starts at $8.40/GB on Pay-As-You-Go ($500/month minimum commitment for discounted tiers). For a web scraping startup using 80 GB/month, Bright Data costs $672/month, whereas Decodo's $3.75/GB rate costs $300/month — preventing a $4,464/year overpayment on identical residential IP routing.
+> Bright Data starts at $8.40/GB on Pay-As-You-Go. For a web scraping workload using 80 GB/month, Bright Data costs $672.00/month ($8,064.00/year), whereas Decodo's $3.75/GB rate costs $300.00/month ($3,600.00/year) — saving $372.00/month ($4,464.00/year) on identical residential IP routing.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/smartproxy?src=brightdata-pricing-vs-decodo_cta2)
 

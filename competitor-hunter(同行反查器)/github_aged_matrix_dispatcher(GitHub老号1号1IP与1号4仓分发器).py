@@ -112,8 +112,13 @@ class GitHubMatrixDispatcher:
     def bind_static_ip_and_domain(self, username, domain_group="group_1_mybskm"):
         """
         Enforce strict 1:1 static IP assignment from available webshare proxy pool.
+        Note: Webshare datacenter proxies share egress IP 144.34.225.53 and block HTTPS CONNECT (HTTP 400).
+        Direct git push via HTTPS requires residential proxies or an authenticated SOCKS5 tunnel.
         Ensure an account is permanently pinned to exactly 1 IP and domain group.
         """
+        if username.lower() == "600me":
+            raise PermissionError("ACCOUNT PROTECTION: 600me is primary author account. Binding to datacenter proxy or batch repo dispatch is strictly forbidden!")
+
         accounts = self.ledger.setdefault("accounts", {})
         if username in accounts and accounts[username].get("bound_ip"):
             return accounts[username]
@@ -293,6 +298,13 @@ def run_self_test():
     verify_res = dispatcher.verify_account("600me")
     print(f"600me verification: http={verify_res['profile_http']}, status={verify_res['status']}")
     assert verify_res["profile_http"] == 200
+
+    # Test 600me protection guard
+    try:
+        dispatcher.bind_static_ip_and_domain("600me")
+        assert False, "600me binding should have raised PermissionError"
+    except PermissionError as e:
+        print(f"600me protection verified: {e}")
 
     # Test warmup generation
     warmup = dispatcher.generate_warmup_pack("sample_user")

@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> ScrapingBee charges $49/month for 150,000 credits (5 credits/JS request = 30k pages) and $99/month for 1M credits (5 credits/JS = 200k pages). ScraperAPI matches 1M credits at $149 but includes 50 concurrent threads vs ScrapingBee's 10 concurrency limit on entry plans. Scraping jobs take 5x longer on low concurrency, causing queue backups.
+> ScrapingBee offers a $99.00/month plan for 1M credits (200k JS pages) with a strict 10–20 concurrent connection limit. ScraperAPI Startup tier costs $149.00/month but provides 50 concurrent threads. For a team scraping 100,000 JS pages on deadline, low concurrency expands job runtime from 2 hours to 10 hours, risking missed batch windows and stale pricing datasets.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/scraperapi?src=scrapingbee-vs-scraperapi-pricing_cta2)
 

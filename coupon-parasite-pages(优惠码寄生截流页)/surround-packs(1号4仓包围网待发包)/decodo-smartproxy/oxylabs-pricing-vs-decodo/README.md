@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Oxylabs Pay-As-You-Go starts at $8.00/GB, with entry monthly subscriptions locking founders into $300/month (43 GB @ $7/GB). A team needing only 35 GB/month is forced into an overprovisioned plan, spending $3,600/year. Decodo Pay-As-You-Go at $4.00/GB costs $140/month ($1,680/year), saving $1,920/year without minimum monthly lock-in.
+> Oxylabs entry commitment locks founders into $300.00/month minimum. A team needing only 35 GB/month is forced into an overprovisioned plan spending $3,600.00/year. Decodo Pay-As-You-Go at $4.00/GB costs $140.00/month ($1,680.00/year), saving $160.00/month ($1,920.00/year) without monthly minimum commitments.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/smartproxy?src=oxylabs-pricing-vs-decodo_cta2)
 

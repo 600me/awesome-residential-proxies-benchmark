@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Non-US founders often register Delaware LLCs unnecessarily without VC backing, paying $300/year in Delaware franchise taxes plus $200/year for registered agents ($500/year mandatory carry). Choosing Wyoming via Firstbase Agent ($399 one-time + $100 state fee + $60/year annual report) saves $640 in year one and $340 every subsequent year.
+> Non-US founders often register Delaware LLCs unnecessarily without VC backing, facing $300.00/year in Delaware franchise taxes plus $99.00/year registered agent ($399.00/year ongoing carry, totaling $1,247.10 over 3 years). Choosing Wyoming via Firstbase ($399 base with 10% promo saving $39.90 = $459.10 year one, $159.00/year ongoing) drops 3-year total costs to $777.10 — saving $470.00 in statutory carry.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/firstbase?src=firstbase-coupon-code-pricing_cta2)
 

@@ -1,6 +1,6 @@
 {
   "verified_at": "2026-10-27T03:50:00.000000+00:00",
-  "status": "PASS_AFTER_REMEDIATION",
+  "status": "PASS_ALL_REMEDIATED",
   "packs_summary": {
     "total_brands": 3,
     "repos_per_brand": 4,
@@ -15,7 +15,14 @@
     "P1_4_apify_status": "Apify marked NOT_SUBMITTED pending portal application. Zero unearned claims.",
     "P1_5_revenue_reality": "Acknowledged zero immediate revenue from 4 blue-ocean brands until affiliate manager approval.",
     "P2_3_three_commercial_elements": "Each README strictly includes: [Reader Loss Case] + [Specific Dollar Calculation] + [Clear Action CTA].",
-    "P2_4_cross_linking": "Added internal cross-links among repo sibling sets and backlinks to authority façades."
+    "P2_4_cross_linking": "Added internal cross-links among repo sibling sets and backlinks to authority façades.",
+    "P1_2_credentials_scrubbed": "Sanitized vps-sniper/test_login_step.py, removing plaintext proxy and X account passwords from working copy.",
+    "P1_3_arithmetic_synchronized": "12 READMEs synchronized with script arithmetic. All 12 verified via automated unittest suite.",
+    "P1_4_unverified_brands_downgraded": "Proxy-Cheap, DataImpulse, BandwagonHost downgraded to NO_ACCOUNT_UNVERIFIED. Apify marked NOT_SUBMITTED.",
+    "P2_1_600me_hard_guard": "Added hard PermissionError guard in bind_static_ip_and_domain() for 600me.",
+    "P2_5_https_connect_noted": "Documented Webshare proxy HTTPS CONNECT tunnel limitation in ledger, dispatcher and report."
   },
-  "syntax_and_math_checked": true
+  "syntax_and_math_checked": true,
+  "test_suite": "tests/test_surround_pack_calculators.py",
+  "test_suite_exit_code": 0
 }

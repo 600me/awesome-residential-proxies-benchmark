@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Non-US resident founders facing IRS Form 5472 penalties ($25,000 fine for late/unfiled foreign-owned LLC disclosure) frequently overpay agencies $1,500 for routine compliance. Understanding exact statutory fees vs optional services keeps recurring annual LLC maintenance under $750/year total.
+> Non-US resident founders facing IRS Form 5472 penalties ($25,000 fine for late/unfiled foreign-owned LLC disclosure) frequently overpay legal agencies $1,500/year for routine paperwork. Understanding exact statutory fees ($60.00 Wyoming report + $99.00 registered agent + $500.00 CPA Form 5472 prep + $120.00 mailroom) keeps true recurring annual LLC maintenance at exactly $779.00/year — saving over $720.00/year in agency markups.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/firstbase?src=non-us-founder-llc-annual-cost_cta2)
 

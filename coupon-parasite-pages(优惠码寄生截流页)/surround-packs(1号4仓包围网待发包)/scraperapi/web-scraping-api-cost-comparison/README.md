@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Self-hosting a headless Playwright cluster to crawl 500k pages/month requires 2x dedicated 8-core cloud instances ($160/mo), rotating residential proxy bandwidth (50GB @ $4/GB = $200/mo), and ~15 hours of developer maintenance for Cloudflare captcha fixes ($1,500/mo engineering time). A managed Scraping API costs $149/mo, saving over $1,700/mo in infrastructure and engineering payroll.
+> Self-hosting a headless browser fleet to crawl pages requires dedicated cloud instances ($160.00/month), rotating proxy bandwidth ($200.00/month), and ~10 hours of developer time fixing bot blocks ($800.00/month @ $80/hr), totaling $1,160.00/month ($13,920.00/year). A managed ScraperAPI Startup plan costs $149.00/month, saving $1,011.00/month ($12,132.00/year).
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/scraperapi?src=web-scraping-api-cost-comparison_cta2)
 

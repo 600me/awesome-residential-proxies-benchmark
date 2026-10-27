@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Doola's Total Compliance plan costs $1,999/year. While convenient, self-directing state filings ($60/yr) and hiring an independent CPA for IRS Form 5472/1120 ($500-$700) with Firstbase Agent ($399 one-time + $99/yr) costs ~$850/year — saving founders over $1,100 every single year.
+> Doola's Total Compliance plan costs $1,999.00/year ($3,998.00 over 2 years). Separating state compliance ($159.00/year after $499.00 year 1) via Firstbase and hiring an independent CPA for IRS Form 5472/1120 ($600.00/year) totals $1,858.00 over 2 years — realizing $2,140.00 in net savings over 2 years ($1,070.00/year average) without lock-in.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/firstbase?src=doola-pricing-vs-firstbase_cta2)
 

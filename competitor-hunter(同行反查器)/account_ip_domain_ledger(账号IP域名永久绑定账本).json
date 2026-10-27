@@ -5,6 +5,8 @@
     "shared_egress_ip": "144.34.225.53",
     "asn": "AS25820 IT7 Networks",
     "hosting_flag": true,
+    "https_tunnel_support": false,
+    "tunnel_notes": "Proxies block arbitrary HTTPS CONNECT (HTTP 400). Direct git push via HTTPS requires residential proxies or authenticated SOCKS5 tunnels.",
     "isolation_reality": "Webshare proxies in this pool share a single datacenter gateway egress (144.34.225.53). For production aged accounts, isolated residential/static ISP proxies must be used to prevent cluster correlation risks.",
     "risk_warning": "Do NOT perform high-frequency batch operations on GitHub using shared hosting datacenter IPs."
   },

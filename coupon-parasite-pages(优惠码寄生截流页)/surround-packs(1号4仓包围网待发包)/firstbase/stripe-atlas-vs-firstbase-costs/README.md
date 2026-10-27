@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Stripe Atlas charges a fixed $500 formation fee and restricts entities to Delaware ($300/year franchise tax minimum). Firstbase supports Wyoming LLCs with $60/year annual reports. Over 3 years, a bootstrapped founder on Stripe Atlas spends $1,600 vs $918 on Firstbase Wyoming — a $682 penalty with zero operational benefit.
+> Stripe Atlas charges a fixed $500.00 formation fee and restricts entities to Delaware ($400.00/year ongoing registered agent + Delaware franchise tax). Over 3 years, a bootstrapped founder on Stripe Atlas spends $1,300.00 vs $817.00 on Firstbase Wyoming — a $483.00 penalty with zero operational benefit.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/firstbase?src=stripe-atlas-vs-firstbase-costs_cta2)
 

@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> ZenRows charges $69/month for 250k API credits (costing ~5 credits for JS rendering = 50,000 pages). ScraperAPI's $149 Startup tier provides 1,000,000 credits (200,000 pages @ 5x). For a production scraper crawling 150,000 JS pages/month, ZenRows requires multiple add-ons costing $207/month, while ScraperAPI handles it within the $149 tier, saving $696/year.
+> ZenRows charges $69.00/month base for 250k credits (5 credits/JS request = 50k pages). Crawling 150,000 JS pages/month requires 100,000 extra pages, adding $140.00 in usage fees for a $209.00/month total ($2,508.00/year). ScraperAPI's $149.00 Startup tier provides 1,000,000 credits (covering all 150,000 JS pages @ 5x) — saving $60.00/month ($720.00/year).
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/scraperapi?src=zenrows-vs-scraperapi-pricing_cta2)
 

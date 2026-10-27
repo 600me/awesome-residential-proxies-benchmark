@@ -18,7 +18,7 @@
       "notes": "Application submitted with technical benchmark facade (scrape.mybskm.top). Waiting for partner team approval email.",
       "gateway_route": "https://go.272738.xyz/zenrows",
       "gateway_status": 302,
-      "evidence_path": "ai-pass query: zenrows.com (HubSpot form submitted)"
+      "evidence_path": "ai-pass query: zenrows.com (HubSpot form submitted under_review)"
     },
     {
       "brand": "ScrapingBee",
@@ -29,7 +29,7 @@
       "notes": "OAuth application submitted on scrapingbee.firstpromoter.com. Awaiting affiliate manager approval.",
       "gateway_route": "https://go.272738.xyz/scrapingbee",
       "gateway_status": 302,
-      "evidence_path": "ai-pass query: scrapingbee.com (FirstPromoter submitted)"
+      "evidence_path": "ai-pass query: scrapingbee.com (FirstPromoter submitted under_review)"
     },
     {
       "brand": "Apify",
@@ -37,7 +37,7 @@
       "portal": "Apify Affiliate Portal",
       "account_email": "none",
       "status": "NOT_SUBMITTED",
-      "notes": "No credentials in ai-pass; partner portal application queued for submission. Gateway routes via UTM.",
+      "notes": "No credentials in ai-pass vault. Partner portal application queued for submission. Gateway routes via UTM.",
       "gateway_route": "https://go.272738.xyz/apify",
       "gateway_status": 301,
       "evidence_path": "None (pending submission)"
@@ -51,42 +51,42 @@
       "notes": "Submitted via PartnerStack with pay.mybskm.top; awaiting affiliate approval email.",
       "gateway_route": "https://go.272738.xyz/doola",
       "gateway_status": 302,
-      "evidence_path": "ai-pass query: doola.com (PartnerStack submitted)"
+      "evidence_path": "ai-pass query: doola.com (PartnerStack submitted under_review)"
     },
     {
       "brand": "Proxy-Cheap",
       "commission_rate": "25% one-time / recurring options",
       "portal": "Proxy-Cheap Dashboard",
-      "account_email": "600megd@gmail.com",
-      "status": "REQUIRES_PURCHASE_ACTIVATION",
-      "notes": "Affiliate module in dashboard requires active service purchase or custom sales review.",
+      "account_email": "none",
+      "status": "NO_ACCOUNT_UNVERIFIED",
+      "notes": "No active account in ai-pass vault. Terms and onboarding steps derived from public vendor documentation, unverified in portal.",
       "gateway_route": "pending_affiliate_id",
       "gateway_status": null,
-      "evidence_path": "ai-pass query: proxy-cheap.com"
+      "evidence_path": "None (no active account in ai-pass)"
     },
     {
       "brand": "DataImpulse",
       "commission_rate": "15% lifetime recurring",
       "portal": "DataImpulse Affiliate Desk",
-      "account_email": "600megd@gmail.com",
-      "status": "PENDING_MANUAL_REVIEW",
-      "notes": "Requires live chat verification on proxy volume and payout method.",
+      "account_email": "none",
+      "status": "NO_ACCOUNT_UNVERIFIED",
+      "notes": "No active account in ai-pass vault. Terms and onboarding steps derived from public vendor documentation, unverified in portal.",
       "gateway_route": "pending_affiliate_id",
       "gateway_status": null,
-      "evidence_path": "ai-pass query: dataimpulse.com"
+      "evidence_path": "None (no active account in ai-pass)"
     },
     {
       "brand": "BandwagonHost",
       "commission_rate": "22% recurring VPS commission",
       "portal": "WHMCS bwh81.net/affiliates.php",
-      "account_email": "600megd@gmail.com",
-      "status": "AWAITING_PAYMENT_PROFILE",
-      "notes": "Registration requires billing profile/card verification to activate WHMCS affiliate ID.",
+      "account_email": "none",
+      "status": "NO_ACCOUNT_UNVERIFIED",
+      "notes": "No active account in ai-pass vault. Terms and onboarding steps derived from public vendor documentation, unverified in portal.",
       "gateway_route": "pending_whmcs_id",
       "gateway_status": null,
-      "evidence_path": "ai-pass query: bandwagonhost.com"
+      "evidence_path": "None (no active account in ai-pass)"
     }
   ],
   "exit_code": 0,
-  "audit_note": "ZenRows, ScrapingBee, Doola submitted and in review. Apify marked NOT_SUBMITTED pending portal application. Zero unearned revenue claims."
+  "audit_note": "ZenRows, ScrapingBee, Doola verified in ai-pass as under_review. Apify marked NOT_SUBMITTED. Proxy-Cheap, DataImpulse, BandwagonHost marked NO_ACCOUNT_UNVERIFIED. Zero unearned claims."
 }

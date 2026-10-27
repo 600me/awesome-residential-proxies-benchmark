@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> An engineering team scraping 250,000 pages monthly with headless JavaScript rendering enabled by default burns 5 credits per request (1,250,000 credits). On the $49 Hobby tier (100k credits), overages bill at $2.50 per 10k credits, resulting in a shocking $287.50 overage invoice ($336.50 total). Upgrading to the $149 Startup tier (1,000,000 credits) with annual discount reduces average cost to $119.20/month — saving $2,607/year.
+> An engineering team scraping 200,000 pages monthly with headless JavaScript rendering enabled burns 5 credits per request (1,000,000 credits). On the $49 Hobby tier (100k credits), 900,000 excess credits bill at $2.50 per 10k overage, resulting in a $225.00 overage penalty ($274.00/month total). Upgrading to the $149 Startup tier (1,000,000 credits) with annual discount reduces the cost to $119.20/month ($1,430.40/year upfront) — saving $1,857.60/year in unforced overage fees.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/scraperapi?src=scraperapi-coupon-code-breakdown_cta2)
 

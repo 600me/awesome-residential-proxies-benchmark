@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> A data engineering team scraping 250 GB/month on unoptimized Pay-As-You-Go ($4.00/GB) burns $1,000/month ($12,000/year). By switching to Decodo's 100GB+ volume tier with annual prepayment ($2.75/GB - 10% annual discount = $2.475/GB), the total drops to $618.75/month — eliminating $4,575/year in unforced infrastructure waste.
+> A data engineering team scraping 100 GB/month on unoptimized Pay-As-You-Go ($4.00/GB) pays $400.00/month ($4,800.00/year). By switching to Decodo's 100GB volume tier with annual prepayment ($2.75/GB with 10% annual billing discount = $247.50/month effective, $2,970.00/year upfront), the team saves exactly $1,830.00/year in bandwidth costs.
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/smartproxy?src=decodo-coupon-pricing-breakdown_cta2)
 
