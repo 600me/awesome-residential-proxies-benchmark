@@ -5,3 +5,10 @@ vps-sniper/*.env
 vps-sniper/logs/
 ai-review(模型讨论)/
 vps-sniper/published_articles.jsonl
+
+# Matrix aged accounts and deployment state (anti-correlation & leak prevention)
+*audit_10_gt_accounts*
+*gt_10_prelogin_audit*
+*mac_gt_login_and_sync_lx*
+*gt_12_surround_deployment*
+gt-credentials/
