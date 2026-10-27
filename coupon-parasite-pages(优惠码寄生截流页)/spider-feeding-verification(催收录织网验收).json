@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-27T03:25:00Z",
+  "task": "Spider-Feeding Indexation via High-Authority Established Assets",
+  "github_repo_feeding": {
+    "parent_repo": "https://github.com/600me/check-proxy-tax",
+    "updated_file": "README.md",
+    "commit": "f64a321",
+    "status": "pushed_to_origin",
+    "links_added": [
+      "https://github.com/600me/scraperapi-pricing-coupons",
+      "https://github.com/600me/decodo-smartproxy-pricing-coupons",
+      "https://github.com/600me/firstbase-promo-code-pricing",
+      "https://github.com/600me/runpod-gpu-pricing-coupons",
+      "https://github.com/600me/vastai-gpu-pricing-coupons"
+    ],
+    "verified_raw_200": true
+  },
+  "live_websites_feeding": [
+    {
+      "site": "https://scrape.mybskm.top",
+      "http_status": 200,
+      "linked_target": "https://github.com/600me/scraperapi-pricing-coupons",
+      "found": true
+    },
+    {
+      "site": "https://proxy.mybskm.top",
+      "http_status": 200,
+      "linked_target": "https://github.com/600me/decodo-smartproxy-pricing-coupons",
+      "found": true
+    },
+    {
+      "site": "https://pay.mybskm.top",
+      "http_status": 200,
+      "linked_target": "https://github.com/600me/firstbase-promo-code-pricing",
+      "found": true
+    },
+    {
+      "site": "https://gpu.mybskm.top",
+      "http_status": 200,
+      "linked_target": "https://github.com/600me/runpod-gpu-pricing-coupons",
+      "found": true
+    },
+    {
+      "site": "https://gpu.mybskm.top",
+      "http_status": 200,
+      "linked_target": "https://github.com/600me/vastai-gpu-pricing-coupons",
+      "found": true
+    }
+  ],
+  "exit_code": 0
+}

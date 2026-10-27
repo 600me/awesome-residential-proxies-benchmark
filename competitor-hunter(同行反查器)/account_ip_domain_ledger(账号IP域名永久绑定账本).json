@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-10-27T03:41:39.600808+00:00",
+  "gateway_topology": {
+    "pool_type": "datacenter_gateway_subaccounts",
+    "shared_egress_ip": "144.34.225.53",
+    "asn": "AS25820 IT7 Networks",
+    "hosting_flag": true,
+    "isolation_reality": "Webshare proxies in this pool share a single datacenter gateway egress (144.34.225.53). For production aged accounts, isolated residential/static ISP proxies must be used to prevent cluster correlation risks.",
+    "risk_warning": "Do NOT perform high-frequency batch operations on GitHub using shared hosting datacenter IPs."
+  },
+  "accounts": {
+    "600me": {
+      "username": "600me",
+      "account_type": "primary_trusted_author",
+      "created_at": "2022-09-15T08:52:19Z",
+      "age_days": 1503,
+      "status": "QUALIFIED_AGED",
+      "policy": "DO_NOT_BIND_DATACENTER_PROXY_DO_NOT_SPAM_REPOS",
+      "notes": "Main developer account. Restricted to core white-hat repositories and verified authority anchors."
+    },
+    "test_aged_operator_01": {
+      "username": "test_aged_operator_01",
+      "bound_ip": "p.webshare.io:80:vsunwqqvdatacenter-1:***",
+      "proxy_ref": "vsunwqqvdatacenter-1",
+      "egress_ip": "144.34.225.53",
+      "domain_group": "group_1",
+      "bound_at": "2026-10-27T03:41:39.600591+00:00",
+      "status": "BOUND_AND_LOCKED"
+    }
+  }
+}
