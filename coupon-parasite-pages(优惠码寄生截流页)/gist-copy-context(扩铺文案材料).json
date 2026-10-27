@@ -1,0 +1,21 @@
+{
+  "public_or_sanitized": true,
+  "decision_key": "gist-coupon-expansion-20261027",
+  "discussion_mode": "review",
+  "goal": "Write two original complete public Gist coupon/pricing guides for representative existing brands Decodo and Vast.ai, authorized by user.",
+  "question": "First confirm understanding, then return one fenced JSON object {\"pages\":{\"decodo\":\"full markdown\",\"vastai\":\"full markdown\"}}. Each 600-900 words, original differentiated guide, exactly FOUR CTA links with src gist_coupon_decodo_cta1 through cta4 (gateway /smartproxy) and gist_coupon_vastai_cta1 through cta4 (gateway /vastai). Gateway domain https://go.272738.xyz . Include affiliate disclosure, pain scenario, detailed illustrative cost comparison table, coupon verification FAQ, monthly and annual arithmetic and clear actions. Do not invent current rates or verified coupon codes. Focus Decodo on bandwidth budgeting; Vast.ai on interruption/restart economics. All numeric rates hypothetical, explicitly not live quotes. Link official pricing source and existing calculator. User requests execution now, no strategic replanning.",
+  "facts": [
+    "Decodo existing calculator https://github.com/600me/decodo-smartproxy-pricing-coupons/blob/main/smartproxy_calculator.py ; user supplied units, unit-rate, included, base, extras, one-time, annual-base. Official https://decodo.com/proxies/residential-proxies . Example 10GB at hypothetical $4/GB is $40/month $480/year; hypothetical $35 monthly base including 10GB gives $420/year. No promises about rollover or overage availability.",
+    "Vast.ai calculator https://github.com/600me/vastai-gpu-pricing-coupons/blob/main/vastai_gpu_calculator.py ; official https://vast.ai/pricing . Example hypothetical $0.30/hour *30 billed hours after restart=$9; $0.40*20=$8. Monthly repeat 100 planned hours: 150 billed *0.30=$45 vs100*0.40=$40. Annual $540 vs480. No measured benchmarks or reliability claims.",
+    "No checkout-verified coupon, no guaranteed discounts, no paid tests. Existing main repositories are published; only two Gists requested, no new repository or forums."
+  ],
+  "unknowns": [
+    "Current rates, specific coupon eligibility, future rankings and income."
+  ],
+  "source_urls": [
+    "https://decodo.com/proxies/residential-proxies",
+    "https://vast.ai/pricing"
+  ],
+  "project_files": [],
+  "review_reason": "One-off execution of two fully specified authorized pages; complete sanitized material supplied here. Automatic project document selection rejected a document as potentially containing credentials; no business strategy change or additional context required."
+}

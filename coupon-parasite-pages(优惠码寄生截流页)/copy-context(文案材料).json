@@ -1,0 +1,29 @@
+{
+  "public_or_sanitized": true,
+  "decision_key": "coupon-readmes-2026-10-26",
+  "discussion_mode": "project",
+  "goal": "Produce all five publish-ready original commercial README pages within exact authorized structure.",
+  "question": "First briefly confirm understanding in Chinese (include 理解). Then output ONE fenced JSON object with key pages, mapping each directory to {readme: full Markdown string, description: concise English description, topics: list}. Produce all five complete articles NOW, not a plan or advice. Each at least 3500 bytes, 4 exact brand CTA URLs. Keep factual counts within supplied limits, no inventions. User has already authorized publication after factual/engineering validation.",
+  "facts": [
+    "ScraperAPI official https://www.scraperapi.com/pricing/ checked 2026-10-26: Hobby $49 monthly or $44.10/month billed annually, 100000 credits, 20 threads; Startup $149 or $134.10 annual equivalent, 1000000 credits, 50 threads; Business $299 or $269.10 annual equivalent, 3000000 credits, 100 threads. Trial 5000 credits for 7 days, no card. JS rendering, rotating proxies, structured parsing. Credit multipliers vary. No checkout-verified coupon. Annual Business saving = $358.80, NOT $360.",
+    "Decodo official https://decodo.com/proxies/residential-proxies checked 2026-10-26: Residential monthly 3GB $11.25 ($3.75/GB), 10GB $35 ($3.50/GB), 25GB $81.25 ($3.25/GB), 50GB $150 ($3/GB), 100GB $275 ($2.75/GB); PAYG $4/GB; excludes VAT. Rotating/sticky sessions, HTTP/SOCKS5, location targeting. No checkout-verified coupon. Do not confuse raw proxies with a managed scraping API.",
+    "Firstbase official https://www.firstbase.io/pricing checked 2026-10-26: Start displays $99 and $399 one-time AND a separate banner formation on us pay only state fee. Cannot resolve campaign eligibility or combine offers; explain checkout controls. Firstbase One $199/month billed yearly $2388. Formation Delaware/Wyoming, EIN setup, mailroom/accounting/registered agent offerings. Do not promise bank approval, zero tax or total cost $99. No checkout-verified promo code.",
+    "Runpod official https://www.runpod.io/pricing checked 2026-10-26 (page updated Oct 8): listed Pods GPU prices A40 48GB $0.59/hour, RTX6000 Ada 48GB $0.99/hour, A100 PCIe80GB $1.79/hour, H100 PCIe80GB $2.89/hour. Listing snapshots not availability/region guarantees. Pods, Serverless, Clusters. Storage/additional charges and idle capacity matter. No verified promo or free credits; do not claim any. 20h at $0.59 = $11.80 compute only; 720h $424.80.",
+    "Vast.ai official https://vast.ai/pricing checked 2026-10-26: market rates vary; static fetched page gives no live numeric GPU quotes. On-demand, interruptible, reserved. All rate examples must be prominently hypothetical NOT live offers: $0.30/h x20=$6; $0.50/h x20=$10; $1/h x20=$20 compute only. Compare storage, transfer, reliability, interruption and total time, not simply GPU price. No verified promo code.",
+    "User authorized publication of five public README repositories in account 600me, exactly 4 prominent CTA links each using supplied gateway. No spend, no paid benchmarks. Nothing published yet. Need original conversion-focused English prose, no copied wording from benchmark, no fake tests/reviews, no guaranteed unblocking or income. Affiliate disclosure near start. Structure requested: H1 coupon/pricing title -> pain/loss scenario -> core features -> CTA1 -> detailed price table -> CTA2 -> best value/savings -> CTA3 -> FAQ -> final CTA4. GitHub native markdown and horizontal rules. Each README 3500-6500 bytes target, minimum2500. FAQ satisfies user real test/FAQ alternative, no need fake code test. Exact pixel equivalence cannot be promised across devices.",
+    "Brand directories: scraperapi, decodo-smartproxy, firstbase, runpod, vastai. Gateway URLs to use exactly: https://go.272738.xyz/scraperapi?src=gh_coupon_scraperapi ; https://go.272738.xyz/smartproxy?src=gh_coupon_decodo ; https://go.272738.xyz/firstbase?src=gh_coupon_firstbase ; https://go.272738.xyz/runpod?src=gh_coupon_runpod ; https://go.272738.xyz/vastai?src=gh_coupon_vastai . Topics must include brand,coupon-code,promo-code,pricing and >=5 relevant topics. No search volume evidence; do not label them verified high volume.",
+    "Copyright constraint: for EACH official source, total paraphrased factual summary should remain below 180 words across its article; expand with original math scenarios, buyer questions, and analysis. Do not quote source prose. Cite official pricing URL in each README. Reference competitor structure only, no copied sentences."
+  ],
+  "unknowns": [
+    "Checkout coupon validity, exact Firstbase eligibility, live Vast GPU offer prices; keep explicitly unknown."
+  ],
+  "source_urls": [
+    "https://github.com/lfi44195/scraperapi",
+    "https://www.scraperapi.com/pricing/",
+    "https://decodo.com/proxies/residential-proxies",
+    "https://www.firstbase.io/pricing",
+    "https://www.runpod.io/pricing",
+    "https://vast.ai/pricing"
+  ],
+  "project_files": []
+}

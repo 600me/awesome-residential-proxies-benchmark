@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-27T02:30:47.025200+00:00",
+  "pages": [
+    {
+      "brand": "decodo",
+      "local_file": "/Users/a600/project-workspaces(项目工作区)/kais-proxy-cps-benchmark/coupon-parasite-pages(优惠码寄生截流页)/decodo-smartproxy/decodo-coupon-code-cost-breakdown.md",
+      "cta_count": 4,
+      "gateway_checks": [
+        {
+          "url": "https://go.272738.xyz/smartproxy?src=gist_coupon_decodo_cta1",
+          "http_status": 302,
+          "location": "https://visit.decodo.com/k434W0?subId1=gist_coupon_decodo_cta1",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        },
+        {
+          "url": "https://go.272738.xyz/smartproxy?src=gist_coupon_decodo_cta2",
+          "http_status": 302,
+          "location": "https://visit.decodo.com/k434W0?subId1=gist_coupon_decodo_cta2",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        },
+        {
+          "url": "https://go.272738.xyz/smartproxy?src=gist_coupon_decodo_cta3",
+          "http_status": 302,
+          "location": "https://visit.decodo.com/k434W0?subId1=gist_coupon_decodo_cta3",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        },
+        {
+          "url": "https://go.272738.xyz/smartproxy?src=gist_coupon_decodo_cta4",
+          "http_status": 302,
+          "location": "https://visit.decodo.com/k434W0?subId1=gist_coupon_decodo_cta4",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        }
+      ],
+      "gist_url": null,
+      "public_http": null,
+      "copy_source": "Existing Gemini-authored approved full buying guide, CTA attribution replacement and reproducible calculator appendix; no new unverified price claim.",
+      "blocker": "POST /gists: HTTP 404; designated token scope public_repo lacks gist"
+    },
+    {
+      "brand": "vastai",
+      "local_file": "/Users/a600/project-workspaces(项目工作区)/kais-proxy-cps-benchmark/coupon-parasite-pages(优惠码寄生截流页)/vastai/vastai-coupon-code-cost-breakdown.md",
+      "cta_count": 4,
+      "gateway_checks": [
+        {
+          "url": "https://go.272738.xyz/vastai?src=gist_coupon_vastai_cta1",
+          "http_status": 302,
+          "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gist_coupon_vastai_cta1",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        },
+        {
+          "url": "https://go.272738.xyz/vastai?src=gist_coupon_vastai_cta2",
+          "http_status": 302,
+          "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gist_coupon_vastai_cta2",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        },
+        {
+          "url": "https://go.272738.xyz/vastai?src=gist_coupon_vastai_cta3",
+          "http_status": 302,
+          "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gist_coupon_vastai_cta3",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        },
+        {
+          "url": "https://go.272738.xyz/vastai?src=gist_coupon_vastai_cta4",
+          "http_status": 302,
+          "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gist_coupon_vastai_cta4",
+          "attribution_preserved": true,
+          "traffic_type": "operator QA, not human acquisition"
+        }
+      ],
+      "gist_url": null,
+      "public_http": null,
+      "copy_source": "Existing Gemini-authored approved full buying guide, CTA attribution replacement and reproducible calculator appendix; no new unverified price claim.",
+      "blocker": "POST /gists: HTTP 404; designated token scope public_repo lacks gist"
+    }
+  ],
+  "complete": false,
+  "new_repositories_created": 0,
+  "forum_posts": 0,
+  "new_spend": 0,
+  "gist_creation_blocker": "Existing token lacks gist scope; scope update required",
+  "report_path": "/Users/a600/project-hub(项目设计实施)/kais-business-findings(生意发现记录)/cps-live-hijack-benchmarks-20261026(海外CPS活体截流同行拆解报告).md",
+  "report_written": true,
+  "search_success_count": 64,
+  "search_expected_count": 66,
+  "all_work_complete": false
+}

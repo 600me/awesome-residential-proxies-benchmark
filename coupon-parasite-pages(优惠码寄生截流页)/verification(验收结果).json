@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-26T14:42:22.799914+00:00",
+  "results": [
+    {
+      "repository": "https://github.com/600me/scraperapi-pricing-coupons",
+      "gateway": "https://go.272738.xyz/scraperapi?src=gh_coupon_scraperapi",
+      "local_bytes": 4652,
+      "cta_count": 4,
+      "public_http": 200,
+      "gateway_http": 302,
+      "readback_equal": true,
+      "description_verified": true,
+      "topics_verified": true
+    },
+    {
+      "repository": "https://github.com/600me/decodo-smartproxy-pricing-coupons",
+      "gateway": "https://go.272738.xyz/smartproxy?src=gh_coupon_decodo",
+      "local_bytes": 4719,
+      "cta_count": 4,
+      "public_http": 200,
+      "gateway_http": 302,
+      "readback_equal": true,
+      "description_verified": true,
+      "topics_verified": true
+    },
+    {
+      "repository": "https://github.com/600me/firstbase-promo-code-pricing",
+      "gateway": "https://go.272738.xyz/firstbase?src=gh_coupon_firstbase",
+      "local_bytes": 5018,
+      "cta_count": 4,
+      "public_http": 200,
+      "gateway_http": 302,
+      "readback_equal": true,
+      "description_verified": true,
+      "topics_verified": true
+    },
+    {
+      "repository": "https://github.com/600me/runpod-gpu-pricing-coupons",
+      "gateway": "https://go.272738.xyz/runpod?src=gh_coupon_runpod",
+      "local_bytes": 4513,
+      "cta_count": 4,
+      "public_http": 200,
+      "gateway_http": 302,
+      "readback_equal": true,
+      "description_verified": true,
+      "topics_verified": true
+    },
+    {
+      "repository": "https://github.com/600me/vastai-gpu-pricing-coupons",
+      "gateway": "https://go.272738.xyz/vastai?src=gh_coupon_vastai",
+      "local_bytes": 5072,
+      "cta_count": 4,
+      "public_http": 200,
+      "gateway_http": 302,
+      "readback_equal": true,
+      "description_verified": true,
+      "topics_verified": true
+    }
+  ],
+  "exit_code": 0
+}
