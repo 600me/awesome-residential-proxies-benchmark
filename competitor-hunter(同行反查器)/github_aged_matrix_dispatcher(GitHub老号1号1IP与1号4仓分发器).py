@@ -116,16 +116,17 @@ class GitHubMatrixDispatcher:
         Direct git push via HTTPS requires residential proxies or an authenticated SOCKS5 tunnel.
         Ensure an account is permanently pinned to exactly 1 IP and domain group.
         """
-        if username.lower() == "600me":
+        clean_user = username.strip().lower()
+        if clean_user == "600me":
             raise PermissionError("ACCOUNT PROTECTION: 600me is primary author account. Binding to datacenter proxy or batch repo dispatch is strictly forbidden!")
 
         accounts = self.ledger.setdefault("accounts", {})
         if username in accounts and accounts[username].get("bound_ip"):
             return accounts[username]
 
-        # Allocate next unassigned proxy
-        assigned_ips = {acc.get("bound_ip") for acc in accounts.values() if acc.get("bound_ip")}
-        available = [p for p in self.static_ips if p not in assigned_ips]
+        # Allocate next unassigned proxy deduplicating by unique proxy_ref (subaccount)
+        assigned_refs = {acc.get("proxy_ref") for acc in accounts.values() if acc.get("proxy_ref")}
+        available = [p for p in self.static_ips if p.split(':')[2] not in assigned_refs]
         if not available:
             raise RuntimeError("Static IP pool exhausted (100/100 allocated)!")
 
@@ -299,12 +300,19 @@ def run_self_test():
     print(f"600me verification: http={verify_res['profile_http']}, status={verify_res['status']}")
     assert verify_res["profile_http"] == 200
 
-    # Test 600me protection guard
-    try:
-        dispatcher.bind_static_ip_and_domain("600me")
-        assert False, "600me binding should have raised PermissionError"
-    except PermissionError as e:
-        print(f"600me protection verified: {e}")
+    # Test 600me protection guard with whitespace and casing variants
+    for variant in ["600me", " 600me ", "  600ME  ", "600Me\t"]:
+        try:
+            dispatcher.bind_static_ip_and_domain(variant)
+            assert False, f"{variant} binding should have raised PermissionError"
+        except PermissionError as e:
+            print(f"600me variant '{variant}' protection verified: {e}")
+
+    # Test F1: 1:1 Distinct proxy allocation across accounts
+    test_user_02 = "test_aged_operator_02"
+    binding_02 = dispatcher.bind_static_ip_and_domain(test_user_02, "group_2")
+    assert binding_02["proxy_ref"] != binding["proxy_ref"], "Each account must receive a unique proxy_ref!"
+    print(f"Distinct IP allocation verified: {binding['proxy_ref']} vs {binding_02['proxy_ref']}")
 
     # Test warmup generation
     warmup = dispatcher.generate_warmup_pack("sample_user")

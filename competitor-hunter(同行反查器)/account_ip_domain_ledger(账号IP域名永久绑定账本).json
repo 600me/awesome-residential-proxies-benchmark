@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T03:41:39.600808+00:00",
+  "updated_at": "2026-10-27T04:01:53.337033+00:00",
   "gateway_topology": {
     "pool_type": "datacenter_gateway_subaccounts",
     "shared_egress_ip": "144.34.225.53",
@@ -27,6 +27,15 @@
       "egress_ip": "144.34.225.53",
       "domain_group": "group_1",
       "bound_at": "2026-10-27T03:41:39.600591+00:00",
+      "status": "BOUND_AND_LOCKED"
+    },
+    "test_aged_operator_02": {
+      "username": "test_aged_operator_02",
+      "bound_ip": "p.webshare.io:80:vsunwqqvdatacenter-2:***",
+      "proxy_ref": "vsunwqqvdatacenter-2",
+      "egress_ip": "144.34.225.53",
+      "domain_group": "group_2",
+      "bound_at": "2026-10-27T04:01:53.337016+00:00",
       "status": "BOUND_AND_LOCKED"
     }
   }

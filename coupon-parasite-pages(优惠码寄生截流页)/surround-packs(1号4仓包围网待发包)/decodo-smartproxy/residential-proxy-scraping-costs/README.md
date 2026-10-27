@@ -9,7 +9,7 @@ Independent financial and infrastructure cost analysis guide for engineering lea
 ## The Hidden Cost Case Study: Avoiding Overpayment
 
 > [!WARNING]
-> Teams scraping anti-bot heavy targets frequently overlook retry bloat: a 20.0% block rate increases effective bandwidth usage by 25.0% (100 GB target consumes 125.0 GB billed). At $4.00/GB rates, this adds $100.00/month in unexpected overages ($1,200.00/year).
+> Teams scraping anti-bot heavy targets frequently overlook retry bloat: a 20.0% block rate increases effective bandwidth usage by 25.0% (100 GB target consumes 125.0 GB billed). Expected nominal cost of $400.00 becomes a true cost of $500.00, adding $100.00/month in unexpected overages ($1,200.00/year).
 
 ### 👉 [Run current pricing tiers on the official portal](https://go.272738.xyz/smartproxy?src=residential-proxy-scraping-costs_cta2)
 

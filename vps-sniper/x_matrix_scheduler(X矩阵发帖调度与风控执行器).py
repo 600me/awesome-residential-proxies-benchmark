@@ -218,7 +218,7 @@ def human_delta(seconds: float) -> str:
 COPY_LIBRARY: dict[int, dict] = {
     5: {
         "seq": 5,
-        "handle": "Tomi11238760",
+        "handle": os.environ.get("X_HANDLE_SLOT_1", "operator_slot_1"),
         "group": "A",
         "group_name": "住宅代理 Residential Proxy",
         "theme": "30% Retry Tax",
@@ -236,7 +236,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     7: {
         "seq": 7,
-        "handle": "TianaRamsey5",
+        "handle": os.environ.get("X_HANDLE_SLOT_2", "operator_slot_2"),
         "group": "A",
         "group_name": "住宅代理 Residential Proxy",
         "theme": "Sticky Session Drop-off at Minute 14",
@@ -254,7 +254,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     26: {
         "seq": 26,
-        "handle": "Josette05752050",
+        "handle": os.environ.get("X_HANDLE_SLOT_3", "operator_slot_3"),
         "group": "B",
         "group_name": "反爬 API Anti-Bot API",
         "theme": "Credit Multiplier",
@@ -272,7 +272,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     28: {
         "seq": 28,
-        "handle": "EastawayLayne",
+        "handle": os.environ.get("X_HANDLE_SLOT_4", "operator_slot_4"),
         "group": "B",
         "group_name": "反爬 API Anti-Bot API",
         "theme": "Cloudflare 403 Challenge Penalty Tax",
@@ -290,7 +290,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     51: {
         "seq": 51,
-        "handle": "Rebecka61453038",
+        "handle": os.environ.get("X_HANDLE_SLOT_5", "operator_slot_5"),
         "group": "C",
         "group_name": "GPU 算力 GPU Compute",
         "theme": "Billable Hours vs Headline $/hr",
@@ -307,7 +307,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     52: {
         "seq": 52,
-        "handle": "Maryett32244792",
+        "handle": os.environ.get("X_HANDLE_SLOT_6", "operator_slot_6"),
         "group": "C",
         "group_name": "GPU 算力 GPU Compute",
         "theme": "Cold Start Container Pull Tax",
@@ -325,7 +325,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     78: {
         "seq": 78,
-        "handle": "David1874901",
+        "handle": os.environ.get("X_HANDLE_SLOT_7", "operator_slot_7"),
         "group": "D",
         "group_name": "出海收单 Payments",
         "theme": "LLC vs MoR 5% Tipping Point at $8k MRR",
@@ -342,7 +342,7 @@ COPY_LIBRARY: dict[int, dict] = {
     },
     91: {
         "seq": 91,
-        "handle": "yichuanxx",
+        "handle": os.environ.get("X_HANDLE_SLOT_8", "operator_slot_8"),
         "group": "D",
         "group_name": "出海收单 Payments",
         "theme": "$15,000 MRR SaaS Tax on 5% MoR",
