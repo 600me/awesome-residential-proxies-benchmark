@@ -416,5 +416,219 @@ class TestSurroundPackCalculators(unittest.TestCase):
         self.check_readme("adcreative", "ecommerce-ad-creative-production-cost",
                           ["50 ad variants", "$2250.00/mo", "$149.00/mo", "$2101.00/mo", "$2.98/asset"])
 
+    # ==========================================
+    # ElevenLabs Calculators (Phase 3)
+    # ==========================================
+
+    def test_elevenlabs_character_cost_calculator(self):
+        out = self.run_calc("elevenlabs", "elevenlabs-promo-code-pricing-breakdown",
+                            ["elevenlabs_character_cost_calculator.py", "--tier", "pro", "--characters", "600000", "--annual"])
+        self.assertIn("Base Monthly Plan:       $82.50/mo", out)
+        self.assertIn("Overage Characters:      100,000", out)
+        self.assertIn("Overage Cost:            $24.00/mo", out)
+        self.assertIn("Effective Monthly Total: $106.50/mo", out)
+        self.check_readme("elevenlabs", "elevenlabs-promo-code-pricing-breakdown",
+                          ["$82.50/mo", "500,000 characters/mo", "$24.00/mo", "$106.50/mo", "$198.00/yr"])
+
+    def test_playht_vs_elevenlabs_calculator(self):
+        out = self.run_calc("elevenlabs", "playht-vs-elevenlabs-voice-cloning-costs",
+                            ["playht_vs_elevenlabs_calculator.py", "--words", "150000", "--seats", "2"])
+        self.assertIn("PlayHT Creator Monthly:  $78.00/mo", out)
+        self.assertIn("ElevenLabs Pro Monthly:  $198.00/mo", out)
+        self.assertIn("Monthly Cost Difference: $120.00/mo", out)
+        self.check_readme("elevenlabs", "playht-vs-elevenlabs-voice-cloning-costs",
+                          ["$78.00/mo", "$198.00/mo", "$120.00/mo"])
+
+    def test_openai_vs_elevenlabs_calculator(self):
+        out = self.run_calc("elevenlabs", "openai-tts-vs-elevenlabs-api-pricing",
+                            ["openai_vs_elevenlabs_latency_cost.py", "--million-chars", "2.5", "--turbo"])
+        self.assertIn("OpenAI TTS-1 Standard:   $37.50/mo", out)
+        self.assertIn("OpenAI TTS-1-HD:         $75.00/mo", out)
+        self.assertIn("ElevenLabs Turbo API:    $250.00/mo", out)
+        self.assertIn("Premium for Realism:     $212.50/mo", out)
+        self.check_readme("elevenlabs", "openai-tts-vs-elevenlabs-api-pricing",
+                          ["$37.50/mo", "$75.00/mo", "$250.00/mo", "$212.50/mo"])
+
+    def test_ai_media_production_calculator(self):
+        out = self.run_calc("elevenlabs", "awesome-ai-voice-and-creative-stack-benchmarks-2026",
+                            ["ai_media_production_tco_calculator.py", "--voice-chars", "500000", "--ad-credits", "10", "--gpu-hours", "200"])
+        self.assertIn("1. AI Voice (ElevenLabs Pro):           $99.00/mo", out)
+        self.assertIn("2. Ad Visuals (AdCreative.ai):          $59.00/mo", out)
+        self.assertIn("3. Compute Infrastructure (RunPod GPU): $148.00/mo", out)
+        self.assertIn("Total Integrated Monthly Budget:        $306.00/mo", out)
+        self.check_readme("elevenlabs", "awesome-ai-voice-and-creative-stack-benchmarks-2026",
+                          ["$99.00/mo", "$59.00/mo", "$148.00/mo", "$306.00/mo"])
+
+    # ==========================================
+    # Helium 10 Calculators (Phase 3)
+    # ==========================================
+
+    def test_helium10_plan_savings_calculator(self):
+        out = self.run_calc("helium10", "helium10-coupon-code-pricing-guide-2026",
+                            ["helium10_plan_savings_calculator.py", "--plan", "platinum", "--months", "12", "--coupon", "annual"])
+        self.assertIn("Annual Prepaid Total:    $948.00/year", out)
+        self.assertIn("Effective Monthly Cost:  $79.00/month", out)
+        self.assertIn("Annual Savings vs Month: $240.00/year", out)
+        self.check_readme("helium10", "helium10-coupon-code-pricing-guide-2026",
+                          ["$948.00/year", "$79.00/month", "$240.00/year"])
+
+    def test_junglescout_vs_helium10_calculator(self):
+        out = self.run_calc("helium10", "jungle-scout-vs-helium10-seller-costs",
+                            ["junglescout_vs_helium10_calculator.py", "--seats", "1", "--annual"])
+        self.assertIn("Jungle Scout Suite:      $588.00/year", out)
+        self.assertIn("Helium 10 Platinum:      $948.00/year", out)
+        self.assertIn("Cost Difference:         $360.00/year", out)
+        self.check_readme("helium10", "jungle-scout-vs-helium10-seller-costs",
+                          ["$588.00/year", "$948.00/year", "$360.00/year"])
+
+    def test_amazon_fba_tool_roi_calculator(self):
+        out = self.run_calc("helium10", "amzscout-vs-helium10-fba-toolkit-pricing",
+                            ["amazon_fba_tool_roi_calculator.py", "--ad-spend", "24000", "--revenue", "120000"])
+        self.assertIn("Helium 10 PPC Savings:   $1,920.00/year", out)
+        self.assertIn("Helium 10 Net Profit ROI:$972.00/year", out)
+        self.assertIn("AMZScout Net Profit ROI: $600.01/year", out)
+        self.check_readme("helium10", "amzscout-vs-helium10-fba-toolkit-pricing",
+                          ["$1,920.00/year", "$972.00/year", "$600.01/year"])
+
+    def test_crossborder_seller_tco_calculator(self):
+        out = self.run_calc("helium10", "awesome-amazon-fba-crossborder-seller-stack-2026",
+                            ["crossborder_seller_tco_calculator.py", "--stores", "2", "--revenue", "150000"])
+        self.assertIn("1. Product ERP & Analytics (Helium 10):  $79.00/mo", out)
+        self.assertIn("2. Anti-Detect Browser (AdsPower 50p):   $19.00/mo", out)
+        self.assertIn("3. US Corporate & Tax (Firstbase.io):    $41.50/mo", out)
+        self.assertIn("Total Monthly Operating Infrastructure:  $139.50/mo", out)
+        self.assertIn("Total Annual Merchant Infrastructure:    $1,674.00/yr", out)
+        self.check_readme("helium10", "awesome-amazon-fba-crossborder-seller-stack-2026",
+                          ["$79.00/mo", "$19.00/mo", "$41.50/mo", "$139.50/mo", "$1,674.00/yr"])
+
+    # ==========================================
+    # Voluum Calculators (Phase 3)
+    # ==========================================
+
+    def test_voluum_event_overage_calculator(self):
+        out = self.run_calc("voluum", "voluum-promo-code-pricing-breakdown",
+                            ["voluum_event_overage_calculator.py", "--tier", "profit", "--events", "1500000", "--annual"])
+        self.assertIn("Base Monthly Plan:       $159.20/mo", out)
+        self.assertIn("Overage Fee:             $30.00/mo", out)
+        self.assertIn("Total Monthly Outlay:    $189.20/mo", out)
+        self.check_readme("voluum", "voluum-promo-code-pricing-breakdown",
+                          ["$159.20/mo", "1,000,000 events/mo", "$30.00/mo", "$189.20/mo"])
+
+    def test_redtrack_vs_voluum_calculator(self):
+        out = self.run_calc("voluum", "redtrack-vs-voluum-ad-tracker-costs",
+                            ["redtrack_vs_voluum_calculator.py", "--monthly-events", "1200000", "--domains", "3"])
+        self.assertIn("RedTrack Pro Monthly:    $161.00/mo", out)
+        self.assertIn("Voluum Profit Monthly:   $211.00/mo", out)
+        self.assertIn("Monthly Difference:      $50.00/mo", out)
+        self.check_readme("voluum", "redtrack-vs-voluum-ad-tracker-costs",
+                          ["$161.00/mo", "$211.00/mo", "$50.00/mo"])
+
+    def test_tracker_event_volume_calculator(self):
+        out = self.run_calc("voluum", "bemob-vs-voluum-media-buying-tco",
+                            ["tracker_event_volume_calculator.py", "--events", "2000000", "--bot-ratio", "0.08"])
+        self.assertIn("BeMob Monthly Cost:      $99.00/mo", out)
+        self.assertIn("Voluum Monthly Cost:     $259.00/mo", out)
+        self.assertIn("Voluum Bot Waste Saved:  $4,800.00/mo", out)
+        self.assertIn("Effective Net Voluum:    $-4541.00/mo", out)
+        self.check_readme("voluum", "bemob-vs-voluum-media-buying-tco",
+                          ["$99.00/mo", "$259.00/mo", "$4,800.00/mo", "$-4541.00/mo"])
+
+    def test_media_buyer_infra_budget_calculator(self):
+        out = self.run_calc("voluum", "awesome-affiliate-media-buying-infrastructure-2026",
+                            ["media_buyer_infra_budget_calculator.py", "--monthly-ad-spend", "10000", "--campaigns", "15"])
+        self.assertIn("1. Tracking Engine (Voluum Profit):     $199.00/mo", out)
+        self.assertIn("2. Multi-Account Browser (AdsPower):    $19.00/mo", out)
+        self.assertIn("3. AI Creative Suite (AdCreative.ai):   $59.00/mo", out)
+        self.assertIn("4. Verification Proxies (9Proxy 200p):  $40.00/mo", out)
+        self.assertIn("Total Dedicated Infrastructure Budget:  $317.00/mo", out)
+        self.assertIn("3.17%", out)
+        self.check_readme("voluum", "awesome-affiliate-media-buying-infrastructure-2026",
+                          ["$199.00/mo", "$19.00/mo", "$59.00/mo", "$40.00/mo", "$317.00/mo", "3.17%"])
+
+    # ==========================================
+    # Brand24 Calculators (Phase 3)
+    # ==========================================
+
+    def test_brand24_mention_quota_calculator(self):
+        out = self.run_calc("brand24", "brand24-coupon-code-pricing-guide",
+                            ["brand24_mention_quota_calculator.py", "--plan", "team", "--annual"])
+        self.assertIn("Monthly Mention Quota:   5,000 mentions/mo", out)
+        self.assertIn("Monthly Plan Rate:       $149.00/mo", out)
+        self.assertIn("Annual Total Spend:      $1,788.00/year", out)
+        self.assertIn("Annual Discount Savings: $360.00/year", out)
+        self.check_readme("brand24", "brand24-coupon-code-pricing-guide",
+                          ["5,000 mentions/mo", "$149.00/mo", "$1,788.00/year", "$360.00/year"])
+
+    def test_mention_vs_brand24_calculator(self):
+        out = self.run_calc("brand24", "mention-vs-brand24-social-listening-costs",
+                            ["mention_vs_brand24_calculator.py", "--keywords", "5", "--mentions", "4000", "--annual"])
+        self.assertIn("Mention Pro Plan:        $83.00/mo", out)
+        self.assertIn("Brand24 Team Plan:       $149.00/mo", out)
+        self.assertIn("Cost Difference:         $66.00/mo", out)
+        self.check_readme("brand24", "mention-vs-brand24-social-listening-costs",
+                          ["$83.00/mo", "$149.00/mo", "$66.00/mo"])
+
+    def test_enterprise_pr_monitoring_calculator(self):
+        out = self.run_calc("brand24", "sprout-social-vs-brand24-enterprise-tco",
+                            ["enterprise_pr_monitoring_calculator.py", "--seats", "3", "--listening-addon"])
+        self.assertIn("Sprout Social Professional:     $1,746.00/mo", out)
+        self.assertIn("Brand24 Enterprise (All Users): $399.00/mo", out)
+        self.assertIn("Annual Savings with Brand24:    $16,164.00/year", out)
+        self.check_readme("brand24", "sprout-social-vs-brand24-enterprise-tco",
+                          ["$1,746.00/mo", "$399.00/mo", "$16,164.00/year"])
+
+    def test_b2b_intelligence_stack_calculator(self):
+        out = self.run_calc("brand24", "awesome-b2b-social-intelligence-and-scraping-stack-2026",
+                            ["b2b_intelligence_stack_calculator.py", "--data-volume-k", "5", "--scraper-api-calls-k", "100", "--proxy-count", "100"])
+        self.assertIn("1. Turnkey Social Listening (Brand24):   $149.00/mo", out)
+        self.assertIn("2. Custom Scraper API (ScraperAPI):      $49.00/mo", out)
+        self.assertIn("3. High-Concurrency Proxy (Webshare):    $18.00/mo", out)
+        self.assertIn("Total Integrated Monthly Intelligence:   $216.00/mo", out)
+        self.check_readme("brand24", "awesome-b2b-social-intelligence-and-scraping-stack-2026",
+                          ["$149.00/mo", "$49.00/mo", "$18.00/mo", "$216.00/mo"])
+
+    # ==========================================
+    # Pawns.app Calculators (Phase 3)
+    # ==========================================
+
+    def test_pawns_residential_proxy_calculator(self):
+        out = self.run_calc("pawns", "pawns-app-referral-bonus-proxy-pricing",
+                            ["pawns_residential_proxy_calculator.py", "--volume-gb", "20", "--referral-bonus"])
+        self.assertIn("Data Volume Purchased:   20 GB", out)
+        self.assertIn("Volume Bandwidth Rate:   $2.50/GB", out)
+        self.assertIn("Gross Purchase Price:    $50.00", out)
+        self.assertIn("Referral Code Bonus:     -$3.00", out)
+        self.assertIn("Final Net Payment:       $47.00", out)
+        self.check_readme("pawns", "pawns-app-referral-bonus-proxy-pricing",
+                          ["20 GB", "$2.50/GB", "$50.00", "$47.00"])
+
+    def test_iproyal_vs_pawns_calculator(self):
+        out = self.run_calc("pawns", "iproyal-vs-pawns-residential-proxy-costs",
+                            ["iproyal_vs_pawns_calculator.py", "--gb", "25"])
+        self.assertIn("IPRoyal Total Cost:      $131.25", out)
+        self.assertIn("Pawns.app Total Cost:    $62.50", out)
+        self.assertIn("Cost Savings with Pawns: $68.75", out)
+        self.check_readme("pawns", "iproyal-vs-pawns-residential-proxy-costs",
+                          ["$131.25", "$62.50", "$68.75", "52.4%"])
+
+    def test_entry_level_proxy_tco_calculator(self):
+        out = self.run_calc("pawns", "smartproxy-vs-pawns-scraping-budget",
+                            ["entry_level_proxy_tco_calculator.py", "--monthly-gb", "12"])
+        self.assertIn("Smartproxy Monthly Cost: $75.00/mo", out)
+        self.assertIn("Pawns.app Monthly Cost:  $30.00/mo", out)
+        self.assertIn("Annual Savings:          $540.00/year", out)
+        self.check_readme("pawns", "smartproxy-vs-pawns-scraping-budget",
+                          ["$75.00/mo", "$30.00/mo", "$540.00/year"])
+
+    def test_proxy_provider_matrix_calculator(self):
+        out = self.run_calc("pawns", "awesome-residential-proxy-providers-benchmark-2026",
+                            ["proxy_provider_matrix_calculator.py", "--traffic-gb", "20", "--ip-count", "100", "--use-case", "general_scraping"])
+        self.assertIn("1. Pawns.app (Budget Residential PAYG):   $50.00", out)
+        self.assertIn("2. Webshare (Cheap Static ISP / DC):      $18.00/mo", out)
+        self.assertIn("3. 9Proxy (Per-IP Residential Clean Pool):$20.00", out)
+        self.assertIn("4. Decodo (Enterprise Heavy-Duty Pool):   $50.00", out)
+        self.check_readme("pawns", "awesome-residential-proxy-providers-benchmark-2026",
+                          ["$50.00", "$18.00/mo", "$20.00"])
+
 if __name__ == '__main__':
     unittest.main()
