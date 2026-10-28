@@ -34,13 +34,13 @@
 
 <!-- BENCHMARK:START -->
 
-Updated: 2026-10-21T08:24:32+00:00 (UTC)
+Updated: 2026-10-28T09:28:38+00:00 (UTC)
 
 **Live run — unconfigured vendors are not tested.**
 
 | Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |
 |---|---:|---:|---|---|---|---|
-| Direct (real network) | 100.0% (3/3) | 98 | 200×3 | Unknown; AS? | OK | — |
+| Direct (real network) | 100.0% (3/3) | 94 | 200×3 | Unknown; AS? | OK | — |
 | [Smartproxy](https://go.272738.xyz/smartproxy?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
 | [Bright Data](https://go.272738.xyz/brightdata?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
 | [Apify](https://go.272738.xyz/apify?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
