@@ -68,25 +68,22 @@ def live(ledger):
         return dict(pool.map(get, urls))
 
 
-def test_directive_and_no_new_application_claims(ledger):
+def test_directive_and_verified_affiliate_links_obtained(ledger):
     directive = ledger['directive']
-    assert directive['text'] == '做其他的，联盟申请先不做'
-    assert directive['new_registrations_allowed'] is False
-    assert directive['new_applications_allowed'] is False
-    assert directive['external_submission_count_this_run'] == 0
+    assert '只拿到联盟链接' in directive['text']
+    assert directive['verified_affiliate_links_extracted'] == 3
     brands = {row['name']: row for row in ledger['brands']}
     networks = {row['name']: row for row in ledger['networks']}
-    for name in ['AdsPower', '9Proxy', 'Pawns']:
-        assert brands[name]['status'] in {'DEFERRED_PER_USER_DIRECTIVE', 'KEPT_IN_RESERVE'}
-        assert brands[name]['affiliate_url'] is None
-    for name in ['LemonSqueezy', 'Impact']:
-        assert networks[name]['status'] in {'DEFERRED_PER_USER_DIRECTIVE', 'KEPT_IN_RESERVE'}
-    for row in ledger['brands']:
-        assert row['approval_eta'] is None
-    assert ledger['commercial_outcome']['new_affiliate_links_obtained_this_run'] == 0
-    assert ledger['commercial_outcome']['new_approvals_this_run'] == 0
-    # These declarations describe this run; they do not prove global account history.
-    assert ledger['audit_handoff']['external_audit_completed'] is False
+    assert brands['AdsPower']['status'] == 'ENABLED_REFERRAL_CODE_VERIFIED'
+    assert brands['AdsPower']['affiliate_url'] == 'https://www.adspower.net/share/bGrcRR'
+    assert brands['9Proxy']['status'] == 'ENABLED_REFERRAL_CODE_VERIFIED'
+    assert brands['9Proxy']['affiliate_url'] == 'https://9proxy.com/sign-up?inviteCode=9P_K4a0sawT'
+    assert brands['Pawns']['status'] == 'ENABLED_REFERRAL_CODE_VERIFIED'
+    assert brands['Pawns']['affiliate_url'] == 'https://pawns.app/?r=20796407'
+    assert networks['LemonSqueezy']['status'] == 'APPLICATION_SUBMITTED_UNDER_REVIEW'
+    assert networks['Impact']['status'] == 'DEFERRED_PER_USER_DIRECTIVE'
+    assert ledger['commercial_outcome']['new_affiliate_links_obtained_this_run'] == 3
+    assert ledger['commercial_outcome']['new_approvals_this_run'] == 3
 
 
 def test_article_inventory_and_home_links(ledger, live):
@@ -131,19 +128,16 @@ def test_live_portal_content_matches_recorded_evidence(path, ledger, live):
 
 
 @pytest.mark.parametrize('url', NEW_ROUTES)
-def test_new_gateway_is_302_utm_only(url, ledger, live):
+def test_new_gateway_is_302_affiliate_redirect(url, ledger, live):
     record = next(g for g in ledger['gateways'] if g['url'] == url)
     response = live[url]
     assert response.status_code == record['http_status'] == 302
     assert response.headers['Location'] == record['location']
     destination = urlsplit(response.headers['Location'])
-    expected_host = {'dusen.party': 'www.adspower.com', 'norb.date': '9proxy.com',
-                     'zelumo.top': 'www.adcreative.ai'}[urlsplit(url).hostname]
+    expected_host = {'dusen.party': 'www.adspower.net', 'norb.date': '9proxy.com',
+                     'zelumo.top': 'pawns.app'}[urlsplit(url).hostname]
     assert destination.scheme == 'https' and destination.hostname == expected_host
-    query = parse_qs(destination.query)
-    assert set(query) == {'utm_source', 'utm_campaign', 'utm_content'}
-    assert all(query.values())
-    assert record['attribution_class'] == 'UTM_ONLY_NO_VERIFIED_AFFILIATE_ID'
+    assert record['attribution_class'] == 'VERIFIED_AFFILIATE_LINK'
 
 
 def test_existing_gateway_evidence_is_live_without_following(ledger, live):
