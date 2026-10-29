@@ -90,6 +90,17 @@ GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动�
 ## 深度研究
 
 - [Why Rotating Residential Proxies Still Get 403s: Sticky Session TTL, JA3 Fingerprints, and ASN Economics (2026)](https://proxy.mybskm.top/blog/residential-proxy-sticky-session-guide.html?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) — 三层失败机理、厂商粘性窗口对照、三档重跑损耗算例，以及可复制的 `curl` / `curl_cffi` 诊断命令。
+- [MoreLogin Cloud Phone vs AdsPower & PacketStream $1/GB Residential Proxy Stack (2026)](https://proxy.mybskm.top/blog/morelogin-vs-adspower-packetstream-tco.html?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) — 100 账号矩阵硬件/网络 TCO 算账，ARM 云手机与 $1.00/GB 住宅代理实测。
+- [HeyGen vs Synthesia + ElevenLabs (2026): AI Video Avatar & Dubbing Localization Unit Economics](https://gpu.mybskm.top/blog/heygen-vs-synthesia-elevenlabs.html?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) — 商业视频工作室 $500/条到 AI 视频流 $1.60/分钟单位算例。
+
+## 14-Brand Infrastructure & CPS Gateway Matrix (Q4 2026 Verified)
+
+全渠道覆盖的 14 大核心基础设施真网关与跳板：
+- **住宅与旋转代理**：[Smartproxy (Decodo)](https://go.272738.xyz/smartproxy?src=readme_matrix) · [Webshare](https://go.272738.xyz/webshare?src=readme_matrix) · [9Proxy](https://go.272738.xyz/9proxy?src=readme_matrix) · [Pawns.app](https://go.272738.xyz/pawns?src=readme_matrix) · [PacketStream](https://go.272738.xyz/packetstream?src=readme_matrix) ($1.00/GB 住宅流量)
+- **指纹浏览器与云手机**：[AdsPower](https://go.272738.xyz/adspower?src=readme_matrix) · [MoreLogin](https://go.272738.xyz/morelogin?src=readme_matrix) (真 Android ARM 云手机与硬件防关联)
+- **AI 视频与音频合成**：[HeyGen](https://go.272738.xyz/heygen?src=readme_matrix) (4K 定制数字人与 175+ 语言对齐) · [ElevenLabs](https://go.272738.xyz/elevenlabs?src=readme_matrix) (流式低延迟语音与声音克隆)
+- **GPU 算力与采集 API**：[RunPod](https://go.272738.xyz/runpod?src=readme_matrix) · [Vast.ai](https://go.272738.xyz/vastai?src=readme_matrix) · [ScraperAPI](https://go.272738.xyz/scraperapi?src=readme_matrix)
+- **广告归因与主体合规**：[Voluum](https://go.272738.xyz/voluum?src=readme_matrix) · [Firstbase.io](https://go.272738.xyz/firstbase?src=readme_matrix)
 
 ## Sister Projects (Matrix Interlinks)
 
