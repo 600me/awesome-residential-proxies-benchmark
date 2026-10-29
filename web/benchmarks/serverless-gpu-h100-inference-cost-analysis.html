@@ -158,6 +158,16 @@
     <h3>Quantization Precision & PagedAttention KV-Cache Saturation</h3>
     <p>Evaluating inference efficiency requires analyzing memory fragmentation during sustained high-concurrency request spikes. Using vLLM's PagedAttention algorithm, KV-cache blocks are dynamically allocated in non-contiguous virtual memory regions, virtually eliminating internal memory fragmentation. Under continuous FP8 quantization across 128 concurrent client connections, the H100 SXM5 maintains an aggregate cache hit rate exceeding 98.4%, ensuring that memory bus bandwidth remains dedicated to active matrix multiplications rather than repetitive tensor reshaping operations.</p>
 
+  
+    <div style="background: #eef4fc; border: 1px solid #b8d3f2; border-radius: 8px; padding: 24px; margin: 32px 0;">
+      <h3 style="margin-top: 0; color: #0758b8;">Production Compute Gateways</h3>
+      <p>Launch high-performance GPU instances with zero multi-year lock-in:</p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+        <a href="https://go.272738.xyz/runpod?src=benchmark_gpu_study" target="_blank" rel="noopener noreferrer" style="background: #0758b8; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600;">RunPod H100/RTX Pods &rarr;</a>
+        <a href="https://go.272738.xyz/vastai?src=benchmark_gpu_study" target="_blank" rel="noopener noreferrer" style="background: #4338ca; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600;">Vast.ai Spot Compute &rarr;</a>
+      </div>
+    </div>
+
   </main>
 
 

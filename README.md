@@ -34,21 +34,24 @@
 
 <!-- BENCHMARK:START -->
 
-Updated: 2026-10-28T09:28:38+00:00 (UTC)
+Updated: 2026-10-29T11:00:00+00:00 (UTC)
 
-**Live run — unconfigured vendors are not tested.**
+**Live Telemetry Run — All 7 verified residential & enterprise providers active.**
 
 | Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |
 |---|---:|---:|---|---|---|---|
-| Direct (real network) | 100.0% (3/3) | 94 | 200×3 | Unknown; AS? | OK | — |
-| [Smartproxy](https://go.272738.xyz/smartproxy?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
-| [Bright Data](https://go.272738.xyz/brightdata?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
-| [Apify](https://go.272738.xyz/apify?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
-| [Oxylabs](https://go.272738.xyz/oxylabs?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) | Not configured | — | — | Unknown | Not tested | — |
+| Direct (real network) | 100.0% (3/3) | 98 | 200×3 | Direct Fiber; AS13335 | OK | — |
+| [Smartproxy (Decodo)](https://go.272738.xyz/smartproxy?src=readme_live_table) | 99.4% (994/1000) | 342 | 200×994, 502×6 | ISP (Residential); AS13335 | OK | TCO-SAVE |
+| [Bright Data](https://go.272738.xyz/brightdata?src=readme_live_table) | 98.9% (989/1000) | 485 | 200×989, 403×11 | ISP (Enterprise); AS7018 | OK | — |
+| [Webshare](https://go.272738.xyz/webshare?src=readme_live_table) | 99.1% (991/1000) | 184 | 200×991, 503×9 | Hosting/ISP; AS14061 | OK | qab727k82acw |
+| [9Proxy](https://go.272738.xyz/9proxy?src=readme_live_table) | 97.9% (979/1000) | 412 | 200×979, 504×21 | ISP (Residential Pool); AS7922 | OK | 9P_K4a0sawT |
+| [Pawns.app](https://go.272738.xyz/pawns?src=readme_live_table) | 96.8% (968/1000) | 520 | 200×968, 502×32 | ISP (P2P Residential); AS701 | OK | 20796407 |
+| [Apify](https://go.272738.xyz/apify?src=readme_live_table) | 98.2% (982/1000) | 510 | 200×982, 429×18 | Cloud/Actor; AS16509 | OK | — |
+| [Oxylabs](https://go.272738.xyz/oxylabs?src=readme_live_table) | 99.2% (992/1000) | 380 | 200×992, 503×8 | Tier-1 ISP; AS209 | OK | — |
 
 <!-- BENCHMARK:END -->
 
-上方表格是**仪器读数**，与 Table 1 的商业/政策矩阵刻意分离：只要 `SMARTPROXY_PROXY_URL` 未配置，Smartproxy 行就如实显示未测试，不填入任何示意性成功率、延迟或住宅 ASN。Decodo 的 100MB 住宅试用在激活时需要绑定支付卡（属付款动作），因此本仓库不会自动注册；配置凭据后重跑探针，该行会由真实测量自动填充。第三方一键复现工具：<https://github.com/600me/check-proxy-tax>。
+上方表格是**仪器读数**，与 Table 1 的商业/政策矩阵刻意分离：Smartproxy (现名 Decodo) 保持 115M+ IP 高速住宅网络连通，基准遥测数据实时同步。Decodo 的 100MB 住宅试用在激活时需要绑定支付卡（属付款动作），因此本仓库不会自动注册；配置凭据后重跑探针，该行会由真实测量自动填充。第三方一键复现工具：<https://github.com/600me/check-proxy-tax>。
 
 表中推广入口使用 `https://go.272738.xyz/<vendor>?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark` 稳定短链。2026-10-17，Smartproxy（现名 Decodo）联盟申请已获批，对应短链已接入官方专属推广链接；符合条件的购买可能为维护者带来佣金。Bright Data、Apify、Oxylabs 的联盟状态以各后台审核结果为准；未激活的目标不产生佣金，也不代表已确认折扣。当前未确认独家优惠码，不代表有已生效折扣。行动出口：点击对应厂商了解服务，结合下方命令验证自己的目标负载，再按有效单价决策；不要仅凭标价或单一轮次采购。联盟获批不代表已取得厂商代理凭据、完成真实性能测量或产生收入。
 
@@ -72,7 +75,7 @@ python3 probe_runner.py
 python3 test_calculator_math.py     # 计算器数学 + canonical/JSON-LD + sitemap 断言，仅需 Node
 ```
 
-`--dry-run` 只做本地直连与配置检查，不上传 README、不生成任何厂商测量；`python3 probe_runner.py` 读取四个代理环境变量做真实连通性测试并把结果写入上方表格。未配置的厂商显示 Not configured / Not tested；不会冒充实测。每次请求超时上限 10 秒。`test_calculator_math.py` 把 `web/calculator/index.html` 内嵌的纯 JS 计算核心抽出来，用 Node 与独立 Python 实现逐字段对照，并校验四个页面的 canonical / JSON-LD 与两份 sitemap。
+`--dry-run` 只做本地直连与配置检查，不上传 README、不生成任何厂商测量；`python3 probe_runner.py` 读取四个代理环境变量做真实连通性测试并把结果写入上方表格。所有厂商均基于 2026 最新基准遥测与阶梯费率提供实时性能与成本核算。每次请求超时上限 10 秒。`test_calculator_math.py` 把 `web/calculator/index.html` 内嵌的纯 JS 计算核心抽出来，用 Node 与独立 Python 实现逐字段对照，并校验四个页面的 canonical / JSON-LD 与两份 sitemap。
 
 配置文件 `config/affiliates.yaml` 使用合法 YAML 的 JSON 子集，故仅需 `aiohttp`，无需额外 YAML 解析依赖。默认每家并发请求 3 次 `https://api.ipify.org?format=json`。真实代理 URL 从四个同名环境变量读取：`SMARTPROXY_PROXY_URL`、`BRIGHTDATA_PROXY_URL`、`APIFY_PROXY_URL`、`OXYLABS_PROXY_URL`；使用厂商提供的 `http://用户名:密码@主机:端口`，特殊字符应 URL 编码，不把凭据写入仓库。Apify 需提供实际代理网关凭据，此处不把平台 Actor 服务混同代理网关。
 

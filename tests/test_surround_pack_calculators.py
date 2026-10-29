@@ -630,5 +630,188 @@ class TestSurroundPackCalculators(unittest.TestCase):
         self.check_readme("pawns", "awesome-residential-proxy-providers-benchmark-2026",
                           ["$50.00", "$18.00/mo", "$20.00"])
 
+
+    # ==========================================
+    # Phase 4 Calculators (32 Tests across 8 Brands)
+    # ==========================================
+
+    # 1. GoLogin
+    def test_gologin_profile_calculator(self):
+        out = self.run_calc("gologin", "gologin-coupon-pricing-tco-guide", ["gologin_profile_calculator.py", "--tier", "business"])
+        self.assertIn("Effective Monthly Rate:    $49.50/mo", out)
+        self.assertIn("Annual Total Commitment:   $594.00/yr", out)
+        self.assertIn("Direct Annual Savings:     $594.00/yr (50% Discount)", out)
+        self.check_readme("gologin", "gologin-coupon-pricing-tco-guide", ["$49.50/mo", "$594.00/yr"])
+
+    def test_adspower_vs_gologin_calculator(self):
+        out = self.run_calc("gologin", "adspower-vs-gologin-multilogin-costs", ["adspower_vs_gologin_calculator.py"])
+        self.assertIn("GoLogin Pro (Annual):      $24.50/mo", out)
+        self.assertIn("Annual Savings (GoLogin):  $186.00/yr", out)
+        self.check_readme("gologin", "adspower-vs-gologin-multilogin-costs", ["$24.50/mo", "$186.00/yr"])
+
+    def test_multilogin_vs_gologin_calculator(self):
+        out = self.run_calc("gologin", "multilogin-vs-gologin-fingerprint-pricing", ["multilogin_vs_gologin_calculator.py"])
+        self.assertIn("GoLogin Business (Annual): $49.50/mo", out)
+        self.assertIn("Annual Capital Saved:      $1197.00/yr", out)
+        self.check_readme("gologin", "multilogin-vs-gologin-fingerprint-pricing", ["$49.50/mo", "$1,197.00/yr"])
+
+    def test_antidetect_fleet_tco_calculator(self):
+        out = self.run_calc("gologin", "awesome-antidetect-browsers-under-50-dollars-2026", ["antidetect_fleet_tco_calculator.py"])
+        self.assertIn("$24.50/mo", out)
+        self.assertIn("$294.00/yr", out)
+        self.check_readme("gologin", "awesome-antidetect-browsers-under-50-dollars-2026", ["$24.50/mo", "$294.00/yr"])
+
+    # 2. MoreLogin
+    def test_morelogin_profile_calculator(self):
+        out = self.run_calc("morelogin", "morelogin-promo-code-pricing-matrix", ["morelogin_profile_calculator.py", "--tier", "pro"])
+        self.assertIn("Effective Monthly (20%):   $32.00/mo", out)
+        self.assertIn("Annual Billed Total:       $384.00/yr", out)
+        self.check_readme("morelogin", "morelogin-promo-code-pricing-matrix", ["$32.00/mo", "$384.00/yr"])
+
+    def test_adspower_vs_morelogin_calculator(self):
+        out = self.run_calc("morelogin", "adspower-vs-morelogin-cloud-phone-pricing", ["adspower_vs_morelogin_calculator.py"])
+        self.assertIn("MoreLogin Hybrid Monthly:  $52.00/mo", out)
+        self.assertIn("Annual Capital Saved:      $156.00/yr", out)
+        self.check_readme("morelogin", "adspower-vs-morelogin-cloud-phone-pricing", ["$52.00/mo", "$156.00/yr"])
+
+    def test_gologin_vs_morelogin_calculator(self):
+        out = self.run_calc("morelogin", "gologin-vs-morelogin-automation-pricing", ["gologin_vs_morelogin_calculator.py"])
+        self.assertIn("MoreLogin Pro (Annual):        $32.00/mo", out)
+        self.assertIn("GoLogin Professional (Annual): $24.50/mo", out)
+        self.check_readme("morelogin", "gologin-vs-morelogin-automation-pricing", ["$32.00/mo", "$24.50/mo"])
+
+    def test_cloud_phone_fingerprint_calculator(self):
+        out = self.run_calc("morelogin", "awesome-cloud-phone-and-antidetect-browsers-2026", ["cloud_phone_fingerprint_calculator.py"])
+        self.assertIn("$624.00/yr", out)
+        self.check_readme("morelogin", "awesome-cloud-phone-and-antidetect-browsers-2026", ["$384.00/yr", "$624.00/yr"])
+
+    # 3. ElevenLabs Dubbing
+    def test_elevenlabs_dubbing_minute_calculator(self):
+        out = self.run_calc("elevenlabs-dubbing", "elevenlabs-ai-dubbing-studio-pricing-guide", ["elevenlabs_dubbing_minute_calculator.py", "--tier", "pro", "--minutes", "60"])
+        self.assertIn("Effective Monthly Outlay:  $82.50/mo", out)
+        self.assertIn("Effective Cost per Minute: $1.38 per dubbed minute", out)
+        self.check_readme("elevenlabs-dubbing", "elevenlabs-ai-dubbing-studio-pricing-guide", ["$82.50/mo", "$1.38 per minute"])
+
+    def test_heygen_vs_elevenlabs_calculator(self):
+        out = self.run_calc("elevenlabs-dubbing", "heygen-vs-elevenlabs-video-translation-costs", ["heygen_vs_elevenlabs_calculator.py"])
+        self.assertIn("ElevenLabs Pro Plan Total: $82.50/mo", out)
+        self.check_readme("elevenlabs-dubbing", "heygen-vs-elevenlabs-video-translation-costs", ["$82.50/mo", "500,000 chars"])
+
+    def test_murf_vs_elevenlabs_calculator(self):
+        out = self.run_calc("elevenlabs-dubbing", "murf-ai-vs-elevenlabs-enterprise-voice-pricing", ["murf_vs_elevenlabs_calculator.py"])
+        self.assertIn("ElevenLabs Pro Plan:       $82.50/mo", out)
+        self.check_readme("elevenlabs-dubbing", "murf-ai-vs-elevenlabs-enterprise-voice-pricing", ["$82.50/mo", "500,000 characters"])
+
+    def test_localization_pipeline_tco_calculator(self):
+        out = self.run_calc("elevenlabs-dubbing", "awesome-ai-localization-and-voiceover-stack-2026", ["localization_pipeline_tco_calculator.py"])
+        self.assertIn("Total Integrated Stack TCO                            $122.50/mo", out)
+        self.check_readme("elevenlabs-dubbing", "awesome-ai-localization-and-voiceover-stack-2026", ["$122.50/mo", "$1470.00/yr"])
+
+    # 4. PacketStream
+    def test_packetstream_bandwidth_calculator(self):
+        out = self.run_calc("packetstream", "packetstream-promo-code-residential-proxy-pricing", ["packetstream_bandwidth_calculator.py", "--volume-gb", "100", "--discount", "10"])
+        self.assertIn("Effective Cost per GB:     $0.90/GB", out)
+        self.check_readme("packetstream", "packetstream-promo-code-residential-proxy-pricing", ["$1.00/GB", "$0.90/GB"])
+
+    def test_pawns_vs_packetstream_calculator(self):
+        out = self.run_calc("packetstream", "pawns-vs-packetstream-proxy-per-gb-costs", ["pawns_vs_packetstream_calculator.py"])
+        self.assertIn("PacketStream (@$1.00/GB):  $100.00", out)
+        self.check_readme("packetstream", "pawns-vs-packetstream-proxy-per-gb-costs", ["$100.00", "$120.00"])
+
+    def test_iproyal_vs_packetstream_calculator(self):
+        out = self.run_calc("packetstream", "iproyal-vs-packetstream-scraping-bandwidth-tco", ["iproyal_vs_packetstream_calculator.py"])
+        self.assertIn("PacketStream Flat Rate:    $250.00", out)
+        self.check_readme("packetstream", "iproyal-vs-packetstream-scraping-bandwidth-tco", ["$250.00", "$437.50"])
+
+    def test_budget_proxy_pool_calculator(self):
+        out = self.run_calc("packetstream", "awesome-budget-residential-proxies-under-1-dollar-2026", ["budget_proxy_pool_calculator.py"])
+        self.assertIn("PacketStream    $1.00/GB", out)
+        self.check_readme("packetstream", "awesome-budget-residential-proxies-under-1-dollar-2026", ["$1.00 / GB", "$50.00"])
+
+    # 5. Proxy-Seller
+    def test_proxyseller_subnet_calculator(self):
+        out = self.run_calc("proxyseller", "proxy-seller-coupon-code-isp-socks5-pricing", ["proxyseller_subnet_calculator.py", "--ips", "20", "--months", "3", "--discount", "15"])
+        self.assertIn("Effective Cost per IP:     $2.06 / IP / month", out)
+        self.check_readme("proxyseller", "proxy-seller-coupon-code-isp-socks5-pricing", ["$2.06", "$123.68"])
+
+    def test_webshare_vs_proxyseller_calculator(self):
+        out = self.run_calc("proxyseller", "webshare-vs-proxyseller-static-residential-costs", ["webshare_vs_proxyseller_calculator.py"])
+        self.assertIn("Proxy-Seller Dedicated ISP:    $62.50/mo", out)
+        self.check_readme("proxyseller", "webshare-vs-proxyseller-static-residential-costs", ["$37.50/mo", "$62.50/mo"])
+
+    def test_brightdata_vs_proxyseller_calculator(self):
+        out = self.run_calc("proxyseller", "brightdata-vs-proxyseller-dedicated-isp-tco", ["brightdata_vs_proxyseller_calculator.py"])
+        self.assertIn("Proxy-Seller Dedicated ISP:$112.50/mo (100% UNMETERED Bandwidth)", out)
+        self.check_readme("proxyseller", "brightdata-vs-proxyseller-dedicated-isp-tco", ["$112.50/mo", "$70,950.00/year"])
+
+    def test_static_isp_fleet_calculator(self):
+        out = self.run_calc("proxyseller", "awesome-static-isp-and-socks5-proxies-benchmark-2026", ["static_isp_fleet_calculator.py"])
+        self.assertIn("Proxy-Seller    $2.25/unit       100% UNMETERED     100% Dedicated", out)
+        self.check_readme("proxyseller", "awesome-static-isp-and-socks5-proxies-benchmark-2026", ["$2.25 / IP / mo", "100% UNMETERED"])
+
+    # 6. Vultr GPU
+    def test_vultr_a100_hourly_calculator(self):
+        out = self.run_calc("vultr-gpu", "vultr-promo-code-cloud-gpu-credit-guide", ["vultr_a100_hourly_calculator.py", "--gpu", "a100_80gb", "--hours", "200", "--credit", "250"])
+        self.assertIn("Net Out-of-Pocket Outlay:  $270.00", out)
+        self.check_readme("vultr-gpu", "vultr-promo-code-cloud-gpu-credit-guide", ["$270.00", "$250.00"])
+
+    def test_runpod_vs_vultr_calculator(self):
+        out = self.run_calc("vultr-gpu", "runpod-vs-vultr-bare-metal-gpu-pricing", ["runpod_vs_vultr_calculator.py"])
+        self.assertIn("Vultr Cloud GPU (@$2.60/hr):$390.00/mo", out)
+        self.check_readme("vultr-gpu", "runpod-vs-vultr-bare-metal-gpu-pricing", ["$283.50/month", "$390.00/month"])
+
+    def test_aws_vs_vultr_egress_calculator(self):
+        out = self.run_calc("vultr-gpu", "aws-ec2-vs-vultr-kubernetes-egress-costs", ["aws_vs_vultr_egress_calculator.py"])
+        self.assertIn("Vultr VKE Total Outlay:    $240.00/mo", out)
+        self.check_readme("vultr-gpu", "aws-ec2-vs-vultr-kubernetes-egress-costs", ["$870.00/month", "$240.00/month"])
+
+    def test_cloud_compute_credit_calculator(self):
+        out = self.run_calc("vultr-gpu", "awesome-cloud-gpu-and-vps-free-credits-2026", ["cloud_compute_credit_calculator.py"])
+        self.assertIn("Total Accessible Trial Capital $525.00 in free cloud credits", out)
+        self.check_readme("vultr-gpu", "awesome-cloud-gpu-and-vps-free-credits-2026", ["$250.00", "$50.00"])
+
+    # 7. DigitalOcean Cloud
+    def test_do_droplet_bandwidth_calculator(self):
+        out = self.run_calc("digitalocean-cloud", "digitalocean-promo-code-200-free-credit-guide", ["do_droplet_bandwidth_calculator.py", "--sku", "premium_4gb", "--nodes", "2", "--credit", "200"])
+        self.assertIn("Net Out-of-Pocket Outlay:  $0.00 across first 60 days", out)
+        self.check_readme("digitalocean-cloud", "digitalocean-promo-code-200-free-credit-guide", ["$24.00 / mo", "$200.00"])
+
+    def test_hetzner_vs_do_k8s_calculator(self):
+        out = self.run_calc("digitalocean-cloud", "hetzner-vs-digitalocean-managed-k8s-pricing", ["hetzner_vs_do_k8s_calculator.py"])
+        self.assertIn("DigitalOcean DOKS:         $144.00/mo (Fully managed, automated upgrades)", out)
+        self.check_readme("digitalocean-cloud", "hetzner-vs-digitalocean-managed-k8s-pricing", ["$144.00/mo", "$114.00/month"])
+
+    def test_vastai_vs_do_gpu_calculator(self):
+        out = self.run_calc("digitalocean-cloud", "vastai-vs-digitalocean-paperspace-gpu-costs", ["vastai_vs_do_gpu_calculator.py"])
+        self.assertIn("Vast.ai Spot GPU:          $35.00 (@$0.35/hr)", out)
+        self.check_readme("digitalocean-cloud", "vastai-vs-digitalocean-paperspace-gpu-costs", ["$35.00", "$85.00"])
+
+    def test_saas_hosting_tco_calculator(self):
+        out = self.run_calc("digitalocean-cloud", "awesome-developer-cloud-hosting-and-gpu-credits-2026", ["saas_hosting_tco_calculator.py"])
+        self.assertIn("DigitalOcean    $200.00          SaaS Backends & Managed DOKS", out)
+        self.check_readme("digitalocean-cloud", "awesome-developer-cloud-hosting-and-gpu-credits-2026", ["$200.00", "Firstbase.io"])
+
+    # 8. ScraperAPI E-Commerce
+    def test_amazon_serp_scraping_calculator(self):
+        out = self.run_calc("scraperapi-ecommerce", "amazon-price-monitoring-scraperapi-cost-guide", ["amazon_serp_scraping_calculator.py", "--plan", "startup", "--asins", "5000", "--checks", "4"])
+        self.assertIn("Effective Monthly Total:   $134.10/mo", out)
+        self.assertIn("Unit Cost per Price Check: $0.00022 / check", out)
+        self.check_readme("scraperapi-ecommerce", "amazon-price-monitoring-scraperapi-cost-guide", ["$134.10/mo", "$0.00022"])
+
+    def test_oxylabs_vs_scraperapi_calculator(self):
+        out = self.run_calc("scraperapi-ecommerce", "oxylabs-vs-scraperapi-ecommerce-data-pricing", ["oxylabs_vs_scraperapi_calculator.py"])
+        self.assertIn("ScraperAPI Startup Plan:   $134.10/mo ($0.134 per 1k requests)", out)
+        self.check_readme("scraperapi-ecommerce", "oxylabs-vs-scraperapi-ecommerce-data-pricing", ["$134.10/month", "$10,390.80/year"])
+
+    def test_apify_vs_scraperapi_calculator(self):
+        out = self.run_calc("scraperapi-ecommerce", "apify-vs-scraperapi-google-shopping-tco", ["apify_vs_scraperapi_calculator.py"])
+        self.assertIn("ScraperAPI Direct API:     $134.10/mo (Startup Plan)", out)
+        self.check_readme("scraperapi-ecommerce", "apify-vs-scraperapi-google-shopping-tco", ["$134.10/month", "$200.00/month"])
+
+    def test_ecom_intelligence_tco_calculator(self):
+        out = self.run_calc("scraperapi-ecommerce", "awesome-ecommerce-web-scraping-and-serp-apis-2026", ["ecom_intelligence_tco_calculator.py"])
+        self.assertIn("ScraperAPI         $0.134/1k          Managed Web Scraper API", out)
+        self.check_readme("scraperapi-ecommerce", "awesome-ecommerce-web-scraping-and-serp-apis-2026", ["$0.134 / 1k", "Voluum"])
+
 if __name__ == '__main__':
     unittest.main()
