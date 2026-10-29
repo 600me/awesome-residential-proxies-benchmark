@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ad-tracker-antidetect-tco"
+version = "1.0.0"
+description = "CLI tool to audit anti-detect browser stacks, tracker event overages, and proxy costs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Kais / 600me" }]
+keywords = ["antidetect", "adspower", "morelogin", "voluum", "9proxy", "webshare", "tco", "affiliate", "tracking"]
+dependencies = []
+
+[project.scripts]
+ad-tracker-antidetect-tco = "ad_tracker_antidetect_tco.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/600me/check-proxy-tax"
+Benchmark = "https://go.272738.xyz/adspower?src=pypi_adstack_calc"
+
+[tool.setuptools]
+packages = ["ad_tracker_antidetect_tco"]

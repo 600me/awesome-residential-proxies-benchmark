@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-gpu-cost-calculator"
+version = "1.0.0"
+description = "CLI tool to audit real cloud GPU TCO, spot interruption penalty, and generative multimodal AI costs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Kais / 600me" }]
+keywords = ["llm", "gpu", "h100", "a100", "runpod", "vastai", "elevenlabs", "heygen", "tco", "pricing"]
+dependencies = []
+
+[project.scripts]
+llm-gpu-cost-calculator = "llm_gpu_cost_calculator.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/600me/check-proxy-tax"
+Benchmark = "https://go.272738.xyz/runpod?src=pypi_gpu_calc"
+
+[tool.setuptools]
+packages = ["llm_gpu_cost_calculator"]

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "us-llc-compliance-tco"
+version = "1.0.0"
+description = "CLI tool to audit 3-year US LLC TCO, franchise taxes, FinCEN BOI, and IRS Form 5472 compliance."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Kais / 600me" }]
+keywords = ["llc", "compliance", "tco", "wyoming", "delaware", "firstbase", "stripe-atlas", "form-5472", "boi", "ein"]
+dependencies = []
+
+[project.scripts]
+us-llc-compliance-tco = "us_llc_compliance_tco.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/600me/check-proxy-tax"
+Benchmark = "https://go.272738.xyz/firstbase?src=pypi_llc_calc"
+
+[tool.setuptools]
+packages = ["us_llc_compliance_tco"]
