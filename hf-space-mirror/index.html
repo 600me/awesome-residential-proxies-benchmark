@@ -332,6 +332,23 @@ footer a:hover { text-decoration: underline; }
             <a href="https://is.gd/CkD8Hx" target="_blank" rel="noopener" class="cta-btn">Deploy</a>
           </div>
 
+          <!-- PacketStream -->
+          <div class="vendor-row highlight">
+            <div class="vendor-info">
+              <div class="vendor-name">PacketStream <span class="vendor-badge badge-rec">Flat $1.00/GB Residential</span></div>
+              <div class="vendor-metrics">
+                <span>List: $1.00/GB</span>
+                <span>Eff: <b id="packetstream-eff">$1.18/GB</b></span>
+                <span>7M+ Real Peer IPs, Never Expires</span>
+              </div>
+            </div>
+            <div class="vendor-cost">
+              <div class="num" id="packetstream-total">$118</div>
+              <div class="sub">/mo total</div>
+            </div>
+            <a href="https://go.272738.xyz/packetstream?src=hf_space_packetstream" target="_blank" rel="noopener" class="cta-btn">Claim Tier</a>
+          </div>
+
           <!-- Bright Data Baseline -->
           <div class="vendor-row">
             <div class="vendor-info">
@@ -372,6 +389,10 @@ footer a:hover { text-decoration: underline; }
         <div class="control-group">
           <label>AI Voice Synthesis Volume <span class="val" id="voice-chars-val">250,000 chars</span></label>
           <input type="range" id="voice-chars" min="50000" max="2000000" step="50000" value="250000" oninput="calcGPU()">
+        </div>
+        <div class="control-group">
+          <label>AI Video Avatar Output <span class="val" id="heygen-mins-val">20 mins</span></label>
+          <input type="range" id="heygen-mins" min="5" max="120" step="5" value="20" oninput="calcGPU()">
         </div>
         <div class="callout">
           <strong>Hyperscaler Tax:</strong> AWS p5/p4 instances mandate 8-GPU minimum allocations ($32+/hr) with complex reserve contracts. Serverless and spot container clouds eliminate idle orchestration fees.
@@ -433,6 +454,22 @@ footer a:hover { text-decoration: underline; }
               <div class="sub">/mo Voice</div>
             </div>
             <a href="https://is.gd/Xa9hhN" target="_blank" rel="noopener" class="cta-btn">Activate</a>
+          </div>
+
+          <!-- HeyGen -->
+          <div class="vendor-row highlight">
+            <div class="vendor-info">
+              <div class="vendor-name">HeyGen <span class="vendor-badge badge-rec">AI Video Avatar Standard</span></div>
+              <div class="vendor-metrics">
+                <span>Plan: <b id="heygen-plan">Creator Tier ($24/mo)</b></span>
+                <span>4K Custom Avatars, 175+ Locales</span>
+              </div>
+            </div>
+            <div class="vendor-cost">
+              <div class="num" id="heygen-total">$24</div>
+              <div class="sub">/mo Video</div>
+            </div>
+            <a href="https://go.272738.xyz/heygen?src=hf_space_heygen" target="_blank" rel="noopener" class="cta-btn">Create Avatar</a>
           </div>
 
           <!-- AWS Baseline -->
@@ -604,6 +641,22 @@ footer a:hover { text-decoration: underline; }
             <a href="https://is.gd/wUkgE0" target="_blank" rel="noopener" class="cta-btn">Get Profiles</a>
           </div>
 
+          <!-- MoreLogin -->
+          <div class="vendor-row highlight">
+            <div class="vendor-info">
+              <div class="vendor-name">MoreLogin <span class="vendor-badge badge-rec">Cloud Phone & Anti-Detect</span></div>
+              <div class="vendor-metrics">
+                <span id="morelogin-tier">Pro Profiles + Android Cloud Phone</span>
+                <span>Real ARM Device Canvas Emulation</span>
+              </div>
+            </div>
+            <div class="vendor-cost">
+              <div class="num" id="morelogin-cost">$25</div>
+              <div class="sub">/mo eff.</div>
+            </div>
+            <a href="https://go.272738.xyz/morelogin?src=hf_space_morelogin" target="_blank" rel="noopener" class="cta-btn">Deploy Cloud Phone</a>
+          </div>
+
           <!-- Voluum -->
           <div class="vendor-row highlight">
             <div class="vendor-info">
@@ -698,6 +751,13 @@ function calcProxies() {
   // Pawns: $3.00 flat PAYG
   let pawnsTot = billedGb * 3.00;
   document.getElementById('pawns-total').innerText = '$' + Math.round(pawnsTot);
+
+  // PacketStream: $1.00 list flat rate
+  let psRate = 1.00;
+  let psEff = psRate * mult;
+  let psTot = billedGb * psRate;
+  document.getElementById('packetstream-eff').innerText = '$' + psEff.toFixed(2) + '/GB';
+  document.getElementById('packetstream-total').innerText = '$' + Math.round(psTot);
   
   // Bright Data: $8.40 list
   let brightRate = 8.40;
@@ -766,6 +826,21 @@ function calcGPU() {
   }
   document.getElementById('el-plan').innerText = elPlan;
   document.getElementById('el-total').innerText = '$' + elCost;
+
+  // HeyGen AI Video
+  const hgMins = parseFloat(document.getElementById('heygen-mins').value);
+  document.getElementById('heygen-mins-val').innerText = hgMins + ' mins';
+  let hgPlan = "Creator Tier ($24)";
+  let hgCost = 24;
+  if (hgMins > 30) {
+    hgPlan = "Team / High-Volume";
+    hgCost = 72 + Math.round((hgMins - 30) * 1.50);
+  } else if (hgMins > 15) {
+    hgPlan = "Team Tier ($72)";
+    hgCost = 72;
+  }
+  document.getElementById('heygen-plan').innerText = hgPlan;
+  document.getElementById('heygen-total').innerText = '$' + hgCost;
 }
 
 // TAB 3: Scraping
@@ -819,6 +894,19 @@ function calcMediaBuy() {
   }
   document.getElementById('adspower-cost').innerText = '$' + adspowerCost;
   document.getElementById('adspower-tier').innerText = adspowerTier;
+
+  // MoreLogin: $9 for 10, $28 for 100 + $1.80 per cloud phone
+  let moreloginCost = 9;
+  let moreloginTier = "Base 10 Profiles";
+  if (profiles >= 100) {
+    moreloginCost = 28 + Math.round(profiles * 0.5 * 1.80);
+    moreloginTier = "Pro 100 + Cloud Phones";
+  } else if (profiles >= 50) {
+    moreloginCost = 19 + Math.round(profiles * 0.5 * 1.80);
+    moreloginTier = "Team 50 + Cloud Phones";
+  }
+  document.getElementById('morelogin-cost').innerText = '$' + moreloginCost;
+  document.getElementById('morelogin-tier').innerText = moreloginTier;
   
   // Voluum: Discover $199 (1M), Profit $349 (3M), Scale $599 (5M)
   let voluumCost = 199;

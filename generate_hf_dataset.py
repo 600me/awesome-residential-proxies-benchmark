@@ -50,9 +50,14 @@ tags:
   - pawns-app
   - elevenlabs
   - voluum
+  - packetstream
+  - morelogin
+  - heygen
+  - ai-video
+  - cloud-phone
 size_categories:
   - n<1K
-pretty_name: "2026 Developer Cloud Infrastructure & True TCO Benchmark (11 Brands)"
+pretty_name: "2026 Developer Cloud Infrastructure & True TCO Benchmark (14 Brands)"
 ---
 """
 
@@ -221,6 +226,51 @@ BRAND_RECORDS = [
         "promo_discount_rules": "1,000,000 events included in Discover tier; microsecond redirect CDN",
         "benchmark_competitor": "RedTrack / Self-Hosted Keitaro + Server Cluster",
         "outbound_url": "https://is.gd/YsboSO"
+    },
+    {
+        "brand": "PacketStream",
+        "category": "Residential Proxy Pool",
+        "entry_pricing_usd": 1.00,
+        "volume_pricing_usd": 1.00,
+        "billing_unit": "USD/GB",
+        "hazard_overhead_pct": 14.0,
+        "effective_unit_cost_usd": 1.16,
+        "monthly_tco_benchmark_usd": 116.00,
+        "competitor_baseline_usd": 525.00,
+        "monthly_savings_usd": 409.00,
+        "promo_discount_rules": "Flat $1.00/GB residential bandwidth, credits never expire, no monthly lock-in",
+        "benchmark_competitor": "IPRoyal ($5.25/GB list)",
+        "outbound_url": "https://go.272738.xyz/packetstream?src=hf_dataset_packetstream"
+    },
+    {
+        "brand": "MoreLogin",
+        "category": "Cloud Phone & Antidetect Browser Fleet",
+        "entry_pricing_usd": 9.00,
+        "volume_pricing_usd": 25.00,
+        "billing_unit": "USD/mo (50 Profiles + Cloud Phone)",
+        "hazard_overhead_pct": 2.5,
+        "effective_unit_cost_usd": 25.63,
+        "monthly_tco_benchmark_usd": 25.00,
+        "competitor_baseline_usd": 99.00,
+        "monthly_savings_usd": 74.00,
+        "promo_discount_rules": "Real Android cloud phone integration + Canvas fingerprint masking, 20% off promos",
+        "benchmark_competitor": "GoLogin ($49/mo) / Multilogin (€99/mo)",
+        "outbound_url": "https://go.272738.xyz/morelogin?src=hf_dataset_morelogin"
+    },
+    {
+        "brand": "HeyGen",
+        "category": "Generative AI Video & Avatars",
+        "entry_pricing_usd": 24.00,
+        "volume_pricing_usd": 72.00,
+        "billing_unit": "USD/mo (Creator / Team Plan)",
+        "hazard_overhead_pct": 1.0,
+        "effective_unit_cost_usd": 72.72,
+        "monthly_tco_benchmark_usd": 72.00,
+        "competitor_baseline_usd": 500.00,
+        "monthly_savings_usd": 428.00,
+        "promo_discount_rules": "35% annual creator terms, 4K video exports, multi-language automated lip-sync",
+        "benchmark_competitor": "Synthesia ($89/mo) / Studio Video Crew ($500+)",
+        "outbound_url": "https://go.272738.xyz/heygen?src=hf_dataset_heygen"
     }
 ]
 
@@ -229,12 +279,12 @@ def generate_dataset_card_markdown():
     """Generate comprehensive Dataset Card README.md exceeding 800 words."""
     card = []
     card.append(DATASET_METADATA.strip())
-    card.append("\n# 2026 Developer Cloud Infrastructure & True TCO Benchmark (11 Commercial Brands)\n")
-    card.append("An authoritative, empirically sampled benchmark measuring advertised list rates versus **real effective operational unit costs** across 11 commercial infrastructure providers in four foundational cloud engineering tracks.\n")
+    card.append("\n# 2026 Developer Cloud Infrastructure & True TCO Benchmark (14 Commercial Brands)\n")
+    card.append("An authoritative, empirically sampled benchmark measuring advertised list rates versus **real effective operational unit costs** across 14 commercial infrastructure providers in four foundational cloud engineering tracks.\n")
     card.append("Engineers, system architects, and technical founders frequently make tooling commitments based on clean sticker prices published on marketing landing pages. However, in production workloads, secondary hazards — including TCP dropouts, session renegotiation tax, token binding failures, headless execution credit multipliers, and rigid minimum hardware leases — skew effective balance sheets by **18% to over 300%**.\n")
     card.append("This dataset compiles structured pricing snapshots, hazard models, comparative baseline ratios, and programmatic verification references as of **October 2026**.\n")
 
-    card.append("\n## 1. Complete Commercial Benchmark Matrix (All 11 Providers)\n")
+    card.append("\n## 1. Complete Commercial Benchmark Matrix (All 14 Providers)\n")
     card.append("| Brand | Vertical Category | Advertised Rate | Hazard Rate (%) | Effective Cost | Monthly Baseline TCO | Competitor Baseline | Net Monthly Savings | Primary Access Link |")
     card.append("|---|---|---|---|---|---|---|---|---|")
     for r in BRAND_RECORDS:
@@ -281,7 +331,7 @@ def generate_dataset_card_markdown():
     card.append("| `outbound_url` | string | Direct verified onboarding endpoint with tracking attribution |")
 
     card.append("\n## 4. Usage & Reproducibility via Python\n")
-    card.append("```python\nimport pandas as pd\n\n# Load dataset directly from Hugging Face Hub\ndf = pd.read_csv('https://huggingface.co/datasets/600me/developer-coupons-breakdown/raw/main/data/developer_coupons_tco_benchmark_2026.csv')\n\n# Calculate average savings across all 11 infrastructure providers\navg_savings = df['monthly_savings_usd'].mean()\nprint(f'Average Monthly Cash Savings: ${avg_savings:.2f}')\n\n# Identify top 3 highest-arbitrage opportunities\ntop3 = df.sort_values(by='monthly_savings_usd', ascending=False).head(3)\nfor idx, row in top3.iterrows():\n    print(f\"{row['brand']}: Saves ${row['monthly_savings_usd']:.2f}/mo vs {row['benchmark_competitor']}\")\n```\n")
+    card.append("```python\nimport pandas as pd\n\n# Load dataset directly from Hugging Face Hub\ndf = pd.read_csv('https://huggingface.co/datasets/600me/developer-coupons-breakdown/raw/main/data/developer_coupons_tco_benchmark_2026.csv')\n\n# Calculate average savings across all 14 infrastructure providers\navg_savings = df['monthly_savings_usd'].mean()\nprint(f'Average Monthly Cash Savings: ${avg_savings:.2f}')\n\n# Identify top 3 highest-arbitrage opportunities\ntop3 = df.sort_values(by='monthly_savings_usd', ascending=False).head(3)\nfor idx, row in top3.iterrows():\n    print(f\"{row['brand']}: Saves ${row['monthly_savings_usd']:.2f}/mo vs {row['benchmark_competitor']}\")\n```\n")
 
     card.append("\n## 5. Maintenance, Licensing & Regulatory Transparency\n")
     card.append("- **License:** MIT Open Source License. Unrestricted reuse for academic, engineering, and enterprise planning.\n")
