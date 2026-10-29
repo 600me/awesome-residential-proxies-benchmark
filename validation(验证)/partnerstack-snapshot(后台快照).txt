@@ -1,0 +1,303 @@
+- link "PS标志" [ref=e5]
+  - image "PS标志"
+- navigation
+  - list
+    - listitem [level=1]
+      - link "首页" [ref=e30]
+        - paragraph
+          - StaticText "首页"
+    - listitem [level=1]
+      - link "佣金" [ref=e31]
+        - paragraph
+          - StaticText "佣金"
+    - listitem [level=1]
+      - link "报告" [ref=e32]
+        - paragraph
+          - StaticText "报告"
+    - listitem [level=1]
+      - link "发现合作伙伴关系" [ref=e33]
+        - paragraph
+          - StaticText "发现合作伙伴关系"
+- button "您的计划" [ref=e16]
+  - image
+  - StaticText "您的计划"
+- generic
+  - button [ref=e23]
+  - StaticText "0 未读通知"
+- generic
+  - button "S" [ref=e24]
+    - StaticText "S"
+- generic
+  - StaticText "欢迎，sccdsd！"
+  - image "Partnerstack 标志"
+  - paragraph
+    - StaticText "PartnerStack 网络转发状态：待处理"
+  - paragraph
+    - StaticText "您的 3 个计划申请处于搁置状态"
+  - paragraph
+    - StaticText "如果获得批准加入网络，PartnerStack将自动为您提交这些申请"
+  - image
+  - image
+  - image
+  - image
+  - image "PartnerStack"
+  - StaticText "网络焦点"
+  - heading "Upwork" [level=2, ref=e6]
+  - image
+  - StaticText "从新客户的首份合同中赚取 70% 的佣金，最高可达 250 美元。"
+  - paragraph
+    - StaticText "Upwork 是全球领先的人力与人工智能赋能型工作平台。它连接从初创企业到全球性企业的各类公司，帮助他们与技能娴熟的独立专业人士携手合作，加速发展并解决问题。二十多年来，Upwork 已帮助众多企业在人工智能、开发、设计、营销、财务、运营、客户支持等领域找到专业人才。"
+  - link "upwork.com" [ref=e7]
+    - image
+    - StaticText "upwork.com"
+  - button "加入计划" [ref=e8]
+    - StaticText "加入计划"
+  - link "忽略" [ref=e9]
+  - list
+    - listitem [level=1, ref=e17] clickable [cursor:pointer]
+      - image
+      - StaticText "合作伙伴关系"
+    - listitem [level=1, ref=e18] clickable [cursor:pointer]
+      - image
+      - StaticText "邀请"
+      - StaticText "0"
+  - searchbox "按计划名称搜索" [ref=e19]
+  - generic [ref=e10] clickable [cursor:pointer]
+    - combobox "全部" [expanded=false, ref=e25]
+    - StaticText "多个状态"
+  - table
+    - rowgroup
+      - row
+        - columnheader "计" [ref=e44] clickable [cursor:pointer, tabindex]
+          - StaticText "计"
+        - columnheader "状态" [ref=e45]
+          - StaticText "状态"
+        - columnheader "点击次数" [ref=e46] clickable [cursor:pointer, tabindex]
+          - StaticText "点击次数"
+        - columnheader "注册号" [ref=e47] clickable [cursor:pointer, tabindex]
+          - StaticText "注册号"
+        - columnheader "收入" [ref=e48] clickable [cursor:pointer, tabindex]
+          - StaticText "收入"
+        - columnheader "待处理佣金" [ref=e49]
+          - StaticText "待处理佣金"
+        - columnheader "已支付佣金" [ref=e50] clickable [cursor:pointer, tabindex]
+          - StaticText "已支付佣金"
+    - rowgroup
+      - row [ref=e52] clickable [cursor:pointer, tabindex]
+        - cell "Firstbase.io" [ref=e56]
+          - image
+          - StaticText "Firstbase.io"
+        - cell "已启用" [ref=e57]
+          - StaticText "已启用"
+        - cell "145" [ref=e58]
+          - StaticText "145"
+        - cell "0" [ref=e59]
+          - StaticText "0"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e60]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e61]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e62]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+      - row [ref=e53] clickable [cursor:pointer]
+        - cell "明亮数据" [ref=e63]
+          - image
+          - StaticText "明亮数据"
+        - cell "已启用" [ref=e64]
+          - StaticText "已启用"
+        - cell "0" [ref=e65]
+          - StaticText "0"
+        - cell "0" [ref=e66]
+          - StaticText "0"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e67]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e68]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e69]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+      - row [ref=e54] clickable [cursor:pointer]
+        - cell "Eleven Labs Inc." [ref=e70]
+          - image
+          - StaticText "Eleven Labs Inc."
+        - cell "已启用" [ref=e71]
+          - StaticText "已启用"
+        - cell "4" [ref=e72]
+          - StaticText "4"
+        - cell "0" [ref=e73]
+          - StaticText "0"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e74]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e75]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e76]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+      - row [ref=e55] clickable [cursor:pointer]
+        - cell "杜拉" [ref=e77]
+          - image
+          - StaticText "杜拉"
+        - cell "申请待处理" [ref=e78]
+          - StaticText "申请待处理"
+        - cell "0" [ref=e79]
+          - StaticText "0"
+        - cell "0" [ref=e80]
+          - StaticText "0"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e81]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e82]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+        - cell "0.00 美元 随外汇汇率变化。 当前汇率： $1.00 USD -> $1.00 USD" [ref=e83]
+          - generic
+            - paragraph
+              - StaticText "0.00 美元"
+            - paragraph
+              - StaticText "随外汇汇率变化。"
+            - paragraph
+              - StaticText "当前汇率： $1.00 USD -> $1.00 USD"
+  - navigation
+    - StaticText "1 - 4 共 4 条"
+    - button "上一页" [disabled, ref=e20]
+    - button "下一页" [disabled, ref=e21]
+    - generic [ref=e22] clickable [cursor:pointer]
+      - combobox "每页行数" [expanded=false, ref=e26]: 10
+        - StaticText "10"
+  - generic
+    - StaticText "业绩概览"
+    - button "以美元显示" [expanded=false, ref=e27]
+      - image
+      - paragraph
+        - StaticText "以美元显示"
+      - image
+    - button "所有计划" [ref=e28]
+      - StaticText "所有计划"
+      - image
+    - button "所有合作伙伴关系" [ref=e29]
+      - StaticText "所有合作伙伴关系"
+      - image
+    - generic
+      - button "过去90天" [expanded=true, ref=e51]
+        - StaticText "过去90天"
+        - image
+  - StaticText "已支付佣金"
+  - generic [ref=e11] clickable [cursor:pointer]
+    - StaticText "点击次数"
+    - StaticText "149"
+    - image
+    - image
+    - StaticText "100%"
+    - StaticText "Previous 90 days"
+  - generic [ref=e12] clickable [cursor:pointer]
+    - StaticText "注册号"
+    - StaticText "0"
+    - image
+    - StaticText "0%"
+    - StaticText "Previous 90 days"
+  - generic [ref=e13] clickable [cursor:pointer]
+    - StaticText "收入"
+    - StaticText "$0.00"
+    - image
+    - StaticText "0%"
+    - StaticText "Previous 90 days"
+  - generic [ref=e14] clickable [cursor:pointer]
+    - StaticText "待处理佣金"
+    - StaticText "$0.00"
+    - image
+    - StaticText "0%"
+    - StaticText "Previous 90 days"
+  - generic
+    - StaticText "已支付佣金"
+    - StaticText "$0.00"
+    - image
+    - StaticText "0%"
+    - StaticText "Previous 90 days"
+  - StaticText "统计数据平台更新"
+  - generic [ref=e15] clickable [cursor:pointer]
+    - StaticText "了解更多有关统计数据的信息"
+  - paragraph
+    - StaticText "您的活动"
+  - image
+  - StaticText "您还没有任何活动"
+  - StaticText "PartnerStack会跟踪您所有计划中的活动，以便您在客户注册、购买或为您的佣金时获得可视性。"
+- link "PartnerStack.com" [ref=e1]
+  - StaticText "PartnerStack.com"
+- StaticText "|"
+- link "合作伙伴协议" [ref=e2]
+  - StaticText "合作伙伴协议"
+- StaticText "|"
+- link "行为准则" [ref=e3]
+  - StaticText "行为准则"
+- StaticText "|"
+- link "支持中心" [ref=e4]
+  - StaticText "支持中心"
+- generic
+  - image
+  - generic
+    - image
+    - image
+  - image
+  - image

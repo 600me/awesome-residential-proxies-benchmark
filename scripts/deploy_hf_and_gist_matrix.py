@@ -94,7 +94,7 @@ def main():
     dataset_name = "600me/developer-coupons-breakdown"
     dataset_remote = f"https://600me:{hf_token}@huggingface.co/datasets/{dataset_name}"
     print(f"\nDeploying Dataset: {dataset_name} ...")
-    ok, msg = push_git_repo(DATASET_MIRROR, dataset_remote, "Update 2026 Developer Cloud Infrastructure & True TCO Benchmark (11 Brands)")
+    ok, msg = push_git_repo(DATASET_MIRROR, dataset_remote, "Update 2026 Developer Cloud Infrastructure & True TCO Benchmark (14 Brands)")
     time.sleep(2)
     public_url = f"https://huggingface.co/datasets/{dataset_name}"
     v_ok, code = verify_url(public_url)

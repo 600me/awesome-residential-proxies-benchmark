@@ -1,0 +1,98 @@
+{
+  "https://plue.men/v/3?cta=r3c3": [
+    "https://github.com/dnoddieva/aws-p5-vs-vastai-h100-pricing"
+  ],
+  "https://plue.men/v/4?cta=r3c4": [
+    "https://github.com/dnoddieva/aws-p5-vs-vastai-h100-pricing"
+  ],
+  "https://plue.men/v/1?cta=r3c1": [
+    "https://github.com/dnoddieva/aws-p5-vs-vastai-h100-pricing"
+  ],
+  "https://plue.men/v/2?cta=r3c2": [
+    "https://github.com/dnoddieva/aws-p5-vs-vastai-h100-pricing"
+  ],
+  "https://plue.men/v/3?cta=r2c3": [
+    "https://github.com/dnoddieva/runpod-vs-vastai-gpu-rental-costs"
+  ],
+  "https://plue.men/v/4?cta=r2c4": [
+    "https://github.com/dnoddieva/runpod-vs-vastai-gpu-rental-costs"
+  ],
+  "https://plue.men/v/1?cta=r2c1": [
+    "https://github.com/dnoddieva/runpod-vs-vastai-gpu-rental-costs"
+  ],
+  "https://plue.men/v/2?cta=r2c2": [
+    "https://github.com/dnoddieva/runpod-vs-vastai-gpu-rental-costs"
+  ],
+  "https://plue.men/v/1?cta=r4c1": [
+    "https://github.com/dnoddieva/spot-instance-gpu-training-budget"
+  ],
+  "https://plue.men/v/2?cta=r4c2": [
+    "https://github.com/dnoddieva/spot-instance-gpu-training-budget"
+  ],
+  "https://plue.men/v/4?cta=r4c4": [
+    "https://github.com/dnoddieva/spot-instance-gpu-training-budget"
+  ],
+  "https://plue.men/v/3?cta=r4c3": [
+    "https://github.com/dnoddieva/spot-instance-gpu-training-budget"
+  ],
+  "https://plue.men/v/4?cta=r1c4": [
+    "https://github.com/dnoddieva/vastai-promo-code-credit-guide"
+  ],
+  "https://plue.men/v/2?cta=r1c2": [
+    "https://github.com/dnoddieva/vastai-promo-code-credit-guide"
+  ],
+  "https://plue.men/v/3?cta=r1c3": [
+    "https://github.com/dnoddieva/vastai-promo-code-credit-guide"
+  ],
+  "https://plue.men/v/1?cta=r1c1": [
+    "https://github.com/dnoddieva/vastai-promo-code-credit-guide"
+  ],
+  "https://plue.men/r/2?cta=r2c2": [
+    "https://github.com/pierrewheffert/lambda-labs-vs-runpod-h100-costs"
+  ],
+  "https://plue.men/r/1?cta=r2c1": [
+    "https://github.com/pierrewheffert/lambda-labs-vs-runpod-h100-costs"
+  ],
+  "https://plue.men/r/4?cta=r2c4": [
+    "https://github.com/pierrewheffert/lambda-labs-vs-runpod-h100-costs"
+  ],
+  "https://plue.men/r/3?cta=r2c3": [
+    "https://github.com/pierrewheffert/lambda-labs-vs-runpod-h100-costs"
+  ],
+  "https://plue.men/r/1?cta=r4c1": [
+    "https://github.com/pierrewheffert/llm-inference-gpu-hourly-calculator"
+  ],
+  "https://plue.men/r/4?cta=r4c4": [
+    "https://github.com/pierrewheffert/llm-inference-gpu-hourly-calculator"
+  ],
+  "https://plue.men/r/2?cta=r4c2": [
+    "https://github.com/pierrewheffert/llm-inference-gpu-hourly-calculator"
+  ],
+  "https://plue.men/r/3?cta=r4c3": [
+    "https://github.com/pierrewheffert/llm-inference-gpu-hourly-calculator"
+  ],
+  "https://plue.men/r/2?cta=r1c2": [
+    "https://github.com/pierrewheffert/runpod-coupon-pricing-guide"
+  ],
+  "https://plue.men/r/4?cta=r1c4": [
+    "https://github.com/pierrewheffert/runpod-coupon-pricing-guide"
+  ],
+  "https://plue.men/r/3?cta=r1c3": [
+    "https://github.com/pierrewheffert/runpod-coupon-pricing-guide"
+  ],
+  "https://plue.men/r/1?cta=r1c1": [
+    "https://github.com/pierrewheffert/runpod-coupon-pricing-guide"
+  ],
+  "https://plue.men/r/3?cta=r3c3": [
+    "https://github.com/pierrewheffert/vastai-vs-runpod-serverless-pricing"
+  ],
+  "https://plue.men/r/4?cta=r3c4": [
+    "https://github.com/pierrewheffert/vastai-vs-runpod-serverless-pricing"
+  ],
+  "https://plue.men/r/2?cta=r3c2": [
+    "https://github.com/pierrewheffert/vastai-vs-runpod-serverless-pricing"
+  ],
+  "https://plue.men/r/1?cta=r3c1": [
+    "https://github.com/pierrewheffert/vastai-vs-runpod-serverless-pricing"
+  ]
+}

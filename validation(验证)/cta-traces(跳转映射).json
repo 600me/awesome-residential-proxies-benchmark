@@ -1,0 +1,1911 @@
+{
+  "utc": "2026-10-29T07:32:38.565426+00:00",
+  "method": "HEAD; known shortlinks and own gateways only; merchant endpoint never requested",
+  "assets": [
+    {
+      "repo": "https://github.com/600me/decodo-smartproxy-pricing-coupons",
+      "created_at": "2026-10-26T14:41:13Z",
+      "cta_candidates": [
+        "https://proxy.mybskm.top/go/smartproxy"
+      ]
+    },
+    {
+      "repo": "https://github.com/600me/firstbase-promo-code-pricing",
+      "created_at": "2026-10-26T14:41:21Z",
+      "cta_candidates": [
+        "https://pay.mybskm.top/go/firstbase"
+      ]
+    },
+    {
+      "repo": "https://github.com/600me/runpod-gpu-pricing-coupons",
+      "created_at": "2026-10-26T14:41:31Z",
+      "cta_candidates": [
+        "https://gpu.mybskm.top/go/runpod"
+      ]
+    },
+    {
+      "repo": "https://github.com/600me/scraperapi-pricing-coupons",
+      "created_at": "2026-10-26T14:41:04Z",
+      "cta_candidates": [
+        "https://scrape.mybskm.top/go/scraperapi"
+      ]
+    },
+    {
+      "repo": "https://github.com/600me/vastai-gpu-pricing-coupons",
+      "created_at": "2026-10-26T14:41:39Z",
+      "cta_candidates": [
+        "https://gpu.mybskm.top/go/vastai"
+      ]
+    },
+    {
+      "repo": "https://github.com/constantconv/doola-pricing-vs-firstbase",
+      "created_at": "2026-10-27T04:57:56Z",
+      "cta_candidates": [
+        "https://tinyurl.com/23dte9da",
+        "https://tinyurl.com/23hfu59c",
+        "https://tinyurl.com/2b4nyndg",
+        "https://tinyurl.com/2bfrsrc3"
+      ]
+    },
+    {
+      "repo": "https://github.com/constantconv/firstbase-coupon-code-pricing",
+      "created_at": "2026-10-27T04:56:54Z",
+      "cta_candidates": [
+        "https://tinyurl.com/23nl94kb",
+        "https://tinyurl.com/25aqgkvf",
+        "https://tinyurl.com/2c2nvy3j",
+        "https://tinyurl.com/2xhk8n5z"
+      ]
+    },
+    {
+      "repo": "https://github.com/constantconv/non-us-founder-llc-annual-cost",
+      "created_at": "2026-10-27T04:58:28Z",
+      "cta_candidates": [
+        "https://tinyurl.com/224r8z8o",
+        "https://tinyurl.com/24zzjq8u",
+        "https://tinyurl.com/25lzv8jl",
+        "https://tinyurl.com/27ljj96a"
+      ]
+    },
+    {
+      "repo": "https://github.com/constantconv/stripe-atlas-vs-firstbase-costs",
+      "created_at": "2026-10-27T04:57:26Z",
+      "cta_candidates": [
+        "https://tinyurl.com/22sm646n",
+        "https://tinyurl.com/2353drsc",
+        "https://tinyurl.com/23hvrc3u",
+        "https://tinyurl.com/2749d5to"
+      ]
+    },
+    {
+      "repo": "https://github.com/dnoddieva/aws-p5-vs-vastai-h100-pricing",
+      "created_at": "2026-10-28T00:17:07Z",
+      "cta_candidates": [
+        "https://da.gd/Bb1epn",
+        "https://da.gd/bxjOC",
+        "https://da.gd/fH1T2",
+        "https://da.gd/gORHmY"
+      ]
+    },
+    {
+      "repo": "https://github.com/dnoddieva/runpod-vs-vastai-gpu-rental-costs",
+      "created_at": "2026-10-28T00:16:28Z",
+      "cta_candidates": [
+        "https://da.gd/2L046S",
+        "https://da.gd/64Wrqq",
+        "https://da.gd/T0Br0S",
+        "https://da.gd/WrAlc"
+      ]
+    },
+    {
+      "repo": "https://github.com/dnoddieva/spot-instance-gpu-training-budget",
+      "created_at": "2026-10-28T00:17:47Z",
+      "cta_candidates": [
+        "https://da.gd/AZx8FA",
+        "https://da.gd/GN7cSo",
+        "https://da.gd/oqMnF",
+        "https://da.gd/qJMxa"
+      ]
+    },
+    {
+      "repo": "https://github.com/dnoddieva/vastai-promo-code-credit-guide",
+      "created_at": "2026-10-28T00:15:47Z",
+      "cta_candidates": [
+        "https://da.gd/ChMBv",
+        "https://da.gd/Xe9kYT",
+        "https://da.gd/bYtqg",
+        "https://da.gd/eXBO0"
+      ]
+    },
+    {
+      "repo": "https://github.com/mistyparticle/brightdata-vs-webshare-pricing",
+      "created_at": "2026-10-28T00:11:08Z",
+      "cta_candidates": [
+        "https://v.gd/0OyWDR",
+        "https://v.gd/0ZC9Xx",
+        "https://v.gd/cI4uW0",
+        "https://v.gd/qjVzB9"
+      ]
+    },
+    {
+      "repo": "https://github.com/mistyparticle/rotating-residential-proxy-bandwidth-calculator",
+      "created_at": "2026-10-28T00:12:25Z",
+      "cta_candidates": [
+        "https://v.gd/AwlVNw",
+        "https://v.gd/PD9k57",
+        "https://v.gd/h2MYrT",
+        "https://v.gd/kwABQo"
+      ]
+    },
+    {
+      "repo": "https://github.com/mistyparticle/smartproxy-vs-webshare-cost-comparison",
+      "created_at": "2026-10-28T00:11:47Z",
+      "cta_candidates": [
+        "https://v.gd/7sG950",
+        "https://v.gd/dh0MXD",
+        "https://v.gd/hIIH5K",
+        "https://v.gd/soL2LE"
+      ]
+    },
+    {
+      "repo": "https://github.com/mistyparticle/webshare-coupon-code-pricing-guide",
+      "created_at": "2026-10-28T00:10:29Z",
+      "cta_candidates": [
+        "https://v.gd/Vl3hpG",
+        "https://v.gd/e66pnG",
+        "https://v.gd/oxH4fO",
+        "https://v.gd/w5dJ7k"
+      ]
+    },
+    {
+      "repo": "https://github.com/pierrewheffert/lambda-labs-vs-runpod-h100-costs",
+      "created_at": "2026-10-28T00:13:48Z",
+      "cta_candidates": [
+        "https://is.gd/4fVPvu",
+        "https://is.gd/Bau2Fl",
+        "https://is.gd/jfiZzI",
+        "https://is.gd/xociBA"
+      ]
+    },
+    {
+      "repo": "https://github.com/pierrewheffert/llm-inference-gpu-hourly-calculator",
+      "created_at": "2026-10-28T00:15:07Z",
+      "cta_candidates": [
+        "https://is.gd/EaZevu",
+        "https://is.gd/SqDUji",
+        "https://is.gd/bCz4mA",
+        "https://is.gd/hkjppI"
+      ]
+    },
+    {
+      "repo": "https://github.com/pierrewheffert/runpod-coupon-pricing-guide",
+      "created_at": "2026-10-28T00:13:06Z",
+      "cta_candidates": [
+        "https://is.gd/17Pg0R",
+        "https://is.gd/TpgbXb",
+        "https://is.gd/gCGepy",
+        "https://is.gd/qQS3nW"
+      ]
+    },
+    {
+      "repo": "https://github.com/pierrewheffert/vastai-vs-runpod-serverless-pricing",
+      "created_at": "2026-10-28T00:14:27Z",
+      "cta_candidates": [
+        "https://is.gd/GnOFZ3",
+        "https://is.gd/mS7VB1",
+        "https://is.gd/njBzOQ",
+        "https://is.gd/wlSgk1"
+      ]
+    },
+    {
+      "repo": "https://github.com/unfitjewell/scraperapi-coupon-code-breakdown",
+      "created_at": "2026-10-27T04:58:58Z",
+      "cta_candidates": [
+        "https://da.gd/ZVMSAN",
+        "https://da.gd/aHsUBU",
+        "https://da.gd/iNGP",
+        "https://da.gd/jLs25"
+      ]
+    },
+    {
+      "repo": "https://github.com/unfitjewell/scrapingbee-vs-scraperapi-pricing",
+      "created_at": "2026-10-27T04:59:57Z",
+      "cta_candidates": [
+        "https://da.gd/3bVWxH",
+        "https://da.gd/ZzyKq",
+        "https://da.gd/edzgRQ",
+        "https://da.gd/kQdKR"
+      ]
+    },
+    {
+      "repo": "https://github.com/unfitjewell/web-scraping-api-cost-comparison",
+      "created_at": "2026-10-27T05:00:29Z",
+      "cta_candidates": [
+        "https://da.gd/FUCtf8",
+        "https://da.gd/hqxX8J",
+        "https://da.gd/soDFWl",
+        "https://da.gd/uFwDB"
+      ]
+    },
+    {
+      "repo": "https://github.com/unfitjewell/zenrows-vs-scraperapi-pricing",
+      "created_at": "2026-10-27T04:59:28Z",
+      "cta_candidates": [
+        "https://da.gd/OoERv",
+        "https://da.gd/ZQWnat",
+        "https://da.gd/arR6R",
+        "https://da.gd/d4Zfe"
+      ]
+    },
+    {
+      "repo": "https://github.com/vainship/brightdata-pricing-vs-decodo",
+      "created_at": "2026-10-27T04:55:19Z",
+      "cta_candidates": [
+        "https://is.gd/8DjFm0",
+        "https://is.gd/Fp9hxU",
+        "https://is.gd/H7D7us",
+        "https://is.gd/wdKUGr"
+      ]
+    },
+    {
+      "repo": "https://github.com/vainship/decodo-coupon-pricing-breakdown",
+      "created_at": "2026-10-27T04:54:47Z",
+      "cta_candidates": [
+        "https://is.gd/8Bhgss",
+        "https://is.gd/TJ1tN0",
+        "https://is.gd/ae562d",
+        "https://is.gd/fJzfuO"
+      ]
+    },
+    {
+      "repo": "https://github.com/vainship/oxylabs-pricing-vs-decodo",
+      "created_at": "2026-10-27T04:55:50Z",
+      "cta_candidates": [
+        "https://is.gd/5aaPTZ",
+        "https://is.gd/8aT3t8",
+        "https://is.gd/CwyYAg",
+        "https://is.gd/tQqNwV"
+      ]
+    },
+    {
+      "repo": "https://github.com/vainship/residential-proxy-scraping-costs",
+      "created_at": "2026-10-27T04:56:20Z",
+      "cta_candidates": [
+        "https://is.gd/2fYIKl",
+        "https://is.gd/QiC0Pd",
+        "https://is.gd/U7GzEA",
+        "https://is.gd/gDV9Iq"
+      ]
+    }
+  ],
+  "traces": {
+    "https://da.gd/2L046S": [
+      {
+        "url": "https://da.gd/2L046S",
+        "status": 302,
+        "location": "https://plue.men/v/3?cta=r2c3",
+        "utc": "2026-10-29T07:32:33.660661+00:00"
+      },
+      {
+        "url": "https://plue.men/v/3?cta=r2c3",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "utc": "2026-10-29T07:32:33.722735+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/3bVWxH": [
+      {
+        "url": "https://da.gd/3bVWxH",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta4",
+        "utc": "2026-10-29T07:32:33.645899+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta4",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta4",
+        "utc": "2026-10-29T07:32:33.710465+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/64Wrqq": [
+      {
+        "url": "https://da.gd/64Wrqq",
+        "status": 302,
+        "location": "https://plue.men/v/4?cta=r2c4",
+        "utc": "2026-10-29T07:32:33.652823+00:00"
+      },
+      {
+        "url": "https://plue.men/v/4?cta=r2c4",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "utc": "2026-10-29T07:32:33.707279+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/AZx8FA": [
+      {
+        "url": "https://da.gd/AZx8FA",
+        "status": 302,
+        "location": "https://plue.men/v/1?cta=r4c1",
+        "utc": "2026-10-29T07:32:33.652370+00:00"
+      },
+      {
+        "url": "https://plue.men/v/1?cta=r4c1",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "utc": "2026-10-29T07:32:33.719410+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/Bb1epn": [
+      {
+        "url": "https://da.gd/Bb1epn",
+        "status": 302,
+        "location": "https://plue.men/v/3?cta=r3c3",
+        "utc": "2026-10-29T07:32:33.658286+00:00"
+      },
+      {
+        "url": "https://plue.men/v/3?cta=r3c3",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "utc": "2026-10-29T07:32:33.718040+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/ChMBv": [
+      {
+        "url": "https://da.gd/ChMBv",
+        "status": 302,
+        "location": "https://plue.men/v/4?cta=r1c4",
+        "utc": "2026-10-29T07:32:34.192093+00:00"
+      },
+      {
+        "url": "https://plue.men/v/4?cta=r1c4",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "utc": "2026-10-29T07:32:34.231631+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/FUCtf8": [
+      {
+        "url": "https://da.gd/FUCtf8",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta4",
+        "utc": "2026-10-29T07:32:34.180469+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta4",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta4",
+        "utc": "2026-10-29T07:32:34.232888+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/GN7cSo": [
+      {
+        "url": "https://da.gd/GN7cSo",
+        "status": 302,
+        "location": "https://plue.men/v/2?cta=r4c2",
+        "utc": "2026-10-29T07:32:34.191261+00:00"
+      },
+      {
+        "url": "https://plue.men/v/2?cta=r4c2",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "utc": "2026-10-29T07:32:34.237070+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/OoERv": [
+      {
+        "url": "https://da.gd/OoERv",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta2",
+        "utc": "2026-10-29T07:32:34.190728+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta2",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta2",
+        "utc": "2026-10-29T07:32:34.248968+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/T0Br0S": [
+      {
+        "url": "https://da.gd/T0Br0S",
+        "status": 302,
+        "location": "https://plue.men/v/1?cta=r2c1",
+        "utc": "2026-10-29T07:32:34.196897+00:00"
+      },
+      {
+        "url": "https://plue.men/v/1?cta=r2c1",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "utc": "2026-10-29T07:32:34.247149+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/WrAlc": [
+      {
+        "url": "https://da.gd/WrAlc",
+        "status": 302,
+        "location": "https://plue.men/v/2?cta=r2c2",
+        "utc": "2026-10-29T07:32:34.699838+00:00"
+      },
+      {
+        "url": "https://plue.men/v/2?cta=r2c2",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "utc": "2026-10-29T07:32:34.750652+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/Xe9kYT": [
+      {
+        "url": "https://da.gd/Xe9kYT",
+        "status": 302,
+        "location": "https://plue.men/v/2?cta=r1c2",
+        "utc": "2026-10-29T07:32:34.701217+00:00"
+      },
+      {
+        "url": "https://plue.men/v/2?cta=r1c2",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "utc": "2026-10-29T07:32:34.739390+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/ZQWnat": [
+      {
+        "url": "https://da.gd/ZQWnat",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta3",
+        "utc": "2026-10-29T07:32:34.707697+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta3",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta3",
+        "utc": "2026-10-29T07:32:34.760634+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/ZVMSAN": [
+      {
+        "url": "https://da.gd/ZVMSAN",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta1",
+        "utc": "2026-10-29T07:32:34.724713+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta1",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta1",
+        "utc": "2026-10-29T07:32:34.764862+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/ZzyKq": [
+      {
+        "url": "https://da.gd/ZzyKq",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta1",
+        "utc": "2026-10-29T07:32:34.718138+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta1",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta1",
+        "utc": "2026-10-29T07:32:34.764071+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/aHsUBU": [
+      {
+        "url": "https://da.gd/aHsUBU",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta2",
+        "utc": "2026-10-29T07:32:35.196698+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta2",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta2",
+        "utc": "2026-10-29T07:32:35.242456+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/arR6R": [
+      {
+        "url": "https://da.gd/arR6R",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta4",
+        "utc": "2026-10-29T07:32:35.212215+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta4",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta4",
+        "utc": "2026-10-29T07:32:35.260937+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/bYtqg": [
+      {
+        "url": "https://da.gd/bYtqg",
+        "status": 302,
+        "location": "https://plue.men/v/3?cta=r1c3",
+        "utc": "2026-10-29T07:32:35.226887+00:00"
+      },
+      {
+        "url": "https://plue.men/v/3?cta=r1c3",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "utc": "2026-10-29T07:32:35.278082+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/bxjOC": [
+      {
+        "url": "https://da.gd/bxjOC",
+        "status": 302,
+        "location": "https://plue.men/v/4?cta=r3c4",
+        "utc": "2026-10-29T07:32:35.244996+00:00"
+      },
+      {
+        "url": "https://plue.men/v/4?cta=r3c4",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "utc": "2026-10-29T07:32:35.269496+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/d4Zfe": [
+      {
+        "url": "https://da.gd/d4Zfe",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta1",
+        "utc": "2026-10-29T07:32:35.230404+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta1",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta1",
+        "utc": "2026-10-29T07:32:35.272660+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_zenrows-vs-scraperapi-pricing_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/eXBO0": [
+      {
+        "url": "https://da.gd/eXBO0",
+        "status": 302,
+        "location": "https://plue.men/v/1?cta=r1c1",
+        "utc": "2026-10-29T07:32:35.704634+00:00"
+      },
+      {
+        "url": "https://plue.men/v/1?cta=r1c1",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "utc": "2026-10-29T07:32:35.758821+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/edzgRQ": [
+      {
+        "url": "https://da.gd/edzgRQ",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta3",
+        "utc": "2026-10-29T07:32:35.734588+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta3",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta3",
+        "utc": "2026-10-29T07:32:35.787196+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/fH1T2": [
+      {
+        "url": "https://da.gd/fH1T2",
+        "status": 302,
+        "location": "https://plue.men/v/1?cta=r3c1",
+        "utc": "2026-10-29T07:32:35.730988+00:00"
+      },
+      {
+        "url": "https://plue.men/v/1?cta=r3c1",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "utc": "2026-10-29T07:32:35.774985+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/gORHmY": [
+      {
+        "url": "https://da.gd/gORHmY",
+        "status": 302,
+        "location": "https://plue.men/v/2?cta=r3c2",
+        "utc": "2026-10-29T07:32:35.739697+00:00"
+      },
+      {
+        "url": "https://plue.men/v/2?cta=r3c2",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "utc": "2026-10-29T07:32:35.776707+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/hqxX8J": [
+      {
+        "url": "https://da.gd/hqxX8J",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta1",
+        "utc": "2026-10-29T07:32:35.747926+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta1",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta1",
+        "utc": "2026-10-29T07:32:35.812743+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta1&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/iNGP": [
+      {
+        "url": "https://da.gd/iNGP",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta3",
+        "utc": "2026-10-29T07:32:36.230489+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta3",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta3",
+        "utc": "2026-10-29T07:32:36.274957+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/jLs25": [
+      {
+        "url": "https://da.gd/jLs25",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta4",
+        "utc": "2026-10-29T07:32:36.242481+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta4",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta4",
+        "utc": "2026-10-29T07:32:36.288241+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta4&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scraperapi-coupon-code-breakdown_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/kQdKR": [
+      {
+        "url": "https://da.gd/kQdKR",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta2",
+        "utc": "2026-10-29T07:32:36.238827+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta2",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta2",
+        "utc": "2026-10-29T07:32:36.282438+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_scrapingbee-vs-scraperapi-pricing_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/oqMnF": [
+      {
+        "url": "https://da.gd/oqMnF",
+        "status": 302,
+        "location": "https://plue.men/v/4?cta=r4c4",
+        "utc": "2026-10-29T07:32:36.259573+00:00"
+      },
+      {
+        "url": "https://plue.men/v/4?cta=r4c4",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "utc": "2026-10-29T07:32:36.305416+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v4",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/qJMxa": [
+      {
+        "url": "https://da.gd/qJMxa",
+        "status": 302,
+        "location": "https://plue.men/v/3?cta=r4c3",
+        "utc": "2026-10-29T07:32:36.274348+00:00"
+      },
+      {
+        "url": "https://plue.men/v/3?cta=r4c3",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "utc": "2026-10-29T07:32:36.319263+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_v3",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/soDFWl": [
+      {
+        "url": "https://da.gd/soDFWl",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta2",
+        "utc": "2026-10-29T07:32:36.734367+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta2",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta2",
+        "utc": "2026-10-29T07:32:36.786584+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta2&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://da.gd/uFwDB": [
+      {
+        "url": "https://da.gd/uFwDB",
+        "status": 302,
+        "location": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta3",
+        "utc": "2026-10-29T07:32:36.750699+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/scraperapi?src=gt_unfitjewell_web-scraping-api-cost-comparison_cta3",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta3",
+        "utc": "2026-10-29T07:32:36.799108+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gt_unfitjewell_web-scraping-api-cost-comparison_cta3&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gt_unfitjewell_web-scraping-api-cost-comparison_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://gpu.mybskm.top/go/runpod": [
+      {
+        "url": "https://gpu.mybskm.top/go/runpod",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gh_main_runpod",
+        "utc": "2026-10-29T07:32:36.340444+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gh_main_runpod",
+        "not_requested": true
+      }
+    ],
+    "https://gpu.mybskm.top/go/vastai": [
+      {
+        "url": "https://gpu.mybskm.top/go/vastai",
+        "status": 302,
+        "location": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gh_main_vastai",
+        "utc": "2026-10-29T07:32:36.361558+00:00"
+      },
+      {
+        "terminal_url": "https://cloud.vast.ai/?ref_id=748114&utm_source=github&utm_campaign=gpu_benchmark&utm_content=gh_main_vastai",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/17Pg0R": [
+      {
+        "url": "https://is.gd/17Pg0R",
+        "status": 301,
+        "location": "https://plue.men/r/2?cta=r1c2",
+        "utc": "2026-10-29T07:32:36.421056+00:00"
+      },
+      {
+        "url": "https://plue.men/r/2?cta=r1c2",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "utc": "2026-10-29T07:32:36.455026+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/2fYIKl": [
+      {
+        "url": "https://is.gd/2fYIKl",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta3",
+        "utc": "2026-10-29T07:32:36.483817+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta3",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta3",
+        "utc": "2026-10-29T07:32:36.532669+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/4fVPvu": [
+      {
+        "url": "https://is.gd/4fVPvu",
+        "status": 301,
+        "location": "https://plue.men/r/2?cta=r2c2",
+        "utc": "2026-10-29T07:32:36.462393+00:00"
+      },
+      {
+        "url": "https://plue.men/r/2?cta=r2c2",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "utc": "2026-10-29T07:32:36.502011+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/5aaPTZ": [
+      {
+        "url": "https://is.gd/5aaPTZ",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta2",
+        "utc": "2026-10-29T07:32:36.558809+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta2",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta2",
+        "utc": "2026-10-29T07:32:36.591705+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/8Bhgss": [
+      {
+        "url": "https://is.gd/8Bhgss",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta3",
+        "utc": "2026-10-29T07:32:36.602269+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta3",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta3",
+        "utc": "2026-10-29T07:32:36.637708+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/8DjFm0": [
+      {
+        "url": "https://is.gd/8DjFm0",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta2",
+        "utc": "2026-10-29T07:32:36.670006+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta2",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta2",
+        "utc": "2026-10-29T07:32:36.706227+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/8aT3t8": [
+      {
+        "url": "https://is.gd/8aT3t8",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta3",
+        "utc": "2026-10-29T07:32:36.716033+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta3",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta3",
+        "utc": "2026-10-29T07:32:36.754855+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/Bau2Fl": [
+      {
+        "url": "https://is.gd/Bau2Fl",
+        "status": 301,
+        "location": "https://plue.men/r/1?cta=r2c1",
+        "utc": "2026-10-29T07:32:36.736515+00:00"
+      },
+      {
+        "url": "https://plue.men/r/1?cta=r2c1",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "utc": "2026-10-29T07:32:36.781471+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/CwyYAg": [
+      {
+        "url": "https://is.gd/CwyYAg",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta4",
+        "utc": "2026-10-29T07:32:36.804219+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta4",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta4",
+        "utc": "2026-10-29T07:32:36.855832+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/EaZevu": [
+      {
+        "url": "https://is.gd/EaZevu",
+        "status": 301,
+        "location": "https://plue.men/r/1?cta=r4c1",
+        "utc": "2026-10-29T07:32:36.849993+00:00"
+      },
+      {
+        "url": "https://plue.men/r/1?cta=r4c1",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "utc": "2026-10-29T07:32:36.896087+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/Fp9hxU": [
+      {
+        "url": "https://is.gd/Fp9hxU",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta1",
+        "utc": "2026-10-29T07:32:36.882648+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta1",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta1",
+        "utc": "2026-10-29T07:32:36.926686+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/GnOFZ3": [
+      {
+        "url": "https://is.gd/GnOFZ3",
+        "status": 301,
+        "location": "https://plue.men/r/3?cta=r3c3",
+        "utc": "2026-10-29T07:32:36.898442+00:00"
+      },
+      {
+        "url": "https://plue.men/r/3?cta=r3c3",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "utc": "2026-10-29T07:32:36.940084+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/H7D7us": [
+      {
+        "url": "https://is.gd/H7D7us",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta3",
+        "utc": "2026-10-29T07:32:36.897012+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta3",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta3",
+        "utc": "2026-10-29T07:32:36.937819+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/QiC0Pd": [
+      {
+        "url": "https://is.gd/QiC0Pd",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta4",
+        "utc": "2026-10-29T07:32:36.989285+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta4",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta4",
+        "utc": "2026-10-29T07:32:37.041300+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/SqDUji": [
+      {
+        "url": "https://is.gd/SqDUji",
+        "status": 301,
+        "location": "https://plue.men/r/4?cta=r4c4",
+        "utc": "2026-10-29T07:32:36.997915+00:00"
+      },
+      {
+        "url": "https://plue.men/r/4?cta=r4c4",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "utc": "2026-10-29T07:32:37.048019+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/TJ1tN0": [
+      {
+        "url": "https://is.gd/TJ1tN0",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta2",
+        "utc": "2026-10-29T07:32:37.152961+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta2",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta2",
+        "utc": "2026-10-29T07:32:37.185504+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/TpgbXb": [
+      {
+        "url": "https://is.gd/TpgbXb",
+        "status": 301,
+        "location": "https://plue.men/r/4?cta=r1c4",
+        "utc": "2026-10-29T07:32:37.178636+00:00"
+      },
+      {
+        "url": "https://plue.men/r/4?cta=r1c4",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "utc": "2026-10-29T07:32:37.246727+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/U7GzEA": [
+      {
+        "url": "https://is.gd/U7GzEA",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta2",
+        "utc": "2026-10-29T07:32:37.076388+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta2",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta2",
+        "utc": "2026-10-29T07:32:37.120896+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/ae562d": [
+      {
+        "url": "https://is.gd/ae562d",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta1",
+        "utc": "2026-10-29T07:32:37.137682+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta1",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta1",
+        "utc": "2026-10-29T07:32:37.187172+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/bCz4mA": [
+      {
+        "url": "https://is.gd/bCz4mA",
+        "status": 301,
+        "location": "https://plue.men/r/2?cta=r4c2",
+        "utc": "2026-10-29T07:32:37.180088+00:00"
+      },
+      {
+        "url": "https://plue.men/r/2?cta=r4c2",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "utc": "2026-10-29T07:32:37.222527+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/fJzfuO": [
+      {
+        "url": "https://is.gd/fJzfuO",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta4",
+        "utc": "2026-10-29T07:32:37.226212+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_decodo-coupon-pricing-breakdown_cta4",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta4",
+        "utc": "2026-10-29T07:32:37.277734+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_decodo-coupon-pricing-breakdown_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/gCGepy": [
+      {
+        "url": "https://is.gd/gCGepy",
+        "status": 301,
+        "location": "https://plue.men/r/3?cta=r1c3",
+        "utc": "2026-10-29T07:32:37.281437+00:00"
+      },
+      {
+        "url": "https://plue.men/r/3?cta=r1c3",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "utc": "2026-10-29T07:32:37.318260+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/gDV9Iq": [
+      {
+        "url": "https://is.gd/gDV9Iq",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta1",
+        "utc": "2026-10-29T07:32:37.282246+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_residential-proxy-scraping-costs_cta1",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta1",
+        "utc": "2026-10-29T07:32:37.344351+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_residential-proxy-scraping-costs_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/hkjppI": [
+      {
+        "url": "https://is.gd/hkjppI",
+        "status": 301,
+        "location": "https://plue.men/r/3?cta=r4c3",
+        "utc": "2026-10-29T07:32:37.345181+00:00"
+      },
+      {
+        "url": "https://plue.men/r/3?cta=r4c3",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "utc": "2026-10-29T07:32:37.398748+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/jfiZzI": [
+      {
+        "url": "https://is.gd/jfiZzI",
+        "status": 301,
+        "location": "https://plue.men/r/4?cta=r2c4",
+        "utc": "2026-10-29T07:32:37.347491+00:00"
+      },
+      {
+        "url": "https://plue.men/r/4?cta=r2c4",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "utc": "2026-10-29T07:32:37.387155+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/mS7VB1": [
+      {
+        "url": "https://is.gd/mS7VB1",
+        "status": 301,
+        "location": "https://plue.men/r/4?cta=r3c4",
+        "utc": "2026-10-29T07:32:37.418527+00:00"
+      },
+      {
+        "url": "https://plue.men/r/4?cta=r3c4",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "utc": "2026-10-29T07:32:37.464733+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/njBzOQ": [
+      {
+        "url": "https://is.gd/njBzOQ",
+        "status": 301,
+        "location": "https://plue.men/r/2?cta=r3c2",
+        "utc": "2026-10-29T07:32:37.411075+00:00"
+      },
+      {
+        "url": "https://plue.men/r/2?cta=r3c2",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "utc": "2026-10-29T07:32:37.449397+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r2",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/qQS3nW": [
+      {
+        "url": "https://is.gd/qQS3nW",
+        "status": 301,
+        "location": "https://plue.men/r/1?cta=r1c1",
+        "utc": "2026-10-29T07:32:37.448346+00:00"
+      },
+      {
+        "url": "https://plue.men/r/1?cta=r1c1",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "utc": "2026-10-29T07:32:37.500637+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/tQqNwV": [
+      {
+        "url": "https://is.gd/tQqNwV",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta1",
+        "utc": "2026-10-29T07:32:37.513740+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_oxylabs-pricing-vs-decodo_cta1",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta1",
+        "utc": "2026-10-29T07:32:37.559897+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_oxylabs-pricing-vs-decodo_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/wdKUGr": [
+      {
+        "url": "https://is.gd/wdKUGr",
+        "status": 301,
+        "location": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta4",
+        "utc": "2026-10-29T07:32:37.501634+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/smartproxy?src=gt_vainship_brightdata-pricing-vs-decodo_cta4",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta4",
+        "utc": "2026-10-29T07:32:37.549557+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gt_vainship_brightdata-pricing-vs-decodo_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/wlSgk1": [
+      {
+        "url": "https://is.gd/wlSgk1",
+        "status": 301,
+        "location": "https://plue.men/r/1?cta=r3c1",
+        "utc": "2026-10-29T07:32:37.542802+00:00"
+      },
+      {
+        "url": "https://plue.men/r/1?cta=r3c1",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "utc": "2026-10-29T07:32:37.574459+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r1",
+        "not_requested": true
+      }
+    ],
+    "https://is.gd/xociBA": [
+      {
+        "url": "https://is.gd/xociBA",
+        "status": 301,
+        "location": "https://plue.men/r/3?cta=r2c3",
+        "utc": "2026-10-29T07:32:37.572120+00:00"
+      },
+      {
+        "url": "https://plue.men/r/3?cta=r2c3",
+        "status": 302,
+        "location": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "utc": "2026-10-29T07:32:37.601211+00:00"
+      },
+      {
+        "terminal_url": "https://www.runpod.io/?ref=zzhi58ly&utm_source=github&utm_campaign=gpu_tco&utm_content=plue_r3",
+        "not_requested": true
+      }
+    ],
+    "https://pay.mybskm.top/go/firstbase": [
+      {
+        "url": "https://pay.mybskm.top/go/firstbase",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gh_main_firstbase",
+        "utc": "2026-10-29T07:32:37.579598+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gh_main_firstbase",
+        "not_requested": true
+      }
+    ],
+    "https://proxy.mybskm.top/go/smartproxy": [
+      {
+        "url": "https://proxy.mybskm.top/go/smartproxy",
+        "status": 302,
+        "location": "https://visit.decodo.com/k434W0?subId1=gh_main_smartproxy",
+        "utc": "2026-10-29T07:32:37.620348+00:00"
+      },
+      {
+        "terminal_url": "https://visit.decodo.com/k434W0?subId1=gh_main_smartproxy",
+        "not_requested": true
+      }
+    ],
+    "https://scrape.mybskm.top/go/scraperapi": [
+      {
+        "url": "https://scrape.mybskm.top/go/scraperapi",
+        "status": 302,
+        "location": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gh_main_scraperapi&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gh_main_scraperapi",
+        "utc": "2026-10-29T07:32:37.619602+00:00"
+      },
+      {
+        "terminal_url": "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid=gh_main_scraperapi&utm_source=github&utm_campaign=scraping_benchmark&utm_content=gh_main_scraperapi",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/224r8z8o": [
+      {
+        "url": "https://tinyurl.com/224r8z8o",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta2",
+        "utc": "2026-10-29T07:32:37.602902+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta2",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta2",
+        "utc": "2026-10-29T07:32:37.656106+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/22sm646n": [
+      {
+        "url": "https://tinyurl.com/22sm646n",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta2",
+        "utc": "2026-10-29T07:32:37.605694+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta2",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta2",
+        "utc": "2026-10-29T07:32:37.637932+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/2353drsc": [
+      {
+        "url": "https://tinyurl.com/2353drsc",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta4",
+        "utc": "2026-10-29T07:32:37.640147+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta4",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta4",
+        "utc": "2026-10-29T07:32:37.693180+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/23dte9da": [
+      {
+        "url": "https://tinyurl.com/23dte9da",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta1",
+        "utc": "2026-10-29T07:32:37.646817+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta1",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta1",
+        "utc": "2026-10-29T07:32:37.692261+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/23hfu59c": [
+      {
+        "url": "https://tinyurl.com/23hfu59c",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta2",
+        "utc": "2026-10-29T07:32:37.649455+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta2",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta2",
+        "utc": "2026-10-29T07:32:37.697266+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/23hvrc3u": [
+      {
+        "url": "https://tinyurl.com/23hvrc3u",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta1",
+        "utc": "2026-10-29T07:32:37.665618+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta1",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta1",
+        "utc": "2026-10-29T07:32:37.718793+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/23nl94kb": [
+      {
+        "url": "https://tinyurl.com/23nl94kb",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta3",
+        "utc": "2026-10-29T07:32:37.685598+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta3",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta3",
+        "utc": "2026-10-29T07:32:37.745282+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/24zzjq8u": [
+      {
+        "url": "https://tinyurl.com/24zzjq8u",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta4",
+        "utc": "2026-10-29T07:32:37.736022+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta4",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta4",
+        "utc": "2026-10-29T07:32:37.784840+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/25aqgkvf": [
+      {
+        "url": "https://tinyurl.com/25aqgkvf",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta1",
+        "utc": "2026-10-29T07:32:37.720600+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta1",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta1",
+        "utc": "2026-10-29T07:32:37.770226+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/25lzv8jl": [
+      {
+        "url": "https://tinyurl.com/25lzv8jl",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta3",
+        "utc": "2026-10-29T07:32:37.729362+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta3",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta3",
+        "utc": "2026-10-29T07:32:37.758529+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/2749d5to": [
+      {
+        "url": "https://tinyurl.com/2749d5to",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta3",
+        "utc": "2026-10-29T07:32:37.749112+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta3",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta3",
+        "utc": "2026-10-29T07:32:37.793482+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_stripe-atlas-vs-firstbase-costs_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/27ljj96a": [
+      {
+        "url": "https://tinyurl.com/27ljj96a",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta1",
+        "utc": "2026-10-29T07:32:37.785642+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_non-us-founder-llc-annual-cost_cta1",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta1",
+        "utc": "2026-10-29T07:32:37.817438+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_non-us-founder-llc-annual-cost_cta1",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/2b4nyndg": [
+      {
+        "url": "https://tinyurl.com/2b4nyndg",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta4",
+        "utc": "2026-10-29T07:32:37.790796+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta4",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta4",
+        "utc": "2026-10-29T07:32:37.845241+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/2bfrsrc3": [
+      {
+        "url": "https://tinyurl.com/2bfrsrc3",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta3",
+        "utc": "2026-10-29T07:32:37.802862+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_doola-pricing-vs-firstbase_cta3",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta3",
+        "utc": "2026-10-29T07:32:37.853466+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_doola-pricing-vs-firstbase_cta3",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/2c2nvy3j": [
+      {
+        "url": "https://tinyurl.com/2c2nvy3j",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta2",
+        "utc": "2026-10-29T07:32:37.818045+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta2",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta2",
+        "utc": "2026-10-29T07:32:37.878772+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta2",
+        "not_requested": true
+      }
+    ],
+    "https://tinyurl.com/2xhk8n5z": [
+      {
+        "url": "https://tinyurl.com/2xhk8n5z",
+        "status": 301,
+        "location": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta4",
+        "utc": "2026-10-29T07:32:37.831193+00:00"
+      },
+      {
+        "url": "https://go.272738.xyz/firstbase?src=gt_constantconv_firstbase-coupon-code-pricing_cta4",
+        "status": 302,
+        "location": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta4",
+        "utc": "2026-10-29T07:32:37.881888+00:00"
+      },
+      {
+        "terminal_url": "https://get.firstbase.io/slcdxtscxrh7?utm_content=gt_constantconv_firstbase-coupon-code-pricing_cta4",
+        "not_requested": true
+      }
+    ],
+    "https://v.gd/0OyWDR": [
+      {
+        "url": "https://v.gd/0OyWDR",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:37.923437+00:00"
+      }
+    ],
+    "https://v.gd/0ZC9Xx": [
+      {
+        "url": "https://v.gd/0ZC9Xx",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:37.993026+00:00"
+      }
+    ],
+    "https://v.gd/7sG950": [
+      {
+        "url": "https://v.gd/7sG950",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:37.956385+00:00"
+      }
+    ],
+    "https://v.gd/AwlVNw": [
+      {
+        "url": "https://v.gd/AwlVNw",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:37.983767+00:00"
+      }
+    ],
+    "https://v.gd/PD9k57": [
+      {
+        "url": "https://v.gd/PD9k57",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.026972+00:00"
+      }
+    ],
+    "https://v.gd/Vl3hpG": [
+      {
+        "url": "https://v.gd/Vl3hpG",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.149118+00:00"
+      }
+    ],
+    "https://v.gd/cI4uW0": [
+      {
+        "url": "https://v.gd/cI4uW0",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.147403+00:00"
+      }
+    ],
+    "https://v.gd/dh0MXD": [
+      {
+        "url": "https://v.gd/dh0MXD",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.131228+00:00"
+      }
+    ],
+    "https://v.gd/e66pnG": [
+      {
+        "url": "https://v.gd/e66pnG",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.125463+00:00"
+      }
+    ],
+    "https://v.gd/h2MYrT": [
+      {
+        "url": "https://v.gd/h2MYrT",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.182585+00:00"
+      }
+    ],
+    "https://v.gd/hIIH5K": [
+      {
+        "url": "https://v.gd/hIIH5K",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.230665+00:00"
+      }
+    ],
+    "https://v.gd/kwABQo": [
+      {
+        "url": "https://v.gd/kwABQo",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.286147+00:00"
+      }
+    ],
+    "https://v.gd/oxH4fO": [
+      {
+        "url": "https://v.gd/oxH4fO",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.286745+00:00"
+      }
+    ],
+    "https://v.gd/qjVzB9": [
+      {
+        "url": "https://v.gd/qjVzB9",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.252110+00:00"
+      }
+    ],
+    "https://v.gd/soL2LE": [
+      {
+        "url": "https://v.gd/soL2LE",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.331322+00:00"
+      }
+    ],
+    "https://v.gd/w5dJ7k": [
+      {
+        "url": "https://v.gd/w5dJ7k",
+        "status": 200,
+        "location": null,
+        "utc": "2026-10-29T07:32:38.331064+00:00"
+      }
+    ]
+  }
+}

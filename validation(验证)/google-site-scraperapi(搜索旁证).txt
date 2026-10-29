@@ -1,0 +1,114 @@
+- generic
+  - link "跳至内容" [ref=e84]
+  - link "辅助功能帮助" [ref=e85]
+  - search
+    - generic
+      - link "前往 Google Home" [ref=e91]
+      - generic
+        - generic
+        - combobox "搜索" [expanded=false, ref=e92]: site:github.com/600me/scraperapi-pricing-coupons
+          - StaticText "site:github.com/600me/scraperapi-pricing-coupons"
+        - generic [ref=e93] clickable [cursor:pointer]
+          - button "清除" [ref=e98]
+        - button "通过语音搜索" [ref=e94]
+        - button "按图片搜索" [ref=e95]
+  - button "分享" [ref=e86]
+  - button "Google 应用" [expanded=false, ref=e90]
+  - button "Google 帐户：sccdsd dfsav (600megd@gmail.com)" [expanded=false, ref=e88]
+  - generic
+    - generic
+      - navigation
+        - generic
+          - generic
+            - generic
+              - list
+                - listitem [level=1]
+                  - link "人工智能模式" [ref=e109]
+                    - StaticText "人工智能模式"
+                - listitem [level=1]
+                  - link "全部" [disabled, ref=e110]
+                    - StaticText "全部"
+                - listitem [level=1]
+                  - link "购物" [ref=e111]
+                    - StaticText "购物"
+                - listitem [level=1]
+                  - link "图片" [ref=e112]
+                    - StaticText "图片"
+                - listitem [level=1]
+                  - link "视频" [ref=e113]
+                    - StaticText "视频"
+                - listitem [level=1]
+                  - link "短视频" [ref=e114]
+                    - StaticText "短视频"
+                - listitem [level=1]
+                  - link "论坛" [ref=e115]
+                    - StaticText "论坛"
+                - listitem [level=1]
+                  - button "更多筛选条件" [expanded=false, ref=e116]
+                    - StaticText "更多的"
+              - button "工具" [expanded=false, ref=e108]
+                - StaticText "工具"
+    - heading "搜索结果" [level=1, ref=e87]
+    - main
+      - generic
+        - generic
+      - generic
+        - heading "谷歌推广" [level=2, ref=e96]
+        - list
+          - listitem [level=1]
+            - heading "试试 Google Search Console" [level=3, ref=e99]
+              - link "试试 Google Search Console" [ref=e105]
+            - StaticText "www.google.com/webmasters/"
+            - LineBreak "\n"
+            - StaticText "您拥有github.com/600me/scraperapi-pricing-coupons吗？获取来自 Google 的索引和排名数据。"
+      - generic
+        - heading "您的搜索 - site:github.com/600me/scraperapi-pricing-coupons - 没有匹配到任何文档。" [level=3, ref=e97]
+          - StaticText "您的搜索 - "
+          - emphasis
+            - StaticText "site:github.com/600me/scraperapi-pricing-coupons"
+          - StaticText " - 没有匹配到任何文档。"
+        - paragraph
+          - StaticText "建议："
+        - list
+          - listitem [level=1]
+            - ListMarker "• "
+            - StaticText "请确保所有单词拼写正确。"
+          - listitem [level=1]
+            - ListMarker "• "
+            - StaticText "尝试不同的关键词。"
+          - listitem [level=1]
+            - ListMarker "• "
+            - StaticText "尝试使用更通用的关键词。"
+        - image "一张雪人在冰上捕鱼的图片"
+          - image
+        - navigation
+      - navigation
+    - generic
+    - contentinfo
+      - heading "页脚链接" [level=1, ref=e89]
+      - StaticText "结果并非个性化定制。"
+      - generic
+        - generic
+          - button "加利福尼亚州洛杉矶  - 来自您的 IP 地址" [ref=e106]
+            - generic
+              - StaticText "加利福尼亚州洛杉矶"
+            - generic
+              - StaticText " - "
+              - StaticText "来自您的 IP 地址"
+        - StaticText " - "
+        - generic [ref=e100] clickable [cursor:pointer]
+          - button "更新位置" [ref=e107]
+            - StaticText "更新位置"
+      - generic
+        - link "帮助" [ref=e101]
+        - link "发送反馈" [ref=e102]
+        - link "隐私" [ref=e103]
+        - link "条款" [ref=e104]
+  - generic
+- generic
+  - image
+  - generic
+    - image
+    - image
+  - image
+  - image

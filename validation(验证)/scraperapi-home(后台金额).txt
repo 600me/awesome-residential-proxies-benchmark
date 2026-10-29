@@ -1,0 +1,60 @@
+- generic
+  - generic
+    - generic
+      - generic
+        - navigation "菜单" [ref=e134]
+          - list
+            - listitem [level=1]
+              - link "家" [ref=e137]
+                - StaticText "家"
+            - listitem [level=1]
+              - link "转诊" [ref=e138]
+                - StaticText "转诊"
+            - listitem [level=1]
+              - link "子关联公司" [ref=e139]
+                - StaticText "子关联公司"
+            - listitem [level=1]
+              - link "佣金" [ref=e140]
+                - StaticText "佣金"
+            - listitem [level=1]
+              - link "支付" [ref=e141]
+                - StaticText "支付"
+            - listitem [level=1]
+              - link "资产" [ref=e142]
+                - StaticText "资产"
+            - listitem [level=1]
+              - link "报告" [ref=e143]
+                - StaticText "报告"
+        - image [ref=e135] clickable [cursor:pointer, tabindex]
+        - StaticText "凯斯"
+        - image
+      - main
+        - image
+        - paragraph
+          - StaticText "到期的"
+        - StaticText "0"
+        - StaticText "美元"
+        - image
+        - paragraph
+          - StaticText "未付总额"
+        - generic
+          - StaticText "0美元"
+        - image
+        - paragraph
+          - StaticText "已付总额"
+        - generic
+          - StaticText "0美元"
+        - image
+        - image
+        - heading "首先，设置支付方式。" [level=3, ref=e133]
+        - StaticText "请选择您的收款方式以激活您的账户并领取款项。"
+        - button "选择支付方式" [ref=e136]
+          - StaticText "选择支付方式"
+  - generic
+- generic
+  - image
+  - generic
+    - image
+    - image
+  - image
+  - image
