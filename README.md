@@ -14,7 +14,7 @@
 
 ## Table 1: 9-Dimension Public Commercial & Policy Matrix（Verified 2026-10）
 
-九个采购决策维度全部取自厂商公开定价页、文档与条款（2026-10 核实），**无需代理凭据即可 100% 核实**，因此表中不出现任何 `Not tested` 占位。价格为其公开标价、不含 VAT，可能随时变动，购买前请回厂商页面复核。
+九个采购决策维度全部取自厂商公开定价页、文档与条款（2026-10 核实），**无需代理凭据即可 100% 核实**，因此表中全部维度均已核实标记。价格为其公开标价、不含 VAT，可能随时变动，购买前请回厂商页面复核。
 
 | Provider | ① Entry $/GB (PAYG) | ② Billing Granularity | ③ Min Deposit | ④ Free Trial | ⑤ Refund SLA | ⑥ Geo / ASN Coverage | ⑦ KYC Friction | ⑧ Sticky Session Window | ⑨ Best For |
 |---|---|---|---|---|---|---|---|---|---|
