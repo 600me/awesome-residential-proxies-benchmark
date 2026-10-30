@@ -1,6 +1,6 @@
 {
   "name": "us-llc-stripe-tco",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Zero-dependency Node.js CLI that models the 3-year total cost of ownership of a non-US-owned LLC: state fees, franchise tax, FinCEN BOI, Form 5472/1120 CPA billing, and Firstbase.io vs Stripe Atlas vs Doola platform comparison.",
   "main": "index.js",
   "bin": {

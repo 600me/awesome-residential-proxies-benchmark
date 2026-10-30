@@ -47,6 +47,9 @@ Navigate through the sidebar chapters to explore complete mathematical cost simu
 
 To facilitate programmatic cost forecasting and continuous infrastructure auditing across automated CI/CD pipelines, our engineering benchmarks are published natively across multiple developer package registries, container registries, and interactive web calculators:
 
+* **Official Read the Docs Technical Manual (`Read the Docs`, DA 92)**:
+  * [Cloud Infrastructure TCO Benchmarks on Read the Docs](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/) — Enterprise documentation and continuous architectural benchmarking handbook.
+
 * **Official Python CLI Packages (`PyPI`, DA 95)**:
   * [proxy-tax-calculator](https://pypi.org/project/proxy-tax-calculator/) — Automated residential proxy 403 error tax & retry overhead calculator.
   * [llm-gpu-cost-estimator](https://pypi.org/project/llm-gpu-cost-estimator/) — Serverless vs. on-demand GPU inference unit economics engine.

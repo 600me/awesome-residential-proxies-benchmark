@@ -101,3 +101,16 @@ print(estimate.render_table())
 4. **For Automated Video Marketing & Avatar Tutorials**:
    * Generate multilingual presenter videos at scale without recording studios.
    👉 **Create AI Avatars with HeyGen**: [Activate Free Creator Credits](https://dusen.party/hg/1)
+
+
+---
+
+## 🌐 Official Documentation & Cross-Platform Packages
+
+This containerized benchmark is integrated into our multi-platform technical evaluation network:
+
+* **Official Technical Manual (Read the Docs, DA 92)**: [cloud-gpu-and-ai-media-unit-economics](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/cloud-gpu-and-ai-media-unit-economics/)
+* **Documentation Portal**: [Cloud Infrastructure & Proxy Docs](https://proxy.mybskm.top/docs/)
+* **Interactive Live Calculator**: [https://gpu.mybskm.top/](https://gpu.mybskm.top/)
+* **Official Python Package (PyPI, DA 95)**: [llm-gpu-cost-calculator](https://pypi.org/project/llm-gpu-cost-calculator/)
+* **Official Node.js Package (npm, DA 96)**: [llm-gpu-cost-estimator](https://www.npmjs.com/package/llm-gpu-cost-estimator)

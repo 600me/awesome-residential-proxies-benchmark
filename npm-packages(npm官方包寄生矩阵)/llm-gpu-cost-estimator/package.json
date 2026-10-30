@@ -1,6 +1,6 @@
 {
   "name": "llm-gpu-cost-estimator",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Zero-dependency Node.js CLI that estimates real 2026 cloud GPU TCO (spot interruption penalty, cold-start overhead) and generative AI media (ElevenLabs voice / HeyGen avatar video) production budgets.",
   "main": "index.js",
   "bin": {

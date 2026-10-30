@@ -1,6 +1,6 @@
 {
   "name": "antidetect-ad-tracker-tco",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Zero-dependency Node.js CLI that audits the multi-account media buyer stack TCO: anti-detect browser profiles (AdsPower / MoreLogin), Voluum tracking event overage, and PacketStream / residential proxy IP budgets.",
   "main": "index.js",
   "bin": {

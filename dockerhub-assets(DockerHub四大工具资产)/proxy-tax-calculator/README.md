@@ -95,3 +95,16 @@ print(report.summary())
    👉 **Spin up Webshare's Free Tier**: [Get 10 Permanent Proxies](https://go.272738.xyz/webshare)
 4. If automated CAPTCHA roadblocks are choking your workers:
    👉 **Integrate CapSolver API**: [Get Test Balance & Instant Key](https://go.272738.xyz/capsolver)
+
+
+---
+
+## 🌐 Official Documentation & Cross-Platform Packages
+
+This containerized benchmark is integrated into our multi-platform technical evaluation network:
+
+* **Official Technical Manual (Read the Docs, DA 92)**: [residential-proxy-and-scraping-tax-benchmark](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/residential-proxy-and-scraping-tax-benchmark/)
+* **Documentation Portal**: [Cloud Infrastructure & Proxy Docs](https://proxy.mybskm.top/docs/)
+* **Interactive Live Calculator**: [https://proxy.mybskm.top/](https://proxy.mybskm.top/)
+* **Official Python Package (PyPI, DA 95)**: [check-proxy-tax](https://pypi.org/project/check-proxy-tax/)
+* **Official Node.js Package (npm, DA 96)**: [proxy-tax-calculator](https://www.npmjs.com/package/proxy-tax-calculator)

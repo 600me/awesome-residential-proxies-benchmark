@@ -178,3 +178,13 @@ Run the audit, then onboard through the verified gateways: [AdsPower](https://go
 ## License
 
 MIT License. Copyright (c) 2026 AdOps Attribution & Browser Benchmark Lab.
+
+
+---
+
+## 🌐 Official Documentation, Docker Image & Web Calculators
+
+* **Official Technical Manual (Read the Docs, DA 92)**: [antidetect-browser-and-ad-tracker-tco](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/antidetect-browser-and-ad-tracker-tco/)
+* **Production Docker Container (Docker Hub, DA 93)**: [600megd/antidetect-ad-tracker-tco](https://hub.docker.com/r/600megd/antidetect-ad-tracker-tco)
+* **Interactive Live Calculator**: [Web Benchmark & TCO Estimator](https://proxy.mybskm.top/blog/residential-proxy-sticky-session-guide.html)
+* **Interactive Documentation Portal**: [Proxy & Infrastructure Docs](https://proxy.mybskm.top/docs/)

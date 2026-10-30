@@ -86,6 +86,10 @@ print("Egress IP:", response.json()["ip"])
 
 To facilitate programmatic cost forecasting and continuous infrastructure auditing across automated CI/CD pipelines, our engineering benchmarks are published natively across multiple developer package registries, container registries, and interactive web calculators:
 
+* **Official Read the Docs Technical Manual (`Read the Docs`, DA 92)**:
+  * [Dedicated Benchmark Chapter on Read the Docs](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/residential-proxy-and-scraping-tax-benchmark/) — Full markdown mirror and architecture specifications.
+  * [Global Documentation Hub](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/)
+
 * **Official Python CLI Packages (`PyPI`, DA 95)**:
   * [proxy-tax-calculator](https://pypi.org/project/proxy-tax-calculator/) — Automated residential proxy 403 error tax & retry overhead calculator.
   * [llm-gpu-cost-estimator](https://pypi.org/project/llm-gpu-cost-estimator/) — Serverless vs. on-demand GPU inference unit economics engine.

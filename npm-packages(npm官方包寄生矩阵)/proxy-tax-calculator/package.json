@@ -1,6 +1,6 @@
 {
   "name": "proxy-tax-calculator",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Zero-dependency Node.js CLI that computes the exact 2026 proxy bandwidth 'hidden tax': effective $/GB across Decodo, ScraperAPI, Webshare, 9Proxy, PacketStream and Pawns residential networks.",
   "main": "index.js",
   "bin": {

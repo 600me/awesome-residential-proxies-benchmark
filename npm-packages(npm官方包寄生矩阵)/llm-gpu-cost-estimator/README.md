@@ -185,3 +185,13 @@ Usage: llm-gpu-cost-estimator [options]
 ## License
 
 MIT License. Copyright (c) 2026 Cloud GPU Economics Working Group.
+
+
+---
+
+## 🌐 Official Documentation, Docker Image & Web Calculators
+
+* **Official Technical Manual (Read the Docs, DA 92)**: [cloud-gpu-and-ai-media-unit-economics](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/cloud-gpu-and-ai-media-unit-economics/)
+* **Production Docker Container (Docker Hub, DA 93)**: [600megd/llm-gpu-cost-estimator](https://hub.docker.com/r/600megd/llm-gpu-cost-estimator)
+* **Interactive Live Calculator**: [Web Benchmark & TCO Estimator](https://gpu.mybskm.top/)
+* **Interactive Documentation Portal**: [Proxy & Infrastructure Docs](https://proxy.mybskm.top/docs/)

@@ -168,3 +168,13 @@ Additional region-specific guides and MoR break-even calculations: **https://pay
 ## License
 
 MIT License. Copyright (c) 2026 Cross-Border SaaS Tax & Compliance Lab.
+
+
+---
+
+## 🌐 Official Documentation, Docker Image & Web Calculators
+
+* **Official Technical Manual (Read the Docs, DA 92)**: [us-llc-stripe-and-cold-outbound-tco](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/us-llc-stripe-and-cold-outbound-tco/)
+* **Production Docker Container (Docker Hub, DA 93)**: [600megd/us-llc-stripe-tco](https://hub.docker.com/r/600megd/us-llc-stripe-tco)
+* **Interactive Live Calculator**: [Web Benchmark & TCO Estimator](https://pay.mybskm.top/)
+* **Interactive Documentation Portal**: [Proxy & Infrastructure Docs](https://proxy.mybskm.top/docs/)

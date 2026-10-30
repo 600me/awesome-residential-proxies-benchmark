@@ -1,0 +1,2 @@
+[console_scripts]
+llm-gpu-cost-calculator = llm_gpu_cost_calculator.cli:main

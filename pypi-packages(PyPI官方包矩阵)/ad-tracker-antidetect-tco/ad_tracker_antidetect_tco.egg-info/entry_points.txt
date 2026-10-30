@@ -1,0 +1,2 @@
+[console_scripts]
+ad-tracker-antidetect-tco = ad_tracker_antidetect_tco.cli:main

@@ -391,6 +391,56 @@ def main() -> int:
     except ImportError:
         pass
 
+    # ---- Track 19 Bidirectional SEO Mesh Assertions -----------------------
+    # 1. Local docs/*.md all 5 files contain complete 4-platform mesh
+    docs_dir = ROOT / "docs"
+    doc_files = [
+        "index.md",
+        "residential-proxy-and-scraping-tax-benchmark.md",
+        "cloud-gpu-and-ai-media-unit-economics.md",
+        "us-llc-stripe-and-cold-outbound-tco.md",
+        "antidetect-browser-and-ad-tracker-tco.md"
+    ]
+    for df in doc_files:
+        content = (docs_dir / df).read_text(encoding="utf-8")
+        check("cloud-infra-tco-benchmarks.readthedocs.io" in content, f"docs/{df} links to Read the Docs (DA 92)")
+        check("pypi.org/project/" in content, f"docs/{df} links to PyPI (DA 95)")
+        check("npmjs.com/package/" in content, f"docs/{df} links to npm (DA 96)")
+        check("hub.docker.com/r/600megd/" in content, f"docs/{df} links to Docker Hub (DA 93)")
+
+    # 2. Docker Hub assets all contain RTD link
+    docker_assets = ["proxy-tax-calculator", "llm-gpu-cost-estimator", "us-llc-stripe-tco", "antidetect-ad-tracker-tco"]
+    for da in docker_assets:
+        readme = (ROOT / "dockerhub-assets(DockerHub四大工具资产)" / da / "README.md").read_text(encoding="utf-8")
+        check("cloud-infra-tco-benchmarks.readthedocs.io" in readme, f"Docker Hub {da} README embeds RTD (DA 92) reverse link")
+
+    # 3. npm packages all contain RTD link
+    npm_packages = ["proxy-tax-calculator", "llm-gpu-cost-estimator", "us-llc-stripe-tco", "antidetect-ad-tracker-tco"]
+    for npkg in npm_packages:
+        readme = (ROOT / "npm-packages(npm官方包寄生矩阵)" / npkg / "README.md").read_text(encoding="utf-8")
+        check("cloud-infra-tco-benchmarks.readthedocs.io" in readme, f"npm {npkg} README embeds RTD (DA 92) reverse link")
+
+    # 4. PyPI packages all contain RTD link
+    check_tax_readme = Path("/Users/a600/project-workspaces(项目工作区)/check-proxy-tax/README.md").read_text(encoding="utf-8")
+    check("cloud-infra-tco-benchmarks.readthedocs.io" in check_tax_readme, "PyPI check-proxy-tax README embeds RTD link")
+    pypi_packages = ["llm-gpu-cost-calculator", "us-llc-compliance-tco", "ad-tracker-antidetect-tco"]
+    for ppkg in pypi_packages:
+        readme = (ROOT / "pypi-packages(PyPI官方包矩阵)" / ppkg / "README.md").read_text(encoding="utf-8")
+        check("cloud-infra-tco-benchmarks.readthedocs.io" in readme, f"PyPI {ppkg} README embeds RTD link")
+
+    # 5. Live proxy.mybskm.top/docs/ verification
+    try:
+        req_docs = urllib.request.Request("https://proxy.mybskm.top/docs/", headers={"User-Agent": _browser_ua})
+        with urllib.request.urlopen(req_docs, timeout=5) as resp:
+            docs_html = resp.read().decode("utf-8")
+            check(resp.status == 200, "live proxy.mybskm.top/docs/ returns HTTP 200")
+            check("cloud-infra-tco-benchmarks.readthedocs.io" in docs_html, "live docs/ contains RTD link")
+            check("pypi.org/project/" in docs_html, "live docs/ contains PyPI link")
+            check("npmjs.com/package/" in docs_html, "live docs/ contains npm link")
+            check("hub.docker.com/r/600megd/" in docs_html, "live docs/ contains Docker Hub link")
+    except Exception as e:
+        pass
+
     print(f"\n{_PASSED} assertions passed")
     return 0
 

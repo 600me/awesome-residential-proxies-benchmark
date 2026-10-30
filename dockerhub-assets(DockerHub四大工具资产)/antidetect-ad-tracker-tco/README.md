@@ -99,3 +99,16 @@ print(benchmark.generate_summary_report())
 4. **For Cost-Effective Rotating Residential IP Routing**:
    * Route profiles through real residential connections at an unbeatable flat rate.
    👉 **Get Clean IPs on PacketStream**: [Purchase \$1.00/GB Data](https://norb.date/ps/1)
+
+
+---
+
+## 🌐 Official Documentation & Cross-Platform Packages
+
+This containerized benchmark is integrated into our multi-platform technical evaluation network:
+
+* **Official Technical Manual (Read the Docs, DA 92)**: [antidetect-browser-and-ad-tracker-tco](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/antidetect-browser-and-ad-tracker-tco/)
+* **Documentation Portal**: [Cloud Infrastructure & Proxy Docs](https://proxy.mybskm.top/docs/)
+* **Interactive Live Calculator**: [https://proxy.mybskm.top/blog/residential-proxy-sticky-session-guide.html](https://proxy.mybskm.top/blog/residential-proxy-sticky-session-guide.html)
+* **Official Python Package (PyPI, DA 95)**: [ad-tracker-antidetect-tco](https://pypi.org/project/ad-tracker-antidetect-tco/)
+* **Official Node.js Package (npm, DA 96)**: [antidetect-ad-tracker-tco](https://www.npmjs.com/package/antidetect-ad-tracker-tco)
