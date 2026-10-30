@@ -1,0 +1,33 @@
+site_name: CloudBench Infrastructure & TCO Lab
+site_description: Empirical benchmarks, telemetry latency measurements, and total cost of ownership (TCO) models across Cloud GPUs, Residential Proxies, Anti-Detect Browsers, and B2B SaaS.
+site_author: CloudBench Research
+site_url: https://proxy.mybskm.top/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+nav:
+  - Overview: index.md
+  - Residential Proxies & Scraping: residential-proxy-and-scraping-tax-benchmark.md
+  - Cloud GPU & Generative AI: cloud-gpu-and-ai-media-unit-economics.md
+  - US LLC & Cold Outbound: us-llc-stripe-and-cold-outbound-tco.md
+  - Antidetect & Ad Tracking: antidetect-browser-and-ad-tracker-tco.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
