@@ -1,0 +1,33 @@
+{
+  "name": "proxy-tax-calculator",
+  "version": "1.0.0",
+  "description": "Zero-dependency Node.js CLI that computes the exact 2026 proxy bandwidth 'hidden tax': effective $/GB across Decodo, ScraperAPI, Webshare, 9Proxy, PacketStream and Pawns residential networks.",
+  "main": "index.js",
+  "bin": {
+    "proxy-tax-calculator": "cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "proxy cost calculator",
+    "residential proxy pricing",
+    "bandwidth tco",
+    "proxy price comparison",
+    "scraperapi pricing",
+    "decodo smartproxy",
+    "webshare proxy cost",
+    "9proxy residential ip",
+    "packetstream pay as you go",
+    "pawns proxy gb",
+    "web scraping budget",
+    "proxy overage calculator",
+    "datacenter vs residential"
+  ],
+  "license": "MIT",
+  "homepage": "https://proxy.mybskm.top",
+  "author": "Proxy FinOps Benchmark Contributors",
+  "engines": {
+    "node": ">=14"
+  }
+}

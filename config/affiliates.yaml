@@ -29,6 +29,13 @@
       "referral_url": "https://go.272738.xyz/oxylabs?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
       "promo_code": "—",
       "destination_url": "https://oxylabs.io/?utm_source=github&utm_campaign=proxy_benchmark"
+    },
+    {
+      "name": "IPRoyal",
+      "proxy_env": "IPROYAL_PROXY_URL",
+      "referral_url": "https://go.272738.xyz/iproyal?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
+      "promo_code": "—",
+      "destination_url": "https://iproyal.com/?r=121112"
     }
   ]
 }

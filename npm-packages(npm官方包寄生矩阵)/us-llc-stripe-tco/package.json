@@ -1,0 +1,34 @@
+{
+  "name": "us-llc-stripe-tco",
+  "version": "1.0.0",
+  "description": "Zero-dependency Node.js CLI that models the 3-year total cost of ownership of a non-US-owned LLC: state fees, franchise tax, FinCEN BOI, Form 5472/1120 CPA billing, and Firstbase.io vs Stripe Atlas vs Doola platform comparison.",
+  "main": "index.js",
+  "bin": {
+    "us-llc-stripe-tco": "cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "llc cost calculator",
+    "stripe atlas alternative",
+    "firstbase.io review",
+    "doola pricing",
+    "llc for non us residents",
+    "form 5472 penalty",
+    "fincen boi filing",
+    "wyoming llc cost",
+    "delaware franchise tax",
+    "stripe for non us founders",
+    "llc formation comparison",
+    "ein without ssn",
+    "registered agent cost",
+    "llc tco"
+  ],
+  "license": "MIT",
+  "homepage": "https://pay.mybskm.top",
+  "author": "Cross-Border SaaS Tax & Compliance Lab",
+  "engines": {
+    "node": ">=14"
+  }
+}

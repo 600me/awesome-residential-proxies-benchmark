@@ -1,0 +1,34 @@
+{
+  "name": "llm-gpu-cost-estimator",
+  "version": "1.0.0",
+  "description": "Zero-dependency Node.js CLI that estimates real 2026 cloud GPU TCO (spot interruption penalty, cold-start overhead) and generative AI media (ElevenLabs voice / HeyGen avatar video) production budgets.",
+  "main": "index.js",
+  "bin": {
+    "llm-gpu-cost-estimator": "cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "gpu cost calculator",
+    "runpod pricing",
+    "vast ai spot gpu",
+    "h100 hourly rate",
+    "a100 cost",
+    "serverless gpu tco",
+    "elevenlabs pricing",
+    "heygen pricing",
+    "ai video budget",
+    "tts cost calculator",
+    "llm inference cost",
+    "lora fine tuning cost",
+    "spot interruption",
+    "ai voice over budget"
+  ],
+  "license": "MIT",
+  "homepage": "https://gpu.mybskm.top",
+  "author": "Cloud GPU Economics Working Group",
+  "engines": {
+    "node": ">=14"
+  }
+}

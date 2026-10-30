@@ -1,0 +1,447 @@
+{
+  "totals_14brands": {
+    "total": 2474,
+    "tool": 668,
+    "bot": 388,
+    "probe": 55,
+    "audit": 783,
+    "real_human": 580
+  },
+  "by_brand": {
+    "/smartproxy": {
+      "total": 541,
+      "tool": 139,
+      "bot": 91,
+      "probe": 12,
+      "audit": 187,
+      "real_human": 112
+    },
+    "/scraperapi": {
+      "total": 413,
+      "tool": 122,
+      "bot": 72,
+      "probe": 10,
+      "audit": 148,
+      "real_human": 61
+    },
+    "/firstbase": {
+      "total": 409,
+      "tool": 122,
+      "bot": 71,
+      "probe": 11,
+      "audit": 138,
+      "real_human": 67
+    },
+    "/vastai": {
+      "total": 372,
+      "tool": 76,
+      "bot": 102,
+      "probe": 9,
+      "audit": 136,
+      "real_human": 49
+    },
+    "/runpod": {
+      "total": 317,
+      "tool": 84,
+      "bot": 43,
+      "probe": 9,
+      "audit": 125,
+      "real_human": 56
+    },
+    "/elevenlabs": {
+      "total": 36,
+      "tool": 10,
+      "bot": 3,
+      "probe": 0,
+      "audit": 3,
+      "real_human": 20
+    },
+    "/adspower": {
+      "total": 66,
+      "tool": 12,
+      "bot": 1,
+      "probe": 0,
+      "audit": 6,
+      "real_human": 47
+    },
+    "/9proxy": {
+      "total": 48,
+      "tool": 12,
+      "bot": 1,
+      "probe": 0,
+      "audit": 6,
+      "real_human": 29
+    },
+    "/voluum": {
+      "total": 34,
+      "tool": 9,
+      "bot": 1,
+      "probe": 0,
+      "audit": 6,
+      "real_human": 18
+    },
+    "/pawns": {
+      "total": 27,
+      "tool": 12,
+      "bot": 0,
+      "probe": 0,
+      "audit": 4,
+      "real_human": 11
+    },
+    "/webshare": {
+      "total": 69,
+      "tool": 14,
+      "bot": 0,
+      "probe": 0,
+      "audit": 8,
+      "real_human": 47
+    },
+    "/packetstream": {
+      "total": 33,
+      "tool": 12,
+      "bot": 1,
+      "probe": 2,
+      "audit": 2,
+      "real_human": 16
+    },
+    "/morelogin": {
+      "total": 42,
+      "tool": 12,
+      "bot": 1,
+      "probe": 1,
+      "audit": 6,
+      "real_human": 22
+    },
+    "/heygen": {
+      "total": 67,
+      "tool": 32,
+      "bot": 1,
+      "probe": 1,
+      "audit": 8,
+      "real_human": 25
+    }
+  },
+  "recent_real_human_clicks": [
+    {
+      "time": "2026-10-24T21:33:00-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=compare_smartproxy_scraperapi",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "152.58.*.*"
+    },
+    {
+      "time": "2026-10-24T23:53:38-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "ip_masked": "37.114.*.*"
+    },
+    {
+      "time": "2026-10-23T00:02:13-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+      "ip_masked": "156.247.*.*"
+    },
+    {
+      "time": "2026-10-23T00:36:31-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_smartproxy_scraperapi",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ip_masked": "82.156.*.*"
+    },
+    {
+      "time": "2026-10-23T00:36:47-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?utm_source=devto&utm_medium=article&utm_campaign=proxy_audit_cli&src=devto_cli",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+      "ip_masked": "124.243.*.*"
+    },
+    {
+      "time": "2026-10-23T00:36:54-11:00",
+      "brand": "/firstbase",
+      "full_path": "/firstbase?src=devto_firstbase_atlas",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ip_masked": "43.128.*.*"
+    },
+    {
+      "time": "2026-10-23T00:37:10-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=devto_smartproxy_scraperapi",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+      "ip_masked": "43.172.*.*"
+    },
+    {
+      "time": "2026-10-23T00:37:23-11:00",
+      "brand": "/runpod",
+      "full_path": "/runpod?src=devto_runpod_vast",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ip_masked": "43.159.*.*"
+    },
+    {
+      "time": "2026-10-23T00:37:57-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?utm_source=devto&utm_medium=article&utm_campaign=proxy_audit_cli&src=devto_cli",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "ip_masked": "116.204.*.*"
+    },
+    {
+      "time": "2026-10-23T00:37:57-11:00",
+      "brand": "/firstbase",
+      "full_path": "/firstbase?src=devto_mor_breakeven",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+      "ip_masked": "27.158.*.*"
+    },
+    {
+      "time": "2026-10-23T10:31:10-11:00",
+      "brand": "/firstbase",
+      "full_path": "/firstbase?src=devto_firstbase_atlas",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+      "ip_masked": "154.72.*.*"
+    },
+    {
+      "time": "2026-10-23T11:21:08-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_smartproxy_scraperapi",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "103.26.*.*"
+    },
+    {
+      "time": "2026-10-23T11:41:47-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_sticky_guide",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "ip_masked": "189.127.*.*"
+    },
+    {
+      "time": "2026-10-23T16:01:41-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=scrape_table_row",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T16:01:47-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=scrape_table_row",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15",
+      "ip_masked": "189.244.*.*"
+    },
+    {
+      "time": "2026-10-23T16:54:33-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "ip_masked": "91.186.*.*"
+    },
+    {
+      "time": "2026-10-23T17:53:18-11:00",
+      "brand": "/firstbase",
+      "full_path": "/firstbase?src=pay_calc_winner",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T18:06:42-11:00",
+      "brand": "/vastai",
+      "full_path": "/vastai?src=compare_runpod_vast",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T18:42:07-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=proxy_footer",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T20:23:36-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=scrape_home_footer",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T20:23:38-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=scrape_home_footer",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+      "ip_masked": "176.149.*.*"
+    },
+    {
+      "time": "2026-10-23T20:42:23-11:00",
+      "brand": "/firstbase",
+      "full_path": "/firstbase?src=compare_firstbase_atlas",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T21:20:31-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=compare_smartproxy_scraperapi",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "47.82.*.*"
+    },
+    {
+      "time": "2026-10-23T22:20:48-11:00",
+      "brand": "/runpod",
+      "full_path": "/runpod?src=compare_runpod_vast",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-23T23:22:21-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "189.203.*.*"
+    },
+    {
+      "time": "2026-10-22T00:02:28-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "170.247.*.*"
+    },
+    {
+      "time": "2026-10-22T19:16:06-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=compare_smartproxy_scraperapi",
+      "referer": "https://scrape.mybskm.top/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.",
+      "ip_masked": "157.254.*.*"
+    },
+    {
+      "time": "2026-10-22T19:16:07-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=compare_smartproxy_scraperapi",
+      "referer": "https://scrape.mybskm.top/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.",
+      "ip_masked": "157.254.*.*"
+    },
+    {
+      "time": "2026-10-21T00:02:30-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-21T02:10:19-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=devto_smartproxy_scraperapi",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.15",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-21T02:10:25-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=devto_smartproxy_scraperapi",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+      "ip_masked": "177.1.*.*"
+    },
+    {
+      "time": "2026-10-21T10:41:00-11:00",
+      "brand": "/firstbase",
+      "full_path": "/firstbase?src=devto_firstbase_atlas",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-21T11:11:33-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_smartproxy_scraperapi",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-21T11:41:53-11:00",
+      "brand": "/runpod",
+      "full_path": "/runpod?src=devto_runpod_vast",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-21T12:00:26-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_sticky_guide",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.",
+      "ip_masked": "47.82.*.*"
+    },
+    {
+      "time": "2026-10-21T12:48:50-11:00",
+      "brand": "/smartproxy",
+      "full_path": "/smartproxy?src=devto_sticky_guide",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+      "ip_masked": "104.165.*.*"
+    },
+    {
+      "time": "2026-10-21T13:41:13-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    },
+    {
+      "time": "2026-10-21T13:41:17-11:00",
+      "brand": "/scraperapi",
+      "full_path": "/scraperapi?src=devto_cli",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15",
+      "ip_masked": "111.108.*.*"
+    },
+    {
+      "time": "2026-10-20T01:36:00-11:00",
+      "brand": "/vastai",
+      "full_path": "/vastai?src=devto_runpod_vast",
+      "referer": "-",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+      "ip_masked": "201.77.*.*"
+    },
+    {
+      "time": "2026-10-20T16:51:28-11:00",
+      "brand": "/vastai",
+      "full_path": "/vastai?src=devto_runpod_vast",
+      "referer": "https://go.272738.xyz/",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "ip_masked": "47.79.*.*"
+    }
+  ],
+  "generated_at": "2026-10-29T15:51:36.807739+00:00"
+}

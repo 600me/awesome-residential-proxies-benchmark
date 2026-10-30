@@ -1,0 +1,2107 @@
+{
+  "started_at": "2026-10-29T15:39:01.449227+00:00",
+  "completed_at": "2026-10-29T15:46:36.136118+00:00",
+  "total_unique_parasite_projects_found": 58,
+  "total_unique_merchant_domains_found": 90,
+  "top_merchant_domains": [
+    {
+      "domain": "runcrate.ai",
+      "count": 7,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/runcrate/text-embedding-throughput-per-dollar-bge-small-base-and-large-on-rtx-5090-l40s-rtx-a6000-and-nlg",
+        "https://dev.to/runcrate/torchcompile-vs-eager-for-training-a-468m-llama-style-model-on-four-gpus-step-time-memory-and-2ebo",
+        "https://dev.to/runcrate/fresh-hugging-face-download-vs-local-cache-time-to-first-token-for-a-7b-model-on-a-runcrate-l40s-3no8",
+        "https://dev.to/runcrate/ollama-q4-vs-vllm-bf16-on-a-24-gb-a10-3x-the-single-user-speed-12-points-of-gsm8k-and-where-3ch4",
+        "https://dev.to/runcrate/whisper-large-v3-hours-of-audio-per-dollar-on-four-gpus-rtx-5090-l40s-rtx-a6000-and-h100-five-3j7o"
+      ],
+      "sample_affiliate_links": [
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=model-weights-download-vs-cache-startup",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=embedding-throughput-per-dollar",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=ollama-vs-vllm-24gb",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=whisper-audio-hours-per-dollar",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=torch-compile-vs-eager-training",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=vllm-fp8-vs-bf16",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=vllm-fp8-vs-bf16",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=whisper-audio-hours-per-dollar"
+      ]
+    },
+    {
+      "domain": "aicostbudget.com",
+      "count": 2,
+      "platforms": [
+        "huggingface.co/spaces",
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://huggingface.co/spaces/aicostbudget-ai/llm-api-pricing-calculator",
+        "https://github.com/aicostbudget/ai-api-pricing-data"
+      ],
+      "sample_affiliate_links": [
+        "https://aicostbudget.com/en/model-switch-cost-calculator?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=readme_model_switch_cost_calculator",
+        "https://aicostbudget.com/en/datasets/ai-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=repo_homepage",
+        "https://aicostbudget.com/en/providers/alibaba-qwen-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=alibaba_qwen",
+        "https://aicostbudget.com/en/model-switch-cost-calculator?utm_source=huggingface&utm_medium=referral&utm_campaign=hf_space&utm_content=readme",
+        "https://aicostbudget.github.io/ai-api-pricing-data/api/v1/models/openai/gpt-4.1.json",
+        "https://aicostbudget.github.io/ai-api-pricing-data/api/v1/meta.json",
+        "https://aicostbudget.com/en/providers/google-gemini-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=google_gemini",
+        "https://aicostbudget.com/en/providers/deepseek-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=deepseek"
+      ]
+    },
+    {
+      "domain": "kenwalger.com",
+      "count": 2,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/kenwalger/four-ways-a-test-can-lie-to-you-2ibf",
+        "https://dev.to/kenwalger/a-message-from-our-founder-on-the-winding-down-of-laasy-467a"
+      ],
+      "sample_affiliate_links": [
+        "https://www.kenwalger.com/blog/software-engineering/tuesday-isnt-a-valid-state-transition/?utm_source=kenwalger&amp;utm_medium=blog&amp;utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai/nothing-reported-it/?utm_source=kenwalger&amp;utm_medium=blog&amp;utm_campaign=cellar_post_wrap_up",
+        "https://vernholtsecretariat.org/register.html?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=laasy_collapse",
+        "https://www.kenwalger.com/blog/satire/introducing-laasy/?utm_source=dev_to&utm_medium=article&utm_campaign=laasy_collapse",
+        "https://www.kenwalger.com/blog/ai/verification-bottleneck-ai-generated-software/?utm_source=kenwalger&utm_medium=blog&utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai/verification-bottleneck-ai-generated-software/?utm_source=kenwalger&amp;utm_medium=blog&amp;utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/satire/introducing-laasy/?utm_source=dev_to&amp;utm_medium=article&amp;utm_campaign=laasy_collapse",
+        "https://www.kenwalger.com/blog/ai-engineering/contract-discovery-bottleneck/?utm_source=devto&utm_medium=article&utm_campaign=cellar_post_wrap_up"
+      ]
+    },
+    {
+      "domain": "russellsteadman.com",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/affiliate",
+        "https://www.npmjs.com/package/affiliate-plugin-amazon"
+      ],
+      "sample_affiliate_links": [
+        "https://www.russellsteadman.com/?utm_source=aff_repo&utm_medium=readme_copy",
+        "https://www.russellsteadman.com/?utm_source=aff_amz_repo&utm_medium=readme_copy"
+      ]
+    },
+    {
+      "domain": "dash.capmonster.cloud",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@zennolab_com/capmonstercloud-client",
+        "https://www.npmjs.com/package/@zennolab_com/n8n-nodes-capmonstercloud"
+      ],
+      "sample_affiliate_links": [
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://capmonster.cloud/en/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read#support",
+        "https://docs.capmonster.cloud/docs/captchas/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://dash.capmonster.cloud/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/extension/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read"
+      ]
+    },
+    {
+      "domain": "docs.capmonster.cloud",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@zennolab_com/capmonstercloud-client",
+        "https://www.npmjs.com/package/@zennolab_com/n8n-nodes-capmonstercloud"
+      ],
+      "sample_affiliate_links": [
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://capmonster.cloud/en/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read#support",
+        "https://docs.capmonster.cloud/docs/captchas/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://dash.capmonster.cloud/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/extension/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read"
+      ]
+    },
+    {
+      "domain": "capmonster.cloud",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@zennolab_com/capmonstercloud-client",
+        "https://www.npmjs.com/package/@zennolab_com/n8n-nodes-capmonstercloud"
+      ],
+      "sample_affiliate_links": [
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://capmonster.cloud/en/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read#support",
+        "https://docs.capmonster.cloud/docs/captchas/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://dash.capmonster.cloud/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/extension/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read"
+      ]
+    },
+    {
+      "domain": "bit.ly",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@infosimples/node_two_captcha",
+        "https://www.npmjs.com/package/node_two_captcha"
+      ],
+      "sample_affiliate_links": [
+        "http://bit.ly/1xXZcKo"
+      ]
+    },
+    {
+      "domain": "outrank.so",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/next-seo",
+        "https://www.npmjs.com/package/@docmd/plugin-seo"
+      ],
+      "sample_affiliate_links": [
+        "https://outrank.so/?via=next-seo",
+        "https://outrank.so/?via=docmd"
+      ]
+    },
+    {
+      "domain": "aiolaola.com",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/agency-agents-zh",
+        "https://www.npmjs.com/package/agency-orchestrator"
+      ],
+      "sample_affiliate_links": [
+        "https://aiolaola.com/?utm_source=github&utm_campaign=agents",
+        "https://aiolaola.com/course/ai-agent?utm_source=github&utm_campaign=orchestrator",
+        "https://aiolaola.com/?utm_source=github&utm_campaign=orchestrator",
+        "https://aiolaola.com/zh-Hant?utm_source=github&utm_campaign=agents-tw",
+        "https://aiolaola.com/course/ai-agency?utm_source=github&utm_campaign=orchestrator",
+        "https://www.volcengine.com/activity/ai618?utm_campaign=hw&utm_content=hw&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=agency-agents-zh",
+        "https://aiolaola.com/zh-Hant/course/agents?utm_source=github&utm_campaign=agents-tw",
+        "https://aiolaola.com/course/ai-pipeline?utm_source=github&utm_campaign=orchestrator"
+      ]
+    },
+    {
+      "domain": "schof.co",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/react-native-map-link",
+        "https://www.npmjs.com/package/react-native-email-link"
+      ],
+      "sample_affiliate_links": [
+        "https://schof.co/consulting/?utm_source=flexible-agency/react-native-email-link",
+        "https://schof.co/consulting/?utm_source=flexible-agency/react-native-map-link"
+      ]
+    },
+    {
+      "domain": "registry.modelcontextprotocol.io",
+      "count": 2,
+      "platforms": [
+        "npmjs.com",
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@mambalabsdev/mcp-talent-agency-lookup",
+        "https://github.com/public-apis/public-apis"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://registry.modelcontextprotocol.io/v0/servers?search=com.mambabuilt/mcp-talent-agency-lookup&limit=1",
+        "https://apilayer.com/products/serpstack?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo"
+      ]
+    },
+    {
+      "domain": "bizon.solutions",
+      "count": 2,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@sp-api-sdk/fba-inventory-api-v1",
+        "https://www.npmjs.com/package/@sp-api-sdk/fulfillment-inbound-api-2024-03-20"
+      ],
+      "sample_affiliate_links": [
+        "https://www.bizon.solutions?utm_source=github&utm_medium=readme&utm_campaign=selling-partner-api-sdk"
+      ]
+    },
+    {
+      "domain": "zenserp.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "geracodigo.com.br",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "ipstack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "monit.ly",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "hotstoks.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "api.postcodedata.nl",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "weatherstack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "currencylayer.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "exchangeratesapi.io",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "ipapi.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "aviationstack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "fixer.io",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "mailboxlayer.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "mercadopago.com.br",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "exchangerate.host",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "filestack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "marketstack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "mediastack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "screenshotlayer.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "cutt.ly",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "vatlayer.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "numverify.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "coinlayer.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "userstack.com",
+      "count": 2,
+      "platforms": [
+        "github.com"
+      ],
+      "sample_projects": [
+        "https://github.com/public-apis/public-apis",
+        "https://github.com/Manavarya09/public-apis-live"
+      ],
+      "sample_affiliate_links": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution"
+      ]
+    },
+    {
+      "domain": "cloudgpu.app",
+      "count": 1,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/cloudgpu_app/wan-22-a14b-at-720p-on-a-24-gb-gpu-why-it-runs-out-of-memory-and-what-to-change-8nc"
+      ],
+      "sample_affiliate_links": [
+        "https://cloudgpu.app/pricing?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=202611_seg01_comfyui&amp;utm_content=wan22_oom",
+        "https://cloudgpu.app/pricing?utm_source=devto&utm_medium=article&utm_campaign=202611_seg01_comfyui&utm_content=wan22_oom"
+      ]
+    },
+    {
+      "domain": "topicwire.online",
+      "count": 1,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/annabel/will-profitable-niche-ideas-save-your-language-blog-3p8b"
+      ],
+      "sample_affiliate_links": [
+        "https://topicwire.online/will-profitable-niche-ideas-save-your-language-blo/?utm_source=devto&utm_medium=social&utm_campaign=will-profitable-niche-ideas-save-your-language-blo",
+        "https://topicwire.online/will-profitable-niche-ideas-save-your-language-blo/?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=will-profitable-niche-ideas-save-your-language-blo"
+      ]
+    },
+    {
+      "domain": "faceonlive-face-search-online.hf.space",
+      "count": 1,
+      "platforms": [
+        "huggingface.co/spaces"
+      ],
+      "sample_projects": [
+        "https://huggingface.co/spaces/Zhu-FaceOnLive/Face-Search-Affiliate"
+      ],
+      "sample_affiliate_links": [
+        "https://faceonlive.com/face-search-online/?utm_source=AFF12345678`",
+        "https://faceonlive.com/face-search-online/?utm_source={affiliate_id}`",
+        "https://faceonlive-face-search-online.hf.space/?utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe22aaeced2814bc47bcc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe177aeced2814bc479bc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe2b5aeced2814bc47dd1&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe128aeced2814bc4786e&utm_source={affiliate_id}"
+      ]
+    },
+    {
+      "domain": "faceonlive.pocketsflow.com",
+      "count": 1,
+      "platforms": [
+        "huggingface.co/spaces"
+      ],
+      "sample_projects": [
+        "https://huggingface.co/spaces/Zhu-FaceOnLive/Face-Search-Affiliate"
+      ],
+      "sample_affiliate_links": [
+        "https://faceonlive.com/face-search-online/?utm_source=AFF12345678`",
+        "https://faceonlive.com/face-search-online/?utm_source={affiliate_id}`",
+        "https://faceonlive-face-search-online.hf.space/?utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe22aaeced2814bc47bcc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe177aeced2814bc479bc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe2b5aeced2814bc47dd1&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe128aeced2814bc4786e&utm_source={affiliate_id}"
+      ]
+    },
+    {
+      "domain": "faceonlive.com",
+      "count": 1,
+      "platforms": [
+        "huggingface.co/spaces"
+      ],
+      "sample_projects": [
+        "https://huggingface.co/spaces/Zhu-FaceOnLive/Face-Search-Affiliate"
+      ],
+      "sample_affiliate_links": [
+        "https://faceonlive.com/face-search-online/?utm_source=AFF12345678`",
+        "https://faceonlive.com/face-search-online/?utm_source={affiliate_id}`",
+        "https://faceonlive-face-search-online.hf.space/?utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe22aaeced2814bc47bcc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe177aeced2814bc479bc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe2b5aeced2814bc47dd1&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe128aeced2814bc4786e&utm_source={affiliate_id}"
+      ]
+    },
+    {
+      "domain": "nothingisaccidental.substack.com",
+      "count": 1,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/nia_agent_d4ea108025639bc/kimi-k31-pro-lists-at-half-the-price-of-claude-opus-in-one-test-the-bill-came-out-the-same-1cnp"
+      ],
+      "sample_affiliate_links": [
+        "https://nothingisaccidental.substack.com/p/kimi-k31-pro-lists-at-half-the-price?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=promobot",
+        "https://nothingisaccidental.substack.com/p/kimi-k31-pro-lists-at-half-the-price?utm_source=devto&utm_medium=social&utm_campaign=promobot",
+        "https://nothingisaccidental.substack.com?utm_source=devto&utm_medium=social&utm_campaign=promobot",
+        "https://nothingisaccidental.substack.com?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=promobot"
+      ]
+    },
+    {
+      "domain": "vernholtsecretariat.org",
+      "count": 1,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/kenwalger/a-message-from-our-founder-on-the-winding-down-of-laasy-467a"
+      ],
+      "sample_affiliate_links": [
+        "https://www.kenwalger.com/blog/satire/introducing-laasy/?utm_source=dev_to&utm_medium=article&utm_campaign=laasy_collapse",
+        "https://vernholtsecretariat.org/register.html?utm_source=devto&utm_medium=article&utm_campaign=laasy_collapse",
+        "https://www.kenwalger.com/blog/satire/introducing-laasy/?utm_source=dev_to&amp;utm_medium=article&amp;utm_campaign=laasy_collapse",
+        "https://vernholtsecretariat.org/register.html?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=laasy_collapse"
+      ]
+    },
+    {
+      "domain": "proxyhat.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/proxyhat"
+      ],
+      "sample_affiliate_links": [
+        "https://dashboard.proxyhat.com/register?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=signup",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=docs-home",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=links",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=getting-started",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=callout",
+        "https://docs.proxyhat.com/errors?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=error-handling",
+        "https://docs.proxyhat.com/api/auth?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=api-reference",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=hero"
+      ]
+    },
+    {
+      "domain": "dashboard.proxyhat.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/proxyhat"
+      ],
+      "sample_affiliate_links": [
+        "https://dashboard.proxyhat.com/register?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=signup",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=docs-home",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=links",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=getting-started",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=callout",
+        "https://docs.proxyhat.com/errors?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=error-handling",
+        "https://docs.proxyhat.com/api/auth?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=api-reference",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=hero"
+      ]
+    },
+    {
+      "domain": "docs.proxyhat.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/proxyhat"
+      ],
+      "sample_affiliate_links": [
+        "https://dashboard.proxyhat.com/register?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=signup",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=docs-home",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=links",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=getting-started",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=callout",
+        "https://docs.proxyhat.com/errors?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=error-handling",
+        "https://docs.proxyhat.com/api/auth?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=api-reference",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=hero"
+      ]
+    },
+    {
+      "domain": "api.dshapi.icu",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@a9i5k4/dsh-auto-memory"
+      ],
+      "sample_affiliate_links": [
+        "https://api.dshapi.icu/register?aff=HJU27P7JL39N"
+      ]
+    },
+    {
+      "domain": "voucherify.io",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/voucher-code-generator"
+      ],
+      "sample_affiliate_links": [
+        "https://www.voucherify.io/?utm_source=github&utm_medium=repo&utm_campaign=opensource"
+      ]
+    },
+    {
+      "domain": "upload-widget.cloudinary.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@tincre/promo-button"
+      ],
+      "sample_affiliate_links": [
+        "https://upload-widget.cloudinary.com/global/all.js"
+      ]
+    },
+    {
+      "domain": "mcprush.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/feedico-mcp"
+      ],
+      "sample_affiliate_links": [
+        "https://mcprush.com/to/feedico-coupons-deals-products-mcp?ref=badge"
+      ]
+    },
+    {
+      "domain": "coinpayments.net",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/coinpayments"
+      ],
+      "sample_affiliate_links": [
+        "https://www.coinpayments.net/index.php?ref=831b8d495071e5b0e1015486f5001150"
+      ]
+    },
+    {
+      "domain": "dashboard.nexmo.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@vonage/pricing"
+      ],
+      "sample_affiliate_links": [
+        "https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=node-server-sdk"
+      ]
+    },
+    {
+      "domain": "myapp.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@profullstack/referrals"
+      ],
+      "sample_affiliate_links": [
+        "https://myapp.com/signup?ref=AB3K7PQZ"
+      ]
+    },
+    {
+      "domain": "dshfind.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/dsh-cost-meter"
+      ],
+      "sample_affiliate_links": [
+        "https://dshfind.com/zh/plugins/Han-1413141/dsh-cost-meter?ref=badge"
+      ]
+    },
+    {
+      "domain": "bluehive.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/sweetalert2"
+      ],
+      "sample_affiliate_links": [
+        "https://bluehive.com/?utm_source=sweetalert2&utm_medium=sponsored&utm_campaign=listing"
+      ]
+    },
+    {
+      "domain": "emailengine.app",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/postal-mime"
+      ],
+      "sample_affiliate_links": [
+        "https://emailengine.app/?utm_source=github&utm_campaign=imapflow&utm_medium=readme-link"
+      ]
+    },
+    {
+      "domain": "bybit.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@pincince64883736/cryptobot"
+      ],
+      "sample_affiliate_links": [
+        "https://www.bybit.com/app/register?ref=46AK7",
+        "https://www.binance.com/?ref=17569916"
+      ]
+    },
+    {
+      "domain": "binance.com",
+      "count": 1,
+      "platforms": [
+        "npmjs.com"
+      ],
+      "sample_projects": [
+        "https://www.npmjs.com/package/@pincince64883736/cryptobot"
+      ],
+      "sample_affiliate_links": [
+        "https://www.bybit.com/app/register?ref=46AK7",
+        "https://www.binance.com/?ref=17569916"
+      ]
+    },
+    {
+      "domain": "captchaai.com",
+      "count": 1,
+      "platforms": [
+        "dev.to"
+      ],
+      "sample_projects": [
+        "https://dev.to/bshahin/image-captcha-solver-in-python-send-the-right-image-to-an-ocr-api-and-get-an-answer-the-site-482c"
+      ],
+      "sample_affiliate_links": [
+        "https://captchaai.com/free-thread?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=image-captcha-solver-python-ocr-api",
+        "https://captchaai.com/free-thread?utm_source=devto&utm_medium=article&utm_campaign=image-captcha-solver-python-ocr-api"
+      ]
+    }
+  ],
+  "all_findings": [
+    {
+      "platform": "huggingface.co/spaces",
+      "query": "pricing calculator",
+      "item": "aicostbudget-ai/llm-api-pricing-calculator",
+      "author": "aicostbudget-ai",
+      "url": "https://huggingface.co/spaces/aicostbudget-ai/llm-api-pricing-calculator",
+      "description": "Likes: 0 | SDK: static",
+      "affiliate_urls": [
+        "https://aicostbudget.com/en/model-switch-cost-calculator?utm_source=huggingface&utm_medium=referral&utm_campaign=hf_space&utm_content=readme"
+      ],
+      "domains": [
+        "aicostbudget.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "Text embedding throughput per dollar: BGE small, base and large on RTX 5090, L40S, RTX A6000 and H100",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/text-embedding-throughput-per-dollar-bge-small-base-and-large-on-rtx-5090-l40s-rtx-a6000-and-nlg",
+      "description": "BGE small, base and large embedding throughput on RTX 5090, L40S, RTX A6000 and H100: passages per second and dollars per million passages.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=embedding-throughput-per-dollar",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=embedding-throughput-per-dollar"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "torch.compile vs eager for training a 468M Llama-style model on four GPUs: step time, memory and compile cost",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/torchcompile-vs-eager-for-training-a-468m-llama-style-model-on-four-gpus-step-time-memory-and-2ebo",
+      "description": "torch.compile vs eager training on RTX 5090, L40S, RTX A6000 and H100: step time, peak memory, compile time and tokens per dollar.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=torch-compile-vs-eager-training",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=torch-compile-vs-eager-training"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "Wan 2.2 A14B at 720p on a 24 GB GPU: why it runs out of memory and what to change",
+      "author": "cloudgpu_app",
+      "url": "https://dev.to/cloudgpu_app/wan-22-a14b-at-720p-on-a-24-gb-gpu-why-it-runs-out-of-memory-and-what-to-change-8nc",
+      "description": "If you try Wan 2.2 T2V A14B at 1280×720 on a 24 GB card and get torch.OutOfMemoryError, you are not...",
+      "affiliate_urls": [
+        "https://cloudgpu.app/pricing?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=202611_seg01_comfyui&amp;utm_content=wan22_oom",
+        "https://cloudgpu.app/pricing?utm_source=devto&utm_medium=article&utm_campaign=202611_seg01_comfyui&utm_content=wan22_oom"
+      ],
+      "domains": [
+        "cloudgpu.app"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "Fresh Hugging Face download vs local cache: time to first token for a 7B model on a Runcrate L40S",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/fresh-hugging-face-download-vs-local-cache-time-to-first-token-for-a-7b-model-on-a-runcrate-l40s-3no8",
+      "description": "Timing a 7B model's startup on an L40S: 48 to 55 s from a fresh Hugging Face download, 18 to 19 s from local disk, and where the rest goes.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=model-weights-download-vs-cache-startup",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=model-weights-download-vs-cache-startup"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "Ollama Q4 vs vLLM bf16 on a 24 GB A10: 3x the single-user speed, 1.2 points of GSM8K, and where vLLM still wins",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/ollama-q4-vs-vllm-bf16-on-a-24-gb-a10-3x-the-single-user-speed-12-points-of-gsm8k-and-where-3ch4",
+      "description": "Qwen2.5-7B on one 24 GB A10: Ollama Q4_K_M and Q8_0 against vLLM bf16, throughput, time to first token, GSM8K and cost per 1M tokens.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=ollama-vs-vllm-24gb",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=ollama-vs-vllm-24gb"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "Whisper large-v3 hours of audio per dollar on four GPUs: RTX 5090, L40S, RTX A6000 and H100, five setups measured",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/whisper-large-v3-hours-of-audio-per-dollar-on-four-gpus-rtx-5090-l40s-rtx-a6000-and-h100-five-3j7o",
+      "description": "Whisper large-v3 and turbo on RTX 5090, L40S, RTX A6000 and H100 PCIe: x realtime, WER and audio hours per dollar for five setups.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=whisper-audio-hours-per-dollar",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=whisper-audio-hours-per-dollar"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "Full fine-tune vs LoRA vs QLoRA on one L40S: Qwen2.5-1.5B, memory, speed and held-out loss, measured",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/full-fine-tune-vs-lora-vs-qlora-on-one-l40s-qwen25-15b-memory-speed-and-held-out-loss-measured-1ibj",
+      "description": "Qwen2.5-1.5B fine-tuned three ways on one 48 GB L40S: full, LoRA and QLoRA, with peak memory, tokens per second, held-out loss and cost.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=lora-vs-full-finetune",
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=lora-vs-full-finetune"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "gpu cloud pricing",
+      "item": "vLLM FP8 vs bf16 on an H100: 1.4x the throughput, and what it did to GSM8K accuracy",
+      "author": "runcrate",
+      "url": "https://dev.to/runcrate/vllm-fp8-vs-bf16-on-an-h100-14x-the-throughput-and-what-it-did-to-gsm8k-accuracy-2n86",
+      "description": "Qwen2.5-7B served by vLLM in bf16 and online FP8 on one H100: tokens per second at 1 to 64 users, memory, cost, and GSM8K accuracy.",
+      "affiliate_urls": [
+        "https://www.runcrate.ai/?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=vllm-fp8-vs-bf16",
+        "https://www.runcrate.ai/?utm_source=devto&utm_medium=post&utm_campaign=vllm-fp8-vs-bf16"
+      ],
+      "domains": [
+        "runcrate.ai"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "affiliate",
+      "item": "Will Profitable Niche Ideas Save Your Language Blog?",
+      "author": "annabel",
+      "url": "https://dev.to/annabel/will-profitable-niche-ideas-save-your-language-blog-3p8b",
+      "description": "Adult learners are spending over $120 million on digital language courses, yet most language blogs fail to capture that spend. A data-driven approach to niche s",
+      "affiliate_urls": [
+        "https://topicwire.online/will-profitable-niche-ideas-save-your-language-blo/?utm_source=devto&utm_medium=social&utm_campaign=will-profitable-niche-ideas-save-your-language-blo",
+        "https://topicwire.online/will-profitable-niche-ideas-save-your-language-blo/?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=will-profitable-niche-ideas-save-your-language-blo"
+      ],
+      "domains": [
+        "topicwire.online"
+      ]
+    },
+    {
+      "platform": "huggingface.co/spaces",
+      "query": "affiliate",
+      "item": "Zhu-FaceOnLive/Face-Search-Affiliate",
+      "author": "Zhu-FaceOnLive",
+      "url": "https://huggingface.co/spaces/Zhu-FaceOnLive/Face-Search-Affiliate",
+      "description": "Likes: 2 | SDK: gradio",
+      "affiliate_urls": [
+        "https://faceonlive.com/face-search-online/?utm_source=AFF12345678`",
+        "https://faceonlive.com/face-search-online/?utm_source={affiliate_id}`",
+        "https://faceonlive-face-search-online.hf.space/?utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe22aaeced2814bc47bcc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe177aeced2814bc479bc&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe2b5aeced2814bc47dd1&utm_source={affiliate_id}",
+        "https://faceonlive.pocketsflow.com/checkout?productId=677fe128aeced2814bc4786e&utm_source={affiliate_id}"
+      ],
+      "domains": [
+        "faceonlive-face-search-online.hf.space",
+        "faceonlive.pocketsflow.com",
+        "faceonlive.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "cost calculator",
+      "item": "Kimi K3.1 Pro lists at half the price of Claude Opus. In one test the bill came out the same.",
+      "author": "nia_agent_d4ea108025639bc",
+      "url": "https://dev.to/nia_agent_d4ea108025639bc/kimi-k31-pro-lists-at-half-the-price-of-claude-opus-in-one-test-the-bill-came-out-the-same-1cnp",
+      "description": "\"One month behind\" is a slogan, not a measurement. Here is what the scoreboards, the invoices and the hands-on tests actually show about the open-weights challenger.",
+      "affiliate_urls": [
+        "https://nothingisaccidental.substack.com/p/kimi-k31-pro-lists-at-half-the-price?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=promobot",
+        "https://nothingisaccidental.substack.com/p/kimi-k31-pro-lists-at-half-the-price?utm_source=devto&utm_medium=social&utm_campaign=promobot",
+        "https://nothingisaccidental.substack.com?utm_source=devto&utm_medium=social&utm_campaign=promobot",
+        "https://nothingisaccidental.substack.com?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=promobot"
+      ],
+      "domains": [
+        "nothingisaccidental.substack.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "ai video generator",
+      "item": "Four Ways a Test Can Lie to You",
+      "author": "kenwalger",
+      "url": "https://dev.to/kenwalger/four-ways-a-test-can-lie-to-you-2ibf",
+      "description": "Green and worthless: what verifying one small application taught me, when an AI agent wrote most of...",
+      "affiliate_urls": [
+        "https://www.kenwalger.com/blog/software-engineering/tuesday-isnt-a-valid-state-transition/?utm_source=kenwalger&amp;utm_medium=blog&amp;utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai/nothing-reported-it/?utm_source=kenwalger&amp;utm_medium=blog&amp;utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai/verification-bottleneck-ai-generated-software/?utm_source=kenwalger&utm_medium=blog&utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai/verification-bottleneck-ai-generated-software/?utm_source=kenwalger&amp;utm_medium=blog&amp;utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai-engineering/contract-discovery-bottleneck/?utm_source=devto&utm_medium=article&utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai/nothing-reported-it/?utm_source=kenwalger&utm_medium=blog&utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/ai-engineering/contract-discovery-bottleneck/?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=cellar_post_wrap_up",
+        "https://www.kenwalger.com/blog/software-engineering/tuesday-isnt-a-valid-state-transition/?utm_source=kenwalger&utm_medium=blog&utm_campaign=cellar_post_wrap_up"
+      ],
+      "domains": [
+        "kenwalger.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "ai video generator",
+      "item": "A Message From Our Founder: On the Winding Down of LaaSy™",
+      "author": "kenwalger",
+      "url": "https://dev.to/kenwalger/a-message-from-our-founder-on-the-winding-down-of-laasy-467a",
+      "description": "It is with a heavy heart, and a considerably heavier wool inventory, that I announce LaaSy™ will...",
+      "affiliate_urls": [
+        "https://www.kenwalger.com/blog/satire/introducing-laasy/?utm_source=dev_to&amp;utm_medium=article&amp;utm_campaign=laasy_collapse",
+        "https://vernholtsecretariat.org/register.html?utm_source=devto&utm_medium=article&utm_campaign=laasy_collapse",
+        "https://www.kenwalger.com/blog/satire/introducing-laasy/?utm_source=dev_to&utm_medium=article&utm_campaign=laasy_collapse",
+        "https://vernholtsecretariat.org/register.html?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=laasy_collapse"
+      ],
+      "domains": [
+        "kenwalger.com",
+        "vernholtsecretariat.org"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "residential proxy",
+      "item": "proxyhat",
+      "author": "proxyhatorg",
+      "url": "https://www.npmjs.com/package/proxyhat",
+      "description": "The official Node.js/TypeScript SDK for the ProxyHat residential proxy API",
+      "affiliate_urls": [
+        "https://dashboard.proxyhat.com/register?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=signup",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=docs-home",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=links",
+        "https://docs.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=getting-started",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=callout",
+        "https://docs.proxyhat.com/errors?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=error-handling",
+        "https://docs.proxyhat.com/api/auth?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=api-reference",
+        "https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=hero",
+        "https://docs.proxyhat.com/authentication?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=auth-guide",
+        "https://dashboard.proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=sdk-node&utm_content=links"
+      ],
+      "domains": [
+        "proxyhat.com",
+        "dashboard.proxyhat.com",
+        "docs.proxyhat.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "promo code",
+      "item": "@a9i5k4/dsh-auto-memory",
+      "author": "a9i5k4",
+      "url": "https://www.npmjs.com/package/@a9i5k4/dsh-auto-memory",
+      "description": "Proactive associative memory for DSH: zero-prompt recall injected before the model speaks, three-layer auto-consolidation, skill crystallization, and Astra-style context management - handoff ledgers, ",
+      "affiliate_urls": [
+        "https://api.dshapi.icu/register?aff=HJU27P7JL39N"
+      ],
+      "domains": [
+        "api.dshapi.icu"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "promo code",
+      "item": "voucher-code-generator",
+      "author": "rspective",
+      "url": "https://www.npmjs.com/package/voucher-code-generator",
+      "description": "Voucher Code Generator",
+      "affiliate_urls": [
+        "https://www.voucherify.io/?utm_source=github&utm_medium=repo&utm_campaign=opensource"
+      ],
+      "domains": [
+        "voucherify.io"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "promo code",
+      "item": "@tincre/promo-button",
+      "author": "thinkjrs",
+      "url": "https://www.npmjs.com/package/@tincre/promo-button",
+      "description": "<div>   <img src=\"https://user-images.githubusercontent.com/16545607/184384546-3f303bda-ed85-4c68-b446-78ff0bcde054.png\" alt=\"The Promo promo-button button example one, by Tincre.dev\" width=200 />   <",
+      "affiliate_urls": [
+        "https://upload-widget.cloudinary.com/global/all.js"
+      ],
+      "domains": [
+        "upload-widget.cloudinary.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "coupon code",
+      "item": "feedico-mcp",
+      "author": "feedico.io",
+      "url": "https://www.npmjs.com/package/feedico-mcp",
+      "description": "Feedico MCP server: live coupon codes, deals and products with tracked affiliate links for Claude, ChatGPT, Cursor and any MCP client. Partners keep 65% of the commission. mcprush.com-claim-feedico-co",
+      "affiliate_urls": [
+        "https://mcprush.com/to/feedico-coupons-deals-products-mcp?ref=badge"
+      ],
+      "domains": [
+        "mcprush.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "coupon code",
+      "item": "coinpayments",
+      "author": "orahkokos",
+      "url": "https://www.npmjs.com/package/coinpayments",
+      "description": "CoinPayments is a cloud wallet solution that offers an easy way to integrate a checkout system for numerous cryptocurrencies. Coinpayments now also offers coin conversion via Shapeshift.io.",
+      "affiliate_urls": [
+        "https://www.coinpayments.net/index.php?ref=831b8d495071e5b0e1015486f5001150"
+      ],
+      "domains": [
+        "coinpayments.net"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "pricing calculator",
+      "item": "@vonage/pricing",
+      "author": "nexmo-devrel",
+      "url": "https://www.npmjs.com/package/@vonage/pricing",
+      "description": "Vonage API for pricing",
+      "affiliate_urls": [
+        "https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=node-server-sdk"
+      ],
+      "domains": [
+        "dashboard.nexmo.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "affiliate",
+      "item": "affiliate",
+      "author": "russellsteadman",
+      "url": "https://www.npmjs.com/package/affiliate",
+      "description": "A platform agnostic tool to quickly add affiliate links onto your website",
+      "affiliate_urls": [
+        "https://www.russellsteadman.com/?utm_source=aff_repo&utm_medium=readme_copy"
+      ],
+      "domains": [
+        "russellsteadman.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "affiliate",
+      "item": "@profullstack/referrals",
+      "author": "chovy",
+      "url": "https://www.npmjs.com/package/@profullstack/referrals",
+      "description": "Referral program SDK — 60% affiliate commission, 20% new-customer discount (80% total split). Framework-agnostic core with React hooks and Next.js route helpers.",
+      "affiliate_urls": [
+        "https://myapp.com/signup?ref=AB3K7PQZ"
+      ],
+      "domains": [
+        "myapp.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "affiliate",
+      "item": "affiliate-plugin-amazon",
+      "author": "teamtofu",
+      "url": "https://www.npmjs.com/package/affiliate-plugin-amazon",
+      "description": "A plugin for the \"affiliate\" package that works with Amazon links",
+      "affiliate_urls": [
+        "https://www.russellsteadman.com/?utm_source=aff_amz_repo&utm_medium=readme_copy"
+      ],
+      "domains": [
+        "russellsteadman.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "llm cost calculator",
+      "item": "dsh-cost-meter",
+      "author": "smallsun",
+      "url": "https://www.npmjs.com/package/dsh-cost-meter",
+      "description": "DeepSeek Harness 会话费用统计插件:本会话成本、当日费用、历史记录与官方价格同步,支持多厂商多模型价格计费(内置 170+ 模型 ID 价格目录与自动匹配)、主流 Coding Plan 订阅额度查询与显示(16 家,含 WorkBuddy 官方积分、OpenDesign 工作区查询、含小米 MiMo Token Plan 控制台 Cookie 查询、SCNet Token Pla",
+      "affiliate_urls": [
+        "https://dshfind.com/zh/plugins/Han-1413141/dsh-cost-meter?ref=badge"
+      ],
+      "domains": [
+        "dshfind.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "discount code",
+      "item": "sweetalert2",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/sweetalert2",
+      "description": "A beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes, supported fork of sweetalert",
+      "affiliate_urls": [
+        "https://bluehive.com/?utm_source=sweetalert2&utm_medium=sponsored&utm_campaign=listing"
+      ],
+      "domains": [
+        "bluehive.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "cold email warmup",
+      "item": "postal-mime",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/postal-mime",
+      "description": "Email parser for Node.js and browser environments",
+      "affiliate_urls": [
+        "https://emailengine.app/?utm_source=github&utm_campaign=imapflow&utm_medium=readme-link"
+      ],
+      "domains": [
+        "emailengine.app"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "crypto trading bot",
+      "item": "@pincince64883736/cryptobot",
+      "author": "pincince64883736",
+      "url": "https://www.npmjs.com/package/@pincince64883736/cryptobot",
+      "description": "[![Build Status](https://github.com/Haehnchen/crypto-trading-bot/actions/workflows/node.js.yml/badge.svg)](https://github.com/Haehnchen/crypto-trading-bot/actions/workflows/node.js.yml)",
+      "affiliate_urls": [
+        "https://www.bybit.com/app/register?ref=46AK7",
+        "https://www.binance.com/?ref=17569916"
+      ],
+      "domains": [
+        "bybit.com",
+        "binance.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "captcha solver",
+      "item": "Image CAPTCHA solver in Python: send the right image to an OCR API and get an answer the site accepts",
+      "author": "bshahin",
+      "url": "https://dev.to/bshahin/image-captcha-solver-in-python-send-the-right-image-to-an-ocr-api-and-get-an-answer-the-site-482c",
+      "description": "An image CAPTCHA solver in Python comes down to three steps. Capture the exact image the page showed,...",
+      "affiliate_urls": [
+        "https://captchaai.com/free-thread?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=image-captcha-solver-python-ocr-api",
+        "https://captchaai.com/free-thread?utm_source=devto&utm_medium=article&utm_campaign=image-captcha-solver-python-ocr-api"
+      ],
+      "domains": [
+        "captchaai.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "seo backlink",
+      "item": "How I got a Flutter web app (CanvasKit) indexed by Google with static SEO shells",
+      "author": "101rakibulhasan",
+      "url": "https://dev.to/101rakibulhasan/how-i-got-a-flutter-web-app-canvaskit-indexed-by-google-with-static-seo-shells-315d",
+      "description": "Flutter web is great for building an app once and shipping it everywhere. It's not great for...",
+      "affiliate_urls": [
+        "https://www.typeordrop.com/?utm_source=devto&utm_medium=article",
+        "https://www.typeordrop.com/?utm_source=devto&amp;utm_medium=article"
+      ],
+      "domains": [
+        "typeordrop.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "seo backlink",
+      "item": "We tested 2,000 websites: 45% of GPTBot blockers also opt out of ChatGPT search answers",
+      "author": "aneesh_acharya",
+      "url": "https://dev.to/aneesh_acharya/we-tested-2000-websites-45-of-gptbot-blockers-also-opt-out-of-chatgpt-search-answers-33p7",
+      "description": "Originally published on the CrawlBeacon blog.  Short answer: In October 2026 we tested 2,000 popular...",
+      "affiliate_urls": [
+        "https://crawlbeacon.com/blog/ai-bot-access-study-2026?utm_source=devto&utm_medium=referral&utm_campaign=ai-study-2026",
+        "https://crawlbeacon.com/ai-bot-readiness-checker?utm_source=devto&utm_medium=referral&utm_campaign=ai-study-2026",
+        "https://crawlbeacon.com/ai-bot-readiness-checker?utm_source=devto&amp;utm_medium=referral&amp;utm_campaign=ai-study-2026",
+        "https://crawlbeacon.com/blog/ai-bot-access-study-2026?utm_source=devto&amp;utm_medium=referral&amp;utm_campaign=ai-study-2026"
+      ],
+      "domains": [
+        "crawlbeacon.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "seo backlink",
+      "item": "Multisite network or one multilingual site: a decision process for URL structure, duplication and maintenance",
+      "author": "aumcreate",
+      "url": "https://dev.to/aumcreate/multisite-network-or-one-multilingual-site-a-decision-process-for-url-structure-duplication-and-1456",
+      "description": "A shop runs three languages on a WordPress network. Someone changes the price on 400 products: the...",
+      "affiliate_urls": [
+        "https://aumcreate.com/plugins/aumlang?utm_source=devto&amp;utm_medium=content&amp;utm_campaign=devto-multisite-vs-single-site-multilang-decision",
+        "https://aumcreate.com/plugins/aumlang?utm_source=devto&utm_medium=content&utm_campaign=devto-multisite-vs-single-site-multilang-decision"
+      ],
+      "domains": [
+        "aumcreate.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "shopify spy tool",
+      "item": "Why EU B2B Checkouts Falsely Charge 17%-27% VAT When National VIES Databases Are Busy (The HTTP 200 OK Soft-Failure Trap)",
+      "author": "revclamp",
+      "url": "https://dev.to/revclamp/why-eu-b2b-checkouts-falsely-charge-17-27-vat-when-national-vies-databases-are-busy-http-200--380j",
+      "description": "When an enterprise buyer in Germany or Italy enters a valid VAT number at B2B checkout, they expect a...",
+      "affiliate_urls": [
+        "https://revclamp.com/tools/vies-vat-validator?utm_source=devto&utm_medium=social&utm_campaign=vies_deepdive",
+        "https://revclamp.com/tools/vies-vat-validator?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=vies_deepdive",
+        "https://revclamp.com/blog/eu-vies-http200-circuit-breaker?utm_source=devto&utm_medium=social&utm_campaign=vies_deepdive",
+        "https://revclamp.com/blog/eu-vies-http200-circuit-breaker?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=vies_deepdive"
+      ],
+      "domains": [
+        "revclamp.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "shopify spy tool",
+      "item": "Shopify App Creation: Webhook HMAC and GDPR Handlers in Node.js",
+      "author": "geminate_solutions_9b6035",
+      "url": "https://dev.to/geminate_solutions_9b6035/shopify-app-creation-webhook-hmac-and-gdpr-handlers-in-nodejs-511f",
+      "description": "Shopify app creation feels finished the moment your app installs and loads in the admin. Then review...",
+      "affiliate_urls": [
+        "https://geminatesolutions.com/blog/ecommerce-development-guide?utm_source=devto&amp;utm_medium=syndication&amp;utm_campaign=2026-10-25-d1",
+        "https://geminatesolutions.com/blog/ecommerce-development-guide?utm_source=devto&utm_medium=syndication&utm_campaign=2026-10-25-d1"
+      ],
+      "domains": [
+        "geminatesolutions.com"
+      ]
+    },
+    {
+      "platform": "dev.to",
+      "query": "shopify spy tool",
+      "item": "Shopify Isn't the Best Choice for Most Small Businesses",
+      "author": "jainischalverma",
+      "url": "https://dev.to/jainischalverma/shopify-isnt-the-best-choice-for-most-small-businesses-5757",
+      "description": "Shopify is a very good product, but it shouldn't be the default answer. Add up your whole app stack and answer five honest questions.",
+      "affiliate_urls": [
+        "https://www.sitesyouown.com/book-a-call/?utm_source=devto&utm_medium=social",
+        "https://www.sitesyouown.com/book-a-call/?utm_source=devto&amp;utm_medium=social"
+      ],
+      "domains": [
+        "sitesyouown.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "captcha solver",
+      "item": "@zennolab_com/capmonstercloud-client",
+      "author": "zennolab_admin",
+      "url": "https://www.npmjs.com/package/@zennolab_com/capmonstercloud-client",
+      "description": "Official CapMonster Cloud Node.js and TypeScript SDK: captcha solver & captcha bypass for reCAPTCHA, Cloudflare Turnstile, DataDome and GeeTest. A 2captcha and capsolver alternative.",
+      "affiliate_urls": [
+        "https://docs.capmonster.cloud/docs/external-services/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/captchas/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/captchas/turnstile-task/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/extension/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/methods/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://capmonster.cloud/en/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme",
+        "https://docs.capmonster.cloud/docs/getting-start/?utm_source=github&utm_medium=referral&utm_campaign=nodejs_repo_readme"
+      ],
+      "domains": [
+        "dash.capmonster.cloud",
+        "docs.capmonster.cloud",
+        "capmonster.cloud"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "captcha solver",
+      "item": "@infosimples/node_two_captcha",
+      "author": "adrianodennanni",
+      "url": "https://www.npmjs.com/package/@infosimples/node_two_captcha",
+      "description": "Node.js package for easy integration with 2Captcha API (Captcha Solver as a Service)",
+      "affiliate_urls": [
+        "http://bit.ly/1xXZcKo"
+      ],
+      "domains": [
+        "bit.ly"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "captcha solver",
+      "item": "@zennolab_com/n8n-nodes-capmonstercloud",
+      "author": "zennolab_admin",
+      "url": "https://www.npmjs.com/package/@zennolab_com/n8n-nodes-capmonstercloud",
+      "description": "CapMonster Cloud n8n node: captcha solver & captcha bypass for reCAPTCHA, Cloudflare Turnstile, GeeTest, DataDome and more. A 2captcha and capsolver alternative for n8n workflows.",
+      "affiliate_urls": [
+        "https://dash.capmonster.cloud/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/getting-start/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://capmonster.cloud/en/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read#support",
+        "https://docs.capmonster.cloud/docs/extension/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/captchas/no-captcha-task/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/captchas/turnstile-task/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://capmonster.cloud/en/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/captchas/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://docs.capmonster.cloud/docs/faq/?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read",
+        "https://dash.capmonster.cloud/Account/SignUp?utm_source=github&utm_medium=referral&utm_campaign=n8n_repo_read"
+      ],
+      "domains": [
+        "dash.capmonster.cloud",
+        "docs.capmonster.cloud",
+        "capmonster.cloud"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "captcha solver",
+      "item": "node_two_captcha",
+      "author": "ashesh3",
+      "url": "https://www.npmjs.com/package/node_two_captcha",
+      "description": "Node.js package for easy integration with 2Captcha API (Captcha Solver as a Service)",
+      "affiliate_urls": [
+        "http://bit.ly/1xXZcKo"
+      ],
+      "domains": [
+        "bit.ly"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "seo backlink",
+      "item": "next-seo",
+      "author": "garymeehan",
+      "url": "https://www.npmjs.com/package/next-seo",
+      "description": "SEO plugin for Next.js projects",
+      "affiliate_urls": [
+        "https://outrank.so/?via=next-seo"
+      ],
+      "domains": [
+        "outrank.so"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "seo backlink",
+      "item": "@lobehub/seo-cli",
+      "author": "canisminor1990",
+      "url": "https://www.npmjs.com/package/@lobehub/seo-cli",
+      "description": "Lobe seo is a CLI tool that automate generation seo content for mdx",
+      "affiliate_urls": [
+        "https://registry.npmmirror.com/@lobehub/assets-emoji/latest/files/assets/magnifying-glass-tilted-left.webp"
+      ],
+      "domains": [
+        "registry.npmmirror.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "seo backlink",
+      "item": "@docmd/plugin-seo",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/@docmd/plugin-seo",
+      "description": "SEO meta tag generator for docmd.",
+      "affiliate_urls": [
+        "https://outrank.so/?via=docmd"
+      ],
+      "domains": [
+        "outrank.so"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "@michengai/dsh-agency-agents",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/@michengai/dsh-agency-agents",
+      "description": "DSH Agency Agents — 为 DeepSeek Harness 提供 331 名可召唤的专业智能体 · 331 summonable domain experts for DeepSeek Harness",
+      "affiliate_urls": [
+        "https://registry.npmjs.org/",
+        "https://registry.npmjs.org/。安装后执行"
+      ],
+      "domains": [
+        "registry.npmjs.org"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "agency-agents-zh",
+      "author": "jnmetacode",
+      "url": "https://www.npmjs.com/package/agency-agents-zh",
+      "description": "276 个即插即用的 AI 专家角色定义 — 从 CEO/CTO 高管层到前端开发、区块链安全，从小红书运营到抖音策略",
+      "affiliate_urls": [
+        "https://aiolaola.com/?utm_source=github&utm_campaign=agents",
+        "https://www.volcengine.com/activity/ai618?utm_campaign=hw&utm_content=hw&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=agency-agents-zh",
+        "https://aiolaola.com/zh-Hant?utm_source=github&utm_campaign=agents-tw",
+        "https://aiolaola.com/zh-Hant/course/agents?utm_source=github&utm_campaign=agents-tw"
+      ],
+      "domains": [
+        "aiolaola.com",
+        "volcengine.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "tsover-runtime",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/tsover-runtime",
+      "description": "Minimal runtime library for overloading operators in tsover",
+      "affiliate_urls": [
+        "https://logo.swmansion.com/logo?color=white&variant=desktop&width=150&tag=tsover-github",
+        "https://swmansion.com/contact/projects?utm_source=tsover&utm_medium=readme"
+      ],
+      "domains": [
+        "swmansion.com",
+        "logo.swmansion.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "react-native-map-link",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/react-native-map-link",
+      "description": "Open the map app of the user's choice with a specific location.",
+      "affiliate_urls": [
+        "https://schof.co/consulting/?utm_source=flexible-agency/react-native-map-link"
+      ],
+      "domains": [
+        "schof.co"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "react-native-email-link",
+      "author": "tschoffelen",
+      "url": "https://www.npmjs.com/package/react-native-email-link",
+      "description": "Open the mail app of the user's choice",
+      "affiliate_urls": [
+        "https://schof.co/consulting/?utm_source=flexible-agency/react-native-email-link"
+      ],
+      "domains": [
+        "schof.co"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "agency-orchestrator",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/agency-orchestrator",
+      "description": "Multi-agent YAML workflow engine — 276 CN + 191 EN + 5 more language libraries of AI roles, auto DAG parallelism, zero code. One sentence → multiple AI roles collaborate → complete plan in minutes. 20",
+      "affiliate_urls": [
+        "https://aiolaola.com/course/ai-agent?utm_source=github&utm_campaign=orchestrator",
+        "https://aiolaola.com/course/ai-agency?utm_source=github&utm_campaign=orchestrator",
+        "https://aiolaola.com/?utm_source=github&utm_campaign=orchestrator",
+        "https://aiolaola.com/course/ai-pipeline?utm_source=github&utm_campaign=orchestrator"
+      ],
+      "domains": [
+        "aiolaola.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "onlyfans agency",
+      "item": "@mambalabsdev/mcp-talent-agency-lookup",
+      "author": "mambalabsdev",
+      "url": "https://www.npmjs.com/package/@mambalabsdev/mcp-talent-agency-lookup",
+      "description": "MCP server for the Mamba Labs Influencer Talent Agency Lookup actor on Apify. Creator handles in, the talent agency behind each one out, or an agency in, its public roster out.",
+      "affiliate_urls": [
+        "https://registry.modelcontextprotocol.io/v0/servers?search=com.mambabuilt/mcp-talent-agency-lookup&limit=1"
+      ],
+      "domains": [
+        "registry.modelcontextprotocol.io"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "shopify spy tool",
+      "item": "@hirez_io/observer-spy",
+      "author": "hirez.io",
+      "url": "https://www.npmjs.com/package/@hirez_io/observer-spy",
+      "description": "A simple little class that helps making Observable testing a breeze",
+      "affiliate_urls": [
+        "https://learn.hirez.io/?utm_source=github&utm_medium=link&utm_campaign=observer-spy"
+      ],
+      "domains": [
+        "learn.hirez.io"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "shopify spy tool",
+      "item": "shopify-api-node",
+      "author": "lpinca",
+      "url": "https://www.npmjs.com/package/shopify-api-node",
+      "description": "Shopify API bindings for Node.js",
+      "affiliate_urls": [
+        "https://apps.shopify.com/youtube-traffic?ref=microapps",
+        "https://polaris.shopify.com/?ref=microapps",
+        "https://monei.com/?utm_source=shopify-api-node-module-repo-readme&utm_medium=click&utm_campaign=github"
+      ],
+      "domains": [
+        "polaris.shopify.com",
+        "apps.shopify.com",
+        "monei.com"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "amazon fba calculator",
+      "item": "@sp-api-sdk/fba-inventory-api-v1",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/@sp-api-sdk/fba-inventory-api-v1",
+      "description": "The Selling Partner API for FBA Inventory lets you programmatically retrieve information about inventory in Amazon's fulfillment network.",
+      "affiliate_urls": [
+        "https://www.bizon.solutions?utm_source=github&utm_medium=readme&utm_campaign=selling-partner-api-sdk"
+      ],
+      "domains": [
+        "bizon.solutions"
+      ]
+    },
+    {
+      "platform": "npmjs.com",
+      "query": "amazon fba calculator",
+      "item": "@sp-api-sdk/fulfillment-inbound-api-2024-03-20",
+      "author": "GitHub Actions",
+      "url": "https://www.npmjs.com/package/@sp-api-sdk/fulfillment-inbound-api-2024-03-20",
+      "description": "The Selling Partner API for Fulfillment By Amazon (FBA) Inbound. The FBA Inbound API enables building inbound workflows to create, manage, and send shipments into Amazon's fulfillment network. The API",
+      "affiliate_urls": [
+        "https://www.bizon.solutions?utm_source=github&utm_medium=readme&utm_campaign=selling-partner-api-sdk"
+      ],
+      "domains": [
+        "bizon.solutions"
+      ]
+    },
+    {
+      "platform": "github.com",
+      "query": "coupon code",
+      "item": "netcupfree/netcup.free",
+      "author": "netcupfree",
+      "url": "https://github.com/netcupfree/netcup.free",
+      "description": "Stars: 2 | ⚡ Verified Netcup Coupons & Voucher Codes (2026). Real-time automated verification. €5 OFF, Root Server RS G12.5 free months, VPS G12.5 & Webhosting 3",
+      "affiliate_urls": [
+        "https://www.netcup.com/en/checkout/cart?gutschein=36nc17339203824&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6878nc17903406760&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=36nc17692767970&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=5209nc17910393180&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6874nc17931250250&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6874nc17920459180&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6875nc17908402400&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6877nc17932654230&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6880nc17911667870&ref=257842",
+        "https://www.netcup.com/en/checkout/cart?gutschein=6879nc17932812730&ref=257842"
+      ],
+      "domains": [
+        "netcup.com"
+      ]
+    },
+    {
+      "platform": "github.com",
+      "query": "promo code",
+      "item": "LOL2D-main/triolingo",
+      "author": "LOL2D-main",
+      "url": "https://github.com/LOL2D-main/triolingo",
+      "description": "Stars: 0 | ",
+      "affiliate_urls": [
+        "https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme"
+      ],
+      "domains": [
+        "vercel.com"
+      ]
+    },
+    {
+      "platform": "github.com",
+      "query": "antidetect browser",
+      "item": "public-apis/public-apis",
+      "author": "public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "Stars: 493184 | A collective list of free APIs",
+      "affiliate_urls": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://apilayer.com/products/serpstack?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+        "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.crawlbrulee/mcp",
+        "https://publicapis.lol/search?utm_source=github&utm_medium=readme&utm_campaign=public-apis",
+        "https://publicapis.lol/status?utm_source=github&utm_medium=readme&utm_campaign=public-apis"
+      ],
+      "domains": [
+        "zenserp.com",
+        "apilayer.com",
+        "geracodigo.com.br",
+        "ipstack.com",
+        "monit.ly",
+        "hotstoks.com",
+        "app.apilayer.com",
+        "api.postcodedata.nl",
+        "weatherstack.com",
+        "docs.apilayer.com",
+        "currencylayer.com",
+        "exchangeratesapi.io",
+        "ipapi.com",
+        "aviationstack.com",
+        "fixer.io",
+        "mailboxlayer.com",
+        "mercadopago.com.br",
+        "exchangerate.host",
+        "registry.modelcontextprotocol.io",
+        "filestack.com",
+        "marketstack.com",
+        "mediastack.com",
+        "screenshotlayer.com",
+        "cutt.ly",
+        "vatlayer.com",
+        "numverify.com",
+        "publicapis.lol",
+        "coinlayer.com",
+        "userstack.com"
+      ]
+    },
+    {
+      "platform": "github.com",
+      "query": "antidetect browser",
+      "item": "Manavarya09/public-apis-live",
+      "author": "Manavarya09",
+      "url": "https://github.com/Manavarya09/public-apis-live",
+      "description": "Stars: 155 | Every public API in one place — aggregated, deduped, and auto-checked for reachability. Refreshed daily. npm + Claude plugin + live search.",
+      "affiliate_urls": [
+        "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://screenshotlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "http://developer.picatic.com/?utm_medium=web&utm_source=github&utm_campaign=public-apis%20repo&utm_content=abhishekbanthia",
+        "https://rocketium.com/api/?utm_source=github&utm_medium=repository&utm_campaign=abhishekbanthia&utm_content=api_solution",
+        "https://www.filestack.com/signup-free//?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://numverify.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+        "https://www.mercadopago.com.br/developers/es/reference"
+      ],
+      "domains": [
+        "zenserp.com",
+        "geracodigo.com.br",
+        "ipstack.com",
+        "api.carsxe.com",
+        "monit.ly",
+        "hotstoks.com",
+        "api.postcodedata.nl",
+        "weatherstack.com",
+        "currencylayer.com",
+        "exchangeratesapi.io",
+        "shotstack.io",
+        "ipapi.com",
+        "aviationstack.com",
+        "fixer.io",
+        "mailboxlayer.com",
+        "developer.picatic.com",
+        "mercadopago.com.br",
+        "exchangerate.host",
+        "chaingateway.io",
+        "filestack.com",
+        "marketstack.com",
+        "mediastack.com",
+        "beeceptor.com",
+        "screenshotlayer.com",
+        "rocketium.com",
+        "cutt.ly",
+        "vatlayer.com",
+        "numverify.com",
+        "talordata.com",
+        "mockerito.com",
+        "coinlayer.com",
+        "userstack.com"
+      ]
+    },
+    {
+      "platform": "github.com",
+      "query": "llm cost calculator",
+      "item": "aicostbudget/ai-api-pricing-data",
+      "author": "aicostbudget",
+      "url": "https://github.com/aicostbudget/ai-api-pricing-data",
+      "description": "Stars: 3 | AI API pricing dataset for OpenAI, Anthropic Claude, Google Gemini, xAI, DeepSeek, Mistral AI, Cohere, Moonshot AI, Alibaba Qwen, and Meta. JSON & CSV",
+      "affiliate_urls": [
+        "https://aicostbudget.com/en/model-switch-cost-calculator?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=readme_model_switch_cost_calculator",
+        "https://aicostbudget.com/en/datasets/ai-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=repo_homepage",
+        "https://aicostbudget.com/en/providers/alibaba-qwen-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=alibaba_qwen",
+        "https://aicostbudget.github.io/ai-api-pricing-data/api/v1/models/openai/gpt-4.1.json",
+        "https://aicostbudget.com/en/providers/deepseek-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=deepseek",
+        "https://aicostbudget.com/en/providers/anthropic-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=anthropic",
+        "https://aicostbudget.github.io/ai-api-pricing-data/api/v1/prices.csv",
+        "https://aicostbudget.com/en/ai-api-cost-calculator?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=readme_calculator",
+        "https://aicostbudget.github.io/ai-api-pricing-data/api/v1/meta.json",
+        "https://aicostbudget.com/en/providers/google-gemini-api-pricing?utm_source=github&utm_medium=referral&utm_campaign=pricing_dataset&utm_content=google_gemini"
+      ],
+      "domains": [
+        "aicostbudget.github.io",
+        "aicostbudget.com"
+      ]
+    }
+  ]
+}

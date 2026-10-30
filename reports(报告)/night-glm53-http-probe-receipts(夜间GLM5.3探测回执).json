@@ -1,0 +1,137 @@
+[
+  {
+    "merchant_name": "2Captcha",
+    "domain": "2captcha.com",
+    "affiliate_signup_url": "https://2captcha.com/auth/register",
+    "verified_entry_url": "https://2captcha.com/auth/register",
+    "final_url": "https://2captcha.com/auth/register",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://2captcha.com/auth/register -> 200",
+      "https://2captcha.com/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "ZenRows",
+    "domain": "zenrows.com",
+    "affiliate_signup_url": "https://app.zenrows.com/register",
+    "verified_entry_url": "https://app.zenrows.com/register",
+    "final_url": "https://app.zenrows.com/register",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://app.zenrows.com/register -> 200",
+      "https://www.zenrows.com/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "ScrapingBee",
+    "domain": "scrapingbee.com",
+    "affiliate_signup_url": "https://app.scrapingbee.com/register",
+    "verified_entry_url": "https://www.scrapingbee.com/",
+    "final_url": "https://www.scrapingbee.com/",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://app.scrapingbee.com/register -> 404",
+      "https://www.scrapingbee.com/register/ -> 404",
+      "https://www.scrapingbee.com/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "Crawlbase",
+    "domain": "crawlbase.com",
+    "affiliate_signup_url": "https://crawlbase.com/signup",
+    "verified_entry_url": "https://crawlbase.com/signup",
+    "final_url": "https://crawlbase.com/login",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://crawlbase.com/signup -> 200",
+      "https://crawlbase.com/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "ScrapingDog",
+    "domain": "scrapingdog.com",
+    "affiliate_signup_url": "https://app.scrapingdog.com/register",
+    "verified_entry_url": "https://scrapingdog.com/",
+    "final_url": "https://www.scrapingdog.com/",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://app.scrapingdog.com/register -> ERR:URLError",
+      "https://scrapingdog.com/register -> 404",
+      "https://scrapingdog.com/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "ScraperAPI",
+    "domain": "scraperapi.com",
+    "affiliate_signup_url": "https://dashboard.scraperapi.com/signup",
+    "verified_entry_url": "https://dashboard.scraperapi.com/signup",
+    "final_url": "https://dashboard.scraperapi.com/signup",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://dashboard.scraperapi.com/signup -> 200",
+      "https://www.scraperapi.com/sign-up/ -> 404",
+      "https://www.scraperapi.com/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "OpenRouter",
+    "domain": "openrouter.ai",
+    "affiliate_signup_url": "https://openrouter.ai/sign-in?redirect_url=https%3A%2F%2Fopenrouter.ai%2Fsettings%2Fcredits",
+    "verified_entry_url": "https://openrouter.ai/sign-in?redirect_url=https%3A%2F%2Fopenrouter.ai%2Fsettings%2Fcredits",
+    "final_url": "https://openrouter.ai/sign-in?redirect_url=https%3A%2F%2Fopenrouter.ai%2Fsettings%2Fcredits",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://openrouter.ai/sign-in?redirect_url=https%3A%2F%2Fopenrouter.ai%2Fsettings%2Fcredits -> 200",
+      "https://openrouter.ai/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "Together.ai",
+    "domain": "together.ai",
+    "affiliate_signup_url": "https://api.together.xyz/signin",
+    "verified_entry_url": "https://api.together.xyz/signin",
+    "final_url": "https://api.together.xyz/signin",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://api.together.xyz/signin -> 200",
+      "https://www.together.ai/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "RunPod",
+    "domain": "runpod.io",
+    "affiliate_signup_url": "https://runpod.io/signup",
+    "verified_entry_url": "https://runpod.io/signup",
+    "final_url": "https://console.runpod.io/signup",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://runpod.io/signup -> 200",
+      "https://www.runpod.io/sign-up/ -> 200",
+      "https://www.runpod.io/ -> 200"
+    ]
+  },
+  {
+    "merchant_name": "Vast.ai",
+    "domain": "vast.ai",
+    "affiliate_signup_url": "https://vast.ai/host-setup/",
+    "verified_entry_url": "https://vast.ai/",
+    "final_url": "https://vast.ai/",
+    "http_status_verified": 200,
+    "reachable": true,
+    "attempts": [
+      "https://vast.ai/host-setup/ -> 404",
+      "https://vast.ai/ -> 200",
+      "https://vast.ai/console/auth/signup -> 404"
+    ]
+  }
+]

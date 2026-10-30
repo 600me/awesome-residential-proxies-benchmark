@@ -1,0 +1,34 @@
+{
+  "name": "antidetect-ad-tracker-tco",
+  "version": "1.0.0",
+  "description": "Zero-dependency Node.js CLI that audits the multi-account media buyer stack TCO: anti-detect browser profiles (AdsPower / MoreLogin), Voluum tracking event overage, and PacketStream / residential proxy IP budgets.",
+  "main": "index.js",
+  "bin": {
+    "antidetect-ad-tracker-tco": "cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "adspower pricing",
+    "morelogin pricing",
+    "voluum cost",
+    "packetstream proxy",
+    "antidetect browser comparison",
+    "multi account traffic",
+    "media buyer budget",
+    "ad tracker overage",
+    "browser fingerprint isolation",
+    "residential proxy cost per ip",
+    "affiliate tracking infrastructure",
+    "facebook ad account bans",
+    "e-commerce multi store",
+    "tco calculator"
+  ],
+  "license": "MIT",
+  "homepage": "https://proxy.mybskm.top",
+  "author": "AdOps Attribution & Browser Benchmark Lab",
+  "engines": {
+    "node": ">=14"
+  }
+}
