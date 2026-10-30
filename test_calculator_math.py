@@ -292,6 +292,18 @@ def main() -> int:
                   "gpu.mybskm.top", "pay.mybskm.top", "scrape.mybskm.top"):
         check(token in source, f"broadcaster references {token}")
 
+
+    # ---- Gateway Fallback Location Assertions -----------------------------
+    nginx_conf = (ROOT / "config" / "kais-proxy-links.nginx.conf").read_text(encoding="utf-8")
+    check("location = /zenrows" in nginx_conf and "fp_ref=apibench08" in nginx_conf,
+          "zenrows route carries ScraperAPI referral token apibench08")
+    check("location = /scrapingbee" in nginx_conf and "fp_ref=apibench08" in nginx_conf,
+          "scrapingbee route carries ScraperAPI referral token apibench08")
+    check("location = /crawlbase" in nginx_conf and "fp_ref=apibench08" in nginx_conf,
+          "crawlbase route carries ScraperAPI referral token apibench08")
+    check("location = /hunter" in nginx_conf and "via=cloudbench" in nginx_conf,
+          "hunter route carries Smartlead referral token via=cloudbench")
+
     print(f"\n{_PASSED} assertions passed")
     return 0
 
