@@ -109,6 +109,14 @@ GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动�
 - [Cross-Border US LLC & Stripe TCO Calculator](https://hub.docker.com/r/600megd/us-llc-stripe-tco) — End-to-end incorporation, EIN, US banking & SaaS runway simulator.
 - [Antidetect Browser Fleet & Ad Click Tracker TCO](https://hub.docker.com/r/600megd/antidetect-ad-tracker-tco) — Multi-account fingerprint protection & click fraud filtration economics.
 
+## Official Benchmark Documentation & Handbooks
+
+- [CloudBench Documentation Portal](https://proxy.mybskm.top/docs/)
+- [Residential Proxies & Scraping Tax Benchmark](https://proxy.mybskm.top/docs/residential-proxy-and-scraping-tax-benchmark/)
+- [Cloud GPU & Generative AI Unit Economics](https://proxy.mybskm.top/docs/cloud-gpu-and-ai-media-unit-economics/)
+- [Cross-Border US LLC & Cold Outbound TCO](https://proxy.mybskm.top/docs/us-llc-stripe-and-cold-outbound-tco/)
+- [Anti-Detect Browser Fleet & Ad Click Tracker TCO](https://proxy.mybskm.top/docs/antidetect-browser-and-ad-tracker-tco/)
+
 ## Sister Projects (Matrix Interlinks)
 
 - [Proxy Infrastructure Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Calculator](https://proxy.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Blog](https://proxy.mybskm.top/blog/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
