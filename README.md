@@ -102,6 +102,13 @@ GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动�
 - **GPU 算力与采集 API**：[RunPod](https://go.272738.xyz/runpod?src=readme_matrix) · [Vast.ai](https://go.272738.xyz/vastai?src=readme_matrix) · [ScraperAPI](https://go.272738.xyz/scraperapi?src=readme_matrix)
 - **广告归因与主体合规**：[Voluum](https://go.272738.xyz/voluum?src=readme_matrix) · [Firstbase.io](https://go.272738.xyz/firstbase?src=readme_matrix)
 
+## Official Docker Hub Container Tools (DA 93 Authority Matrix)
+
+- [Proxy Tax & Residential TCO Calculator](https://hub.docker.com/r/600megd/proxy-tax-calculator) — Real-time hidden retry tax model & multi-provider proxy benchmark.
+- [LLM GPU Cost Estimator & Inference TCO](https://hub.docker.com/r/600megd/llm-gpu-cost-estimator) — Decentralized GPU vs Hyperscaler cost estimator for vLLM & training.
+- [Cross-Border US LLC & Stripe TCO Calculator](https://hub.docker.com/r/600megd/us-llc-stripe-tco) — End-to-end incorporation, EIN, US banking & SaaS runway simulator.
+- [Antidetect Browser Fleet & Ad Click Tracker TCO](https://hub.docker.com/r/600megd/antidetect-ad-tracker-tco) — Multi-account fingerprint protection & click fraud filtration economics.
+
 ## Sister Projects (Matrix Interlinks)
 
 - [Proxy Infrastructure Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Calculator](https://proxy.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Blog](https://proxy.mybskm.top/blog/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
