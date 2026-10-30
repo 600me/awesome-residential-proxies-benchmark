@@ -22,3 +22,8 @@ DIRECTIVE_*
 *.tmp.json
 *.tmp.py
 *.bak
+logs/
+surround-packs/
+config/affiliate_master_registry*.json
+directive_*.md
+audit_*.md
