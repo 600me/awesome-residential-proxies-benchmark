@@ -24,6 +24,7 @@ nav:
   - US LLC & Cold Outbound: us-llc-stripe-and-cold-outbound-tco.md
   - Antidetect & Ad Tracking: antidetect-browser-and-ad-tracker-tco.md
   - HTML-to-PDF API & Chromium TCO: html-to-pdf-api-and-headless-chromium-tco.md
+  - SEO Suite & Workflow TCO: seo-suite-and-workflow-automation-tco.md
 
 markdown_extensions:
   - tables

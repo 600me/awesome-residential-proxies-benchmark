@@ -1,0 +1,32 @@
+{
+  "name": "seo-workflow-tco-calculator",
+  "version": "1.0.0",
+  "description": "CLI tool to benchmark SEO keyword suite seat costs and iPaaS workflow automation TCO.",
+  "main": "bin/cli.js",
+  "bin": {
+    "seo-workflow-tco": "bin/cli.js",
+    "seo-workflow-tco-calculator": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "seo",
+    "ahrefs",
+    "semrush",
+    "mangools",
+    "zapier",
+    "make",
+    "pabbly",
+    "workflow-automation",
+    "tco",
+    "calculator"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "homepage": "https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/seo-suite-and-workflow-automation-tco/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud-infra-tco-benchmarks/seo-workflow-tco-calculator.git"
+  }
+}
