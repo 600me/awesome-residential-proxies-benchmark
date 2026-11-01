@@ -1,0 +1,19 @@
+{
+  "name": "@cloudbench-labs/cloud-tco-agent-skills",
+  "version": "1.0.0",
+  "description": "Standardized Cloud Infrastructure TCO & Loss Benchmarking Skills for AI Agents",
+  "main": "index.js",
+  "bin": {
+    "cloud-tco-agent-skills": "./index.js",
+    "@cloudbench-labs/cloud-tco-agent-skills": "./index.js"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "tco-benchmark",
+    "skills"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT"
+}

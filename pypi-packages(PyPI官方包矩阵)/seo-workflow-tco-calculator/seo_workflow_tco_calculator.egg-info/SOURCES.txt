@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+seo_workflow_tco_calculator/__init__.py
+seo_workflow_tco_calculator/cli.py
+seo_workflow_tco_calculator.egg-info/PKG-INFO
+seo_workflow_tco_calculator.egg-info/SOURCES.txt
+seo_workflow_tco_calculator.egg-info/dependency_links.txt
+seo_workflow_tco_calculator.egg-info/entry_points.txt
+seo_workflow_tco_calculator.egg-info/top_level.txt

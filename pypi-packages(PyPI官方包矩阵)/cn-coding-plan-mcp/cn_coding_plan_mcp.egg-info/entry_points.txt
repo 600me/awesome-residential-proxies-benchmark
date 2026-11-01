@@ -1,0 +1,2 @@
+[console_scripts]
+cn-coding-plan-mcp = cn_coding_plan_mcp.server:main

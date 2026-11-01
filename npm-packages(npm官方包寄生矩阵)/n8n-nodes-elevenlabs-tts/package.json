@@ -1,0 +1,25 @@
+{
+  "name": "n8n-nodes-elevenlabs-tts",
+  "version": "1.0.1",
+  "description": "n8n community workflow node & CLI for ElevenLabs TTS and HeyGen AI avatar batch production TCO",
+  "main": "index.js",
+  "bin": {
+    "n8n-nodes-elevenlabs-tts": "./index.js"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "elevenlabs",
+    "heygen",
+    "tts",
+    "voice-clone",
+    "ai-video",
+    "workflow"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudbench-labs/n8n-nodes-elevenlabs-tts.git"
+  }
+}

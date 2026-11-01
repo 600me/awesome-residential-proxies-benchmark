@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cn-coding-plan-mcp"
+version = "1.0.1"
+description = "国内开发者 Coding Plan / AI 算力 / 海外订阅虚拟卡 TCO 比价 MCP Server 与 CLI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "CloudBench Research" }]
+keywords = ["mcp", "model-context-protocol", "coding-plan", "aliyun-coding", "volcengine", "zhipu-glm", "claude-code", "cursor", "pokepay"]
+
+[project.urls]
+Homepage = "https://coding.mybskm.top/"
+Repository = "https://github.com/cloudbench-labs/cn-coding-plan-mcp.git"
+
+[project.scripts]
+cn-coding-plan-mcp = "cn_coding_plan_mcp.server:main"
+
+[tool.setuptools]
+packages = ["cn_coding_plan_mcp"]

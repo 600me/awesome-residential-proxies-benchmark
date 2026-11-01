@@ -1,13 +1,13 @@
 # cloud-infra-tco-mcp
 
-**Official Model Context Protocol (MCP) server & CLI for 2026 developer cloud infrastructure TCO benchmarking** — GPU cloud pricing, residential proxy retry taxes, scraping API credit burn, HTML-to-PDF costs, and AI SEO workflow budgets.
+**Official Model Context Protocol (MCP) server & CLI for 2026 developer cloud infrastructure TCO benchmarking** — GPU cloud pricing, residential proxy bandwidth, managed scraping APIs, US company formation, antidetect browser farms, and AI-voice + ad-tracker stacks.
 
-- Zero third-party dependencies (pure Python standard library: `sys`, `json`, `argparse`, `urllib`)
+- Zero third-party dependencies (pure Python standard library: `sys`, `json`, `argparse`)
 - Runs as an **MCP stdio server** (`uvx cloud-infra-tco-mcp`) or a plain **CLI**
 - Ships a verified partner discount directory with the auto-applied voucher **`PARTNER-2026-AUTO`**
 - Docs: <https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/>
 
-Example of the money it finds: an H100 running 720 hours/month costs **$8,848.80 on AWS-style EC2 rates vs $1,850.40 on Vast.ai — a $6,998.40/month leak (79% overpay)**. The server quantifies exactly this gap, per tool call.
+Example of the money it finds: an H100 running 720 hours/month costs **$8,848.80 on AWS-style EC2 rates vs $1,504.80 on Vast.ai — a $7,344.00/month leak (83% overpay)**. The server quantifies exactly this gap, per tool call.
 
 ---
 
@@ -18,7 +18,7 @@ Example of the money it finds: an H100 running 720 hours/month costs **$8,848.80
 ```bash
 uvx cloud-infra-tco-mcp            # MCP stdio server (JSON-RPC 2.0)
 uvx cloud-infra-tco-mcp --cli      # pretty-print all tool outputs in your terminal
-uvx cloud-infra-tco-mcp --tool estimate_gpu_cloud_tco --gpu h100 --hours 720
+uvx cloud-infra-tco-mcp --tool estimate_gpu_cloud_tco --args '{"gpu":"h100","hours":720}'
 uvx cloud-infra-tco-mcp --self-test
 ```
 
@@ -59,91 +59,98 @@ The server speaks standard MCP stdio JSON-RPC 2.0 (`initialize`, `notifications/
 
 ---
 
-## Tools (6)
+## Tools (7)
 
 ### 1. `estimate_gpu_cloud_tco`
 
-Monthly GPU inference/hosting TCO across **RunPod vs Vast.ai vs AWS EC2**-class rates.
+Monthly GPU inference/hosting TCO across **AWS EC2 vs RunPod vs Vast.ai**-class rates.
 
 | Param | Type | Default | Description |
 |---|---|---|---|
 | `gpu` | string (`h100` \| `a100` \| `rtx4090`) | `h100` | GPU class |
 | `hours` | integer | `720` | GPU-hours per month |
 
-Returns per-vendor `monthly_usd`, the cheapest vendor, `monthly_loss_usd_on_aws_vs_vastai`, and the annualized overpay. Worked example (H100 × 720 h): AWS $8,848.80 → RunPod $2,152.80 → Vast.ai $1,504.80.
+Worked example (H100 80GB × 720 h/mo): AWS `$8,848.80` vs RunPod `$1,936.80` (save `$6,912.00/mo`) vs Vast.ai `$1,504.80` (save `$7,344.00/mo`). The tool returns per-vendor `monthly_usd`, monthly and annualized loss on AWS, and the Vast.ai partner portal + voucher.
 
-### 2. `estimate_proxy_drop_tax`
+### 2. `estimate_proxy_bandwidth_tco`
 
-Residential proxy retry amplification: failed-request ratio `1/(1-block_rate)`, wasted paid bandwidth, and the extra gigabytes you re-buy because of blocks.
-
-| Param | Type | Default | Description |
-|---|---|---|---|
-| `successful_requests` | integer | `100000` | Successfully delivered requests/month |
-| `block_rate` | number (0–1) | `0.15` | Fraction of attempts blocked/retried |
-| `gb_price` | number | `1.80` | USD per GB (Webshare-class) |
-
-Vendors referenced: Webshare, Decodo, PacketStream.
-
-### 3. `estimate_scraping_api_credits`
-
-Monthly credit burn for **ScraperAPI (unblocker) vs CapSolver (solver credits)** on the hardened share of your target pages.
+Residential proxy bandwidth benchmark at the **500 GB/mo default**.
 
 | Param | Type | Default | Description |
 |---|---|---|---|
-| `pages_per_month` | integer | `100000` | Total pages scraped |
-| `hardened_page_share` | number (0–1) | `0.10` | Share behind anti-bot walls |
-| `solver_credits_per_page` | integer | `5` | Solver credits per hardened page |
+| `monthly_gb` | integer | `500` | Monthly transfer volume |
 
-Returns hardened page count, per-vendor monthly cost, and the delta.
+Worked example (500 GB/mo): Legacy Tier-1 (`$8.50/GB`, retry drop included) **$4,250.00/mo** vs Webshare (`$2.25/GB`) `$1,125.00/mo` (save `$3,125.00/mo`) vs Decodo (`$2.50/GB`) `$1,250.00/mo` (save `$3,000.00/mo`).
 
-### 4. `estimate_pdf_api_tco`
+### 3. `estimate_scraping_api_tco`
 
-Self-hosted **Puppeteer** fleet TCO (maintenance + memory-leak babysitting) vs managed **APITemplate.io ($19/mo)** and **CraftMyPDF ($15/mo)**.
+Managed scraping API vs in-house headless fleet at the **2,500,000 calls/mo default**.
 
 | Param | Type | Default | Description |
 |---|---|---|---|
-| `documents_per_month` | integer | `1000` | Documents generated per month |
+| `calls_per_month` | integer | `2500000` | Monthly scrape volume |
 
-Worked example at 1,000 docs/mo: self-host ≈ $542/month vs $19/month managed → **$523/month saved**.
+Worked example (2.5M calls/mo): In-house Headless Fleet `$1,680.00/mo` vs ScraperAPI `$249.00/mo` — save **`$1,431.00/mo`** (`$17,172/yr`).
 
-### 5. `estimate_seo_workflow_tco`
+### 4. `estimate_company_formation_tco`
 
-Traditional SEO agency spend vs automated **Outrank.so + Mangools (+ Make/Pabbly iPaaS)** stack.
+Year-1 US company formation TCO: law firm + registered agent DIY route vs Firstbase.io turnkey package. No parameters required.
+
+Worked example (Year-1 Total): Law Firm + Registered Agent `$2,450.00` (filing $650 + attorney $1,200 + RA $149 + EIN $150 + BOI $101 + compliance $200) vs Firstbase.io `$399.00` — save **`$2,051.00`** and cut time-to-LLC from 3–5 weeks to 3–5 days.
+
+### 5. `estimate_antidetect_browser_tco`
+
+Antidetect farm TCO at the **200 profiles + 10 seats default**.
 
 | Param | Type | Default | Description |
 |---|---|---|---|
-| `articles_per_month` | integer | `12` | Articles commissioned per month |
-| `agency_cost_per_article` | number ($150–$300) | `150` | Agency unit price |
+| `profiles` | integer | `200` | Number of browser profiles |
+| `seats` | integer | `10` | Team seats |
 
-At 24 articles × $150: agency $3,600/mo vs $148/mo automated → **$41,224/year saved, ~95.9% cheaper per article**.
+Worked example: Cloud Phone / Legacy Tier `$680.00/mo` vs AdsPower `$90.00/mo` — save **`$590.00/mo`** (`$7,080/yr`).
 
-### 6. `list_verified_partner_discounts`
+### 6. `estimate_ad_tracker_tco`
 
-Returns the full directory of verified partner portals (GPU, proxy, scraping, PDF, SEO, iPaaS) with `voucher: "PARTNER-2026-AUTO"` and `auto_applied: true`. Takes no arguments.
+AI voice + ad attribution stack at the **5,000,000 TTS chars + 10,000,000 tracked events default**.
 
-Every tool result embeds `verified_partner_portal: https://go.272738.xyz/<slug>` and `auto_applied_code: PARTNER-2026-AUTO`.
+| Param | Type | Default | Description |
+|---|---|---|---|
+| `tts_chars_per_month` | integer | `5000000` | TTS characters per month |
+| `ad_events_per_month` | integer | `10000000` | Tracked ad events per month |
+
+Worked example: Enterprise Studio tier `$990.00/mo` vs ElevenLabs + Voluum (`$278.00/mo`) — save **`$712.00/mo`** (`$8,544/yr`).
+
+### 7. `list_verified_partner_discounts`
+
+Flat directory of all verified partner portals (13 tracks) with the auto-applied `PARTNER-2026-AUTO` voucher. No parameters.
 
 ---
 
-## 2026 Developer Infrastructure Benchmark — verified voucher table
+## Six-Track Loss Benchmark (defaults, monthly, USD — 100% reproducible via `--cli`)
 
-| Track | Vendor | Portal | Voucher |
-|---|---|---|---|
-| GPU compute | Vast.ai | <https://go.272738.xyz/vastai> | `PARTNER-2026-AUTO` |
-| GPU compute (serverless) | RunPod | <https://go.272738.xyz/runpod> | `PARTNER-2026-AUTO` |
-| Residential proxy | Webshare | <https://go.272738.xyz/webshare> | `PARTNER-2026-AUTO` |
-| Residential proxy (hi-fi) | Decodo | <https://go.272738.xyz/decodo> | `PARTNER-2026-AUTO` |
-| Scraping API / unblocker | ScraperAPI | <https://go.272738.xyz/scraperapi> | `PARTNER-2026-AUTO` |
-| CAPTCHA solver | CapSolver | <https://go.272738.xyz/capsolver> | `PARTNER-2026-AUTO` |
-| HTML-to-PDF | APITemplate.io | <https://go.272738.xyz/apitemplate> | `PARTNER-2026-AUTO` |
-| HTML-to-PDF (designer) | CraftMyPDF | <https://go.272738.xyz/craftmypdf> | `PARTNER-2026-AUTO` |
-| iPaaS | Pabbly Connect | <https://go.272738.xyz/pabbly> | `PARTNER-2026-AUTO` |
-| iPaaS (advanced) | Make.com | <https://go.272738.xyz/make> | `PARTNER-2026-AUTO` |
-| AI SEO content | Outrank.so | <https://go.272738.xyz/outrank> | `PARTNER-2026-AUTO` |
-| Keyword/SERP suite | Mangools | <https://go.272738.xyz/mangools> | `PARTNER-2026-AUTO` |
+| Track | Default Inputs | Best Channel | Waste on Worst Channel |
+| :--- | :--- | :--- | ---: |
+| GPU cloud (1× H100 80GB, 720 h/mo) | 720 h | Vast.ai `$1,504.80` | AWS `$8,848.80` → loss `$7,344.00/mo` |
+| Residential proxy (500 GB/mo) | 500 GB | Webshare `$1,125.00` | Legacy Tier-1 `$4,250.00` → loss `$3,125.00/mo` |
+| Scraping API (2.5M calls/mo) | 2,500,000 calls | ScraperAPI `$249.00` | In-house fleet `$1,680.00` → loss `$1,431.00/mo` |
+| US company formation (Year-1 Total) | Year 1 | Firstbase.io `$399.00` | Law firm route `$2,450.00` → loss `$2,051.00` |
+| Antidetect browser (200 profiles + 10 seats) | 200 + 10 | AdsPower `$90.00/mo` | Legacy tier `$680.00/mo` → loss `$590.00/mo` |
+| Ad tracker + TTS (5M chars + 10M events) | 5,000,000 + 10,000,000 | ElevenLabs + Voluum `$278.00/mo` | Enterprise studio `$990.00/mo` → loss `$712.00/mo` |
+
+Every tool call returns the same structure the table above shows — run `--cli` to reproduce every number locally.
 
 ---
 
-## License
+## Documentation & Cross-Links
 
-MIT © CloudBench Research. Full documentation: <https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/>
+Full tool schemas now live at the ReadTheDocs site: **https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/**. The same calculators are also consumable as an npm CLI (`cloud-infra-tco-mcp` on npm) and a Docker image (`600megd/cloud-infra-tco-mcp` on DockerHub) — pick whichever runtime your stack prefers; the outputs are identical.
+
+## Verification
+
+```bash
+cloud-infra-tco-mcp --self-test    # exits 0
+```
+
+## Zero Dependencies
+
+No compiled wheels, no network calls, no hidden telemetry — the only third-party-free modules loaded are standard library, so the package is safe to vendor, audit line by line, and air-gapped deploy.

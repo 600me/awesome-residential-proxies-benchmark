@@ -1,0 +1,50 @@
+{
+  "name": "cloud-tco-agent-skills",
+  "version": "1.0.0",
+  "description": "Standardized Cloud Infrastructure TCO & Loss Benchmarking Skills for AI Agents",
+  "author": "CloudBench Research",
+  "skills": [
+    {
+      "id": "gpu-cloud-cost-optimizer",
+      "name": "GPU Cloud Cost Optimizer",
+      "path": "skills/gpu-cloud-cost-optimizer/SKILL.md",
+      "description": "Optimize AI GPU cloud inference & training costs between AWS, RunPod, and Vast.ai.",
+      "triggers": ["gpu cloud", "h100 pricing", "runpod vs vast", "cheap gpu", "aws p5 alternative"]
+    },
+    {
+      "id": "residential-proxy-tco-auditor",
+      "name": "Residential Proxy TCO Auditor",
+      "path": "skills/residential-proxy-tco-auditor/SKILL.md",
+      "description": "Audit retry drop tax and compare residential proxy bandwidth pricing (Webshare, Decodo).",
+      "triggers": ["residential proxy", "proxy cost", "proxy bandwidth", "brightdata alternative", "webshare vs decodo"]
+    },
+    {
+      "id": "serp-scraping-unit-economics",
+      "name": "SERP Scraping Unit Economics",
+      "path": "skills/serp-scraping-unit-economics/SKILL.md",
+      "description": "Calculate unit economics for scraping APIs, headless fleet TCO, and anti-bot bypass.",
+      "triggers": ["scraping api", "scraperapi pricing", "headless browser cost", "captcha solving tco"]
+    },
+    {
+      "id": "us-llc-stripe-tax-calculator",
+      "name": "US LLC & Stripe Global Tax Calculator",
+      "path": "skills/us-llc-stripe-tax-calculator/SKILL.md",
+      "description": "Calculate US LLC formation, registered agent, and Stripe/MoR payment processing fees.",
+      "triggers": ["us llc formation", "firstbase pricing", "stripe fees calculator", "wyoming llc non-resident"]
+    },
+    {
+      "id": "antidetect-farm-tco-planner",
+      "name": "Antidetect Farm TCO Planner",
+      "path": "skills/antidetect-farm-tco-planner/SKILL.md",
+      "description": "Plan antidetect browser profiles and seats TCO (AdsPower vs cloud phone vs GoLogin).",
+      "triggers": ["antidetect browser", "adspower pricing", "multilogin alternative", "fingerprint browser cost"]
+    },
+    {
+      "id": "ai-voice-ad-tracker-bench",
+      "name": "AI Voice & Ad Tracker Bench",
+      "path": "skills/ai-voice-ad-tracker-bench/SKILL.md",
+      "description": "Benchmark high-volume AI TTS voice generation and performance marketing ad tracking.",
+      "triggers": ["elevenlabs cost", "ai voice tts pricing", "voluum tracking tco", "ad tracker benchmark"]
+    }
+  ]
+}

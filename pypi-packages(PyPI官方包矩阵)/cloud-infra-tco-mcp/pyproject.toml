@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cloud-infra-tco-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "Official Model Context Protocol (MCP) server & CLI for 2026 developer cloud infrastructure, GPU, proxy, scraping, and PDF TCO benchmarking"
 readme = "README.md"
 requires-python = ">=3.8"

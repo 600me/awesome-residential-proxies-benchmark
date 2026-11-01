@@ -1,0 +1,25 @@
+{
+  "name": "@cloudbench-labs/n8n-nodes-firstbase",
+  "version": "1.0.1",
+  "description": "n8n community workflow node & CLI for US LLC formation and Stripe vs MoR tax reconciliation TCO",
+  "main": "index.js",
+  "bin": {
+    "n8n-nodes-firstbase": "./index.js"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "firstbase",
+    "stripe",
+    "mor",
+    "us-llc",
+    "tax-compliance",
+    "workflow"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudbench-labs/n8n-nodes-firstbase.git"
+  }
+}

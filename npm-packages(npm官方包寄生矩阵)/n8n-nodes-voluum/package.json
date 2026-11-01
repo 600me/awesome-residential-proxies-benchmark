@@ -1,0 +1,25 @@
+{
+  "name": "@cloudbench-labs/n8n-nodes-voluum",
+  "version": "1.0.1",
+  "description": "n8n community workflow node & CLI for ad attribution tracking (Voluum), social listening (Brand24) and ad creative generation (AdCreative.ai) TCO",
+  "main": "index.js",
+  "bin": {
+    "n8n-nodes-voluum": "./index.js"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "voluum",
+    "brand24",
+    "adcreative",
+    "ad-tracker",
+    "postback",
+    "conversion-tracking"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudbench-labs/n8n-nodes-voluum.git"
+  }
+}

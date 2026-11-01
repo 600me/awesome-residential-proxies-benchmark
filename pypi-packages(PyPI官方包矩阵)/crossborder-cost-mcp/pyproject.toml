@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crossborder-cost-mcp"
+version = "1.0.1"
+description = "跨境出海多开指纹浏览器 / 云手机 TikTok 矩阵 / 住宅代理成本对账 MCP Server 与 CLI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "CloudBench Research" }]
+keywords = ["mcp", "model-context-protocol", "adspower", "morelogin", "duoplus", "lisahost", "tiktok-matrix", "crossborder-saas", "antidetect-browser"]
+
+[project.urls]
+Homepage = "https://cbcost.mybskm.top/"
+Repository = "https://github.com/cloudbench-labs/crossborder-cost-mcp.git"
+
+[project.scripts]
+crossborder-cost-mcp = "crossborder_cost_mcp.server:main"
+
+[tool.setuptools]
+packages = ["crossborder_cost_mcp"]

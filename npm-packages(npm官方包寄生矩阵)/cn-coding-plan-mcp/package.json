@@ -1,0 +1,26 @@
+{
+  "name": "cn-coding-plan-mcp",
+  "version": "1.0.1",
+  "description": "国内开发者 Coding Plan / AI 算力 / 海外订阅虚拟卡 TCO 比价 MCP Server 与 CLI",
+  "main": "index.js",
+  "bin": {
+    "cn-coding-plan-mcp": "./index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "coding-plan",
+    "aliyun-coding",
+    "volcengine",
+    "zhipu-glm",
+    "claude-code",
+    "cursor",
+    "pokepay"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudbench-labs/cn-coding-plan-mcp.git"
+  }
+}
