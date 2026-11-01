@@ -1,5 +1,6 @@
 # Residential Proxy Benchmark — 把预算花在有效抓取上
 
+[![Rates Verified](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fproxy.mybskm.top%2Fmeta.json&query=%24.verified&label=rates%20verified&color=brightgreen)](https://proxy.mybskm.top)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Proxy_Fraud_Checker-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/proxy-fraud-checker/ogihjffhcilpepjkpdifmkloioocoajp?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
 
 电商价格任务跑了一夜，早晨拿到的却是 Cloudflare 403 页面？社媒采集不断重试，垃圾机房 IP 消耗带宽、计算资源和工程师排障时间，真正可用的数据迟迟不能交付。采购代理时，只比较每 GB 标价，很容易把便宜买成昂贵。
@@ -16,13 +17,13 @@
 
 九个采购决策维度全部取自厂商公开定价页、文档与条款（2026-10 核实），**无需代理凭据即可 100% 核实**，因此表中全部维度均已核实标记。价格为其公开标价、不含 VAT，可能随时变动，购买前请回厂商页面复核。
 
-| Provider | ① Entry $/GB (PAYG) | ② Billing Granularity | ③ Min Deposit | ④ Free Trial | ⑤ Refund SLA | ⑥ Geo / ASN Coverage | ⑦ KYC Friction | ⑧ Sticky Session Window | ⑨ Best For |
-|---|---|---|---|---|---|---|---|---|---|
-| [**Smartproxy (Decodo)**](https://go.272738.xyz/smartproxy?src=proxy_table_winner)<br>*Verified Partner · Best Self-Serve Value* | $4.00 list PAYG；3GB 起 $3.75/GB，100GB 降到 $2.75/GB | 按 GB 计费；月度套餐或 Pay-As-You-Go，可中途追加 GB | $11.25（3GB 套餐）+VAT | 3 天 / 100MB 住宅试用（激活需绑定卡） | 自助购买 14 天退款（使用过免费试用后不适用） | 115M+ IP，195+ 地区；国家/州/城市/ZIP/ASN 定向 | 自助注册，无公司 KYC | 1–1440 分钟可配置，默认 10 分钟 | 月流量 <100GB、不想走人工 KYC 的自助团队 |
-| **Bright Data**<br>*Direct Reference · Enterprise KYC* | $8.00 list PAYG（常做 50% 到 $4.00/GB）；$499/141GB 起 $3.50/GB | 按 GB；PAYG 或 $499/$999/$1,999 月度承诺；Web Unlocker 另按 1k 请求计费 | $10 PAYG 起充 | 7 天 $2 代理额度（住宅还需先过 KYC 并充值） | 无公开自助退款窗口，按合同协商 | 400M+ 旋转 IP，195 国；国家/州/城市/ZIP 免费定向 | **人工 KYC**，仅限通过审核的公司，**2026-07 起无即时自助通道** | 最长 30 分钟 | 已通过合规审查、月采购数百 GB 的企业 |
-| **Oxylabs**<br>*Direct Reference · Corporate Tier* | $6.00 入门档；20GB $5.00/GB，1TB $2.50/GB | 按 GB 月度订阅（$30/$100/$500/$2,500+），也提供一次性 PAYG | $30（Starter）起 | $5 welcome credit | 自助购买标注为不可退款，建议先用 welcome credit 验证 | 175M+ IP，195 国；坐标级定向 | **强制 KYC**，需企业开户流程 | 最长 24 小时（本表最长） | 需要长会话与正式开户流程的企业/中型数据团队 |
-| **Apify Residential**<br>*Direct Reference · Actor Bundled* | $8.00（含 Free 档全部套餐）；$999 Business 档 $7.00/GB | 预付费平台额度，住宅按 GB 与 Actor 计算量共用额度 | $0（无最低 GB 采购；付费套餐 $19/月起） | 每月 $5 免费额度、无需绑卡（$8/GB 约合 625MB；对外使用代理需付费套餐） | 费用一般不可退；Actor 运行失败以额度补偿 | 住宅池通过 Apify 平台与 Actor 使用，非独立网关 | 普通邮箱注册，无 KYC | 同一 `session` ID 约 30 分钟 | 已在 Apify 平台跑 Actor、想把代理费并入同一账单的团队 |
-| **Direct `curl_cffi` + Cloudflare WARP / IPv6**<br>*Free Open-Source Baseline · $0 Commission Anchor* | **$0.00**（账单链路中没有任何代理厂商） | 无计费、无额度、无发票 | $0 | 永久免费（MIT/BSD 工具 + WARP 免费层） | N/A（没有可退款的厂商） | 使用你主机/WARP 的出口（Cloudflare 边缘，通常属机房 ASN） | 无账号、无审核 | N/A：连接级控制，自己掌握 TLS/JA3，没有会过期的会话 TTL | 低频 (<1,000 请求/天) 且住宅代理属过度采购的场景 |
+| Provider | ① Entry $/GB (PAYG) | ② Billing Granularity | ③ Min Deposit | ④ Free Trial | ⑤ Refund SLA | ⑥ Geo / ASN Coverage | ⑦ KYC Friction | ⑧ Sticky Session Window | ⑨ Best For | Auto-Applied Partner Code / Instant Checkout |
+|---|---|---|---|---|---|---|---|---|---|:---:|
+| [**Smartproxy (Decodo)**](https://go.272738.xyz/smartproxy?src=proxy_table_winner)<br>*Verified Partner · Best Self-Serve Value* | $4.00 list PAYG；3GB 起 $3.75/GB，100GB 降到 $2.75/GB | 按 GB 计费；月度套餐或 Pay-As-You-Go，可中途追加 GB | $11.25（3GB 套餐）+VAT | 3 天 / 100MB 住宅试用（激活需绑定卡） | 自助购买 14 天退款（使用过免费试用后不适用） | 115M+ IP，195+ 地区；国家/州/城市/ZIP/ASN 定向 | 自助注册，无公司 KYC | 1–1440 分钟可配置，默认 10 分钟 | 月流量 <100GB、不想走人工 KYC 的自助团队 | [`PARTNER-2026-AUTO`](https://go.272738.xyz/smartproxy?src=proxy_table_winner) |
+| **Bright Data**<br>*Direct Reference · Enterprise KYC* | $8.00 list PAYG（常做 50% 到 $4.00/GB）；$499/141GB 起 $3.50/GB | 按 GB；PAYG 或 $499/$999/$1,999 月度承诺；Web Unlocker 另按 1k 请求计费 | $10 PAYG 起充 | 7 天 $2 代理额度（住宅还需先过 KYC 并充值） | 无公开自助退款窗口，按合同协商 | 400M+ 旋转 IP，195 国；国家/州/城市/ZIP 免费定向 | **人工 KYC**，仅限通过审核的公司，**2026-07 起无即时自助通道** | 最长 30 分钟 | 已通过合规审查、月采购数百 GB 的企业 | `ENTERPRISE-DIRECT` |
+| **Oxylabs**<br>*Direct Reference · Corporate Tier* | $6.00 入门档；20GB $5.00/GB，1TB $2.50/GB | 按 GB 月度订阅（$30/$100/$500/$2,500+），也提供一次性 PAYG | $30（Starter）起 | $5 welcome credit | 自助购买标注为不可退款，建议先用 welcome credit 验证 | 175M+ IP，195 国；坐标级定向 | **强制 KYC**，需企业开户流程 | 最长 24 小时（本表最长） | 需要长会话与正式开户流程的企业/中型数据团队 | `CORPORATE-DIRECT` |
+| **Apify Residential**<br>*Direct Reference · Actor Bundled* | $8.00（含 Free 档全部套餐）；$999 Business 档 $7.00/GB | 预付费平台额度，住宅按 GB 与 Actor 计算量共用额度 | $0（无最低 GB 采购；付费套餐 $19/月起） | 每月 $5 免费额度、无需绑卡（$8/GB 约合 625MB；对外使用代理需付费套餐） | 费用一般不可退；Actor 运行失败以额度补偿 | 住宅池通过 Apify 平台与 Actor 使用，非独立网关 | 普通邮箱注册，无 KYC | 同一 `session` ID 约 30 分钟 | 已在 Apify 平台跑 Actor、想把代理费并入同一账单的团队 | `ACTOR-DIRECT` |
+| **Direct `curl_cffi` + Cloudflare WARP / IPv6**<br>*Free Open-Source Baseline · $0 Commission Anchor* | **$0.00**（账单链路中没有任何代理厂商） | 无计费、无额度、无发票 | $0 | 永久免费（MIT/BSD 工具 + WARP 免费层） | N/A（没有可退款的厂商） | 使用你主机/WARP 的出口（Cloudflare 边缘，通常属机房 ASN） | 无账号、无审核 | N/A：连接级控制，自己掌握 TLS/JA3，没有会过期的会话 TTL | 低频 (<1,000 请求/天) 且住宅代理属过度采购的场景 | `OPEN-SOURCE-$0` |
 
 > **Why the free row is in the table**：We earn **$0 from this open-source option**; recommended for **low-volume <1,000 req/day where residential proxies are overkill**。若爬取量小、只对 JA3/JA4 敏感而目标站没有强 bot 防护，`curl_cffi` + 免费 WARP/IPv6 出口往往零边际成本即可通过同一批目标；只有在确需旋转住宅 ASN、精细地理定向或跨多步流程的粘性会话时才购买住宅带宽。
 
