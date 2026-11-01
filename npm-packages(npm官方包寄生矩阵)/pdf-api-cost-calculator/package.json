@@ -1,0 +1,30 @@
+{
+  "name": "pdf-api-cost-calculator",
+  "version": "1.0.0",
+  "description": "CLI tool to calculate serverless HTML-to-PDF rendering API costs vs self-hosted Headless Chromium TCO.",
+  "main": "bin/pdf-cost.js",
+  "bin": {
+    "pdf-api-cost-calculator": "bin/pdf-cost.js"
+  },
+  "scripts": {
+    "test": "node bin/pdf-cost.js --docs 15000"
+  },
+  "keywords": [
+    "pdf",
+    "html-to-pdf",
+    "craftmypdf",
+    "apitemplate",
+    "puppeteer",
+    "chromium",
+    "tco",
+    "pricing",
+    "invoicing"
+  ],
+  "author": "DevOps Benchmark Labs",
+  "license": "MIT",
+  "homepage": "https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/html-to-pdf-api-and-headless-chromium-tco/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/600me/awesome-residential-proxies-benchmark.git"
+  }
+}

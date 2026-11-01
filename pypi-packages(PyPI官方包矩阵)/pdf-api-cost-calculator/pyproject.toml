@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-api-cost-calculator"
+version = "1.0.0"
+description = "CLI tool to calculate serverless HTML-to-PDF rendering API costs vs self-hosted Headless Chromium TCO."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "DevOps Benchmark Labs" }]
+keywords = ["pdf", "html-to-pdf", "craftmypdf", "apitemplate", "puppeteer", "chromium", "tco", "pricing", "invoicing"]
+dependencies = []
+
+[project.scripts]
+pdf-api-cost-calculator = "pdf_api_cost_calculator.cli:main"
+
+[project.urls]
+Homepage = "https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/html-to-pdf-api-and-headless-chromium-tco/"
+Documentation = "https://cloud-infra-tco-benchmarks.readthedocs.io/"
+Repository = "https://github.com/600me/awesome-residential-proxies-benchmark"
+Benchmark = "https://go.272738.xyz/pdf-trial"
+
+[tool.setuptools]
+packages = ["pdf_api_cost_calculator"]

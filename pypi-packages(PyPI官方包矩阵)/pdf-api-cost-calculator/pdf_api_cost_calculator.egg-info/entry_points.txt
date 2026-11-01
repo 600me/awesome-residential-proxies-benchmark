@@ -1,0 +1,2 @@
+[console_scripts]
+pdf-api-cost-calculator = pdf_api_cost_calculator.cli:main
