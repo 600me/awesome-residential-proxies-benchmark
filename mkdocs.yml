@@ -23,6 +23,7 @@ nav:
   - Cloud GPU & Generative AI: cloud-gpu-and-ai-media-unit-economics.md
   - US LLC & Cold Outbound: us-llc-stripe-and-cold-outbound-tco.md
   - Antidetect & Ad Tracking: antidetect-browser-and-ad-tracker-tco.md
+  - HTML-to-PDF API & Chromium TCO: html-to-pdf-api-and-headless-chromium-tco.md
 
 markdown_extensions:
   - tables
