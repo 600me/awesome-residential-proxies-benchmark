@@ -1,0 +1,24 @@
+{
+  "name": "n8n-nodes-outrank",
+  "version": "1.0.0",
+  "description": "n8n community workflow node & CLI for Outrank.so AI SEO content automation and Mangools SERP keyword TCO calculation",
+  "main": "index.js",
+  "bin": {
+    "n8n-nodes-outrank": "./index.js"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "outrank",
+    "mangools",
+    "seo",
+    "keyword-research",
+    "workflow"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudbench-labs/n8n-nodes-outrank.git"
+  }
+}

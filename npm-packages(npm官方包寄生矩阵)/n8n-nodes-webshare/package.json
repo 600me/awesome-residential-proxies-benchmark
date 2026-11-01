@@ -1,0 +1,24 @@
+{
+  "name": "n8n-nodes-webshare",
+  "version": "1.0.0",
+  "description": "n8n community workflow node & CLI for Webshare and Decodo residential proxy rotation and scraping retry loss calculation",
+  "main": "index.js",
+  "bin": {
+    "n8n-nodes-webshare": "./index.js"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "webshare",
+    "decodo",
+    "proxy",
+    "scraperapi",
+    "scraping"
+  ],
+  "author": "CloudBench Research",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudbench-labs/n8n-nodes-webshare.git"
+  }
+}
