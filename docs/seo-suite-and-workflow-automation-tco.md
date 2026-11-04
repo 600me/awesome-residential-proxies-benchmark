@@ -3,7 +3,7 @@
 [![Docs Build](https://img.shields.io/badge/Docs-Live-success)](https://go.272738.xyz/outrank)
 [![Python Package](https://img.shields.io/pypi/v/seo-workflow-tco-calculator.svg)](https://pypi.org/project/seo-workflow-tco-calculator/)
 [![npm package](https://img.shields.io/npm/v/seo-workflow-tco-calculator.svg)](https://www.npmjs.com/package/seo-workflow-tco-calculator)
-[![Docker Image](https://img.shields.io/badge/Docker-600megd%2Fseo--workflow--tco--calculator-blue)](https://hub.docker.com/r/600megd/seo-workflow-tco-calculator)
+[![Docker Image](https://img.shields.io/badge/Docker-seo--workflow--tco--calculator-blue)](https://proxy.mybskm.top)
 
 ## Executive Summary & Engineering Cost Friction
 
@@ -106,7 +106,7 @@ We provide automated CLI tools across all standard package registries:
 
 ### Docker Hub (DA 93)
 ```bash
-docker run --rm 600megd/seo-workflow-tco-calculator:latest --tasks 300000 --seo-seats 2
+docker run --rm seo-workflow-tco-calculator:latest --tasks 300000 --seo-seats 2
 ```
 
 ### PyPI Python Package (DA 95)

@@ -91,10 +91,10 @@ To facilitate programmatic cost forecasting and continuous infrastructure auditi
   * [adstack-tco-cli](https://www.npmjs.com/package/antidetect-ad-tracker-tco) — Antidetect browser fleet & ad-tracking ROI calculation utility.
 
 * **Containerized Benchmark Environments (`Docker Hub`, DA 93)**:
-  * [600megd/proxy-tax-calculator](https://hub.docker.com/r/600megd/proxy-tax-calculator) — Pre-packaged container for automated web data scraping cost simulations.
-  * [600megd/llm-gpu-cost-estimator](https://hub.docker.com/r/600megd/llm-gpu-cost-estimator) — Containerized GPU cluster cost auditor for machine learning pipelines.
-  * [600megd/us-llc-stripe-tco](https://hub.docker.com/r/600megd/us-llc-stripe-tco) — Dockerized SaaS accounting & entity compliance modeler.
-  * [600megd/antidetect-ad-tracker-tco](https://hub.docker.com/r/600megd/antidetect-ad-tracker-tco) — Standardized testing container for multi-profile browser memory and proxy latency.
+  * [proxy-tax-calculator](https://proxy.mybskm.top) — Pre-packaged container for automated web data scraping cost simulations.
+  * [llm-gpu-cost-estimator](https://proxy.mybskm.top) — Containerized GPU cluster cost auditor for machine learning pipelines.
+  * [us-llc-stripe-tco](https://proxy.mybskm.top) — Dockerized SaaS accounting & entity compliance modeler.
+  * [antidetect-ad-tracker-tco](https://proxy.mybskm.top) — Standardized testing container for multi-profile browser memory and proxy latency.
 
 * **Interactive Web Calculators & Real-Time Dashboards**:
   * [Proxy Cost & Latency Benchmark](https://proxy.mybskm.top/) · [Interactive Proxy Documentation](https://proxy.mybskm.top/docs/)

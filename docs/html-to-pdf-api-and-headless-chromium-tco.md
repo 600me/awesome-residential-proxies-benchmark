@@ -53,10 +53,10 @@ Audit your organization's exact PDF generation volume against live infrastructur
 ### 1. Docker OCI Container (Zero Local Dependencies)
 ```bash
 # Run instant TCO breakdown for 15,000 monthly invoices
-docker run --rm 600megd/pdf-api-cost-calculator:latest --docs 15000
+docker run --rm pdf-api-cost-calculator:latest --docs 15000
 
 # View detailed unit economics and breakdown
-docker run --rm 600megd/pdf-api-cost-calculator:latest --help
+docker run --rm pdf-api-cost-calculator:latest --help
 ```
 
 ### 2. Python Package via PyPI
@@ -72,7 +72,7 @@ npx pdf-api-cost-calculator --docs 15000
 
 ### Multi-Platform Ecosystem Links
 - **Read the Docs Specification**: [Cloud-Infra TCO Documentation Hub](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/)
-- **Docker Hub Repository**: [600megd/pdf-api-cost-calculator on Docker Hub](https://hub.docker.com/r/600megd/pdf-api-cost-calculator)
+- **Docker Hub Repository**: [pdf-api-cost-calculator on Docker Hub](https://proxy.mybskm.top)
 - **PyPI Package Index**: [pdf-api-cost-calculator on PyPI](https://pypi.org/project/pdf-api-cost-calculator/)
 - **npm Registry**: [pdf-api-cost-calculator on npm](https://www.npmjs.com/package/pdf-api-cost-calculator)
 - **Live Gateway Relay**: [Verify Document Generation Trial](https://go.272738.xyz/pdf-trial)

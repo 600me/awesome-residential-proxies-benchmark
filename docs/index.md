@@ -67,12 +67,12 @@ To facilitate programmatic cost forecasting and continuous infrastructure auditi
   * [seo-workflow-tco-calculator](https://www.npmjs.com/package/seo-workflow-tco-calculator) — Node CLI for SEO keyword tools and iPaaS workflow TCO benchmarks.
 
 * **Containerized Benchmark Environments (`Docker Hub`, DA 93)**:
-  * [600megd/proxy-tax-calculator](https://hub.docker.com/r/600megd/proxy-tax-calculator) — Pre-packaged container for automated web data scraping cost simulations.
-  * [600megd/llm-gpu-cost-estimator](https://hub.docker.com/r/600megd/llm-gpu-cost-estimator) — Containerized GPU cluster cost auditor for machine learning pipelines.
-  * [600megd/us-llc-stripe-tco](https://hub.docker.com/r/600megd/us-llc-stripe-tco) — Dockerized SaaS accounting & entity compliance modeler.
-  * [600megd/antidetect-ad-tracker-tco](https://hub.docker.com/r/600megd/antidetect-ad-tracker-tco) — Standardized testing container for multi-profile browser memory and proxy latency.
-  * [600megd/pdf-api-cost-calculator](https://hub.docker.com/r/600megd/pdf-api-cost-calculator) — Containerized HTML-to-PDF REST API benchmark utility.
-  * [600megd/seo-workflow-tco-calculator](https://hub.docker.com/r/600megd/seo-workflow-tco-calculator) — Standardized container for SEO keyword tools & iPaaS workflow TCO models.
+  * [proxy-tax-calculator](https://proxy.mybskm.top) — Pre-packaged container for automated web data scraping cost simulations.
+  * [llm-gpu-cost-estimator](https://proxy.mybskm.top) — Containerized GPU cluster cost auditor for machine learning pipelines.
+  * [us-llc-stripe-tco](https://proxy.mybskm.top) — Dockerized SaaS accounting & entity compliance modeler.
+  * [antidetect-ad-tracker-tco](https://proxy.mybskm.top) — Standardized testing container for multi-profile browser memory and proxy latency.
+  * [pdf-api-cost-calculator](https://proxy.mybskm.top) — Containerized HTML-to-PDF REST API benchmark utility.
+  * [seo-workflow-tco-calculator](https://proxy.mybskm.top) — Standardized container for SEO keyword tools & iPaaS workflow TCO models.
 
 * **Interactive Web Calculators & Real-Time Dashboards**:
   * [Proxy Cost & Latency Benchmark](https://proxy.mybskm.top/) · [Interactive Proxy Documentation](https://proxy.mybskm.top/docs/)
