@@ -54,12 +54,12 @@ All outputs include a `verified_partner_portal` URL and `auto_applied_code`, so 
 
 | Track | Default Inputs | Best Channel | Waste on Worst Channel | Remedy |
 | :--- | :--- | :--- | ---: | :--- |
-| GPU cloud (1× H100 80GB, 720 h/mo) | 720 h | Vast.ai **$1,504.80** | vs RunPod $1,936.80 (–$432), vs AWS **$8,848.80 → $7,344.00/mo** | [PARTNER-2026-AUTO](https://go.272738.xyz/vastai) |
-| Residential proxy (500 GB/mo) | 500 GB | Webshare **$1,125.00** ($2.25/GB) | Legacy Tier-1 $4,250.00 ($8.50/GB, retry drop) → **$3,125.00/mo**; Decodo $1,250.00 ($2.50/GB) | [PARTNER-2026-AUTO](https://go.272738.xyz/webshare) |
-| Scraping API (2,500,000 calls/mo) | 2.5M calls | ScraperAPI **$249.00** | In-house headless fleet $1,680.00 → **$1,431.00/mo** | [PARTNER-2026-AUTO](https://go.272738.xyz/scraperapi) |
-| US company formation (Year-1 Total) | Year 1 | Firstbase.io **$399.00** | Law firm + registered agent $2,450.00 → **$2,051.00** | [PARTNER-2026-AUTO](https://go.272738.xyz/firstbase) |
-| Antidetect browser (200 profiles + 10 seats) | 200 + 10 | AdsPower **$90.00/mo** | Cloud phone / legacy tier $680.00/mo → **$590.00/mo** | [PARTNER-2026-AUTO](https://go.272738.xyz/adspower) |
-| Ad tracker + TTS (5,000,000 chars + 10M events) | 5M + 10M | ElevenLabs + Voluum **$278.00/mo** | Enterprise studio $990.00/mo → **$712.00/mo** | [PARTNER-2026-AUTO](https://go.272738.xyz/elevenlabs) |
+| GPU cloud (1× H100 80GB, 720 h/mo) | 720 h | Vast.ai **$1,504.80** | vs RunPod $1,936.80 (–$432), vs AWS **$8,848.80 → $7,344.00/mo** | [OFFICIAL-PARTNER-DIRECT](https://go.272738.xyz/vastai) |
+| Residential proxy (500 GB/mo) | 500 GB | Webshare **$1,125.00** ($2.25/GB) | Legacy Tier-1 $4,250.00 ($8.50/GB, retry drop) → **$3,125.00/mo**; Decodo $1,250.00 ($2.50/GB) | [OFFICIAL-PARTNER-DIRECT](https://go.272738.xyz/webshare) |
+| Scraping API (2,500,000 calls/mo) | 2.5M calls | ScraperAPI **$249.00** | In-house headless fleet $1,680.00 → **$1,431.00/mo** | [OFFICIAL-PARTNER-DIRECT](https://go.272738.xyz/scraperapi) |
+| US company formation (Year-1 Total) | Year 1 | Firstbase.io **$399.00** | Law firm + registered agent $2,450.00 → **$2,051.00** | [OFFICIAL-PARTNER-DIRECT](https://go.272738.xyz/firstbase) |
+| Antidetect browser (200 profiles + 10 seats) | 200 + 10 | AdsPower **$90.00/mo** | Cloud phone / legacy tier $680.00/mo → **$590.00/mo** | [OFFICIAL-PARTNER-DIRECT](https://go.272738.xyz/adspower) |
+| Ad tracker + TTS (5,000,000 chars + 10M events) | 5M + 10M | ElevenLabs + Voluum **$278.00/mo** | Enterprise studio $990.00/mo → **$712.00/mo** | [OFFICIAL-PARTNER-DIRECT](https://go.272738.xyz/elevenlabs) |
 
 Run `--cli` for the exact, reproducible numbers behind every row — the MCP tools return the same structure so agents can chain "calculate the loss, then open the remedy" in one conversation.
 

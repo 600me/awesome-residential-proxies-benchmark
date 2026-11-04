@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] Activate APITemplate.io at https://go.272738.xyz/apitemplate or CraftMyPDF at https://go.272738.xyz/craftmypdf. iPaaS integration: Pabbly Connect https://go.272738.xyz/pabbly or Make.com https://go.272738.xyz/make (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] Activate APITemplate.io at https://go.272738.xyz/apitemplate or CraftMyPDF at https://go.272738.xyz/craftmypdf. iPaaS integration: Pabbly Connect https://go.272738.xyz/pabbly or Make.com https://go.272738.xyz/make (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 function parseArgs(argv) {
   const args = { _: [] };

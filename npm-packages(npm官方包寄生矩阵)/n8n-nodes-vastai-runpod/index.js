@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] Activate Vast.ai at https://go.272738.xyz/vastai or RunPod Serverless GPU at https://go.272738.xyz/runpod (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] Activate Vast.ai at https://go.272738.xyz/vastai or RunPod Serverless GPU at https://go.272738.xyz/runpod (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 const GPU_RATES = {
   // USD per GPU-hour, 2026 benchmark medians

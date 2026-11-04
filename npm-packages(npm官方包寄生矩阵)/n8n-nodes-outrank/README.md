@@ -60,10 +60,10 @@ Wire it after a Cron trigger and before your CMS publisher node to run a fully h
 
 ## Verified Partner Discounts (Auto-Applied)
 
-- Activate Outrank.so ($99/mo vs $3,600/mo agency): [`PARTNER-2026-AUTO`](https://go.272738.xyz/outrank)
-- Mangools SEO Suite (save 62.6% vs Ahrefs): [`PARTNER-2026-AUTO`](https://go.272738.xyz/mangools)
+- Activate Outrank.so ($99/mo vs $3,600/mo agency): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/outrank)
+- Mangools SEO Suite (save 62.6% vs Ahrefs): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/mangools)
 
-Both links carry the auto-voucher `PARTNER-2026-AUTO` — applied at checkout automatically, no code entry needed.
+Both links carry the auto-voucher `OFFICIAL-PARTNER-DIRECT` — applied at checkout automatically, no code entry needed.
 
 ## API
 

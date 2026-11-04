@@ -16,7 +16,6 @@ const LINKS = {
   volcengine: 'https://coding.mybskm.top/go/volcengine-coding',
   zhipu: 'https://coding.mybskm.top/go/zhipu-glm',
   tencent: 'https://coding.mybskm.top/go/tencent-double11',
-  pokepay: 'https://coding.mybskm.top/go/pokepay',
   bwh: 'https://coding.mybskm.top/go/bwh',
   rainyun: 'https://coding.mybskm.top/go/rainyun',
   lisahost: 'https://coding.mybskm.top/go/lisahost',
@@ -59,9 +58,10 @@ function calcClaudeCursorCardTco(input) {
       usd_annual_effective: Math.round(annualCost * 100) / 100,
       pain_points: ['风控拒付', '汇率二次损耗', '余额沉淀'],
     },
-    action: LINKS.pokepay,
+    action: LINKS.lisahost,
+    action_domestic: LINKS.aliyunCoding,
     interactive_site: SITE,
-    note: 'PokePay 虚拟卡开卡快、支持主流 AI 订阅扣款；实际费率以官网为准。',
+    note: '海外订阅防封首选原生住宅双ISP节点（丽萨主机）；免外卡直连首选阿里云百炼 Coding Plan。',
   };
 }
 

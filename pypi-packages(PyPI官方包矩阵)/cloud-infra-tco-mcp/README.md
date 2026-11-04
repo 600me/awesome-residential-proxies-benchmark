@@ -4,7 +4,7 @@
 
 - Zero third-party dependencies (pure Python standard library: `sys`, `json`, `argparse`)
 - Runs as an **MCP stdio server** (`uvx cloud-infra-tco-mcp`) or a plain **CLI**
-- Ships a verified partner discount directory with the auto-applied voucher **`PARTNER-2026-AUTO`**
+- Ships a verified partner discount directory with the auto-applied voucher **`OFFICIAL-PARTNER-DIRECT`**
 - Docs: <https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/>
 
 Example of the money it finds: an H100 running 720 hours/month costs **$8,848.80 on AWS-style EC2 rates vs $1,504.80 on Vast.ai — a $7,344.00/month leak (83% overpay)**. The server quantifies exactly this gap, per tool call.
@@ -122,7 +122,7 @@ Worked example: Enterprise Studio tier `$990.00/mo` vs ElevenLabs + Voluum (`$27
 
 ### 7. `list_verified_partner_discounts`
 
-Flat directory of all verified partner portals (13 tracks) with the auto-applied `PARTNER-2026-AUTO` voucher. No parameters.
+Flat directory of all verified partner portals (13 tracks) with the auto-applied `OFFICIAL-PARTNER-DIRECT` voucher. No parameters.
 
 ---
 

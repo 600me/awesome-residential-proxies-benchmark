@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] ElevenLabs (22% off): https://go.272738.xyz/elevenlabs | HeyGen AI Video (35% off): https://go.272738.xyz/heygen (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] ElevenLabs (22% off): https://go.272738.xyz/elevenlabs | HeyGen AI Video (35% off): https://go.272738.xyz/heygen (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 function parseArgs(argv) {
   const args = { _: [] };

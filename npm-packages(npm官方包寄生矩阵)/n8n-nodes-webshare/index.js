@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] Activate Webshare (10 Free Proxies + $1.80/GB) at https://go.272738.xyz/webshare, Decodo ($2.20/GB) at https://go.272738.xyz/decodo, ScraperAPI (Unblocker) at https://go.272738.xyz/scraperapi, CapSolver at https://go.272738.xyz/capsolver (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] Activate Webshare (10 Free Proxies + $1.80/GB) at https://go.272738.xyz/webshare, Decodo ($2.20/GB) at https://go.272738.xyz/decodo, ScraperAPI (Unblocker) at https://go.272738.xyz/scraperapi, CapSolver at https://go.272738.xyz/capsolver (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 function parseArgs(argv) {
   const args = { _: [] };

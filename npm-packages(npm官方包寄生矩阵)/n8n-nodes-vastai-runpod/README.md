@@ -60,10 +60,10 @@ Pipeline shape: Webhook/Cron → prompt assembly (Set node) → this GPU inferen
 
 ## Verified Partner Discounts (Auto-Applied)
 
-- Vast.ai marketplace GPUs: [`PARTNER-2026-AUTO`](https://go.272738.xyz/vastai)
-- RunPod Serverless GPU (scale-to-zero vLLM): [`PARTNER-2026-AUTO`](https://go.272738.xyz/runpod)
+- Vast.ai marketplace GPUs: [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/vastai)
+- RunPod Serverless GPU (scale-to-zero vLLM): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/runpod)
 
-Both links carry auto-voucher `PARTNER-2026-AUTO` — applied at checkout automatically.
+Both links carry auto-voucher `OFFICIAL-PARTNER-DIRECT` — applied at checkout automatically.
 
 ## API
 

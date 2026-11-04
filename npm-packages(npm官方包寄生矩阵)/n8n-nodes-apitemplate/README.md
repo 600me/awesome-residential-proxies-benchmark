@@ -64,11 +64,11 @@ Typical pipeline: Stripe/Shopify webhook → n8n Set node → this HTTP node →
 
 ## Verified Partner Discounts (Auto-Applied)
 
-- APITemplate.io (HTML-to-PDF, images, Zapier-grade API): [`PARTNER-2026-AUTO`](https://go.272738.xyz/apitemplate)
-- CraftMyPDF (drag-drop PDF designer with expressions): [`PARTNER-2026-AUTO`](https://go.272738.xyz/craftmypdf)
+- APITemplate.io (HTML-to-PDF, images, Zapier-grade API): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/apitemplate)
+- CraftMyPDF (drag-drop PDF designer with expressions): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/craftmypdf)
 - iPaaS backends if you prefer them over n8n: [Pabbly Connect](https://go.272738.xyz/pabbly) · [Make.com](https://go.272738.xyz/make)
 
-All links carry the auto-voucher `PARTNER-2026-AUTO` — applied automatically at checkout.
+All links carry the auto-voucher `OFFICIAL-PARTNER-DIRECT` — applied automatically at checkout.
 
 ## API
 

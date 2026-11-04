@@ -14,7 +14,7 @@ The default, explicitly hypothetical workload needs 500 useful GB per month. In 
 
 Classify transport errors, explicit access denials, throttling and semantically invalid responses separately. The model uses a single completion probability to make the economic break-even visible. A residential address does not authorize access and cannot guarantee acceptance. The datacenter default of 35% completion is a deliberately stressful hypothetical case, not an industry average. Residential defaults are hypothetical as well.
 
-**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. The gateway is a promotional outbound link; this project does not independently verify its destination or promise a referral reward. No sign-up or purchase is required to run the code.
+**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. Partner referral link; eligible purchases may earn a commission at no extra cost to the buyer. No sign-up or purchase is required to run the code.
 
 ## 2. Pricing and technical comparison: what is known and what is modeled
 

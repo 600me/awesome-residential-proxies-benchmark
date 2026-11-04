@@ -60,12 +60,12 @@ Chain it: Cron → target queue → this proxy node → HTML parse → database 
 
 ## Verified Partner Discounts (Auto-Applied)
 
-- Webshare (10 free proxies, then $1.80/GB): [`PARTNER-2026-AUTO`](https://go.272738.xyz/webshare)
-- Decodo residential ($2.20/GB, high fidelity): [`PARTNER-2026-AUTO`](https://go.272738.xyz/decodo)
-- ScraperAPI (managed unblocker, zero infra): [`PARTNER-2026-AUTO`](https://go.272738.xyz/scraperapi)
-- CapSolver (CAPTCHA solving for the stubborn remnants): [`PARTNER-2026-AUTO`](https://go.272738.xyz/capsolver)
+- Webshare (10 free proxies, then $1.80/GB): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/webshare)
+- Decodo residential ($2.20/GB, high fidelity): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/decodo)
+- ScraperAPI (managed unblocker, zero infra): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/scraperapi)
+- CapSolver (CAPTCHA solving for the stubborn remnants): [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/capsolver)
 
-All links carry auto-voucher `PARTNER-2026-AUTO` — applied at checkout automatically.
+All links carry auto-voucher `OFFICIAL-PARTNER-DIRECT` — applied at checkout automatically.
 
 ## API
 

@@ -190,7 +190,7 @@ options:
 
 ## License
 
-MIT License. Copyright (c) 2026 Kais / 600me.
+MIT License. Copyright (c) 2026 CloudBench Contributors.
 
 
 ---

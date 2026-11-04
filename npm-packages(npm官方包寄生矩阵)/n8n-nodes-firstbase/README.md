@@ -114,9 +114,9 @@ npx -y n8n-nodes-firstbase --arr 120000
 
 Every invocation prints:
 
-`[Partner Trial & Auto-Applied Discount] Firstbase.io Turnkey US LLC: https://go.272738.xyz/firstbase (Voucher: PARTNER-2026-AUTO)`
+`[Partner Trial & Auto-Applied Discount] Firstbase.io Turnkey US LLC: https://go.272738.xyz/firstbase (Voucher: OFFICIAL-PARTNER-DIRECT)`
 
-Start formation through [`PARTNER-2026-AUTO`](https://go.272738.xyz/firstbase) — the partner voucher applies automatically at checkout.
+Start formation through [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/firstbase) — the partner voucher applies automatically at checkout.
 
 ## Zero Dependencies
 

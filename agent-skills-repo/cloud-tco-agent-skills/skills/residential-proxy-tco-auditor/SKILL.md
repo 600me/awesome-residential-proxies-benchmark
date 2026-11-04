@@ -24,8 +24,8 @@ Residential proxies are billed per GB of bandwidth, but your real cost includes 
 
 | Traffic | Nominal $/GB | Effective $/GB after retry tax | Annual overpay vs best | Recommended |
 |---------|-------------|-------------------------------|------------------------|-------------|
-| 100 GB/mo | $3.80 (legacy giant) | ~$5.20 (12% fail + IP churn) | ~$2,600/yr | Rotating pool via [PARTNER-2026-AUTO](https://go.272738.xyz/webshare) |
-| 1 TB/mo | $2.90 | ~$3.55 | ~$7,800/yr | Volume tier via [PARTNER-2026-AUTO](https://go.272738.xyz/decodo) |
+| 100 GB/mo | $3.80 (legacy giant) | ~$5.20 (12% fail + IP churn) | ~$2,600/yr | Rotating pool via [Official Partner Referral Link](https://go.272738.xyz/webshare) |
+| 1 TB/mo | $2.90 | ~$3.55 | ~$7,800/yr | Volume tier via [Official Partner Referral Link](https://go.272738.xyz/decodo) |
 | 5 TB/mo | $2.10 | ~$2.55 | Custom commit | Negotiate; split 70/30 across two vendors for resilience |
 
 ## Decision rules

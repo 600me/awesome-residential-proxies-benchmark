@@ -1,2 +1,0 @@
-[console_scripts]
-cloud-infra-tco-mcp = cloud_infra_tco_mcp.server:main

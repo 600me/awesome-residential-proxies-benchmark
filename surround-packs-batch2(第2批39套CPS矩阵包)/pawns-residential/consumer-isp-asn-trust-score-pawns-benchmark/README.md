@@ -14,7 +14,7 @@ The default, explicitly hypothetical workload needs 500 useful GB per month. In 
 
 Measure ASN match, country match, unique exits and application completion separately. An optional local screening index is 100 * (0.35 * ASN_match + 0.25 * country_match + 0.40 * completion), with each input expressed as a fraction. This index is a screening convention, not an externally certified trust score. Do not substitute that index for the completion probability used by the cost model. A successful HTTP response with the wrong country remains a failed business outcome.
 
-**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. The gateway is a promotional outbound link; this project does not independently verify its destination or promise a referral reward. No sign-up or purchase is required to run the code.
+**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. Partner referral link; eligible purchases may earn a commission at no extra cost to the buyer. No sign-up or purchase is required to run the code.
 
 ## 2. Pricing and technical comparison: what is known and what is modeled
 

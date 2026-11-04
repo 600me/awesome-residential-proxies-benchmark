@@ -79,16 +79,16 @@ To facilitate programmatic cost forecasting and continuous infrastructure auditi
   * [Global Documentation Hub](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/)
 
 * **Official Python CLI Packages (`PyPI`, DA 95)**:
-  * [proxy-tax-calculator](https://pypi.org/project/proxy-tax-calculator/) — Automated residential proxy 403 error tax & retry overhead calculator.
-  * [llm-gpu-cost-estimator](https://pypi.org/project/llm-gpu-cost-estimator/) — Serverless vs. on-demand GPU inference unit economics engine.
-  * [us-llc-stripe-tco](https://pypi.org/project/us-llc-stripe-tco/) — Non-resident cross-border entity incorporation & cold outreach TCO simulation.
-  * [antidetect-adstack-tco](https://pypi.org/project/antidetect-adstack-tco/) — Multi-account fingerprint isolation & tracking attribution cost benchmark.
+  * [proxy-tax-calculator](https://pypi.org/project/check-proxy-tax/) — Automated residential proxy 403 error tax & retry overhead calculator.
+  * [llm-gpu-cost-estimator](https://pypi.org/project/llm-gpu-cost-calculator/) — Serverless vs. on-demand GPU inference unit economics engine.
+  * [us-llc-stripe-tco](https://pypi.org/project/us-llc-compliance-tco/) — Non-resident cross-border entity incorporation & cold outreach TCO simulation.
+  * [antidetect-adstack-tco](https://pypi.org/project/ad-tracker-antidetect-tco/) — Multi-account fingerprint isolation & tracking attribution cost benchmark.
 
 * **Official Node.js CLI Tools (`npm`, DA 96)**:
-  * [proxy-tax-audit](https://www.npmjs.com/package/proxy-tax-audit) — Fast Node CLI to simulate effective bandwidth scraping bills.
-  * [gpu-tco-estimator](https://www.npmjs.com/package/gpu-tco-estimator) — Real-time TCO evaluation for H100 and consumer GPU cloud tiers.
-  * [llc-stripe-calculator](https://www.npmjs.com/package/llc-stripe-calculator) — Firstbase + Stripe Atlas compliance fee audit tool.
-  * [adstack-tco-cli](https://www.npmjs.com/package/adstack-tco-cli) — Antidetect browser fleet & ad-tracking ROI calculation utility.
+  * [proxy-tax-audit](https://www.npmjs.com/package/proxy-tax-calculator) — Fast Node CLI to simulate effective bandwidth scraping bills.
+  * [gpu-tco-estimator](https://www.npmjs.com/package/llm-gpu-cost-estimator) — Real-time TCO evaluation for H100 and consumer GPU cloud tiers.
+  * [llc-stripe-calculator](https://www.npmjs.com/package/us-llc-stripe-tco) — Firstbase + Stripe Atlas compliance fee audit tool.
+  * [adstack-tco-cli](https://www.npmjs.com/package/antidetect-ad-tracker-tco) — Antidetect browser fleet & ad-tracking ROI calculation utility.
 
 * **Containerized Benchmark Environments (`Docker Hub`, DA 93)**:
   * [600megd/proxy-tax-calculator](https://hub.docker.com/r/600megd/proxy-tax-calculator) — Pre-packaged container for automated web data scraping cost simulations.

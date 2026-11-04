@@ -1,2 +1,0 @@
-[console_scripts]
-us-llc-compliance-tco = us_llc_compliance_tco.cli:main

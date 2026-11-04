@@ -24,8 +24,8 @@ When your agent needs GPU capacity for inference or fine-tuning, this skill benc
 
 | Workload | Wasted $/mo on on-demand hyperscaler | Waste driver | Best-cost route |
 |----------|-------------------------------------|--------------|-----------------|
-| Hobby: ~50 hrs H100 | ~$510 | 24/7 billing on bursty usage | Spot/community GPUs via [PARTNER-2026-AUTO](https://go.272738.xyz/vastai) |
-| Growth: ~400 hrs H100 + 2 A100s | ~$4,300 | Reserved kill-switch gaps, egress | Pod autoscaling via [PARTNER-2026-AUTO](https://go.272738.xyz/runpod) |
+| Hobby: ~50 hrs H100 | ~$510 | 24/7 billing on bursty usage | Spot/community GPUs via [Official Partner Referral Link](https://go.272738.xyz/vastai) |
+| Growth: ~400 hrs H100 + 2 A100s | ~$4,300 | Reserved kill-switch gaps, egress | Pod autoscaling via [Official Partner Referral Link](https://go.272738.xyz/runpod) |
 | Heavy: dedicated fleet | ~$9,000+ | Static capacity vs demand curve | Contract + spot hybrid, blend both vendors |
 
 ## Decision rules

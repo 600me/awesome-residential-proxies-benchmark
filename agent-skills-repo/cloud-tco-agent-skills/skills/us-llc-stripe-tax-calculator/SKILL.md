@@ -23,7 +23,7 @@ Non-US founders routinely pay formation bundles with hidden recurring line items
 
 | Stage | Typical setup | Year-1 all-in cost | Hidden waste | Best route |
 |-------|--------------|-------------------|--------------|------------|
-| Bootstrapped (testing market) | DIY filing + agent | ~$300–450 | Bundles lock 12-mo agent contracts | Bundle via [PARTNER-2026-AUTO](https://go.272738.xyz/firstbase) |
+| Bootstrapped (testing market) | DIY filing + agent | ~$300–450 | Bundles lock 12-mo agent contracts | Bundle via [Official Partner Referral Link](https://go.272738.xyz/firstbase) |
 | Scaling (<$20K/mo revenue) | Bundle + Stripe | ~$1,100 | 2.9%+30¢ × cross-border uplift ≈ +1.5% | Bundle + native Stripe |
 | >$20K/mo | Stripe + MoR alternative for VAT | Fee stack ~4–6% | VAT/shipping compliance gap | MoR shields VAT-heavy geos |
 

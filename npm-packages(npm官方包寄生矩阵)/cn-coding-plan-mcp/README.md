@@ -15,7 +15,7 @@
    - 智谱 GLM: https://coding.mybskm.top/go/zhipu-glm
    - 腾讯云轻量/双11: https://coding.mybskm.top/go/tencent-double11
 
-2. `calculate_claude_cursor_card_tco` — 计算国内开发者订阅 Claude Code / Cursor / OpenAI 的虚拟卡真实成本（开卡费、汇率损耗、充值损耗），跳板: https://coding.mybskm.top/go/pokepay
+2. `calculate_claude_cursor_card_tco` — 计算国内开发者订阅 Claude Code / Cursor / OpenAI 的防封网络环境与直连平替成本，跳板: 丽萨双 ISP (https://coding.mybskm.top/go/lisahost) 与 阿里云百炼 (https://coding.mybskm.top/go/aliyun-coding)
 
 3. `compare_cn2_gia_agent_vps` — 对比搬瓦工 CN2 GIA、丽萨主机双 ISP、雨云高速节点的 Agent 部署成本：
 

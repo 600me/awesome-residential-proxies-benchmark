@@ -143,9 +143,9 @@ npx -y n8n-nodes-voluum --spend 50000 --mentions 12000
 
 Every invocation prints:
 
-`[Partner Trial & Auto-Applied Discount] Voluum: https://go.272738.xyz/voluum | Brand24: https://go.272738.xyz/brand24 | AdCreative.ai: https://go.272738.xyz/adcreative (Voucher: PARTNER-2026-AUTO)`
+`[Partner Trial & Auto-Applied Discount] Voluum: https://go.272738.xyz/voluum | Brand24: https://go.272738.xyz/brand24 | AdCreative.ai: https://go.272738.xyz/adcreative (Voucher: OFFICIAL-PARTNER-DIRECT)`
 
-Start with [`PARTNER-2026-AUTO`](https://go.272738.xyz/voluum), add listening via [`PARTNER-2026-AUTO`](https://go.272738.xyz/brand24) and creative generation via [`PARTNER-2026-AUTO`](https://go.272738.xyz/adcreative) — vouchers apply automatically at checkout.
+Start with [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/voluum), add listening via [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/brand24) and creative generation via [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/adcreative) — vouchers apply automatically at checkout.
 
 ## Zero Dependencies
 

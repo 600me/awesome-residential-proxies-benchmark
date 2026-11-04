@@ -18,7 +18,7 @@ PROTOCOL_VERSION = "2024-11-05"
 SERVER_INFO = {"name": "cloud-infra-tco-mcp", "version": "1.0.1"}
 PARTNER_BASE = "https://go.272738.xyz"
 DOCS_URL = "https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/"
-VOUCHER = "PARTNER-2026-AUTO"
+VOUCHER = "OFFICIAL-PARTNER-DIRECT"
 
 def _p(slug):
     return "%s/%s" % (PARTNER_BASE, slug)

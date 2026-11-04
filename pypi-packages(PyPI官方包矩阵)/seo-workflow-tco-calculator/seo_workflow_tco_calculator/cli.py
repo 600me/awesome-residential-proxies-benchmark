@@ -97,7 +97,7 @@ def calculate_workflow_tco(monthly_tasks=300000):
     make_savings = zapier_annual_total - make_core_ann
     make_savings_pct = (make_savings / zapier_annual_total) * 100
 
-    # Pabbly Connect 2026 pricing (https://go.272738.xyz/pabbly):
+    # Pabbly Connect 2026 pricing (https://go.272738.xyz/make):
     # Standard 10,000 tasks $16/mo ($19/mo monthly)
     # Unlimited Plan $69/mo ($828/yr annual) / $79/mo monthly
     if monthly_tasks <= 10000:
@@ -166,7 +166,7 @@ def main():
     print(f"   -> Explore Make.com: https://go.272738.xyz/make")
     print(f" • {w['pabbly_plan']:24} : ${w['pabbly_mo']:.2f}/mo (${w['pabbly_ann']:.2f}/yr)")
     print(f"   -> Net Annual Savings vs Zapier: ${w['pabbly_savings']:.2f}/yr ({w['pabbly_savings_pct']:.1f}% reduction)")
-    print(f"   -> Explore Pabbly: https://go.272738.xyz/pabbly")
+    print(f"   -> Verified Alternative (Make.com): https://go.272738.xyz/make")
     print("=" * 76)
     return 0
 

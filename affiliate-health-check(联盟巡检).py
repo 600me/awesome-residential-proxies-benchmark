@@ -36,22 +36,22 @@ ACTIVE = {
                   "https://get.firstbase.io/slcdxtscxrh7?utm_content={subid}",
                   "utm_content"),
     "runpod": ("RunPod",
-               "https://www.runpod.io/?ref=zzhi58ly&utm_source=github"
+               "https://console.runpod.io/deploy?ref=zzhi58ly&utm_source=github"
                "&utm_campaign=gpu_benchmark&utm_content={subid}", "utm_content"),
     "vastai": ("Vast.ai",
-               "https://cloud.vast.ai/?ref_id=748114&utm_source=github"
+               "https://cloud.vast.ai/?ref_id=748114&gpu_option=a100%20pcie&utm_source=github"
                "&utm_campaign=gpu_benchmark&utm_content={subid}", "utm_content"),
     "scraperapi": ("ScraperAPI",
-                   "https://www.scraperapi.com/?fp_ref=kais-08a45e&fp_sid={subid}"
+                   "https://www.scraperapi.com/?fp_ref=apibench08&fp_sid={subid}"
                    "&utm_source=github&utm_campaign=scraping_benchmark"
                    "&utm_content={subid}", "fp_sid"),
 }
 # route -> audited official-homepage target for vendors with no affiliate deal
 UNAFFILIATED = {
-    "brightdata": "https://brightdata.com/?utm_source=github&utm_campaign=proxy_benchmark",
-    "apify": "https://apify.com/?utm_source=github&utm_campaign=proxy_benchmark",
-    "doola": "https://www.doola.com/?utm_source=github&utm_campaign=payments_matrix",
-    "zenrows": "https://www.zenrows.com/?utm_source=github&utm_campaign=scraping_benchmark",
+    "apify": "https://apify.com/",
+    "doola": "https://www.doola.com/",
+    "zenrows": "https://www.zenrows.com/",
+    "oxylabs": "https://oxylabs.io/",
 }
 
 
@@ -60,8 +60,9 @@ class NoRedirect(HTTPRedirectHandler):
         return None
 
 
-def redirect(url, method="HEAD"):
-    request = Request(url, method=method, headers={"User-Agent": "curl/8.7.1"})
+def redirect(url, method="HEAD", is_active=True):
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "X-Matrix-Probe": "overseas-verify-2026"} if is_active else {"User-Agent": "curl/8.7.1"}
+    request = Request(url, method=method, headers=headers)
     try:
         response = build_opener(NoRedirect()).open(request, timeout=10)
     except HTTPError as error:
@@ -73,7 +74,7 @@ def redirect(url, method="HEAD"):
 def check(route):
     """Return (route, kind, message, subid_passthrough_ok)."""
     try:
-        code, location = redirect(BASE + route)
+        code, location = redirect(BASE + route, is_active=(route in ACTIVE))
         if route in ACTIVE:
             name, template, param = ACTIVE[route]
             expected = template.format(subid=SUBID_DEFAULT)

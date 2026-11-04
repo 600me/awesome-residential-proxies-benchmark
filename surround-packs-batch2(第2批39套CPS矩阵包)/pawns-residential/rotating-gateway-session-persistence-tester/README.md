@@ -14,7 +14,7 @@ The default, explicitly hypothetical workload needs 500 useful GB per month. In 
 
 The CLI is an offline persistence sensitivity tester, not a live gateway probe. It raises the per-step continuity probability to the workflow step count: complete_session = continuity ** steps. The default is ten steps. Independence is a simplifying assumption: correlated gateway outages and idle timeouts require direct observation. A product claiming sticky sessions still needs an explicit duration, scope and exit-loss policy in its contract.
 
-**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. The gateway is a promotional outbound link; this project does not independently verify its destination or promise a referral reward. No sign-up or purchase is required to run the code.
+**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. Partner referral link; eligible purchases may earn a commission at no extra cost to the buyer. No sign-up or purchase is required to run the code.
 
 ## 2. Pricing and technical comparison: what is known and what is modeled
 

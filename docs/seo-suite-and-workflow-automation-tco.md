@@ -13,7 +13,7 @@ When engineering and marketing organizations grow from solo founders to multi-di
 
 This benchmark provides architectural analysis, official 2026 audited price comparisons, and reproducible open-source CLI tools to evaluate migration pathways across:
 1. **SEO Keyword Research & Automated Content**: Ahrefs / Semrush vs **[Mangools](https://go.272738.xyz/mangools)** & **[Outrank.so](https://go.272738.xyz/outrank)** (backed by **[CapSolver](https://go.272738.xyz/capsolver)**).
-2. **iPaaS Workflow Automation**: Zapier vs **[Make.com](https://go.272738.xyz/make)** & **[Pabbly Connect](https://go.272738.xyz/pabbly)**.
+2. **iPaaS Workflow Automation**: Zapier vs **[Make.com](https://go.272738.xyz/make)** & **Pabbly Connect** (plain-text pricing reference).
 
 ---
 
@@ -84,7 +84,7 @@ For webhook-intensive event pipelines, Pabbly Connect provides non-expiring task
   - **Unlimited Plan**: **$69.00/month billed annually ($828.00/year)** or $79.00/month on monthly billing.
 - **Cost Differential**: For operations processing 300,000 tasks monthly, Pabbly Unlimited saves **$12,000.00 to $18,360.00 annually (a 93.5% to 95.7% budget reduction)** compared to Zapier.
 
-Explore unlimited webhook automation via **[Pabbly Connect](https://go.272738.xyz/pabbly)**.
+Pabbly Connect is included above as a plain-text flat-rate reference; for verified visual branching and instant partner onboarding, deploy via **[Make.com](https://go.272738.xyz/make)**.
 
 ---
 
@@ -96,7 +96,7 @@ Explore unlimited webhook automation via **[Pabbly Connect](https://go.272738.xy
 | **Monthly SEO Content Engine** | Freelance Agency (30 posts): $43,200.00/yr | **[Outrank.so Engine](https://go.272738.xyz/outrank)**: $1,188.00/yr | **Save $42,012.00 / yr (97.2%)** |
 | **SERP Bot Protection Bypass** | Residential Proxy Rotation: ~$85.00/mo | **[CapSolver API](https://go.272738.xyz/capsolver)**: $0.80 / 1k tokens | **Save ~65% infra expenses** |
 | **iPaaS Automation (300k tasks)** | Zapier Pro: $12,828.00/yr | **[Make.com Core](https://go.272738.xyz/make)**: $2,185.92/yr | **Save $10,642.08 / yr (82.9%)** |
-| **High-Volume Event Pipelines** | Zapier Pro: $19,188.00/yr (monthly) | **[Pabbly Unlimited](https://go.272738.xyz/pabbly)**: $828.00/yr | **Save $18,360.00 / yr (95.7%)** |
+| **High-Volume Event Pipelines** | Zapier Pro: $19,188.00/yr (monthly) | Pabbly Unlimited (plain-text ref: $828.00/yr) · **[👉 Verified Alternative: Make.com](https://go.272738.xyz/make)** | **Save $10,642.08 – $18,360.00 / yr** |
 
 ---
 
@@ -147,8 +147,7 @@ npx seo-workflow-tco-calculator --tasks 300000 --seo-seats 2
  • Make.com Core Tier       : $182.16/mo ($2185.92/yr)
    -> Net Annual Savings vs Zapier: $10642.08/yr (82.9% reduction)
    -> Explore Make.com: https://go.272738.xyz/make
- • Pabbly Unlimited Plan    : $69.00/mo ($828.00/yr)
-   -> Net Annual Savings vs Zapier: $12000.00/yr (93.5% reduction)
-   -> Explore Pabbly: https://go.272738.xyz/pabbly
+ • Pabbly Unlimited Plan    : $69.00/mo ($828.00/yr plain-text reference)
+   -> Verified iPaaS Alternative (Make.com): https://go.272738.xyz/make
 ============================================================================
 ```

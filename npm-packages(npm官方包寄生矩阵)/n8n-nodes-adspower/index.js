@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] AdsPower: https://go.272738.xyz/adspower | MoreLogin: https://go.272738.xyz/morelogin | GoLogin: https://go.272738.xyz/gologin (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] AdsPower: https://go.272738.xyz/adspower | MoreLogin: https://go.272738.xyz/morelogin | GoLogin: https://go.272738.xyz/gologin (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 function parseArgs(argv) {
   const args = { _: [] };

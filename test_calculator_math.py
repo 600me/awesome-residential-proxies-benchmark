@@ -25,7 +25,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 WEB = ROOT / "web"
-GPU_ROOT = ROOT.parent / "kais-gpu-cloud-benchmark"
+GPU_ROOT = next(ROOT.parent.glob("*-gpu-cloud-benchmark"), ROOT.parent / "gpu-cloud-benchmark")
 
 CALC = WEB / "calculator" / "index.html"
 HOME = WEB / "index.html"
@@ -294,7 +294,7 @@ def main() -> int:
 
 
     # ---- Gateway Fallback & Anti-Unroll Cloak Location Assertions ----------
-    nginx_conf = (ROOT / "config" / "kais-proxy-links.nginx.conf").read_text(encoding="utf-8")
+    nginx_conf = next((ROOT / "config").glob("*.nginx.conf")).read_text(encoding="utf-8")
 
     def _extract_location_block(conf_text: str, loc_path: str) -> str:
         idx = conf_text.find(f"location = {loc_path}")
@@ -313,28 +313,14 @@ def main() -> int:
                     return conf_text[start + 1:i]
         return ""
 
-    route_specs = {
-        "/zenrows": {
-            "cloak_target": "https://www.zenrows.com/",
-            "carrier_url": "https://www.scraperapi.com/",
-            "carrier_token": "fp_ref=apibench08"
-        },
-        "/scrapingbee": {
-            "cloak_target": "https://www.scrapingbee.com/",
-            "carrier_url": "https://www.scraperapi.com/",
-            "carrier_token": "fp_ref=apibench08"
-        },
-        "/crawlbase": {
-            "cloak_target": "https://crawlbase.com/",
-            "carrier_url": "https://www.scraperapi.com/",
-            "carrier_token": "fp_ref=apibench08"
-        },
-        "/hunter": {
-            "cloak_target": "https://hunter.io/",
-            "carrier_url": "https://smartlead.ai/",
-            "carrier_token": "via=cloudbench"
-        }
-    }
+    route_specs = {}  # brands without own affiliate code must not dark-jump to another brand
+    for path, official in {"/zenrows": "zenrows.com", "/scrapingbee": "scrapingbee.com",
+                           "/crawlbase": "crawlbase.com", "/hunter": "hunter.io"}.items():
+        blk = _extract_location_block(nginx_conf, path)
+        check(bool(blk), f"nginx block exists for {path}")
+        check("scraperapi.com" not in blk and "smartlead.ai" not in blk,
+              f"{path} has no dark jump to another brand")
+        check(official in blk, f"{path} points to its own official site {official}")
 
     for path, spec in route_specs.items():
         block = _extract_location_block(nginx_conf, path)
@@ -372,8 +358,7 @@ def main() -> int:
                 check(err.code == 302, f"live {path} returns 302 for browser buyer")
                 check(spec["carrier_token"] in loc, f"live {path} buyer 302 location carries token {spec['carrier_token']}")
             except Exception as e:
-                # In isolated environments without outbound web access, pass gracefully
-                pass
+                check(False, f"live {path} buyer request failed: {e}")
 
             # 2. Cloak mode (bare curl UA)
             req_bot = urllib.request.Request(
@@ -387,9 +372,9 @@ def main() -> int:
                 check(err.code == 302, f"live {path} returns 302 for bot/cloak probe")
                 check(spec["cloak_target"].rstrip("/") in loc, f"live {path} bot 302 location redirects to cloak {spec['cloak_target']}")
             except Exception as e:
-                pass
-    except ImportError:
-        pass
+                check(False, f"live {path} bot request failed: {e}")
+    except ImportError as e:
+        raise AssertionError(f"live gateway check dependency missing: {e}")
 
     # ---- Track 19 Bidirectional SEO Mesh Assertions -----------------------
     # 1. Local docs/*.md all 5 files contain complete 4-platform mesh
@@ -421,8 +406,10 @@ def main() -> int:
         check("cloud-infra-tco-benchmarks.readthedocs.io" in readme, f"npm {npkg} README embeds RTD (DA 92) reverse link")
 
     # 4. PyPI packages all contain RTD link
-    check_tax_readme = Path("/Users/a600/project-workspaces(项目工作区)/check-proxy-tax/README.md").read_text(encoding="utf-8")
-    check("cloud-infra-tco-benchmarks.readthedocs.io" in check_tax_readme, "PyPI check-proxy-tax README embeds RTD link")
+    check_tax_readme_path = ROOT.parent / "check-proxy-tax" / "README.md"
+    if check_tax_readme_path.is_file():
+        check_tax_readme = check_tax_readme_path.read_text(encoding="utf-8")
+        check("cloud-infra-tco-benchmarks.readthedocs.io" in check_tax_readme, "PyPI check-proxy-tax README embeds RTD link")
     pypi_packages = ["llm-gpu-cost-calculator", "us-llc-compliance-tco", "ad-tracker-antidetect-tco"]
     for ppkg in pypi_packages:
         readme = (ROOT / "pypi-packages(PyPI官方包矩阵)" / ppkg / "README.md").read_text(encoding="utf-8")
@@ -439,7 +426,7 @@ def main() -> int:
             check("npmjs.com/package/" in docs_html, "live docs/ contains npm link")
             check("hub.docker.com/r/600megd/" in docs_html, "live docs/ contains Docker Hub link")
     except Exception as e:
-        pass
+        raise AssertionError(f"live docs check failed: {e}")
 
     print(f"\n{_PASSED} assertions passed")
     return 0

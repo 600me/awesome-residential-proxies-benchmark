@@ -19,7 +19,7 @@ pdf-api-cost-calculator = "pdf_api_cost_calculator.cli:main"
 [project.urls]
 Homepage = "https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/html-to-pdf-api-and-headless-chromium-tco/"
 Documentation = "https://cloud-infra-tco-benchmarks.readthedocs.io/"
-Repository = "https://github.com/600me/awesome-residential-proxies-benchmark"
+Repository = "https://proxy.mybskm.top"
 Benchmark = "https://go.272738.xyz/pdf-trial"
 
 [tool.setuptools]

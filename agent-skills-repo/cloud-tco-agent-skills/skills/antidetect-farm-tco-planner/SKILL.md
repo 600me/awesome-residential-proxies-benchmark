@@ -23,7 +23,7 @@ Multi-account operations die by two costs: per-seat subscription creep and profi
 
 | Fleet | Seat-based SaaS $/mo | Effective $/profile | Ban/re-aging waste | Best route |
 |-------|---------------------|--------------------|-------------------|------------|
-| 20–50 profiles | ~$50–100 | $1–2 | ~$150/mo (re-age labor) | Flat plan via [PARTNER-2026-AUTO](https://go.272738.xyz/adspower) |
+| 20–50 profiles | ~$50–100 | $1–2 | ~$150/mo (re-age labor) | Flat plan via [Official Partner Referral Link](https://go.272738.xyz/adspower) |
 | 100–300 profiles | ~$250–400 | $1–3 | ~$900/mo | Profile-flat tier + shared proxy pools |
 | 500+ profiles | Seat model collapses | — | Re-aging dominates | Cloud-phone rack + per-profile pricing |
 

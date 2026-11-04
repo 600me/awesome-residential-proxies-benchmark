@@ -41,8 +41,8 @@ Migrating from fragile self-hosted browser containers to a specialized document 
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **CraftMyPDF** | **$29 / mo** (Lite: 1,200 docs, $0.024/doc) | **$49 / mo** (Plus: 3,000 docs, $0.016/doc) | **$99 / mo** (Professional: 12,000 docs, $0.008/doc) | Drag-and-drop Visual Editor + JSON | 50 Free Documents/mo (No credit card) | [👉 Claim CraftMyPDF Free Sandbox](https://go.272738.xyz/craftmypdf) |
 | **APITemplate.io** | **$19 / mo** (Basic: 3,000 docs, $0.0063/doc) | **$69 / mo** (Standard: 12,000 docs, $0.0057/doc) | **$139 / mo** (Enterprise: 25,000 docs, $0.0055/doc) | No-code Template Builder + HTML/CSS | Free Developer Tier (3,000 Free Credits) | [👉 Deploy APITemplate.io](https://go.272738.xyz/apitemplate) |
-| **Adobe PDF Services** | $0.050 / doc (Pay-as-you-go) | $0.045 / doc | Enterprise quote ($500/mo min) | Programmatic Word/Excel template engine | 1,000 Free Document Transactions | [👉 Review Adobe API TCO](https://go.272738.xyz/pdf-trial) |
-| **DocRaptor** | $15 / mo (125 docs, $0.120/doc) | $75 / mo (1,250 docs, $0.060/doc) | $225 / mo (4,500 docs, $0.050/doc) | PrinceXML High-Quality CSS Engine | Watermarked Free Sandbox | [👉 Compare PrinceXML TCO](https://go.272738.xyz/pdf-trial) |
+| **Adobe PDF Services** | $0.050 / doc (Pay-as-you-go) | $0.045 / doc | Enterprise quote ($500/mo min) | Programmatic Word/Excel template engine | 1,000 Free Document Transactions | Plain-text spec · [👉 Lower-TCO Alternative: CraftMyPDF](https://go.272738.xyz/craftmypdf) |
+| **DocRaptor** | $15 / mo (125 docs, $0.120/doc) | $75 / mo (1,250 docs, $0.060/doc) | $225 / mo (4,500 docs, $0.050/doc) | PrinceXML High-Quality CSS Engine | Watermarked Free Sandbox | Plain-text spec · [👉 Lower-TCO Alternative: APITemplate.io](https://go.272738.xyz/apitemplate) |
 
 ---
 

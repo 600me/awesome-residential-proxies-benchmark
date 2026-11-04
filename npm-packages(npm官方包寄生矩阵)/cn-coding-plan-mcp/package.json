@@ -1,7 +1,7 @@
 {
   "name": "cn-coding-plan-mcp",
-  "version": "1.0.1",
-  "description": "国内开发者 Coding Plan / AI 算力 / 海外订阅虚拟卡 TCO 比价 MCP Server 与 CLI",
+  "version": "1.0.2",
+  "description": "国内开发者 Coding Plan / AI 算力 / 海外订阅防封网络环境与平替 TCO 比价 MCP Server 与 CLI",
   "main": "index.js",
   "bin": {
     "cn-coding-plan-mcp": "./index.js"
@@ -15,7 +15,7 @@
     "zhipu-glm",
     "claude-code",
     "cursor",
-    "pokepay"
+    "lisahost"
   ],
   "author": "CloudBench Research",
   "license": "MIT",

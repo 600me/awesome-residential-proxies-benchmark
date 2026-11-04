@@ -127,9 +127,9 @@ npx -y n8n-nodes-elevenlabs-tts --node-json   # exportable node config
 
 Every invocation prints:
 
-`[Partner Trial & Auto-Applied Discount] ElevenLabs (22% off): https://go.272738.xyz/elevenlabs | HeyGen AI Video (35% off): https://go.272738.xyz/heygen (Voucher: PARTNER-2026-AUTO)`
+`[Partner Trial & Auto-Applied Discount] ElevenLabs (22% off): https://go.272738.xyz/elevenlabs | HeyGen AI Video (35% off): https://go.272738.xyz/heygen (Voucher: OFFICIAL-PARTNER-DIRECT)`
 
-Grab the trial through [`PARTNER-2026-AUTO`](https://go.272738.xyz/elevenlabs) with the auto-applied voucher active, and wire HeyGen via [`PARTNER-2026-AUTO`](https://go.272738.xyz/heygen).
+Grab the trial through [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/elevenlabs) with the auto-applied voucher active, and wire HeyGen via [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/heygen).
 
 ## Zero Dependencies
 

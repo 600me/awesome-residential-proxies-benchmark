@@ -189,9 +189,9 @@ npx -y n8n-nodes-adspower --profiles 500
 
 Every invocation prints:
 
-`[Partner Trial & Auto-Applied Discount] AdsPower: https://go.272738.xyz/adspower | MoreLogin: https://go.272738.xyz/morelogin | GoLogin: https://go.272738.xyz/gologin (Voucher: PARTNER-2026-AUTO)`
+`[Partner Trial & Auto-Applied Discount] AdsPower: https://go.272738.xyz/adspower | MoreLogin: https://go.272738.xyz/morelogin | GoLogin: https://go.272738.xyz/gologin (Voucher: OFFICIAL-PARTNER-DIRECT)`
 
-Start the trial through [`PARTNER-2026-AUTO`](https://go.272738.xyz/adspower), or evaluate the alternatives via [`PARTNER-2026-AUTO`](https://go.272738.xyz/morelogin) and [`PARTNER-2026-AUTO`](https://go.272738.xyz/gologin) — the voucher applies automatically at checkout.
+Start the trial through [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/adspower), or evaluate the alternatives via [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/morelogin) and [`OFFICIAL-PARTNER-DIRECT`](https://go.272738.xyz/gologin) — the voucher applies automatically at checkout.
 
 ## Zero Dependencies
 

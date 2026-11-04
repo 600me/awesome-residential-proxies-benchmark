@@ -14,7 +14,6 @@ LINKS = {
     "volcengine": "https://coding.mybskm.top/go/volcengine-coding",
     "zhipu": "https://coding.mybskm.top/go/zhipu-glm",
     "tencent": "https://coding.mybskm.top/go/tencent-double11",
-    "pokepay": "https://coding.mybskm.top/go/pokepay",
     "bwh": "https://coding.mybskm.top/go/bwh",
     "rainyun": "https://coding.mybskm.top/go/rainyun",
     "lisahost": "https://coding.mybskm.top/go/lisahost",
@@ -54,7 +53,8 @@ def calculate_claude_cursor_card_tco(args=None):
             "usd_annual_effective": round(card_monthly * 12 + open_card_fee, 2),
             "pain_points": ["风控拒付", "汇率二次损耗", "余额沉淀"],
         },
-        "action": LINKS["pokepay"],
+        "action": LINKS["lisahost"],
+        "action_domestic": LINKS["aliyun_coding"],
         "interactive_site": SITE,
     }
 

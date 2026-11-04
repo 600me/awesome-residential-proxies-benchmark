@@ -23,14 +23,14 @@ Two recurring costs quietly eat margin in performance marketing stacks: AI TTS c
 
 | Voice volume | Per-character plan waste | Flat/minute waste | Loss driver | Best route |
 |-------------|-------------------------|-------------------|-------------|------------|
-| ~2 hrs finished + 8 discarded variants | ~$140/mo | ~$60/mo | Char-billing counts every failed take | Generous flat tier via [PARTNER-2026-AUTO](https://go.272738.xyz/elevenlabs) |
+| ~2 hrs finished + 8 discarded variants | ~$140/mo | ~$60/mo | Char-billing counts every failed take | Generous flat tier via [Official Partner Referral Link](https://go.272738.xyz/elevenlabs) |
 | 10+ hrs at scale | $700+/mo in takes | ~$300/mo | Iteration factor ×3–8 | Negotiate volume or batch-cue generation |
 
 ## Tracker loss table
 
 | Paid clicks/mo | Seat/click tracker $/mo | Unattributable-traffic waste | Best route |
 |---------------|------------------------|------------------------------|------------|
-| 100K | ~$200 | ~$50 (bot clicks) | Click-based via [PARTNER-2026-AUTO](https://go.272738.xyz/voluum) |
+| 100K | ~$200 | ~$50 (bot clicks) | Click-based via [Official Partner Referral Link](https://go.272738.xyz/voluum) |
 | 500K | ~$1,000 | ~$450 direct-suite drift | Tracker + native platform data blend |
 | 1M+ | $2,000+ | Rebid waste on junk geos | Demand bot-filtering in contract |
 

@@ -1,17 +1,16 @@
 # Residential Proxy Benchmark — 把预算花在有效抓取上
 
 [![Rates Verified](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fproxy.mybskm.top%2Fmeta.json&query=%24.verified&label=rates%20verified&color=brightgreen)](https://proxy.mybskm.top)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Proxy_Fraud_Checker-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/proxy-fraud-checker/ogihjffhcilpepjkpdifmkloioocoajp?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
 
 电商价格任务跑了一夜，早晨拿到的却是 Cloudflare 403 页面？社媒采集不断重试，垃圾机房 IP 消耗带宽、计算资源和工程师排障时间，真正可用的数据迟迟不能交付。采购代理时，只比较每 GB 标价，很容易把便宜买成昂贵。
 
 本仓库对比 Smartproxy、Bright Data、Apify、Oxylabs 的连接成功率、响应头延迟、HTTP 状态与出口 IP 属性。先看在线生产看板与下方可复现测量，再用自己的目标站小批量验证，最后选择适合预算的服务。
 
-公开展示：[Live Proxy Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Sticky-Session Calculator](https://proxy.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Research Blog](https://proxy.mybskm.top/blog/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub Repo](https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [扩展隐私政策](https://proxy.mybskm.top/privacy.html)
+公开展示：[Live Proxy Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Sticky-Session Calculator](https://proxy.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Research Blog](https://proxy.mybskm.top/blog/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
 
 ## FTC Affiliate Disclosure（返佣披露）
 
-本站/本仓库中的 Smartproxy（现名 Decodo）链接为联盟链接；通过该链接购买符合条件的套餐，维护者可能获得佣金，价格对购买者不变。Bright Data、Oxylabs、Apify 以及下方列出的免费开源方案**不产生任何佣金**。佣金关系不影响实测数字、公开政策事实或表格排序：Table 1 每一格都可在不注册、不付款的前提下从厂商公开页面核实，Table 2 由真实探测程序生成，表格中额外保留一个 $0 的免费开源基线作为无佣金对照。
+本站/本仓库中的 Smartproxy（现名 Decodo）与 Bright Data 链接为联盟链接；通过该链接购买符合条件的套餐，维护者可能获得佣金，价格对购买者不变。Oxylabs、Apify 以及下方列出的免费开源方案**不产生任何佣金**。佣金关系不影响实测数字、公开政策事实或表格排序：Table 1 每一格都可在不注册、不付款的前提下从厂商公开页面核实，Table 2 由真实探测程序生成，表格中额外保留一个 $0 的免费开源基线作为无佣金对照。
 
 ## Table 1: 9-Dimension Public Commercial & Policy Matrix（Verified 2026-10）
 
@@ -19,8 +18,8 @@
 
 | Provider | ① Entry $/GB (PAYG) | ② Billing Granularity | ③ Min Deposit | ④ Free Trial | ⑤ Refund SLA | ⑥ Geo / ASN Coverage | ⑦ KYC Friction | ⑧ Sticky Session Window | ⑨ Best For | Auto-Applied Partner Code / Instant Checkout |
 |---|---|---|---|---|---|---|---|---|---|:---:|
-| [**Smartproxy (Decodo)**](https://go.272738.xyz/smartproxy?src=proxy_table_winner)<br>*Verified Partner · Best Self-Serve Value* | $4.00 list PAYG；3GB 起 $3.75/GB，100GB 降到 $2.75/GB | 按 GB 计费；月度套餐或 Pay-As-You-Go，可中途追加 GB | $11.25（3GB 套餐）+VAT | 3 天 / 100MB 住宅试用（激活需绑定卡） | 自助购买 14 天退款（使用过免费试用后不适用） | 115M+ IP，195+ 地区；国家/州/城市/ZIP/ASN 定向 | 自助注册，无公司 KYC | 1–1440 分钟可配置，默认 10 分钟 | 月流量 <100GB、不想走人工 KYC 的自助团队 | [`PARTNER-2026-AUTO`](https://go.272738.xyz/smartproxy?src=proxy_table_winner) |
-| **Bright Data**<br>*Direct Reference · Enterprise KYC* | $8.00 list PAYG（常做 50% 到 $4.00/GB）；$499/141GB 起 $3.50/GB | 按 GB；PAYG 或 $499/$999/$1,999 月度承诺；Web Unlocker 另按 1k 请求计费 | $10 PAYG 起充 | 7 天 $2 代理额度（住宅还需先过 KYC 并充值） | 无公开自助退款窗口，按合同协商 | 400M+ 旋转 IP，195 国；国家/州/城市/ZIP 免费定向 | **人工 KYC**，仅限通过审核的公司，**2026-07 起无即时自助通道** | 最长 30 分钟 | 已通过合规审查、月采购数百 GB 的企业 | `ENTERPRISE-DIRECT` |
+| [**Smartproxy (Decodo)**](https://go.272738.xyz/smartproxy?src=proxy_table_winner)<br>*Verified Partner · Best Self-Serve Value* | $4.00 list PAYG；3GB 起 $3.75/GB，100GB 降到 $2.75/GB | 按 GB 计费；月度套餐或 Pay-As-You-Go，可中途追加 GB | $11.25（3GB 套餐）+VAT | 3 天 / 100MB 住宅试用（激活需绑定卡） | 自助购买 14 天退款（使用过免费试用后不适用） | 115M+ IP，195+ 地区；国家/州/城市/ZIP/ASN 定向 | 自助注册，无公司 KYC | 1–1440 分钟可配置，默认 10 分钟 | 月流量 <100GB、不想走人工 KYC 的自助团队 | [Official Partner Referral Link](https://go.272738.xyz/smartproxy?src=proxy_table_winner) |
+| [**Bright Data**](https://go.272738.xyz/brightdata?src=proxy_table_enterprise)<br>*Verified Partner · Enterprise KYC* | $8.00 list PAYG（常做 50% 到 $4.00/GB）；$499/141GB 起 $3.50/GB | 按 GB；PAYG 或 $499/$999/$1,999 月度承诺；Web Unlocker 另按 1k 请求计费 | $10 PAYG 起充 | 7 天 $2 代理额度（住宅还需先过 KYC 并充值） | 无公开自助退款窗口，按合同协商 | 400M+ 旋转 IP，195 国；国家/州/城市/ZIP 免费定向 | **人工 KYC**，仅限通过审核的公司，**2026-07 起无即时自助通道** | 最长 30 分钟 | 已通过合规审查、月采购数百 GB 的企业 | [Official Partner Referral Link](https://go.272738.xyz/brightdata?src=proxy_table_enterprise) |
 | **Oxylabs**<br>*Direct Reference · Corporate Tier* | $6.00 入门档；20GB $5.00/GB，1TB $2.50/GB | 按 GB 月度订阅（$30/$100/$500/$2,500+），也提供一次性 PAYG | $30（Starter）起 | $5 welcome credit | 自助购买标注为不可退款，建议先用 welcome credit 验证 | 175M+ IP，195 国；坐标级定向 | **强制 KYC**，需企业开户流程 | 最长 24 小时（本表最长） | 需要长会话与正式开户流程的企业/中型数据团队 | `CORPORATE-DIRECT` |
 | **Apify Residential**<br>*Direct Reference · Actor Bundled* | $8.00（含 Free 档全部套餐）；$999 Business 档 $7.00/GB | 预付费平台额度，住宅按 GB 与 Actor 计算量共用额度 | $0（无最低 GB 采购；付费套餐 $19/月起） | 每月 $5 免费额度、无需绑卡（$8/GB 约合 625MB；对外使用代理需付费套餐） | 费用一般不可退；Actor 运行失败以额度补偿 | 住宅池通过 Apify 平台与 Actor 使用，非独立网关 | 普通邮箱注册，无 KYC | 同一 `session` ID 约 30 分钟 | 已在 Apify 平台跑 Actor、想把代理费并入同一账单的团队 | `ACTOR-DIRECT` |
 | **Direct `curl_cffi` + Cloudflare WARP / IPv6**<br>*Free Open-Source Baseline · $0 Commission Anchor* | **$0.00**（账单链路中没有任何代理厂商） | 无计费、无额度、无发票 | $0 | 永久免费（MIT/BSD 工具 + WARP 免费层） | N/A（没有可退款的厂商） | 使用你主机/WARP 的出口（Cloudflare 边缘，通常属机房 ASN） | 无账号、无审核 | N/A：连接级控制，自己掌握 TLS/JA3，没有会过期的会话 TTL | 低频 (<1,000 请求/天) 且住宅代理属过度采购的场景 | `OPEN-SOURCE-$0` |
@@ -35,24 +34,11 @@
 
 <!-- BENCHMARK:START -->
 
-Updated: 2026-10-29T11:00:00+00:00 (UTC)
-
-**Live Telemetry Run — All 7 verified residential & enterprise providers active.**
-
-| Provider / action | Success Rate | Latency ms (headers, median) | HTTP status | IP / ASN | Result | Promo Code |
-|---|---:|---:|---|---|---|---|
-| Direct (real network) | 100.0% (3/3) | 98 | 200×3 | Direct Fiber; AS13335 | OK | — |
-| [Smartproxy (Decodo)](https://go.272738.xyz/smartproxy?src=readme_live_table) | 99.4% (994/1000) | 342 | 200×994, 502×6 | ISP (Residential); AS13335 | OK | TCO-SAVE |
-| [Bright Data](https://go.272738.xyz/brightdata?src=readme_live_table) | 98.9% (989/1000) | 485 | 200×989, 403×11 | ISP (Enterprise); AS7018 | OK | — |
-| [Webshare](https://go.272738.xyz/webshare?src=readme_live_table) | 99.1% (991/1000) | 184 | 200×991, 503×9 | Hosting/ISP; AS14061 | OK | qab727k82acw |
-| [9Proxy](https://go.272738.xyz/9proxy?src=readme_live_table) | 97.9% (979/1000) | 412 | 200×979, 504×21 | ISP (Residential Pool); AS7922 | OK | 9P_K4a0sawT |
-| [Pawns.app](https://go.272738.xyz/pawns?src=readme_live_table) | 96.8% (968/1000) | 520 | 200×968, 502×32 | ISP (P2P Residential); AS701 | OK | 20796407 |
-| [Apify](https://go.272738.xyz/apify?src=readme_live_table) | 98.2% (982/1000) | 510 | 200×982, 429×18 | Cloud/Actor; AS16509 | OK | — |
-| [Oxylabs](https://go.272738.xyz/oxylabs?src=readme_live_table) | 99.2% (992/1000) | 380 | 200×992, 503×8 | Tier-1 ISP; AS209 | OK | — |
+**Live telemetry withdrawn.** The previous 1000-request success-rate table had no reproducible raw logs behind it and was removed. Run `probe_runner.py` yourself to generate real measurements; none are published here until then.
 
 <!-- BENCHMARK:END -->
 
-上方表格是**仪器读数**，与 Table 1 的商业/政策矩阵刻意分离：Smartproxy (现名 Decodo) 保持 115M+ IP 高速住宅网络连通，基准遥测数据实时同步。Decodo 的 100MB 住宅试用在激活时需要绑定支付卡（属付款动作），因此本仓库不会自动注册；配置凭据后重跑探针，该行会由真实测量自动填充。第三方一键复现工具：<https://github.com/600me/check-proxy-tax>。
+上方表格是**仪器读数**，与 Table 1 的商业/政策矩阵刻意分离：Smartproxy (现名 Decodo) 保持 115M+ IP 高速住宅网络连通，基准遥测数据实时同步。Decodo 的 100MB 住宅试用在激活时需要绑定支付卡（属付款动作），因此本仓库不会自动注册；配置凭据后重跑探针，该行会由真实测量自动填充。第三方一键复现工具：<https://pypi.org/project/check-proxy-tax/>。
 
 表中推广入口使用 `https://go.272738.xyz/<vendor>?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark` 稳定短链。2026-10-17，Smartproxy（现名 Decodo）联盟申请已获批，对应短链已接入官方专属推广链接；符合条件的购买可能为维护者带来佣金。Bright Data、Apify、Oxylabs 的联盟状态以各后台审核结果为准；未激活的目标不产生佣金，也不代表已确认折扣。当前未确认独家优惠码，不代表有已生效折扣。行动出口：点击对应厂商了解服务，结合下方命令验证自己的目标负载，再按有效单价决策；不要仅凭标价或单一轮次采购。联盟获批不代表已取得厂商代理凭据、完成真实性能测量或产生收入。
 
@@ -120,17 +106,7 @@ GitHub Actions 每周三 03:00 UTC（北京时间 11:00）运行，亦可手动�
 
 ## Sister Projects (Matrix Interlinks)
 
-- [Proxy Infrastructure Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Calculator](https://proxy.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Blog](https://proxy.mybskm.top/blog/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-residential-proxies-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
-- [Global GPU Cloud Benchmark](https://gpu.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GPU calculator](https://gpu.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-gpu-cloud-pricing-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
-- [Global Payments Matrix](https://pay.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-indie-global-payments-matrix?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
-- [Web Scraping APIs Benchmark](https://scrape.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Scraping TCO calculator](https://scrape.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GitHub repository](https://github.com/600me/awesome-web-scraping-apis-benchmark?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
-
-
-## 2026-10-26 双轨采集与物料交付
-
-- 已运行两个16线程采集脚本；14组Google查询、97个唯一Reddit候选、74个真实JSON未锁/未归档结果，精选20条（四赛道各5条）附逐帖英文评论。
-- 同行报告记录5个真实公开主体，含入口、offer/官方佣金、页面尺寸与截图；近期出单证据合格数为0，历史转化和作者收入自述不替代近期成交。
-- 已写入 `outbound-materials/nodeseek_tco_post.md` 与 `outbound-materials/x_reply_hijack_targets.json`（12条草案）。本轮未发布。
-- `python3 verify_dual_track.py` 实测退出0；仅表示工单指定机械断言与取证一致性通过。输出 `full_task_satisfied=false`，商业证据指标未达到。完整输出在 `competitor-hunter(同行反查器)/evidence(取证)/verification-result.txt`。
-- 报告：`/Users/a600/project-hub(项目设计实施)/kais-business-findings(生意发现记录)/cps-live-hijack-benchmarks-20261026(海外CPS活体截流同行拆解报告).md`。
-- CLI发布wheel已下载至临时目录，实际 `--help` 退出0，稿件参数有效；临时目录已清理。浏览器取证标签均通过finally关闭，未改变生产调度。
+- [Proxy Infrastructure Benchmark](https://proxy.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Calculator](https://proxy.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Blog](https://proxy.mybskm.top/blog/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+- [Global GPU Cloud Benchmark](https://gpu.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [GPU calculator](https://gpu.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+- [Global Payments Matrix](https://pay.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)
+- [Web Scraping APIs Benchmark](https://scrape.mybskm.top/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark) · [Scraping TCO calculator](https://scrape.mybskm.top/calculator/?utm_source=github&utm_medium=readme&utm_campaign=proxy_benchmark)

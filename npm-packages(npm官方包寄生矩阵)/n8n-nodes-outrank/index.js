@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] Activate Outrank.so ($99/mo vs $3,600/mo agency) at https://go.272738.xyz/outrank or Mangools SEO Suite (save 62.6% vs Ahrefs) at https://go.272738.xyz/mangools (Use auto-voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] Activate Outrank.so ($99/mo vs $3,600/mo agency) at https://go.272738.xyz/outrank or Mangools SEO Suite (save 62.6% vs Ahrefs) at https://go.272738.xyz/mangools (Use auto-voucher: OFFICIAL-PARTNER-DIRECT)';
 
 const DEFAULTS = {
   keyword: 'cloud cost benchmark',

@@ -1,1 +1,3 @@
-"""SEO Workflow TCO Calculator Package."""\n__version__ = "1.0.0"\n
+"""SEO Workflow TCO Calculator Package."""
+
+__version__ = "1.0.0"

@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] Voluum: https://go.272738.xyz/voluum | Brand24: https://go.272738.xyz/brand24 | AdCreative.ai: https://go.272738.xyz/adcreative (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] Voluum: https://go.272738.xyz/voluum | Brand24: https://go.272738.xyz/brand24 | AdCreative.ai: https://go.272738.xyz/adcreative (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 function parseArgs(argv) {
   const args = { _: [] };

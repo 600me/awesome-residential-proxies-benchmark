@@ -1,3 +1,0 @@
-[console_scripts]
-seo-workflow-tco = seo_workflow_tco_calculator.cli:main
-seo-workflow-tco-calculator = seo_workflow_tco_calculator.cli:main

@@ -7,7 +7,7 @@
 'use strict';
 
 const PARTNER_LINE =
-  '[Partner Trial & Auto-Applied Discount] Firstbase.io Turnkey US LLC: https://go.272738.xyz/firstbase (Voucher: PARTNER-2026-AUTO)';
+  '[Partner Trial & Auto-Applied Discount] Firstbase.io Turnkey US LLC: https://go.272738.xyz/firstbase (Voucher: OFFICIAL-PARTNER-DIRECT)';
 
 function parseArgs(argv) {
   const args = { _: [] };

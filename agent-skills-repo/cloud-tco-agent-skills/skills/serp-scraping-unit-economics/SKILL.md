@@ -23,7 +23,7 @@ Should you buy a managed scraping API at per-request prices, or run your own hea
 
 | Volume | Managed API $/mo | Self-hosted true TCO/mo | Typical waste | Best option |
 |--------|-----------------|------------------------|---------------|-------------|
-| 100K pages | ~$1,000 | ~$1,400 (fleet idle) | Self-host idle servers | Managed via [PARTNER-2026-AUTO](https://go.272738.xyz/scraperapi) |
+| 100K pages | ~$1,000 | ~$1,400 (fleet idle) | Self-host idle servers | Managed via [Official Partner Referral Link](https://go.272738.xyz/scraperapi) |
 | 1M pages | ~$7,900 | ~$3,800 (busy fleet + proxies) | API per-request premium | Go self-hosted |
 | 5M pages | ~$35,000 | ~$14,500 | Retries & captcha burn | Hybrid: API for hard targets, fleet for easy |
 

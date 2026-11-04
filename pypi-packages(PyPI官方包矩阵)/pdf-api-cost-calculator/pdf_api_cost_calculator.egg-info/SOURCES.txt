@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-pdf_api_cost_calculator/__init__.py
-pdf_api_cost_calculator/cli.py
-pdf_api_cost_calculator.egg-info/PKG-INFO
-pdf_api_cost_calculator.egg-info/SOURCES.txt
-pdf_api_cost_calculator.egg-info/dependency_links.txt
-pdf_api_cost_calculator.egg-info/entry_points.txt
-pdf_api_cost_calculator.egg-info/top_level.txt

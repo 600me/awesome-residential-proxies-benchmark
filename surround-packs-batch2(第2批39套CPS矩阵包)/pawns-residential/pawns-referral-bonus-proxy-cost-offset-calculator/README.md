@@ -14,7 +14,7 @@ The default, explicitly hypothetical workload needs 500 useful GB per month. In 
 
 Keep three separate ledgers in your existing accounting system: proxy expenses, recurring bandwidth-sharing receipts and one-time referral receipts. This repository creates no accounting files. Only the recurring net amount offsets the annual run rate. The one-time bonus appears in first-year savings once. Default shared traffic is a hypothetical 100 GB per month, valued at a historical $0.20/GB contributor benchmark, less $5 of incremental monthly costs. Availability of paid traffic and eligibility are not assumed guaranteed.
 
-**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. The gateway is a promotional outbound link; this project does not independently verify its destination or promise a referral reward. No sign-up or purchase is required to run the code.
+**[Evaluate Pawns.app and confirm current eligibility](https://zelumo.top/pw/1)** before committing funds. Partner referral link; eligible purchases may earn a commission at no extra cost to the buyer. No sign-up or purchase is required to run the code.
 
 ## 2. Pricing and technical comparison: what is known and what is modeled
 
