@@ -1,6 +1,6 @@
 # HTML-to-PDF API vs Self-Hosted Headless Chromium: 2026 Production TCO Benchmark
 
-[![Benchmark Suite](https://img.shields.io/badge/Benchmark-Track_5_PDF_API-blue.svg)](https://proxy.mybskm.top/)
+[![Benchmark Suite](https://img.shields.io/badge/Benchmark-Track_5_PDF_API-blue.svg)](https://proxy.mybskm.top/?src=docs-html-to-pdf-api-and-headless-chromium-tco)
 [![Anti--Bot Audit](https://img.shields.io/badge/TCO_Calculator-Docker_PyPI_npm-success.svg)](https://go.272738.xyz/pdf-trial)
 
 An empirical cost, reliability, and throughput evaluation of serverless HTML-to-PDF rendering pipelines. This benchmark models real-world Total Cost of Ownership (TCO) comparing self-managed Headless Chromium / Puppeteer clusters against managed document generation APIs including CraftMyPDF, APITemplate.io, DocRaptor, and Adobe PDF Services.
@@ -72,7 +72,7 @@ npx pdf-api-cost-calculator --docs 15000
 
 ### Multi-Platform Ecosystem Links
 - **Read the Docs Specification**: [Cloud-Infra TCO Documentation Hub](https://cloud-infra-tco-benchmarks.readthedocs.io/en/latest/)
-- **Docker Hub Repository**: [pdf-api-cost-calculator on Docker Hub](https://proxy.mybskm.top)
+- **Docker Hub Repository**: [pdf-api-cost-calculator on Docker Hub](https://proxy.mybskm.top?src=docs-html-to-pdf-api-and-headless-chromium-tco)
 - **PyPI Package Index**: [pdf-api-cost-calculator on PyPI](https://pypi.org/project/pdf-api-cost-calculator/)
 - **npm Registry**: [pdf-api-cost-calculator on npm](https://www.npmjs.com/package/pdf-api-cost-calculator)
 - **Live Gateway Relay**: [Verify Document Generation Trial](https://go.272738.xyz/pdf-trial)

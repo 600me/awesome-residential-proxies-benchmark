@@ -3,7 +3,7 @@
 [![Docs Build](https://img.shields.io/badge/Docs-Live-success)](https://go.272738.xyz/outrank)
 [![Python Package](https://img.shields.io/pypi/v/seo-workflow-tco-calculator.svg)](https://pypi.org/project/seo-workflow-tco-calculator/)
 [![npm package](https://img.shields.io/npm/v/seo-workflow-tco-calculator.svg)](https://www.npmjs.com/package/seo-workflow-tco-calculator)
-[![Docker Image](https://img.shields.io/badge/Docker-seo--workflow--tco--calculator-blue)](https://proxy.mybskm.top)
+[![Docker Image](https://img.shields.io/badge/Docker-seo--workflow--tco--calculator-blue)](https://proxy.mybskm.top?src=docs-seo-suite-and-workflow-automation-tco)
 
 ## Executive Summary & Engineering Cost Friction
 
