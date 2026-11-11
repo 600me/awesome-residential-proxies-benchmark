@@ -1,0 +1,5 @@
+site_name: Cloud & AI Infrastructure TCO Lab
+site_description: Archived TCO benchmark documentation for proxies, GPUs and automation tooling.
+site_url: https://awesome-residential-proxies-benchmark.readthedocs.io/
+theme: readthedocs
+docs_dir: docs
